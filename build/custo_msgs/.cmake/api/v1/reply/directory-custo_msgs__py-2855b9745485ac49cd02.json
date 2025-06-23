@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "custo_msgs__py",
+		"source" : "/home/huy/ros2_ws/build/custo_msgs/custo_msgs__py"
+	}
+}

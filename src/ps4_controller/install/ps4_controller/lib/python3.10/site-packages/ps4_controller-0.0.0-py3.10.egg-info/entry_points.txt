@@ -1,0 +1,4 @@
+[console_scripts]
+ps4_controller_node = ps4_controller.ps4_controller:main
+servo_controller_node = ps4_controller.servo_controller:main
+

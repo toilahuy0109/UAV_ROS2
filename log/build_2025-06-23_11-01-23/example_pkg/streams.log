@@ -1,0 +1,41 @@
+[0.653s] Invoking command in '/home/huy/ros2_ws/src/example_pkg': PYTHONPATH=/home/huy/ros2_ws/build/example_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/huy/ros2_ws/install/example_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/example_pkg build --build-base /home/huy/ros2_ws/build/example_pkg/build install --record /home/huy/ros2_ws/build/example_pkg/install.log --single-version-externally-managed install_data
+[0.844s] running egg_info
+[0.844s] creating ../../build/example_pkg/example_pkg.egg-info
+[0.844s] writing ../../build/example_pkg/example_pkg.egg-info/PKG-INFO
+[0.844s] writing dependency_links to ../../build/example_pkg/example_pkg.egg-info/dependency_links.txt
+[0.844s] writing entry points to ../../build/example_pkg/example_pkg.egg-info/entry_points.txt
+[0.845s] writing requirements to ../../build/example_pkg/example_pkg.egg-info/requires.txt
+[0.845s] writing top-level names to ../../build/example_pkg/example_pkg.egg-info/top_level.txt
+[0.845s] writing manifest file '../../build/example_pkg/example_pkg.egg-info/SOURCES.txt'
+[0.847s] reading manifest file '../../build/example_pkg/example_pkg.egg-info/SOURCES.txt'
+[0.847s] writing manifest file '../../build/example_pkg/example_pkg.egg-info/SOURCES.txt'
+[0.847s] running build
+[0.847s] running build_py
+[0.848s] creating /home/huy/ros2_ws/build/example_pkg/build
+[0.848s] creating /home/huy/ros2_ws/build/example_pkg/build/lib
+[0.848s] creating /home/huy/ros2_ws/build/example_pkg/build/lib/example_pkg
+[0.848s] copying example_pkg/__init__.py -> /home/huy/ros2_ws/build/example_pkg/build/lib/example_pkg
+[0.848s] copying example_pkg/listener.py -> /home/huy/ros2_ws/build/example_pkg/build/lib/example_pkg
+[0.848s] copying example_pkg/talker.py -> /home/huy/ros2_ws/build/example_pkg/build/lib/example_pkg
+[0.848s] running install
+[0.848s] running install_lib
+[0.849s] creating /home/huy/ros2_ws/install/example_pkg/lib/python3.10/site-packages/example_pkg
+[0.849s] copying /home/huy/ros2_ws/build/example_pkg/build/lib/example_pkg/__init__.py -> /home/huy/ros2_ws/install/example_pkg/lib/python3.10/site-packages/example_pkg
+[0.849s] copying /home/huy/ros2_ws/build/example_pkg/build/lib/example_pkg/listener.py -> /home/huy/ros2_ws/install/example_pkg/lib/python3.10/site-packages/example_pkg
+[0.849s] copying /home/huy/ros2_ws/build/example_pkg/build/lib/example_pkg/talker.py -> /home/huy/ros2_ws/install/example_pkg/lib/python3.10/site-packages/example_pkg
+[0.850s] byte-compiling /home/huy/ros2_ws/install/example_pkg/lib/python3.10/site-packages/example_pkg/__init__.py to __init__.cpython-310.pyc
+[0.850s] byte-compiling /home/huy/ros2_ws/install/example_pkg/lib/python3.10/site-packages/example_pkg/listener.py to listener.cpython-310.pyc
+[0.850s] byte-compiling /home/huy/ros2_ws/install/example_pkg/lib/python3.10/site-packages/example_pkg/talker.py to talker.cpython-310.pyc
+[0.851s] running install_data
+[0.851s] creating /home/huy/ros2_ws/install/example_pkg/share/ament_index
+[0.851s] creating /home/huy/ros2_ws/install/example_pkg/share/ament_index/resource_index
+[0.851s] creating /home/huy/ros2_ws/install/example_pkg/share/ament_index/resource_index/packages
+[0.851s] copying resource/example_pkg -> /home/huy/ros2_ws/install/example_pkg/share/ament_index/resource_index/packages
+[0.851s] copying package.xml -> /home/huy/ros2_ws/install/example_pkg/share/example_pkg
+[0.851s] running install_egg_info
+[0.853s] Copying ../../build/example_pkg/example_pkg.egg-info to /home/huy/ros2_ws/install/example_pkg/lib/python3.10/site-packages/example_pkg-0.0.0-py3.10.egg-info
+[0.854s] running install_scripts
+[0.872s] Installing listener script to /home/huy/ros2_ws/install/example_pkg/lib/example_pkg
+[0.872s] Installing talker script to /home/huy/ros2_ws/install/example_pkg/lib/example_pkg
+[0.872s] writing list of installed files to '/home/huy/ros2_ws/build/example_pkg/install.log'
+[0.897s] Invoked command in '/home/huy/ros2_ws/src/example_pkg' returned '0': PYTHONPATH=/home/huy/ros2_ws/build/example_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/huy/ros2_ws/install/example_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/example_pkg build --build-base /home/huy/ros2_ws/build/example_pkg/build install --record /home/huy/ros2_ws/build/example_pkg/install.log --single-version-externally-managed install_data

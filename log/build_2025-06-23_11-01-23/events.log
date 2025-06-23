@@ -1,0 +1,347 @@
+[0.000000] (-) TimerEvent: {}
+[0.000235] (custo_msgs) JobQueued: {'identifier': 'custo_msgs', 'dependencies': OrderedDict()}
+[0.000276] (example_pkg) JobQueued: {'identifier': 'example_pkg', 'dependencies': OrderedDict()}
+[0.000291] (ps4_controller) JobQueued: {'identifier': 'ps4_controller', 'dependencies': OrderedDict()}
+[0.000542] (custo_msgs) JobStarted: {'identifier': 'custo_msgs'}
+[0.004571] (example_pkg) JobStarted: {'identifier': 'example_pkg'}
+[0.008197] (ps4_controller) JobStarted: {'identifier': 'ps4_controller'}
+[0.012255] (custo_msgs) JobProgress: {'identifier': 'custo_msgs', 'progress': 'cmake'}
+[0.012700] (custo_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/huy/ros2_ws/src/custo_msgs', '-DCMAKE_INSTALL_PREFIX=/home/huy/ros2_ws/install/custo_msgs'], 'cwd': '/home/huy/ros2_ws/build/custo_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'huy'), ('LC_TIME', 'vi_VN'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/huy'), ('OLDPWD', '/home/huy/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'vi_VN'), ('SYSTEMD_EXEC_PID', '2043'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/huy/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'huy'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'huy'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/huy-IdeaPad-Gaming-3-15ACH6:@/tmp/.ICE-unix/2014,unix/huy-IdeaPad-Gaming-3-15ACH6:/tmp/.ICE-unix/2014'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'vi_VN'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/969a12cb_c34a_4cf2_acfb_384815a95103'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'vi_VN'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.103'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/huy/ros2_ws/install/ps4_controller:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'vi_VN'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'vi_VN'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'vi_VN'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/huy/ros2_ws/build/custo_msgs'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/huy/ros2_ws/install/ps4_controller/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'vi_VN'), ('LC_PAPER', 'vi_VN'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/huy/ros2_ws/install/ps4_controller:/opt/ros/humble')]), 'shell': False}
+[0.099809] (-) TimerEvent: {}
+[0.200180] (-) TimerEvent: {}
+[0.201117] (custo_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.244894] (custo_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.254263] (custo_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.300291] (-) TimerEvent: {}
+[0.316928] (custo_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.322420] (custo_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.322869] (custo_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.323479] (custo_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.326496] (custo_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.395672] (custo_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.400373] (-) TimerEvent: {}
+[0.401806] (custo_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.402064] (custo_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.402435] (custo_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.405119] (custo_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.407050] (custo_msgs) StdoutLine: {'line': b'-- Found ament_cmake_core: 1.3.11 (/opt/ros/humble/share/ament_cmake_core/cmake)\n'}
+[0.500466] (-) TimerEvent: {}
+[0.539932] (custo_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.598752] (custo_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.600543] (-) TimerEvent: {}
+[0.607563] (custo_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.657237] (example_pkg) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/example_pkg', 'build', '--build-base', '/home/huy/ros2_ws/build/example_pkg/build', 'install', '--record', '/home/huy/ros2_ws/build/example_pkg/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/huy/ros2_ws/src/example_pkg', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'huy', 'LC_TIME': 'vi_VN', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/huy', 'OLDPWD': '/home/huy/ros2_ws/src', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'vi_VN', 'SYSTEMD_EXEC_PID': '2043', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/huy/ros2_ws/install', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'huy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'huy', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/huy-IdeaPad-Gaming-3-15ACH6:@/tmp/.ICE-unix/2014,unix/huy-IdeaPad-Gaming-3-15ACH6:/tmp/.ICE-unix/2014', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'vi_VN', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/969a12cb_c34a_4cf2_acfb_384815a95103', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'vi_VN', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.103', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/huy/ros2_ws/install/ps4_controller:/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'vi_VN', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'vi_VN', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'LC_IDENTIFICATION': 'vi_VN', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/huy/ros2_ws/build/example_pkg', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/huy/ros2_ws/build/example_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/huy/ros2_ws/install/example_pkg/lib/python3.10/site-packages:/home/huy/ros2_ws/install/ps4_controller/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'vi_VN', 'LC_PAPER': 'vi_VN', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[0.666263] (ps4_controller) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/ps4_controller', 'build', '--build-base', '/home/huy/ros2_ws/build/ps4_controller/build', 'install', '--record', '/home/huy/ros2_ws/build/ps4_controller/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/huy/ros2_ws/src/ps4_controller', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'huy', 'LC_TIME': 'vi_VN', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/huy', 'OLDPWD': '/home/huy/ros2_ws/src', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'vi_VN', 'SYSTEMD_EXEC_PID': '2043', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/huy/ros2_ws/install', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'huy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'huy', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/huy-IdeaPad-Gaming-3-15ACH6:@/tmp/.ICE-unix/2014,unix/huy-IdeaPad-Gaming-3-15ACH6:/tmp/.ICE-unix/2014', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'vi_VN', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/969a12cb_c34a_4cf2_acfb_384815a95103', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'vi_VN', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.103', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/huy/ros2_ws/install/ps4_controller:/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'vi_VN', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'vi_VN', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'LC_IDENTIFICATION': 'vi_VN', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/huy/ros2_ws/build/ps4_controller', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/huy/ros2_ws/build/ps4_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/huy/ros2_ws/install/ps4_controller/lib/python3.10/site-packages:/home/huy/ros2_ws/install/ps4_controller/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'vi_VN', 'LC_PAPER': 'vi_VN', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[0.686068] (custo_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.700645] (-) TimerEvent: {}
+[0.723473] (custo_msgs) StdoutLine: {'line': b'-- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.782407] (custo_msgs) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.785744] (custo_msgs) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.800732] (-) TimerEvent: {}
+[0.848412] (example_pkg) StdoutLine: {'line': b'running egg_info\n'}
+[0.848823] (example_pkg) StdoutLine: {'line': b'creating ../../build/example_pkg/example_pkg.egg-info\n'}
+[0.848967] (example_pkg) StdoutLine: {'line': b'writing ../../build/example_pkg/example_pkg.egg-info/PKG-INFO\n'}
+[0.849175] (example_pkg) StdoutLine: {'line': b'writing dependency_links to ../../build/example_pkg/example_pkg.egg-info/dependency_links.txt\n'}
+[0.849302] (example_pkg) StdoutLine: {'line': b'writing entry points to ../../build/example_pkg/example_pkg.egg-info/entry_points.txt\n'}
+[0.849387] (example_pkg) StdoutLine: {'line': b'writing requirements to ../../build/example_pkg/example_pkg.egg-info/requires.txt\n'}
+[0.849466] (example_pkg) StdoutLine: {'line': b'writing top-level names to ../../build/example_pkg/example_pkg.egg-info/top_level.txt\n'}
+[0.849582] (example_pkg) StdoutLine: {'line': b"writing manifest file '../../build/example_pkg/example_pkg.egg-info/SOURCES.txt'\n"}
+[0.851338] (example_pkg) StdoutLine: {'line': b"reading manifest file '../../build/example_pkg/example_pkg.egg-info/SOURCES.txt'\n"}
+[0.852144] (example_pkg) StdoutLine: {'line': b"writing manifest file '../../build/example_pkg/example_pkg.egg-info/SOURCES.txt'\n"}
+[0.852262] (example_pkg) StdoutLine: {'line': b'running build\n'}
+[0.852341] (example_pkg) StdoutLine: {'line': b'running build_py\n'}
+[0.852454] (example_pkg) StdoutLine: {'line': b'creating /home/huy/ros2_ws/build/example_pkg/build\n'}
+[0.852533] (example_pkg) StdoutLine: {'line': b'creating /home/huy/ros2_ws/build/example_pkg/build/lib\n'}
+[0.852627] (example_pkg) StdoutLine: {'line': b'creating /home/huy/ros2_ws/build/example_pkg/build/lib/example_pkg\n'}
+[0.852677] (example_pkg) StdoutLine: {'line': b'copying example_pkg/__init__.py -> /home/huy/ros2_ws/build/example_pkg/build/lib/example_pkg\n'}
+[0.852762] (example_pkg) StdoutLine: {'line': b'copying example_pkg/listener.py -> /home/huy/ros2_ws/build/example_pkg/build/lib/example_pkg\n'}
+[0.852826] (example_pkg) StdoutLine: {'line': b'copying example_pkg/talker.py -> /home/huy/ros2_ws/build/example_pkg/build/lib/example_pkg\n'}
+[0.852980] (example_pkg) StdoutLine: {'line': b'running install\n'}
+[0.853240] (example_pkg) StdoutLine: {'line': b'running install_lib\n'}
+[0.853852] (example_pkg) StdoutLine: {'line': b'creating /home/huy/ros2_ws/install/example_pkg/lib/python3.10/site-packages/example_pkg\n'}
+[0.853946] (example_pkg) StdoutLine: {'line': b'copying /home/huy/ros2_ws/build/example_pkg/build/lib/example_pkg/__init__.py -> /home/huy/ros2_ws/install/example_pkg/lib/python3.10/site-packages/example_pkg\n'}
+[0.854028] (example_pkg) StdoutLine: {'line': b'copying /home/huy/ros2_ws/build/example_pkg/build/lib/example_pkg/listener.py -> /home/huy/ros2_ws/install/example_pkg/lib/python3.10/site-packages/example_pkg\n'}
+[0.854132] (example_pkg) StdoutLine: {'line': b'copying /home/huy/ros2_ws/build/example_pkg/build/lib/example_pkg/talker.py -> /home/huy/ros2_ws/install/example_pkg/lib/python3.10/site-packages/example_pkg\n'}
+[0.854740] (example_pkg) StdoutLine: {'line': b'byte-compiling /home/huy/ros2_ws/install/example_pkg/lib/python3.10/site-packages/example_pkg/__init__.py to __init__.cpython-310.pyc\n'}
+[0.854947] (example_pkg) StdoutLine: {'line': b'byte-compiling /home/huy/ros2_ws/install/example_pkg/lib/python3.10/site-packages/example_pkg/listener.py to listener.cpython-310.pyc\n'}
+[0.855335] (example_pkg) StdoutLine: {'line': b'byte-compiling /home/huy/ros2_ws/install/example_pkg/lib/python3.10/site-packages/example_pkg/talker.py to talker.cpython-310.pyc\n'}
+[0.855416] (ps4_controller) StdoutLine: {'line': b'running egg_info\n'}
+[0.855781] (example_pkg) StdoutLine: {'line': b'running install_data\n'}
+[0.855871] (example_pkg) StdoutLine: {'line': b'creating /home/huy/ros2_ws/install/example_pkg/share/ament_index\n'}
+[0.855959] (example_pkg) StdoutLine: {'line': b'creating /home/huy/ros2_ws/install/example_pkg/share/ament_index/resource_index\n'}
+[0.856029] (example_pkg) StdoutLine: {'line': b'creating /home/huy/ros2_ws/install/example_pkg/share/ament_index/resource_index/packages\n'}
+[0.856080] (ps4_controller) StdoutLine: {'line': b'writing ../../build/ps4_controller/ps4_controller.egg-info/PKG-INFO\n'}
+[0.856163] (example_pkg) StdoutLine: {'line': b'copying resource/example_pkg -> /home/huy/ros2_ws/install/example_pkg/share/ament_index/resource_index/packages\n'}
+[0.856232] (example_pkg) StdoutLine: {'line': b'copying package.xml -> /home/huy/ros2_ws/install/example_pkg/share/example_pkg\n'}
+[0.856284] (example_pkg) StdoutLine: {'line': b'running install_egg_info\n'}
+[0.856363] (ps4_controller) StdoutLine: {'line': b'writing dependency_links to ../../build/ps4_controller/ps4_controller.egg-info/dependency_links.txt\n'}
+[0.856415] (ps4_controller) StdoutLine: {'line': b'writing entry points to ../../build/ps4_controller/ps4_controller.egg-info/entry_points.txt\n'}
+[0.856479] (ps4_controller) StdoutLine: {'line': b'writing requirements to ../../build/ps4_controller/ps4_controller.egg-info/requires.txt\n'}
+[0.856564] (ps4_controller) StdoutLine: {'line': b'writing top-level names to ../../build/ps4_controller/ps4_controller.egg-info/top_level.txt\n'}
+[0.857738] (example_pkg) StdoutLine: {'line': b'Copying ../../build/example_pkg/example_pkg.egg-info to /home/huy/ros2_ws/install/example_pkg/lib/python3.10/site-packages/example_pkg-0.0.0-py3.10.egg-info\n'}
+[0.858023] (ps4_controller) StdoutLine: {'line': b"reading manifest file '../../build/ps4_controller/ps4_controller.egg-info/SOURCES.txt'\n"}
+[0.858559] (example_pkg) StdoutLine: {'line': b'running install_scripts\n'}
+[0.858730] (ps4_controller) StdoutLine: {'line': b"writing manifest file '../../build/ps4_controller/ps4_controller.egg-info/SOURCES.txt'\n"}
+[0.858815] (ps4_controller) StdoutLine: {'line': b'running build\n'}
+[0.858868] (ps4_controller) StdoutLine: {'line': b'running build_py\n'}
+[0.859148] (ps4_controller) StdoutLine: {'line': b'running install\n'}
+[0.859396] (ps4_controller) StdoutLine: {'line': b'running install_lib\n'}
+[0.860364] (ps4_controller) StdoutLine: {'line': b'running install_data\n'}
+[0.860485] (ps4_controller) StdoutLine: {'line': b'running install_egg_info\n'}
+[0.861902] (ps4_controller) StdoutLine: {'line': b"removing '/home/huy/ros2_ws/install/ps4_controller/lib/python3.10/site-packages/ps4_controller-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[0.862225] (ps4_controller) StdoutLine: {'line': b'Copying ../../build/ps4_controller/ps4_controller.egg-info to /home/huy/ros2_ws/install/ps4_controller/lib/python3.10/site-packages/ps4_controller-0.0.0-py3.10.egg-info\n'}
+[0.863051] (ps4_controller) StdoutLine: {'line': b'running install_scripts\n'}
+[0.873792] (custo_msgs) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[0.876401] (example_pkg) StdoutLine: {'line': b'Installing listener script to /home/huy/ros2_ws/install/example_pkg/lib/example_pkg\n'}
+[0.876571] (example_pkg) StdoutLine: {'line': b'Installing talker script to /home/huy/ros2_ws/install/example_pkg/lib/example_pkg\n'}
+[0.876862] (example_pkg) StdoutLine: {'line': b"writing list of installed files to '/home/huy/ros2_ws/build/example_pkg/install.log'\n"}
+[0.879817] (ps4_controller) StdoutLine: {'line': b'Installing ps4_controller_node script to /home/huy/ros2_ws/install/ps4_controller/lib/ps4_controller\n'}
+[0.879964] (ps4_controller) StdoutLine: {'line': b'Installing servo_controller_node script to /home/huy/ros2_ws/install/ps4_controller/lib/ps4_controller\n'}
+[0.880259] (ps4_controller) StdoutLine: {'line': b"writing list of installed files to '/home/huy/ros2_ws/build/ps4_controller/install.log'\n"}
+[0.899387] (custo_msgs) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[0.900810] (-) TimerEvent: {}
+[0.901850] (example_pkg) CommandEnded: {'returncode': 0}
+[0.909448] (example_pkg) JobEnded: {'identifier': 'example_pkg', 'rc': 0}
+[0.910397] (ps4_controller) CommandEnded: {'returncode': 0}
+[0.914790] (ps4_controller) JobEnded: {'identifier': 'ps4_controller', 'rc': 0}
+[0.933760] (custo_msgs) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.942339] (custo_msgs) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.000935] (-) TimerEvent: {}
+[1.007634] (custo_msgs) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.007873] (custo_msgs) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.067354] (custo_msgs) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.068163] (custo_msgs) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.100988] (-) TimerEvent: {}
+[1.201196] (-) TimerEvent: {}
+[1.292898] (custo_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[1.301272] (-) TimerEvent: {}
+[1.401479] (-) TimerEvent: {}
+[1.428764] (custo_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.501586] (-) TimerEvent: {}
+[1.602172] (-) TimerEvent: {}
+[1.602410] (custo_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.619180] (custo_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[1.620853] (custo_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[1.641469] (custo_msgs) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[1.641625] (custo_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.641686] (custo_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[1.641758] (custo_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[1.657564] (custo_msgs) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[1.681971] (custo_msgs) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.702244] (-) TimerEvent: {}
+[1.702918] (custo_msgs) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.704190] (custo_msgs) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.706746] (custo_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.730559] (custo_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[1.738647] (custo_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/huy/ros2_ws/build/custo_msgs\n'}
+[1.749465] (custo_msgs) CommandEnded: {'returncode': 0}
+[1.750658] (custo_msgs) JobProgress: {'identifier': 'custo_msgs', 'progress': 'build'}
+[1.751017] (custo_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/huy/ros2_ws/build/custo_msgs', '--', '-j16', '-l16'], 'cwd': '/home/huy/ros2_ws/build/custo_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'huy'), ('LC_TIME', 'vi_VN'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/huy'), ('OLDPWD', '/home/huy/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'vi_VN'), ('SYSTEMD_EXEC_PID', '2043'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/huy/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'huy'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'huy'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/huy-IdeaPad-Gaming-3-15ACH6:@/tmp/.ICE-unix/2014,unix/huy-IdeaPad-Gaming-3-15ACH6:/tmp/.ICE-unix/2014'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'vi_VN'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/969a12cb_c34a_4cf2_acfb_384815a95103'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'vi_VN'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.103'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/huy/ros2_ws/install/ps4_controller:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'vi_VN'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'vi_VN'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'vi_VN'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/huy/ros2_ws/build/custo_msgs'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/huy/ros2_ws/install/ps4_controller/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'vi_VN'), ('LC_PAPER', 'vi_VN'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/huy/ros2_ws/install/ps4_controller:/opt/ros/humble')]), 'shell': False}
+[1.784341] (custo_msgs) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[1.792291] (custo_msgs) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[1.800023] (custo_msgs) StdoutLine: {'line': b'[  6%] Built target ament_cmake_python_copy_custo_msgs\n'}
+[1.802313] (-) TimerEvent: {}
+[1.902542] (-) TimerEvent: {}
+[1.981798] (custo_msgs) StdoutLine: {'line': b'[  6%] Built target custo_msgs__cpp\n'}
+[1.984564] (custo_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/custo_msgs__rosidl_generator_c.dir/rosidl_generator_c/custo_msgs/msg/detail/the_ultimate_msg__functions.c.o\x1b[0m\n'}
+[1.991781] (custo_msgs) StdoutLine: {'line': b'[ 19%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[1.992035] (custo_msgs) StdoutLine: {'line': b'[ 19%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[1.992122] (custo_msgs) StdoutLine: {'line': b'[ 19%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.002048] (custo_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[2.002605] (-) TimerEvent: {}
+[2.002805] (custo_msgs) StdoutLine: {'line': b'creating custo_msgs.egg-info\n'}
+[2.002963] (custo_msgs) StdoutLine: {'line': b'writing custo_msgs.egg-info/PKG-INFO\n'}
+[2.003088] (custo_msgs) StdoutLine: {'line': b'writing dependency_links to custo_msgs.egg-info/dependency_links.txt\n'}
+[2.003192] (custo_msgs) StdoutLine: {'line': b'writing top-level names to custo_msgs.egg-info/top_level.txt\n'}
+[2.003386] (custo_msgs) StdoutLine: {'line': b"writing manifest file 'custo_msgs.egg-info/SOURCES.txt'\n"}
+[2.005103] (custo_msgs) StdoutLine: {'line': b"reading manifest file 'custo_msgs.egg-info/SOURCES.txt'\n"}
+[2.005543] (custo_msgs) StdoutLine: {'line': b"writing manifest file 'custo_msgs.egg-info/SOURCES.txt'\n"}
+[2.035371] (custo_msgs) StdoutLine: {'line': b'[ 19%] Built target ament_cmake_python_build_custo_msgs_egg\n'}
+[2.041254] (custo_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32m\x1b[1mLinking C shared library libcusto_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[2.076699] (custo_msgs) StdoutLine: {'line': b'[ 22%] Built target custo_msgs__rosidl_generator_c\n'}
+[2.087002] (custo_msgs) StdoutLine: {'line': b'[ 32%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[2.087216] (custo_msgs) StdoutLine: {'line': b'[ 32%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.087308] (custo_msgs) StdoutLine: {'line': b'[ 32%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.102735] (-) TimerEvent: {}
+[2.187605] (custo_msgs) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/custo_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custo_msgs/msg/the_ultimate_msg__type_support.cpp.o\x1b[0m\n'}
+[2.202841] (-) TimerEvent: {}
+[2.206551] (custo_msgs) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/custo_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custo_msgs/msg/detail/the_ultimate_msg__type_support.cpp.o\x1b[0m\n'}
+[2.210201] (custo_msgs) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/custo_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custo_msgs/msg/detail/dds_fastrtps/the_ultimate_msg__type_support.cpp.o\x1b[0m\n'}
+[2.289865] (custo_msgs) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/custo_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/custo_msgs/msg/the_ultimate_msg__type_support.cpp.o\x1b[0m\n'}
+[2.302982] (-) TimerEvent: {}
+[2.313060] (custo_msgs) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/custo_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custo_msgs/msg/detail/the_ultimate_msg__type_support_c.cpp.o\x1b[0m\n'}
+[2.321678] (custo_msgs) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding C object CMakeFiles/custo_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custo_msgs/msg/detail/the_ultimate_msg__type_support.c.o\x1b[0m\n'}
+[2.322957] (custo_msgs) StdoutLine: {'line': b'[ 54%] \x1b[32m\x1b[1mLinking CXX shared library libcusto_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[2.359219] (custo_msgs) StdoutLine: {'line': b'[ 58%] \x1b[32m\x1b[1mLinking C shared library libcusto_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[2.366765] (custo_msgs) StdoutLine: {'line': b'[ 58%] Built target custo_msgs__rosidl_typesupport_c\n'}
+[2.391312] (custo_msgs) StdoutLine: {'line': b'[ 58%] Built target custo_msgs__rosidl_typesupport_introspection_c\n'}
+[2.403056] (-) TimerEvent: {}
+[2.453195] (custo_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32m\x1b[1mLinking CXX shared library libcusto_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[2.492375] (custo_msgs) StdoutLine: {'line': b'[ 61%] Built target custo_msgs__rosidl_typesupport_cpp\n'}
+[2.503156] (-) TimerEvent: {}
+[2.570960] (custo_msgs) StdoutLine: {'line': b'[ 64%] \x1b[32m\x1b[1mLinking CXX shared library libcusto_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[2.587753] (custo_msgs) StdoutLine: {'line': b'[ 67%] \x1b[32m\x1b[1mLinking CXX shared library libcusto_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[2.589239] (custo_msgs) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX shared library libcusto_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[2.603263] (-) TimerEvent: {}
+[2.647913] (custo_msgs) StdoutLine: {'line': b'[ 70%] Built target custo_msgs__rosidl_typesupport_introspection_cpp\n'}
+[2.658576] (custo_msgs) StdoutLine: {'line': b'[ 70%] Built target custo_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[2.663648] (custo_msgs) StdoutLine: {'line': b'[ 70%] Built target custo_msgs__rosidl_typesupport_fastrtps_c\n'}
+[2.679003] (custo_msgs) StdoutLine: {'line': b'[ 70%] Built target custo_msgs\n'}
+[2.694066] (custo_msgs) StdoutLine: {'line': b'[ 74%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[2.703331] (-) TimerEvent: {}
+[2.803564] (-) TimerEvent: {}
+[2.891804] (custo_msgs) StdoutLine: {'line': b'[ 74%] Built target custo_msgs__py\n'}
+[2.903655] (-) TimerEvent: {}
+[2.907915] (custo_msgs) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding C object CMakeFiles/custo_msgs__rosidl_generator_py.dir/rosidl_generator_py/custo_msgs/msg/_the_ultimate_msg_s.c.o\x1b[0m\n'}
+[3.003779] (-) TimerEvent: {}
+[3.006545] (custo_msgs) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/custo_msgs/libcusto_msgs__rosidl_generator_py.so\x1b[0m\n'}
+[3.038255] (custo_msgs) StdoutLine: {'line': b'[ 80%] Built target custo_msgs__rosidl_generator_py\n'}
+[3.055015] (custo_msgs) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/custo_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/custo_msgs/_custo_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[3.055218] (custo_msgs) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/custo_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/custo_msgs/_custo_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[3.055288] (custo_msgs) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/custo_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/custo_msgs/_custo_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[3.103897] (-) TimerEvent: {}
+[3.126364] (custo_msgs) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/custo_msgs/custo_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[3.126561] (custo_msgs) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/custo_msgs/custo_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[3.130097] (custo_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/custo_msgs/custo_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[3.154979] (custo_msgs) StdoutLine: {'line': b'[100%] Built target custo_msgs__rosidl_typesupport_c__pyext\n'}
+[3.155189] (custo_msgs) StdoutLine: {'line': b'[100%] Built target custo_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[3.159409] (custo_msgs) StdoutLine: {'line': b'[100%] Built target custo_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[3.169022] (custo_msgs) CommandEnded: {'returncode': 0}
+[3.169559] (custo_msgs) JobProgress: {'identifier': 'custo_msgs', 'progress': 'install'}
+[3.176613] (custo_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/huy/ros2_ws/build/custo_msgs'], 'cwd': '/home/huy/ros2_ws/build/custo_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'huy'), ('LC_TIME', 'vi_VN'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/huy'), ('OLDPWD', '/home/huy/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'vi_VN'), ('SYSTEMD_EXEC_PID', '2043'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/huy/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'huy'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'huy'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/huy-IdeaPad-Gaming-3-15ACH6:@/tmp/.ICE-unix/2014,unix/huy-IdeaPad-Gaming-3-15ACH6:/tmp/.ICE-unix/2014'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'vi_VN'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/969a12cb_c34a_4cf2_acfb_384815a95103'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'vi_VN'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.103'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/huy/ros2_ws/install/ps4_controller:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'vi_VN'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'vi_VN'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'vi_VN'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/huy/ros2_ws/build/custo_msgs'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/huy/ros2_ws/install/ps4_controller/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'vi_VN'), ('LC_PAPER', 'vi_VN'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/huy/ros2_ws/install/ps4_controller:/opt/ros/humble')]), 'shell': False}
+[3.183113] (custo_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[3.183317] (custo_msgs) StdoutLine: {'line': b'-- Installing: /home/huy/ros2_ws/install/custo_msgs/share/ament_index/resource_index/rosidl_interfaces/custo_msgs\n'}
+[3.183461] (custo_msgs) StdoutLine: {'line': b'-- Installing: /home/huy/ros2_ws/install/custo_msgs/include/custo_msgs/custo_msgs\n'}
+[3.183568] (custo_msgs) StdoutLine: {'line': b'-- Installing: /home/huy/ros2_ws/install/custo_msgs/include/custo_msgs/custo_msgs/msg\n'}
+[3.183641] (custo_msgs) StdoutLine: {'line': b'-- Installing: /home/huy/ros2_ws/install/custo_msgs/include/custo_msgs/custo_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[3.183747] (custo_msgs) StdoutLine: {'line': b'-- Installing: /home/huy/ros2_ws/install/custo_msgs/include/custo_msgs/custo_msgs/msg/detail\n'}
+[3.183822] (custo_msgs) StdoutLine: {'line': b'-- Installing: /home/huy/ros2_ws/install/custo_msgs/include/custo_msgs/custo_msgs/msg/detail/the_ultimate_msg__type_support.h\n'}
+[3.183917] (custo_msgs) StdoutLine: {'line': b'-- Installing: /home/huy/ros2_ws/install/custo_msgs/include/custo_msgs/custo_msgs/msg/detail/the_ultimate_msg__struct.h\n'}
+[3.184015] (custo_msgs) StdoutLine: {'line': b'-- Installing: /home/huy/ros2_ws/install/custo_msgs/include/custo_msgs/custo_msgs/msg/detail/the_ultimate_msg__functions.c\n'}
+[3.184122] (custo_msgs) StdoutLine: {'line': b'-- Installing: /home/huy/ros2_ws/install/custo_msgs/include/custo_msgs/custo_msgs/msg/detail/the_ultimate_msg__functions.h\n'}
+[3.184227] (custo_msgs) StdoutLine: {'line': b'-- Installing: /home/huy/ros2_ws/install/custo_msgs/include/custo_msgs/custo_msgs/msg/the_ultimate_msg.h\n'}
+[3.184403] (custo_msgs) StdoutLine: {'line': b'-- Installing: /home/huy/ros2_ws/install/custo_msgs/share/custo_msgs/environment/library_path.sh\n'}
+[3.184523] (custo_msgs) StdoutLine: {'line': b'-- Installing: /home/huy/ros2_ws/install/custo_msgs/share/custo_msgs/environment/library_path.dsv\n'}
+[3.184697] (custo_msgs) StdoutLine: {'line': b'-- Installing: /home/huy/ros2_ws/install/custo_msgs/lib/libcusto_msgs__rosidl_generator_c.so\n'}
+[3.184976] (custo_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/huy/ros2_ws/install/custo_msgs/lib/libcusto_msgs__rosidl_generator_c.so" to ""\n'}
+[3.185046] (custo_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/huy/ros2_ws/install/custo_msgs/include/custo_msgs/custo_msgs\n'}
+[3.185092] (custo_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/huy/ros2_ws/install/custo_msgs/include/custo_msgs/custo_msgs/msg\n'}
+[3.185157] (custo_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/huy/ros2_ws/install/custo_msgs/include/custo_msgs/custo_msgs/msg/detail\n'}
+[3.185201] (custo_msgs) StdoutLine: {'line': b'-- Installing: /home/huy/ros2_ws/install/custo_msgs/include/custo_msgs/custo_msgs/msg/detail/the_ultimate_msg__rosidl_typesupport_fastrtps_c.h\n'}
+[3.185260] (custo_msgs) StdoutLine: {'line': b'-- Installing: /home/huy/ros2_ws/install/custo_msgs/include/custo_msgs/custo_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[3.185348] (custo_msgs) StdoutLine: {'line': b'-- Installing: /home/huy/ros2_ws/install/custo_msgs/lib/libcusto_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[3.185636] (custo_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/huy/ros2_ws/install/custo_msgs/lib/libcusto_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[3.185714] (custo_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/huy/ros2_ws/install/custo_msgs/include/custo_msgs/custo_msgs\n'}
+[3.185831] (custo_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/huy/ros2_ws/install/custo_msgs/include/custo_msgs/custo_msgs/msg\n'}
+[3.185893] (custo_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/huy/ros2_ws/install/custo_msgs/include/custo_msgs/custo_msgs/msg/detail\n'}
+[3.185949] (custo_msgs) StdoutLine: {'line': b'-- Installing: /home/huy/ros2_ws/install/custo_msgs/include/custo_msgs/custo_msgs/msg/detail/the_ultimate_msg__rosidl_typesupport_introspection_c.h\n'}
+[3.186025] (custo_msgs) StdoutLine: {'line': b'-- Installing: /home/huy/ros2_ws/install/custo_msgs/include/custo_msgs/custo_msgs/msg/detail/the_ultimate_msg__type_support.c\n'}
+[3.186081] (custo_msgs) StdoutLine: {'line': b'-- Installing: /home/huy/ros2_ws/install/custo_msgs/include/custo_msgs/custo_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[3.186153] (custo_msgs) StdoutLine: {'line': b'-- Installing: /home/huy/ros2_ws/install/custo_msgs/lib/libcusto_msgs__rosidl_typesupport_introspection_c.so\n'}
+[3.186423] (custo_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/huy/ros2_ws/install/custo_msgs/lib/libcusto_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[3.186496] (custo_msgs) StdoutLine: {'line': b'-- Installing: /home/huy/ros2_ws/install/custo_msgs/lib/libcusto_msgs__rosidl_typesupport_c.so\n'}
+[3.186748] (custo_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/huy/ros2_ws/install/custo_msgs/lib/libcusto_msgs__rosidl_typesupport_c.so" to ""\n'}
+[3.186834] (custo_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/huy/ros2_ws/install/custo_msgs/include/custo_msgs/custo_msgs\n'}
+[3.186896] (custo_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/huy/ros2_ws/install/custo_msgs/include/custo_msgs/custo_msgs/msg\n'}
+[3.186969] (custo_msgs) StdoutLine: {'line': b'-- Installing: /home/huy/ros2_ws/install/custo_msgs/include/custo_msgs/custo_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[3.187027] (custo_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/huy/ros2_ws/install/custo_msgs/include/custo_msgs/custo_msgs/msg/detail\n'}
+[3.187098] (custo_msgs) StdoutLine: {'line': b'-- Installing: /home/huy/ros2_ws/install/custo_msgs/include/custo_msgs/custo_msgs/msg/detail/the_ultimate_msg__struct.hpp\n'}
+[3.187142] (custo_msgs) StdoutLine: {'line': b'-- Installing: /home/huy/ros2_ws/install/custo_msgs/include/custo_msgs/custo_msgs/msg/detail/the_ultimate_msg__traits.hpp\n'}
+[3.187196] (custo_msgs) StdoutLine: {'line': b'-- Installing: /home/huy/ros2_ws/install/custo_msgs/include/custo_msgs/custo_msgs/msg/detail/the_ultimate_msg__builder.hpp\n'}
+[3.187292] (custo_msgs) StdoutLine: {'line': b'-- Installing: /home/huy/ros2_ws/install/custo_msgs/include/custo_msgs/custo_msgs/msg/detail/the_ultimate_msg__type_support.hpp\n'}
+[3.187398] (custo_msgs) StdoutLine: {'line': b'-- Installing: /home/huy/ros2_ws/install/custo_msgs/include/custo_msgs/custo_msgs/msg/the_ultimate_msg.hpp\n'}
+[3.187510] (custo_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/huy/ros2_ws/install/custo_msgs/include/custo_msgs/custo_msgs\n'}
+[3.187571] (custo_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/huy/ros2_ws/install/custo_msgs/include/custo_msgs/custo_msgs/msg\n'}
+[3.187628] (custo_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/huy/ros2_ws/install/custo_msgs/include/custo_msgs/custo_msgs/msg/detail\n'}
+[3.187671] (custo_msgs) StdoutLine: {'line': b'-- Installing: /home/huy/ros2_ws/install/custo_msgs/include/custo_msgs/custo_msgs/msg/detail/the_ultimate_msg__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[3.187778] (custo_msgs) StdoutLine: {'line': b'-- Installing: /home/huy/ros2_ws/install/custo_msgs/include/custo_msgs/custo_msgs/msg/detail/dds_fastrtps\n'}
+[3.187868] (custo_msgs) StdoutLine: {'line': b'-- Installing: /home/huy/ros2_ws/install/custo_msgs/include/custo_msgs/custo_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[3.187931] (custo_msgs) StdoutLine: {'line': b'-- Installing: /home/huy/ros2_ws/install/custo_msgs/lib/libcusto_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[3.188283] (custo_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/huy/ros2_ws/install/custo_msgs/lib/libcusto_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[3.188365] (custo_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/huy/ros2_ws/install/custo_msgs/include/custo_msgs/custo_msgs\n'}
+[3.188415] (custo_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/huy/ros2_ws/install/custo_msgs/include/custo_msgs/custo_msgs/msg\n'}
+[3.188483] (custo_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/huy/ros2_ws/install/custo_msgs/include/custo_msgs/custo_msgs/msg/detail\n'}
+[3.188532] (custo_msgs) StdoutLine: {'line': b'-- Installing: /home/huy/ros2_ws/install/custo_msgs/include/custo_msgs/custo_msgs/msg/detail/the_ultimate_msg__rosidl_typesupport_introspection_cpp.hpp\n'}
+[3.188593] (custo_msgs) StdoutLine: {'line': b'-- Installing: /home/huy/ros2_ws/install/custo_msgs/include/custo_msgs/custo_msgs/msg/detail/the_ultimate_msg__type_support.cpp\n'}
+[3.188655] (custo_msgs) StdoutLine: {'line': b'-- Installing: /home/huy/ros2_ws/install/custo_msgs/lib/libcusto_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[3.189008] (custo_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/huy/ros2_ws/install/custo_msgs/lib/libcusto_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[3.189072] (custo_msgs) StdoutLine: {'line': b'-- Installing: /home/huy/ros2_ws/install/custo_msgs/lib/libcusto_msgs__rosidl_typesupport_cpp.so\n'}
+[3.189349] (custo_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/huy/ros2_ws/install/custo_msgs/lib/libcusto_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[3.189412] (custo_msgs) StdoutLine: {'line': b'-- Installing: /home/huy/ros2_ws/install/custo_msgs/share/custo_msgs/environment/pythonpath.sh\n'}
+[3.189510] (custo_msgs) StdoutLine: {'line': b'-- Installing: /home/huy/ros2_ws/install/custo_msgs/share/custo_msgs/environment/pythonpath.dsv\n'}
+[3.189626] (custo_msgs) StdoutLine: {'line': b'-- Installing: /home/huy/ros2_ws/install/custo_msgs/local/lib/python3.10/dist-packages/custo_msgs-0.0.0-py3.10.egg-info\n'}
+[3.189842] (custo_msgs) StdoutLine: {'line': b'-- Installing: /home/huy/ros2_ws/install/custo_msgs/local/lib/python3.10/dist-packages/custo_msgs-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[3.189945] (custo_msgs) StdoutLine: {'line': b'-- Installing: /home/huy/ros2_ws/install/custo_msgs/local/lib/python3.10/dist-packages/custo_msgs-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[3.190045] (custo_msgs) StdoutLine: {'line': b'-- Installing: /home/huy/ros2_ws/install/custo_msgs/local/lib/python3.10/dist-packages/custo_msgs-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[3.190152] (custo_msgs) StdoutLine: {'line': b'-- Installing: /home/huy/ros2_ws/install/custo_msgs/local/lib/python3.10/dist-packages/custo_msgs-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[3.190281] (custo_msgs) StdoutLine: {'line': b'-- Installing: /home/huy/ros2_ws/install/custo_msgs/local/lib/python3.10/dist-packages/custo_msgs\n'}
+[3.190364] (custo_msgs) StdoutLine: {'line': b'-- Installing: /home/huy/ros2_ws/install/custo_msgs/local/lib/python3.10/dist-packages/custo_msgs/_custo_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[3.190479] (custo_msgs) StdoutLine: {'line': b'-- Installing: /home/huy/ros2_ws/install/custo_msgs/local/lib/python3.10/dist-packages/custo_msgs/custo_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.190606] (custo_msgs) StdoutLine: {'line': b'-- Installing: /home/huy/ros2_ws/install/custo_msgs/local/lib/python3.10/dist-packages/custo_msgs/libcusto_msgs__rosidl_generator_py.so\n'}
+[3.190745] (custo_msgs) StdoutLine: {'line': b'-- Installing: /home/huy/ros2_ws/install/custo_msgs/local/lib/python3.10/dist-packages/custo_msgs/custo_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.190866] (custo_msgs) StdoutLine: {'line': b'-- Installing: /home/huy/ros2_ws/install/custo_msgs/local/lib/python3.10/dist-packages/custo_msgs/msg\n'}
+[3.190941] (custo_msgs) StdoutLine: {'line': b'-- Installing: /home/huy/ros2_ws/install/custo_msgs/local/lib/python3.10/dist-packages/custo_msgs/msg/_the_ultimate_msg_s.c\n'}
+[3.191064] (custo_msgs) StdoutLine: {'line': b'-- Installing: /home/huy/ros2_ws/install/custo_msgs/local/lib/python3.10/dist-packages/custo_msgs/msg/__init__.py\n'}
+[3.191173] (custo_msgs) StdoutLine: {'line': b'-- Installing: /home/huy/ros2_ws/install/custo_msgs/local/lib/python3.10/dist-packages/custo_msgs/msg/_the_ultimate_msg.py\n'}
+[3.191282] (custo_msgs) StdoutLine: {'line': b'-- Installing: /home/huy/ros2_ws/install/custo_msgs/local/lib/python3.10/dist-packages/custo_msgs/__init__.py\n'}
+[3.191376] (custo_msgs) StdoutLine: {'line': b'-- Installing: /home/huy/ros2_ws/install/custo_msgs/local/lib/python3.10/dist-packages/custo_msgs/custo_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.191495] (custo_msgs) StdoutLine: {'line': b'-- Installing: /home/huy/ros2_ws/install/custo_msgs/local/lib/python3.10/dist-packages/custo_msgs/_custo_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[3.191601] (custo_msgs) StdoutLine: {'line': b'-- Installing: /home/huy/ros2_ws/install/custo_msgs/local/lib/python3.10/dist-packages/custo_msgs/_custo_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[3.203951] (-) TimerEvent: {}
+[3.217284] (custo_msgs) StdoutLine: {'line': b"Listing '/home/huy/ros2_ws/install/custo_msgs/local/lib/python3.10/dist-packages/custo_msgs'...\n"}
+[3.217421] (custo_msgs) StdoutLine: {'line': b"Compiling '/home/huy/ros2_ws/install/custo_msgs/local/lib/python3.10/dist-packages/custo_msgs/__init__.py'...\n"}
+[3.217483] (custo_msgs) StdoutLine: {'line': b"Listing '/home/huy/ros2_ws/install/custo_msgs/local/lib/python3.10/dist-packages/custo_msgs/msg'...\n"}
+[3.217537] (custo_msgs) StdoutLine: {'line': b"Compiling '/home/huy/ros2_ws/install/custo_msgs/local/lib/python3.10/dist-packages/custo_msgs/msg/__init__.py'...\n"}
+[3.217596] (custo_msgs) StdoutLine: {'line': b"Compiling '/home/huy/ros2_ws/install/custo_msgs/local/lib/python3.10/dist-packages/custo_msgs/msg/_the_ultimate_msg.py'...\n"}
+[3.220600] (custo_msgs) StdoutLine: {'line': b'-- Installing: /home/huy/ros2_ws/install/custo_msgs/local/lib/python3.10/dist-packages/custo_msgs/custo_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.220984] (custo_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/huy/ros2_ws/install/custo_msgs/local/lib/python3.10/dist-packages/custo_msgs/custo_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[3.221165] (custo_msgs) StdoutLine: {'line': b'-- Installing: /home/huy/ros2_ws/install/custo_msgs/local/lib/python3.10/dist-packages/custo_msgs/custo_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.221441] (custo_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/huy/ros2_ws/install/custo_msgs/local/lib/python3.10/dist-packages/custo_msgs/custo_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[3.221617] (custo_msgs) StdoutLine: {'line': b'-- Installing: /home/huy/ros2_ws/install/custo_msgs/local/lib/python3.10/dist-packages/custo_msgs/custo_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.221899] (custo_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/huy/ros2_ws/install/custo_msgs/local/lib/python3.10/dist-packages/custo_msgs/custo_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[3.222021] (custo_msgs) StdoutLine: {'line': b'-- Installing: /home/huy/ros2_ws/install/custo_msgs/lib/libcusto_msgs__rosidl_generator_py.so\n'}
+[3.222271] (custo_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/huy/ros2_ws/install/custo_msgs/lib/libcusto_msgs__rosidl_generator_py.so" to ""\n'}
+[3.222369] (custo_msgs) StdoutLine: {'line': b'-- Installing: /home/huy/ros2_ws/install/custo_msgs/share/custo_msgs/msg/TheUltimateMsg.idl\n'}
+[3.222480] (custo_msgs) StdoutLine: {'line': b'-- Installing: /home/huy/ros2_ws/install/custo_msgs/share/custo_msgs/msg/TheUltimateMsg.msg\n'}
+[3.222668] (custo_msgs) StdoutLine: {'line': b'-- Installing: /home/huy/ros2_ws/install/custo_msgs/share/ament_index/resource_index/package_run_dependencies/custo_msgs\n'}
+[3.222861] (custo_msgs) StdoutLine: {'line': b'-- Installing: /home/huy/ros2_ws/install/custo_msgs/share/ament_index/resource_index/parent_prefix_path/custo_msgs\n'}
+[3.222976] (custo_msgs) StdoutLine: {'line': b'-- Installing: /home/huy/ros2_ws/install/custo_msgs/share/custo_msgs/environment/ament_prefix_path.sh\n'}
+[3.223121] (custo_msgs) StdoutLine: {'line': b'-- Installing: /home/huy/ros2_ws/install/custo_msgs/share/custo_msgs/environment/ament_prefix_path.dsv\n'}
+[3.223237] (custo_msgs) StdoutLine: {'line': b'-- Installing: /home/huy/ros2_ws/install/custo_msgs/share/custo_msgs/environment/path.sh\n'}
+[3.223340] (custo_msgs) StdoutLine: {'line': b'-- Installing: /home/huy/ros2_ws/install/custo_msgs/share/custo_msgs/environment/path.dsv\n'}
+[3.223462] (custo_msgs) StdoutLine: {'line': b'-- Installing: /home/huy/ros2_ws/install/custo_msgs/share/custo_msgs/local_setup.bash\n'}
+[3.223582] (custo_msgs) StdoutLine: {'line': b'-- Installing: /home/huy/ros2_ws/install/custo_msgs/share/custo_msgs/local_setup.sh\n'}
+[3.223715] (custo_msgs) StdoutLine: {'line': b'-- Installing: /home/huy/ros2_ws/install/custo_msgs/share/custo_msgs/local_setup.zsh\n'}
+[3.223846] (custo_msgs) StdoutLine: {'line': b'-- Installing: /home/huy/ros2_ws/install/custo_msgs/share/custo_msgs/local_setup.dsv\n'}
+[3.223965] (custo_msgs) StdoutLine: {'line': b'-- Installing: /home/huy/ros2_ws/install/custo_msgs/share/custo_msgs/package.dsv\n'}
+[3.224130] (custo_msgs) StdoutLine: {'line': b'-- Installing: /home/huy/ros2_ws/install/custo_msgs/share/ament_index/resource_index/packages/custo_msgs\n'}
+[3.224297] (custo_msgs) StdoutLine: {'line': b'-- Installing: /home/huy/ros2_ws/install/custo_msgs/share/custo_msgs/cmake/export_custo_msgs__rosidl_generator_cExport.cmake\n'}
+[3.224430] (custo_msgs) StdoutLine: {'line': b'-- Installing: /home/huy/ros2_ws/install/custo_msgs/share/custo_msgs/cmake/export_custo_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[3.224563] (custo_msgs) StdoutLine: {'line': b'-- Installing: /home/huy/ros2_ws/install/custo_msgs/share/custo_msgs/cmake/export_custo_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[3.224698] (custo_msgs) StdoutLine: {'line': b'-- Installing: /home/huy/ros2_ws/install/custo_msgs/share/custo_msgs/cmake/export_custo_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[3.224852] (custo_msgs) StdoutLine: {'line': b'-- Installing: /home/huy/ros2_ws/install/custo_msgs/share/custo_msgs/cmake/custo_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[3.224977] (custo_msgs) StdoutLine: {'line': b'-- Installing: /home/huy/ros2_ws/install/custo_msgs/share/custo_msgs/cmake/custo_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[3.225107] (custo_msgs) StdoutLine: {'line': b'-- Installing: /home/huy/ros2_ws/install/custo_msgs/share/custo_msgs/cmake/custo_msgs__rosidl_typesupport_cExport.cmake\n'}
+[3.225234] (custo_msgs) StdoutLine: {'line': b'-- Installing: /home/huy/ros2_ws/install/custo_msgs/share/custo_msgs/cmake/custo_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[3.225366] (custo_msgs) StdoutLine: {'line': b'-- Installing: /home/huy/ros2_ws/install/custo_msgs/share/custo_msgs/cmake/export_custo_msgs__rosidl_generator_cppExport.cmake\n'}
+[3.225497] (custo_msgs) StdoutLine: {'line': b'-- Installing: /home/huy/ros2_ws/install/custo_msgs/share/custo_msgs/cmake/export_custo_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[3.225631] (custo_msgs) StdoutLine: {'line': b'-- Installing: /home/huy/ros2_ws/install/custo_msgs/share/custo_msgs/cmake/export_custo_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[3.225771] (custo_msgs) StdoutLine: {'line': b'-- Installing: /home/huy/ros2_ws/install/custo_msgs/share/custo_msgs/cmake/custo_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[3.225900] (custo_msgs) StdoutLine: {'line': b'-- Installing: /home/huy/ros2_ws/install/custo_msgs/share/custo_msgs/cmake/custo_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[3.226033] (custo_msgs) StdoutLine: {'line': b'-- Installing: /home/huy/ros2_ws/install/custo_msgs/share/custo_msgs/cmake/custo_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[3.226160] (custo_msgs) StdoutLine: {'line': b'-- Installing: /home/huy/ros2_ws/install/custo_msgs/share/custo_msgs/cmake/custo_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[3.226294] (custo_msgs) StdoutLine: {'line': b'-- Installing: /home/huy/ros2_ws/install/custo_msgs/share/custo_msgs/cmake/export_custo_msgs__rosidl_generator_pyExport.cmake\n'}
+[3.226418] (custo_msgs) StdoutLine: {'line': b'-- Installing: /home/huy/ros2_ws/install/custo_msgs/share/custo_msgs/cmake/export_custo_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[3.226548] (custo_msgs) StdoutLine: {'line': b'-- Installing: /home/huy/ros2_ws/install/custo_msgs/share/custo_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[3.226668] (custo_msgs) StdoutLine: {'line': b'-- Installing: /home/huy/ros2_ws/install/custo_msgs/share/custo_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[3.226799] (custo_msgs) StdoutLine: {'line': b'-- Installing: /home/huy/ros2_ws/install/custo_msgs/share/custo_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[3.226926] (custo_msgs) StdoutLine: {'line': b'-- Installing: /home/huy/ros2_ws/install/custo_msgs/share/custo_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[3.227049] (custo_msgs) StdoutLine: {'line': b'-- Installing: /home/huy/ros2_ws/install/custo_msgs/share/custo_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[3.227169] (custo_msgs) StdoutLine: {'line': b'-- Installing: /home/huy/ros2_ws/install/custo_msgs/share/custo_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[3.227301] (custo_msgs) StdoutLine: {'line': b'-- Installing: /home/huy/ros2_ws/install/custo_msgs/share/custo_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[3.227423] (custo_msgs) StdoutLine: {'line': b'-- Installing: /home/huy/ros2_ws/install/custo_msgs/share/custo_msgs/cmake/custo_msgsConfig.cmake\n'}
+[3.227527] (custo_msgs) StdoutLine: {'line': b'-- Installing: /home/huy/ros2_ws/install/custo_msgs/share/custo_msgs/cmake/custo_msgsConfig-version.cmake\n'}
+[3.227644] (custo_msgs) StdoutLine: {'line': b'-- Installing: /home/huy/ros2_ws/install/custo_msgs/share/custo_msgs/package.xml\n'}
+[3.230221] (custo_msgs) CommandEnded: {'returncode': 0}
+[3.242035] (custo_msgs) JobEnded: {'identifier': 'custo_msgs', 'rc': 0}
+[3.242562] (-) EventReactorShutdown: {}
