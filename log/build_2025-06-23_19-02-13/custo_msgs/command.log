@@ -1,2 +1,0 @@
-Invoking command in '/home/huy/ros2_ws/build/custo_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/huy/ros2_ws/install/ps4_controller:/home/huy/ros2_ws/install/example_pkg:/opt/ros/humble /usr/bin/cmake --build /home/huy/ros2_ws/build/custo_msgs -- -j16 -l16
-Invoked command in '/home/huy/ros2_ws/build/custo_msgs' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/huy/ros2_ws/install/ps4_controller:/home/huy/ros2_ws/install/example_pkg:/opt/ros/humble /usr/bin/cmake --build /home/huy/ros2_ws/build/custo_msgs -- -j16 -l16

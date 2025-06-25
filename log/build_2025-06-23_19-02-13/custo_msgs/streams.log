@@ -1,5 +1,0 @@
-[0.029s] Invoking command in '/home/huy/ros2_ws/build/custo_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/huy/ros2_ws/install/ps4_controller:/home/huy/ros2_ws/install/example_pkg:/opt/ros/humble /usr/bin/cmake --build /home/huy/ros2_ws/build/custo_msgs -- -j16 -l16
-[0.336s] [0mCMake Error: The source directory "/home/huy/ros2_ws/src/custo_msgs" does not exist.
-[0.337s] Specify --help for usage, or press the help button on the CMake GUI.[0m
-[0.337s] gmake: *** [Makefile:747: cmake_check_build_system] Error 1
-[0.628s] Invoked command in '/home/huy/ros2_ws/build/custo_msgs' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/huy/ros2_ws/install/ps4_controller:/home/huy/ros2_ws/install/example_pkg:/opt/ros/humble /usr/bin/cmake --build /home/huy/ros2_ws/build/custo_msgs -- -j16 -l16

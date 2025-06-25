@@ -1,6 +1,0 @@
-Invoking command in '/home/huy/ros2_ws/build/custo_msgs': CMAKE_PREFIX_PATH=/home/huy/ros2_ws/install/ps4_controller:/opt/ros/humble /usr/bin/cmake /home/huy/ros2_ws/src/custo_msgs -DCMAKE_INSTALL_PREFIX=/home/huy/ros2_ws/install/custo_msgs
-Invoked command in '/home/huy/ros2_ws/build/custo_msgs' returned '0': CMAKE_PREFIX_PATH=/home/huy/ros2_ws/install/ps4_controller:/opt/ros/humble /usr/bin/cmake /home/huy/ros2_ws/src/custo_msgs -DCMAKE_INSTALL_PREFIX=/home/huy/ros2_ws/install/custo_msgs
-Invoking command in '/home/huy/ros2_ws/build/custo_msgs': CMAKE_PREFIX_PATH=/home/huy/ros2_ws/install/ps4_controller:/opt/ros/humble /usr/bin/cmake --build /home/huy/ros2_ws/build/custo_msgs -- -j16 -l16
-Invoked command in '/home/huy/ros2_ws/build/custo_msgs' returned '0': CMAKE_PREFIX_PATH=/home/huy/ros2_ws/install/ps4_controller:/opt/ros/humble /usr/bin/cmake --build /home/huy/ros2_ws/build/custo_msgs -- -j16 -l16
-Invoking command in '/home/huy/ros2_ws/build/custo_msgs': CMAKE_PREFIX_PATH=/home/huy/ros2_ws/install/ps4_controller:/opt/ros/humble /usr/bin/cmake --install /home/huy/ros2_ws/build/custo_msgs
-Invoked command in '/home/huy/ros2_ws/build/custo_msgs' returned '0': CMAKE_PREFIX_PATH=/home/huy/ros2_ws/install/ps4_controller:/opt/ros/humble /usr/bin/cmake --install /home/huy/ros2_ws/build/custo_msgs

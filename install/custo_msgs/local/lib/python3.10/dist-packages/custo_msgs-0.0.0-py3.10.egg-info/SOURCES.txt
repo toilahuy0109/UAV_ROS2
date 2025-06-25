@@ -1,8 +1,0 @@
-setup.py
-custo_msgs/__init__.py
-custo_msgs.egg-info/PKG-INFO
-custo_msgs.egg-info/SOURCES.txt
-custo_msgs.egg-info/dependency_links.txt
-custo_msgs.egg-info/top_level.txt
-custo_msgs/msg/__init__.py
-custo_msgs/msg/_the_ultimate_msg.py

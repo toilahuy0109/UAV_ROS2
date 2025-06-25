@@ -1,2 +1,0 @@
-Invoking command in '/home/huy/ros2_ws/src/build/custom_msgs': /usr/bin/cmake /home/huy/ros2_ws/src/custom_msgs -DCMAKE_INSTALL_PREFIX=/home/huy/ros2_ws/src/install/custom_msgs
-Invoked command in '/home/huy/ros2_ws/src/build/custom_msgs' returned '1': /usr/bin/cmake /home/huy/ros2_ws/src/custom_msgs -DCMAKE_INSTALL_PREFIX=/home/huy/ros2_ws/src/install/custom_msgs
