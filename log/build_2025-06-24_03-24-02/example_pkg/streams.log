@@ -1,0 +1,22 @@
+[0.627s] Invoking command in '/home/huy/ros2_ws/src/example_pkg': PYTHONPATH=/home/huy/ros2_ws/build/example_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/huy/ros2_ws/install/example_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/example_pkg build --build-base /home/huy/ros2_ws/build/example_pkg/build install --record /home/huy/ros2_ws/build/example_pkg/install.log --single-version-externally-managed install_data
+[0.811s] running egg_info
+[0.811s] writing ../../build/example_pkg/example_pkg.egg-info/PKG-INFO
+[0.811s] writing dependency_links to ../../build/example_pkg/example_pkg.egg-info/dependency_links.txt
+[0.812s] writing entry points to ../../build/example_pkg/example_pkg.egg-info/entry_points.txt
+[0.812s] writing requirements to ../../build/example_pkg/example_pkg.egg-info/requires.txt
+[0.812s] writing top-level names to ../../build/example_pkg/example_pkg.egg-info/top_level.txt
+[0.813s] reading manifest file '../../build/example_pkg/example_pkg.egg-info/SOURCES.txt'
+[0.814s] writing manifest file '../../build/example_pkg/example_pkg.egg-info/SOURCES.txt'
+[0.814s] running build
+[0.814s] running build_py
+[0.814s] running install
+[0.814s] running install_lib
+[0.815s] running install_data
+[0.815s] running install_egg_info
+[0.817s] removing '/home/huy/ros2_ws/install/example_pkg/lib/python3.10/site-packages/example_pkg-0.0.0-py3.10.egg-info' (and everything under it)
+[0.817s] Copying ../../build/example_pkg/example_pkg.egg-info to /home/huy/ros2_ws/install/example_pkg/lib/python3.10/site-packages/example_pkg-0.0.0-py3.10.egg-info
+[0.818s] running install_scripts
+[0.835s] Installing listener script to /home/huy/ros2_ws/install/example_pkg/lib/example_pkg
+[0.835s] Installing talker script to /home/huy/ros2_ws/install/example_pkg/lib/example_pkg
+[0.835s] writing list of installed files to '/home/huy/ros2_ws/build/example_pkg/install.log'
+[0.861s] Invoked command in '/home/huy/ros2_ws/src/example_pkg' returned '0': PYTHONPATH=/home/huy/ros2_ws/build/example_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/huy/ros2_ws/install/example_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/example_pkg build --build-base /home/huy/ros2_ws/build/example_pkg/build install --record /home/huy/ros2_ws/build/example_pkg/install.log --single-version-externally-managed install_data

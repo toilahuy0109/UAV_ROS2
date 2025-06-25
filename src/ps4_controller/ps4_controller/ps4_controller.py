@@ -63,8 +63,6 @@ class PS4ControllerNode(Node):
         ]
 
         self.data_pub.publish(ps4_data)
-        print(f'\rLeft Axes: {ps4_data.axes[0]}, {ps4_data.axes[1]} \n Right Axes: {ps4_data.axes[2]}, {ps4_data.axes[3]} \n X_button: {ps4_data.buttons[0]} \n O_button: {ps4_data.buttons[1]} \n Triangle_button: {ps4_data.buttons[2]} \n Square_button: {ps4_data.buttons[3]}')
-
 
 def main(args = None):
     rclpy.init(args = args)

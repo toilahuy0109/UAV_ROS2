@@ -1,3 +1,4 @@
+import os
 import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import Joy
@@ -23,9 +24,36 @@ class ServoControllerNode(Node):
         self.get_logger().info('Servo Controller Node has been started!')
 
     def data_callback(self, msg):
-        #Nhan goc servo tu topic /ps4_data
-        servo_angle = msg.axes[0]
-        print(f'\rReceived and published servo angle: {servo_angle:.2f} degrees')
+
+        left_stick_x = msg.axes[0]
+        left_stick_y = msg.axes[1]
+        L2_axes = msg.axes[4]
+        right_stick_x = msg.axes[2]
+        right_stick_y = msg.axes[3]
+        R2_axes = msg.axes[5]
+        left_button_axes_x = msg.axes[6]
+        left_button_axes_y = msg.axes[7]
+
+        x_button = msg.buttons[0]
+        o_button = msg.buttons[1]
+        tr_button = msg.buttons[2]
+        sq_button = msg.buttons[3]
+        L1_button = msg.buttons[4]
+        R1_button = msg.buttons[5]
+        L2_button = msg.buttons[6]
+        R2_button = msg.buttons[7]
+
+        sh_button = msg.buttons[8]
+        op_button = msg.buttons[9]
+
+        exit_button = msg.buttons[10]
+
+        left_joy_button = msg.buttons[11]
+        right_joy_button = msg.buttons[12]
+
+        button_disp = [msg.buttons[i] for i in range(0,4)]
+        
+        self.get_logger().info(f'\r Axes: [{left_stick_x},{left_stick_y}][{right_stick_x},{right_stick_y}] \n Buttons: {button_disp}')
 
 
     

@@ -1,6 +1,6 @@
 import rclpy
 from rclpy.node import Node
-from custo_msgs.msg import TheUltimateMsg
+from custom_msg.msg import PS4Data
 import pickle
 
 from std_msgs.msg import String
@@ -9,7 +9,7 @@ class MinimalSubscriber(Node):
     def __init__(self):
         super().__init__("listener")
         self.subscription = self.create_subscription(
-            TheUltimateMsg,
+            PS4Data,
             'topic',
             self.listener_callback,
             10
