@@ -11,6 +11,7 @@ setup.py
 description/inertial_macros.xacro
 description/robot.urdf.xacro
 description/robot_core.xacro
+launch/launch_sim.launch.py
 launch/rsp.launch.py
 my_robot_pkg/__init__.py
 my_robot_pkg/controller_node.py
