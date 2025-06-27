@@ -8,6 +8,7 @@ setup.py
 ../../build/my_robot_pkg/my_robot_pkg.egg-info/requires.txt
 ../../build/my_robot_pkg/my_robot_pkg.egg-info/top_level.txt
 ../../build/my_robot_pkg/my_robot_pkg.egg-info/zip-safe
+description/gazebo_control.xacro
 description/inertial_macros.xacro
 description/robot.urdf.xacro
 description/robot_core.xacro

@@ -58,7 +58,9 @@
     </link>
 
     <gazebo reference = "chassis">
-        <material name="Gazebo/White"/>
+        <material>
+            Gazebo/White
+        </material>
     </gazebo>
 
 
@@ -90,7 +92,9 @@
     </link>
 
     <gazebo reference = "left_wheel">
-        <material name="Gazebo/Blue"/>
+        <material>
+            Gazebo/Blue
+        </material>
     </gazebo>
 
 
@@ -123,7 +127,9 @@
 
 
     <gazebo reference="right_wheel">
-        <material name="Gazebo/Blue"/>
+        <material>
+            Gazebo/Blue
+        </material>
     </gazebo>
 
 
@@ -155,7 +161,9 @@
     </link>
 
     <gazebo reference="caster_wheel">
-        <material name="Gazebo/Black"/>
+        <material>
+            Gazebo/Black
+        </material>
     </gazebo>
 
 </robot>

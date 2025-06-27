@@ -8,6 +8,7 @@
 /home/huy/ros2_ws/install/my_robot_pkg/share/my_robot_pkg/launch/rsp.launch.py
 /home/huy/ros2_ws/install/my_robot_pkg/share/my_robot_pkg/description/inertial_macros.xacro
 /home/huy/ros2_ws/install/my_robot_pkg/share/my_robot_pkg/description/robot_core.xacro
+/home/huy/ros2_ws/install/my_robot_pkg/share/my_robot_pkg/description/gazebo_control.xacro
 /home/huy/ros2_ws/install/my_robot_pkg/share/my_robot_pkg/description/robot.urdf.xacro
 /home/huy/ros2_ws/install/my_robot_pkg/lib/python3.10/site-packages/my_robot_pkg-0.0.0-py3.10.egg-info/PKG-INFO
 /home/huy/ros2_ws/install/my_robot_pkg/lib/python3.10/site-packages/my_robot_pkg-0.0.0-py3.10.egg-info/SOURCES.txt
