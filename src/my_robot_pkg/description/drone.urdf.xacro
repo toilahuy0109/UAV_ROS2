@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="drone">
+    
+    <!-- Parameters -->
+
+    <xacro:property name = "base_length" value = "0.3"/>
+    <xacro:property name = "base_width" value = "0.3"/>
+    <xacro:property name = "base_height" value = "0.1"/>
+    <xacro:property name = "rotor_radius" value = "0.05"/>
+    <xacro:property name = "rotor_length" value = "0.02"/>
+    <xacro:property name = "mass" value = "1.0"/>
+
+    <!-- Than drone -->
+
+    <link name="base_link">
+
+        <inertial>
+            <origin xyz = "0 0 ${base_height/2}" rpy = "0 0 0"/>
+            <mass value="${mass}"/>
+            <inertia ixx="${mass*(base_width^2 + base_height^2)/12}" ixy="0" ixz="0" iyy="${mass*(base_length^2 + base_height^2)/12}" iyz="0" izz="${mass*(base_length^2 + base_width^2)/12}"/>
+        </inertial>
+
+        <visual>
+            <geometry>
+                <box size="${base_length} ${base_width} ${base_height}"/>
+            </geometry>
+        </visual>
+
+        <collision>
+            <geometry>
+                <box size="${base_length} ${base_width} ${base_height}"/>
+            </geometry>
+        </collision>
+        
+        <gazebo>
+            <material>
+                Gazebo/Grey
+            </material>
+        </gazebo>
+    </link>
+
+
+    <!-- 4 rotor -->
+
+    <xacro:macro name = "rotor" params = "name x y">
+        
+        <link name="${name}">
+            <visual>
+                <geometry>
+                    <cylinder radius="${rotor_length}" length="${rotor_radius}"/>
+                </geometry>
+            </visual>
+            <collision>
+                <geometry>
+                    <cylinder radius="${rotor_radius}" length="${rotor_radius}"/>
+                </geometry>
+            </collision>
+            <gazebo reference = "${name}">
+                <material>
+                    Gazebo/Black
+                </material>
+                <turnGravityOff>true</turnGrativyOff>
+            </gazebo>
+        </link>
+
+        <joint name="${name}_joint" type="continuous">
+            <parent link="base_link"/>
+            <child link="${name}"/>
+            <origin xyz="${x} ${y} ${base_height}" rpy = "0 0 0"/>
+            <axis xyz="0 0 1"/>
+        </joint>
+    </xacro:macro>
+
+    <xacro:rotor name = "rotor1" x = "0.15" y = "0.15"/>
+    <xacro:rotor name = "rotor2" x = "-0.15" y = "0.15"/>
+    <xacro:rotor name = "rotor3" x = "-0.15" y = "-0.15"/>
+    <xacro:rotor name = "rotor4" x = "0.15" y = "-0.15"/>
+    
+
+    <!-- Gazebo plugin -->
+    <gazebo>
+        <plugin name = "gazebo_ros_control" filename = "libgazebo_ros_control.so">
+            <robotNamespace>/</robotNamespace>
+            <controlPeriod>0.001</controlPeriod>
+        </plugin>
+    </gazebo>
+
+
+</robot>

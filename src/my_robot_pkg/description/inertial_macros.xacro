@@ -37,5 +37,6 @@
                     izz = "${(1/12) * mass * (radius*radius)}"/>
         </inertial>
     </xacro:macro>
+
     
 </robot>
