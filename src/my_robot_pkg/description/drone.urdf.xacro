@@ -18,7 +18,7 @@
         <inertial>
             <origin xyz = "0 0 ${base_height/2}" rpy = "0 0 0"/>
             <mass value="${mass}"/>
-            <inertia ixx="${mass*(base_width^2 + base_height^2)/12}" ixy="0" ixz="0" iyy="${mass*(base_length^2 + base_height^2)/12}" iyz="0" izz="${mass*(base_length^2 + base_width^2)/12}"/>
+            <inertia ixx="${mass*(pow(base_width,2) + pow(base_height,2))/12}" ixy="0" ixz="0" iyy="${mass*(pow(base_length,2) + pow(base_height,2))/12}" iyz="0" izz="${mass*(pow(base_length,2) + pow(base_width,2))/12}"/>
         </inertial>
 
         <visual>
@@ -60,7 +60,6 @@
                 <material>
                     Gazebo/Black
                 </material>
-                <turnGravityOff>true</turnGrativyOff>
             </gazebo>
         </link>
 
