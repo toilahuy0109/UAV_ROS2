@@ -24,7 +24,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            
+            'ps4_controller_node = my_robot_pkg.ps4_controller_node:main',
         ],
     },
 )

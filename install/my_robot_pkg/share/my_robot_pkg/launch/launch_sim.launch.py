@@ -27,11 +27,18 @@ def generate_launch_description():
         ]),
     )
 
+    ps4 = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource([os.path.join(
+            get_package_share_directory(package_name),'launch','ps4_init.launch.py'
+        )]),
+    )
+
     spawn_entity = Node(package="gazebo_ros", executable="spawn_entity.py",
                         arguments=['-topic','robot_description','-entity','my_bot'],output='screen')
     
     return LaunchDescription([
         rsp,
+        ps4,
         gazebo,
         spawn_entity,
     ])
