@@ -1,5 +1,7 @@
+/home/huy/ros2_ws/install/my_robot_pkg/lib/python3.10/site-packages/my_robot_pkg/ps4_drone_node.py
 /home/huy/ros2_ws/install/my_robot_pkg/lib/python3.10/site-packages/my_robot_pkg/ps4_controller_node.py
 /home/huy/ros2_ws/install/my_robot_pkg/lib/python3.10/site-packages/my_robot_pkg/__init__.py
+/home/huy/ros2_ws/install/my_robot_pkg/lib/python3.10/site-packages/my_robot_pkg/__pycache__/ps4_drone_node.cpython-310.pyc
 /home/huy/ros2_ws/install/my_robot_pkg/lib/python3.10/site-packages/my_robot_pkg/__pycache__/ps4_controller_node.cpython-310.pyc
 /home/huy/ros2_ws/install/my_robot_pkg/lib/python3.10/site-packages/my_robot_pkg/__pycache__/__init__.cpython-310.pyc
 /home/huy/ros2_ws/install/my_robot_pkg/share/ament_index/resource_index/packages/my_robot_pkg
@@ -7,8 +9,10 @@
 /home/huy/ros2_ws/install/my_robot_pkg/share/my_robot_pkg/launch/launch_sim.launch.py
 /home/huy/ros2_ws/install/my_robot_pkg/share/my_robot_pkg/launch/rsp.launch.py
 /home/huy/ros2_ws/install/my_robot_pkg/share/my_robot_pkg/launch/ps4_init.launch.py
+/home/huy/ros2_ws/install/my_robot_pkg/share/my_robot_pkg/launch/drone.launch.py
 /home/huy/ros2_ws/install/my_robot_pkg/share/my_robot_pkg/description/inertial_macros.xacro
 /home/huy/ros2_ws/install/my_robot_pkg/share/my_robot_pkg/description/robot_core.xacro
+/home/huy/ros2_ws/install/my_robot_pkg/share/my_robot_pkg/description/drone.urdf.xacro
 /home/huy/ros2_ws/install/my_robot_pkg/share/my_robot_pkg/description/gazebo_control.xacro
 /home/huy/ros2_ws/install/my_robot_pkg/share/my_robot_pkg/description/robot.urdf.xacro
 /home/huy/ros2_ws/install/my_robot_pkg/lib/python3.10/site-packages/my_robot_pkg-0.0.0-py3.10.egg-info/PKG-INFO
