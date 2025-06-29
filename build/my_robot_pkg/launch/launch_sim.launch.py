@@ -1,1 +1,0 @@
-/home/huy/ros2_ws/src/my_robot_pkg/launch/launch_sim.launch.py
