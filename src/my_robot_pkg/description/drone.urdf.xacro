@@ -3,6 +3,7 @@
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="drone">\
     
     <xacro:include filename = "inertial_macros.xacro"/>
+    <xacro:include filename = "drone_macros.xacro"/>
 
     <!-- MATERIAL -->
 
@@ -28,8 +29,10 @@
     <xacro:property name = "base_width" value = "0.3"/>
     <xacro:property name = "base_height" value = "0.1"/>
     <xacro:property name = "rotor_radius" value = "0.05"/>
-    <xacro:property name = "rotor_length" value = "0.04"/>
+    <xacro:property name = "rotor_length" value = "0.05"/>
     <xacro:property name = "mass" value = "1.0"/>
+    <xacro:property name = "wing_pos" value = "${base_height/2+0.02}"/>
+
 
     <!-- BASE_LINK -->
 
@@ -72,158 +75,37 @@
     </gazebo>
 
     
-    <!-- Wing 1 -->
+    <!-- Bar 1 -->
 
-    <joint name="wing1_joint" type="fixed">
-        <parent link="body_link"/>
-        <child link="wing1"/>
-        <origin xyz="0 0 0" rpy="0 0 ${pi/4}"/>
-    </joint>
-
-    <link name="wing1">
-        <visual>
-            <origin xyz="0.3 0.0 ${base_height/2}"/>
-            <geometry>
-                <box size="0.3 0.08 0.03"/>
-            </geometry>
-            <material name="orange"/>
-        </visual>
-
-        <collision>
-            <origin xyz="0.3 0.0 ${base_height/2}"/>
-            <geometry>
-                <box size="0.3 0.08 0.03"/>
-            </geometry>
-        </collision>
-    </link>
+    <xacro:bar name="bar1" parent="body_link" angle="${pi/4}" pos="0.3 0 ${wing_pos}" size="0.3 0.08 0.03"></xacro:bar>
 
     <!-- Rotor 1 -->
 
-    <joint name="rotor1_joint" type="continuous">
-        <parent link="wing1"/>
-        <child link="rotor1"/>
-        <origin xyz="${0.45-rotor_radius} 0.0 ${base_height/2 +0.015}"/>
-        <axis xyz="0 0 1"/>
-    </joint>
+    <xacro:rotor num="1" parent="bar1" radius="${rotor_radius}" length="${rotor_length}" wing_pos="${wing_pos}"></xacro:rotor>
 
-    <link name="rotor1">
-        
-    </link>
+    <!-- Bar 2 -->
 
-    <!-- Wing 2 -->
-
-    <joint name="wing2_joint" type="fixed">
-        <parent link="body_link"/>
-        <child link="wing2"/>
-        <origin xyz="0 0 0" rpy="0 0 ${3*pi/4}"/>
-    </joint>
-
-    <link name="wing2">
-        <visual>
-            <origin xyz="0.3 0.0 ${base_height/2}"/>
-            <geometry>
-                <box size="0.3 0.08 0.03"/>
-            </geometry>
-            <material name="orange"/>
-        </visual>
-
-        <collision>
-            <origin xyz="0.3 0.0 ${base_height/2}"/>
-            <geometry>
-                <box size="0.3 0.08 0.03"/>
-            </geometry>
-        </collision>
-    </link>
+    <xacro:bar name="bar2" parent="body_link" angle="${3*pi/4}" pos="0.3 0 ${wing_pos}" size="0.3 0.08 0.03"></xacro:bar>
 
 
     <!-- Rotor 2 -->
 
-    <joint name="rotor2_joint" type="continuous">
-        <parent link="wing2"/>
-        <child link="rotor2"/>
-        <origin xyz="${0.45-rotor_radius} 0.0 ${base_height/2 +0.015}"/>
-        <axis xyz="0 0 -1"/>
-    </joint>
+    <xacro:rotor num="2" parent="bar2" radius="${rotor_radius}" length="${rotor_length}" wing_pos="${wing_pos}"></xacro:rotor>
 
-    <link name="rotor2">
-        
-    </link>
+    <!-- Bar 3 -->
 
-
-    <!-- Wing 3 -->
-    <joint name="wing3_joint" type="fixed">
-        <parent link="body_link"/>
-        <child link="wing3"/>
-        <origin xyz="0 0 0" rpy="0 0 ${-3*pi/4}"/>
-    </joint>
-
-    <link name="wing3">
-        <visual>
-            <origin xyz="0.3 0.0 ${base_height/2}"/>
-            <geometry>
-                <box size="0.3 0.08 0.03"/>
-            </geometry>
-            <material name="orange"/>
-        </visual>
-
-        <collision>
-            <origin xyz="0.3 0.0 ${base_height/2}"/>
-            <geometry>
-                <box size="0.3 0.08 0.03"/>
-            </geometry>
-        </collision>
-    </link>
-
+    <xacro:bar name="bar3" parent="body_link" angle="${-3*pi/4}" pos="0.3 0 ${wing_pos}" size="0.3 0.08 0.03"></xacro:bar>
 
     <!-- Rotor 3 -->
 
-    <joint name="rotor3_joint" type="continuous">
-        <parent link="wing3"/>
-        <child link="rotor3"/>
-        <origin xyz="${0.45-rotor_radius} 0.0 ${base_height/2 +0.015}"/>
-        <axis xyz="0 0 1"/>
-    </joint>
+    <xacro:rotor num="3" parent="bar3" radius="${rotor_radius}" length="${rotor_length}" wing_pos="${wing_pos}"></xacro:rotor>
 
-    <link name="rotor3">
-        
-    </link>
+    <!-- Bar 4 -->
 
-    <!-- Wing 4 -->
-
-    <joint name="wing4_joint" type="fixed">
-        <parent link="body_link"/>
-        <child link="wing4"/>
-        <origin xyz="0 0 0" rpy="0 0 ${-pi/4}"/>
-    </joint>
-
-    <link name="wing4">
-        <visual>
-            <origin xyz="0.3 0.0 ${base_height/2}"/>
-            <geometry>
-                <box size="0.3 0.08 0.03"/>
-            </geometry>
-            <material name="orange"/>
-        </visual>
-
-        <collision>
-            <origin xyz="0.3 0.0 ${base_height/2}"/>
-            <geometry>
-                <box size="0.3 0.08 0.03"/>
-            </geometry>
-        </collision>
-    </link>
+    <xacro:bar name="bar4" parent="body_link" angle="${-pi/4}" pos="0.3 0 ${wing_pos}" size="0.3 0.08 0.03"></xacro:bar>
 
     <!-- Rotor 4 -->
 
-    <joint name="rotor4_joint" type="continuous">
-        <parent link="wing4"/>
-        <child link="rotor4"/>
-        <origin xyz="${0.45-rotor_radius} 0.0 ${base_height/2 +0.015}"/>
-        <axis xyz="0 0 -1"/>
-    </joint>
-
-    <link name="rotor4">
-        
-    </link>
+    <xacro:rotor num="4" parent="bar4" radius="${rotor_radius}" length="${rotor_length}" wing_pos="${wing_pos}"></xacro:rotor>
 
 </robot>
