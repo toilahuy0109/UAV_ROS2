@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 
-<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="drone">\
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="drone">
     
     <xacro:include filename = "inertial_macros.xacro"/>
     <xacro:include filename = "drone_macros.xacro"/>
@@ -77,35 +77,35 @@
     
     <!-- Bar 1 -->
 
-    <xacro:bar name="bar1" parent="body_link" angle="${pi/4}" pos="0.3 0 ${wing_pos}" size="0.3 0.08 0.03"></xacro:bar>
+    <xacro:bar name="bar1" parent="body_link" angle="${pi/4}" pos="0.3 0 ${wing_pos}" size="0.3 0.08 0.03" mass="${mass}"></xacro:bar>
 
     <!-- Rotor 1 -->
 
-    <xacro:rotor num="1" parent="bar1" radius="${rotor_radius}" length="${rotor_length}" wing_pos="${wing_pos}"></xacro:rotor>
+    <xacro:rotor num="1" parent="bar1" radius="${rotor_radius}" length="${rotor_length}" wing_pos="${wing_pos}" mass="${mass}"></xacro:rotor>
 
     <!-- Bar 2 -->
 
-    <xacro:bar name="bar2" parent="body_link" angle="${3*pi/4}" pos="0.3 0 ${wing_pos}" size="0.3 0.08 0.03"></xacro:bar>
+    <xacro:bar name="bar2" parent="body_link" angle="${3*pi/4}" pos="0.3 0 ${wing_pos}" size="0.3 0.08 0.03" mass="${mass}"></xacro:bar>
 
 
     <!-- Rotor 2 -->
 
-    <xacro:rotor num="2" parent="bar2" radius="${rotor_radius}" length="${rotor_length}" wing_pos="${wing_pos}"></xacro:rotor>
+    <xacro:rotor num="2" parent="bar2" radius="${rotor_radius}" length="${rotor_length}" wing_pos="${wing_pos}" mass="${mass}"></xacro:rotor>
 
     <!-- Bar 3 -->
 
-    <xacro:bar name="bar3" parent="body_link" angle="${-3*pi/4}" pos="0.3 0 ${wing_pos}" size="0.3 0.08 0.03"></xacro:bar>
+    <xacro:bar name="bar3" parent="body_link" angle="${-3*pi/4}" pos="0.3 0 ${wing_pos}" size="0.3 0.08 0.03" mass="${mass}"></xacro:bar>
 
     <!-- Rotor 3 -->
 
-    <xacro:rotor num="3" parent="bar3" radius="${rotor_radius}" length="${rotor_length}" wing_pos="${wing_pos}"></xacro:rotor>
+    <xacro:rotor num="3" parent="bar3" radius="${rotor_radius}" length="${rotor_length}" wing_pos="${wing_pos}" mass="${mass}"></xacro:rotor>
 
     <!-- Bar 4 -->
 
-    <xacro:bar name="bar4" parent="body_link" angle="${-pi/4}" pos="0.3 0 ${wing_pos}" size="0.3 0.08 0.03"></xacro:bar>
+    <xacro:bar name="bar4" parent="body_link" angle="${-pi/4}" pos="0.3 0 ${wing_pos}" size="0.3 0.08 0.03" mass="${mass}"></xacro:bar>
 
     <!-- Rotor 4 -->
 
-    <xacro:rotor num="4" parent="bar4" radius="${rotor_radius}" length="${rotor_length}" wing_pos="${wing_pos}"></xacro:rotor>
+    <xacro:rotor num="4" parent="bar4" radius="${rotor_radius}" length="${rotor_length}" wing_pos="${wing_pos}" mass="${mass}"></xacro:rotor>
 
 </robot>

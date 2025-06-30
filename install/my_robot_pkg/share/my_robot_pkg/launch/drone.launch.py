@@ -37,16 +37,16 @@ def generate_launch_description():
         )]),
     )
 
-    gazebo = IncludeLaunchDescription(
-        PythonLaunchDescriptionSource([
-            os.path.join(
-                get_package_share_directory('gazebo_ros'),'launch','gazebo.launch.py'
-            )
-        ]),
-    )
+    # gazebo = IncludeLaunchDescription(
+    #     PythonLaunchDescriptionSource([
+    #         os.path.join(
+    #             get_package_share_directory('gazebo_ros'),'launch','gazebo.launch.py'
+    #         )
+    #     ]),
+    # )
 
-    spawn_entity = Node(package="gazebo_ros", executable="spawn_entity.py",
-                        arguments=['-topic','robot_description','-entity','my_bot'],output='screen')
+    # spawn_entity = Node(package="gazebo_ros", executable="spawn_entity.py",
+    #                     arguments=['-topic','robot_description','-entity','my_bot'],output='screen')
 
 
     # Launch
@@ -59,7 +59,7 @@ def generate_launch_description():
         ),
         node_robot_state_publisher,
         ps4,
-        gazebo,
-        spawn_entity,
+        # gazebo,
+        # spawn_entity,
     ])
     

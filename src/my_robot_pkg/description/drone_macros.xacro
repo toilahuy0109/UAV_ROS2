@@ -8,7 +8,7 @@
 
     <!-- Bar -->
     
-    <xacro:macro name="bar" params="name parent angle pos size ">
+    <xacro:macro name="bar" params="name parent angle pos size mass">
         <joint name="${name}_joint" type="fixed">
             <parent link="${parent}"/>
             <child link="${name}"/>
@@ -30,9 +30,11 @@
                     <box size="${size}"/>
                 </geometry>
             </collision>
+            <xacro:inertial_box mass="${mass}" x="0.3" y="0.08" z="0.03">
+                <origin xyz="0.0 0.0 0.0"/>
+            </xacro:inertial_box>
         </link>
 
-        <xacro:inertial_box mass="${mass}" x="${size[0]}" y="${size[1]}" z="${size[2]}"></xacro:inertial_box>
 
         <gazebo reference="${name}">
             <material>
@@ -44,7 +46,7 @@
 
     <!-- Rotor -->
 
-    <xacro:macro name="rotor" params="num parent radius length wing_pos">
+    <xacro:macro name="rotor" params="num parent radius length wing_pos mass">
         <joint name="rotor${num}_joint" type="continuous">
             <parent link="${parent}"/>
             <child link="rotor${num}"/>
@@ -67,12 +69,13 @@
                     <cylinder radius="${radius}" length="${length}"/>
                 </geometry>
             </collision>
+            <xacro:inertial_cylinder mass="${mass}" length="${length}" radius="${radius}">
+                <origin xyz="0.0 0.0 0.0"/>
+            </xacro:inertial_cylinder>
         </link>
 
-        <xacro:inertial_cylinder mass="${mass}" length="${length}" radius="${radius}">
-        </xacro:inertial_cylinder>
 
-        <gazebo>
+        <gazebo reference="rotor${num}">
             <material>
                 Gazebo/Blue
             </material>
