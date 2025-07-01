@@ -14,6 +14,8 @@ setup(
         ('share/' + package_name, ['package.xml']),
         (os.path.join('share',package_name,'launch'),glob('launch/*.py')),
         (os.path.join('share',package_name,'description'),glob('description/*.xacro')),
+        (os.path.join('share', package_name, 'config'),glob('config/*.yaml')),
+        (os.path.join('share',package_name,'')),
     ],
     install_requires=['setuptools'],
     zip_safe=True,
@@ -25,6 +27,7 @@ setup(
     entry_points={
         'console_scripts': [
             'ps4_controller_node = my_robot_pkg.ps4_controller_node:main',
+            'drone_controller = my_robot_pkg.drone_controller:main',
         ],
     },
 )
