@@ -1,3 +1,0 @@
-warning: install_data: setup script did not provide a directory for 'share/my_robot_pkg/' -- installing right in '/home/huy/ros2_ws/install/my_robot_pkg'
-
-error: can't copy 'share/my_robot_pkg/': doesn't exist or not a regular file
