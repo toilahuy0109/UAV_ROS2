@@ -1,0 +1,11 @@
+In file included from [01m[K/home/huy/ros2_ws/src/drone_drive/src/drone_drive.cpp:1[m[K:
+[01m[K/home/huy/ros2_ws/src/drone_drive/include/drone_drive/drone_drive.hpp:[m[K In constructor ‘[01m[Kgazebo::DroneDiffDrivePlugin::DroneDiffDrivePlugin()[m[K’:
+[01m[K/home/huy/ros2_ws/src/drone_drive/include/drone_drive/drone_drive.hpp:45:16:[m[K [01;35m[Kwarning: [m[K‘[01m[Kgazebo::DroneDiffDrivePlugin::angular_z_[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   45 |         double [01;35m[Kangular_z_[m[K;
+      |                [01;35m[K^~~~~~~~~~[m[K
+[01m[K/home/huy/ros2_ws/src/drone_drive/include/drone_drive/drone_drive.hpp:35:16:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kdouble gazebo::DroneDiffDrivePlugin::k_thrust_[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   35 |         double [01;35m[Kk_thrust_[m[K;
+      |                [01;35m[K^~~~~~~~~[m[K
+[01m[K/home/huy/ros2_ws/src/drone_drive/src/drone_drive.cpp:9:5:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+    9 |     [01;35m[KDroneDiffDrivePlugin[m[K::DroneDiffDrivePlugin()
+      |     [01;35m[K^~~~~~~~~~~~~~~~~~~~[m[K
