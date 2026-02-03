@@ -1,2 +1,0 @@
-Invoking command in '/home/huy/ros2_ws/build/drone_drive': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/huy/ros2_ws/install/my_robot_pkg:/opt/ros/humble /usr/bin/cmake --build /home/huy/ros2_ws/build/drone_drive -- -j16 -l16
-Invoked command in '/home/huy/ros2_ws/build/drone_drive' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/huy/ros2_ws/install/my_robot_pkg:/opt/ros/humble /usr/bin/cmake --build /home/huy/ros2_ws/build/drone_drive -- -j16 -l16

@@ -1,0 +1,259 @@
+[0.036s] Invoking command in '/home/huy/ros2_ws/build/uav_msgs': /usr/bin/cmake /home/huy/ros2_ws/src/uav_msgs -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/huy/ros2_ws/install/uav_msgs
+[0.181s] -- The C compiler identification is GNU 11.4.0
+[0.313s] -- The CXX compiler identification is GNU 11.4.0
+[0.332s] -- Detecting C compiler ABI info
+[0.505s] -- Detecting C compiler ABI info - done
+[0.521s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.521s] -- Detecting C compile features
+[0.522s] -- Detecting C compile features - done
+[0.529s] -- Detecting CXX compiler ABI info
+[0.740s] -- Detecting CXX compiler ABI info - done
+[0.758s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.758s] -- Detecting CXX compile features
+[0.759s] -- Detecting CXX compile features - done
+[0.766s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.119s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.325s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[1.332s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.348s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.448s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.106s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[2.531s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.077s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.130s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[3.133s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[3.195s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[3.196s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[3.196s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[3.196s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[3.248s] -- Found PythonExtra: .so  
+[3.338s] -- Configuring done
+[3.415s] -- Generating done
+[3.423s] [33mCMake Warning:
+[3.424s]   Manually-specified variables were not used by the project:
+[3.424s] 
+[3.424s]     CATKIN_INSTALL_INTO_PREFIX_ROOT
+[3.424s] 
+[3.425s] [0m
+[3.445s] -- Build files have been written to: /home/huy/ros2_ws/build/uav_msgs
+[3.463s] Invoked command in '/home/huy/ros2_ws/build/uav_msgs' returned '0': /usr/bin/cmake /home/huy/ros2_ws/src/uav_msgs -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/huy/ros2_ws/install/uav_msgs
+[3.469s] Invoking command in '/home/huy/ros2_ws/build/uav_msgs': /usr/bin/cmake --build /home/huy/ros2_ws/build/uav_msgs -- -j16 -l16
+[3.570s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[3.596s] [  5%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[3.618s] [  5%] Built target ament_cmake_python_copy_uav_msgs
+[4.184s] running egg_info
+[4.186s] creating uav_msgs.egg-info
+[4.186s] writing uav_msgs.egg-info/PKG-INFO
+[4.187s] writing dependency_links to uav_msgs.egg-info/dependency_links.txt
+[4.187s] writing top-level names to uav_msgs.egg-info/top_level.txt
+[4.187s] writing manifest file 'uav_msgs.egg-info/SOURCES.txt'
+[4.192s] reading manifest file 'uav_msgs.egg-info/SOURCES.txt'
+[4.193s] writing manifest file 'uav_msgs.egg-info/SOURCES.txt'
+[4.219s] [ 10%] [32mBuilding C object CMakeFiles/uav_msgs__rosidl_generator_c.dir/rosidl_generator_c/uav_msgs/msg/detail/uav_state__functions.c.o[0m
+[4.219s] [ 10%] [32mBuilding C object CMakeFiles/uav_msgs__rosidl_generator_c.dir/rosidl_generator_c/uav_msgs/msg/detail/uav_cmd__functions.c.o[0m
+[4.223s] [ 10%] Built target uav_msgs__cpp
+[4.249s] [ 17%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[4.249s] [ 17%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[4.249s] [ 17%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[4.261s] [ 17%] Built target ament_cmake_python_build_uav_msgs_egg
+[4.325s] [ 20%] [32m[1mLinking C shared library libuav_msgs__rosidl_generator_c.so[0m
+[4.417s] [ 20%] Built target uav_msgs__rosidl_generator_c
+[4.442s] [ 25%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[4.442s] [ 25%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[4.442s] [ 28%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[4.875s] [ 30%] [32mBuilding CXX object CMakeFiles/uav_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/uav_msgs/msg/uav_state__type_support.cpp.o[0m
+[4.879s] [ 33%] [32mBuilding CXX object CMakeFiles/uav_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/uav_msgs/msg/uav_cmd__type_support.cpp.o[0m
+[4.939s] [ 35%] [32mBuilding CXX object CMakeFiles/uav_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/uav_msgs/msg/detail/uav_state__type_support.cpp.o[0m
+[4.942s] [ 38%] [32mBuilding CXX object CMakeFiles/uav_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/uav_msgs/msg/detail/uav_cmd__type_support.cpp.o[0m
+[5.015s] [ 43%] [32mBuilding CXX object CMakeFiles/uav_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/uav_msgs/msg/detail/dds_fastrtps/uav_state__type_support.cpp.o[0m
+[5.015s] [ 43%] [32mBuilding CXX object CMakeFiles/uav_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/uav_msgs/msg/detail/dds_fastrtps/uav_cmd__type_support.cpp.o[0m
+[5.136s] [ 46%] [32mBuilding CXX object CMakeFiles/uav_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/uav_msgs/msg/uav_cmd__type_support.cpp.o[0m
+[5.139s] [ 48%] [32mBuilding CXX object CMakeFiles/uav_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/uav_msgs/msg/uav_state__type_support.cpp.o[0m
+[5.178s] [ 51%] [32mBuilding C object CMakeFiles/uav_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/uav_msgs/msg/detail/uav_state__type_support.c.o[0m
+[5.186s] [ 53%] [32mBuilding C object CMakeFiles/uav_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/uav_msgs/msg/detail/uav_cmd__type_support.c.o[0m
+[5.230s] [ 56%] [32mBuilding CXX object CMakeFiles/uav_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/uav_msgs/msg/detail/uav_cmd__type_support_c.cpp.o[0m
+[5.233s] [ 58%] [32mBuilding CXX object CMakeFiles/uav_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/uav_msgs/msg/detail/uav_state__type_support_c.cpp.o[0m
+[5.240s] [ 61%] [32m[1mLinking CXX shared library libuav_msgs__rosidl_typesupport_c.so[0m
+[5.292s] [ 64%] [32m[1mLinking C shared library libuav_msgs__rosidl_typesupport_introspection_c.so[0m
+[5.393s] [ 64%] Built target uav_msgs__rosidl_typesupport_c
+[5.405s] [ 64%] Built target uav_msgs__rosidl_typesupport_introspection_c
+[5.683s] [ 66%] [32m[1mLinking CXX shared library libuav_msgs__rosidl_typesupport_cpp.so[0m
+[5.785s] [ 66%] Built target uav_msgs__rosidl_typesupport_cpp
+[5.925s] [ 69%] [32m[1mLinking CXX shared library libuav_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[6.024s] [ 69%] Built target uav_msgs__rosidl_typesupport_introspection_cpp
+[6.049s] [ 71%] [32m[1mLinking CXX shared library libuav_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[6.107s] [ 74%] [32m[1mLinking CXX shared library libuav_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[6.210s] [ 74%] Built target uav_msgs__rosidl_typesupport_fastrtps_cpp
+[6.266s] [ 74%] Built target uav_msgs__rosidl_typesupport_fastrtps_c
+[6.314s] [ 74%] Built target uav_msgs
+[6.361s] [ 76%] [34m[1mGenerating Python code for ROS interfaces[0m
+[6.956s] [ 76%] Built target uav_msgs__py
+[6.990s] [ 82%] [32mBuilding C object CMakeFiles/uav_msgs__rosidl_generator_py.dir/rosidl_generator_py/uav_msgs/msg/_uav_cmd_s.c.o[0m
+[6.990s] [ 82%] [32mBuilding C object CMakeFiles/uav_msgs__rosidl_generator_py.dir/rosidl_generator_py/uav_msgs/msg/_uav_state_s.c.o[0m
+[7.122s] [ 84%] [32m[1mLinking C shared library rosidl_generator_py/uav_msgs/libuav_msgs__rosidl_generator_py.so[0m
+[7.183s] [ 84%] Built target uav_msgs__rosidl_generator_py
+[7.214s] [ 89%] [32mBuilding C object CMakeFiles/uav_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/uav_msgs/_uav_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[7.214s] [ 89%] [32mBuilding C object CMakeFiles/uav_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/uav_msgs/_uav_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[7.214s] [ 92%] [32mBuilding C object CMakeFiles/uav_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/uav_msgs/_uav_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[7.327s] [ 94%] [32m[1mLinking C shared library rosidl_generator_py/uav_msgs/uav_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[7.332s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/uav_msgs/uav_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[7.337s] [100%] [32m[1mLinking C shared library rosidl_generator_py/uav_msgs/uav_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[7.372s] [100%] Built target uav_msgs__rosidl_typesupport_c__pyext
+[7.380s] [100%] Built target uav_msgs__rosidl_typesupport_fastrtps_c__pyext
+[7.383s] [100%] Built target uav_msgs__rosidl_typesupport_introspection_c__pyext
+[7.402s] Invoked command in '/home/huy/ros2_ws/build/uav_msgs' returned '0': /usr/bin/cmake --build /home/huy/ros2_ws/build/uav_msgs -- -j16 -l16
+[7.416s] Invoking command in '/home/huy/ros2_ws/build/uav_msgs': /usr/bin/cmake --install /home/huy/ros2_ws/build/uav_msgs
+[7.427s] -- Install configuration: ""
+[7.427s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/share/ament_index/resource_index/rosidl_interfaces/uav_msgs
+[7.427s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/include/uav_msgs/uav_msgs
+[7.428s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/include/uav_msgs/uav_msgs/msg
+[7.428s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/include/uav_msgs/uav_msgs/msg/rosidl_generator_c__visibility_control.h
+[7.428s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/include/uav_msgs/uav_msgs/msg/detail
+[7.428s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/include/uav_msgs/uav_msgs/msg/detail/uav_cmd__struct.h
+[7.428s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/include/uav_msgs/uav_msgs/msg/detail/uav_state__type_support.h
+[7.428s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/include/uav_msgs/uav_msgs/msg/detail/uav_cmd__functions.h
+[7.429s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/include/uav_msgs/uav_msgs/msg/detail/uav_state__functions.c
+[7.429s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/include/uav_msgs/uav_msgs/msg/detail/uav_cmd__functions.c
+[7.429s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/include/uav_msgs/uav_msgs/msg/detail/uav_state__struct.h
+[7.429s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/include/uav_msgs/uav_msgs/msg/detail/uav_state__functions.h
+[7.429s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/include/uav_msgs/uav_msgs/msg/detail/uav_cmd__type_support.h
+[7.429s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/include/uav_msgs/uav_msgs/msg/uav_cmd.h
+[7.430s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/include/uav_msgs/uav_msgs/msg/uav_state.h
+[7.430s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/share/uav_msgs/environment/library_path.sh
+[7.430s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/share/uav_msgs/environment/library_path.dsv
+[7.430s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/lib/libuav_msgs__rosidl_generator_c.so
+[7.431s] -- Set runtime path of "/home/huy/ros2_ws/install/uav_msgs/lib/libuav_msgs__rosidl_generator_c.so" to ""
+[7.431s] -- Up-to-date: /home/huy/ros2_ws/install/uav_msgs/include/uav_msgs/uav_msgs
+[7.431s] -- Up-to-date: /home/huy/ros2_ws/install/uav_msgs/include/uav_msgs/uav_msgs/msg
+[7.431s] -- Up-to-date: /home/huy/ros2_ws/install/uav_msgs/include/uav_msgs/uav_msgs/msg/detail
+[7.432s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/include/uav_msgs/uav_msgs/msg/detail/uav_state__rosidl_typesupport_fastrtps_c.h
+[7.432s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/include/uav_msgs/uav_msgs/msg/detail/uav_cmd__rosidl_typesupport_fastrtps_c.h
+[7.432s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/include/uav_msgs/uav_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[7.432s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/lib/libuav_msgs__rosidl_typesupport_fastrtps_c.so
+[7.432s] -- Set runtime path of "/home/huy/ros2_ws/install/uav_msgs/lib/libuav_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[7.432s] -- Up-to-date: /home/huy/ros2_ws/install/uav_msgs/include/uav_msgs/uav_msgs
+[7.433s] -- Up-to-date: /home/huy/ros2_ws/install/uav_msgs/include/uav_msgs/uav_msgs/msg
+[7.433s] -- Up-to-date: /home/huy/ros2_ws/install/uav_msgs/include/uav_msgs/uav_msgs/msg/detail
+[7.433s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/include/uav_msgs/uav_msgs/msg/detail/uav_cmd__type_support.c
+[7.433s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/include/uav_msgs/uav_msgs/msg/detail/uav_state__type_support.c
+[7.433s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/include/uav_msgs/uav_msgs/msg/detail/uav_cmd__rosidl_typesupport_introspection_c.h
+[7.433s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/include/uav_msgs/uav_msgs/msg/detail/uav_state__rosidl_typesupport_introspection_c.h
+[7.433s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/include/uav_msgs/uav_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[7.433s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/lib/libuav_msgs__rosidl_typesupport_introspection_c.so
+[7.434s] -- Set runtime path of "/home/huy/ros2_ws/install/uav_msgs/lib/libuav_msgs__rosidl_typesupport_introspection_c.so" to ""
+[7.434s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/lib/libuav_msgs__rosidl_typesupport_c.so
+[7.434s] -- Set runtime path of "/home/huy/ros2_ws/install/uav_msgs/lib/libuav_msgs__rosidl_typesupport_c.so" to ""
+[7.434s] -- Up-to-date: /home/huy/ros2_ws/install/uav_msgs/include/uav_msgs/uav_msgs
+[7.434s] -- Up-to-date: /home/huy/ros2_ws/install/uav_msgs/include/uav_msgs/uav_msgs/msg
+[7.435s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/include/uav_msgs/uav_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[7.435s] -- Up-to-date: /home/huy/ros2_ws/install/uav_msgs/include/uav_msgs/uav_msgs/msg/detail
+[7.435s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/include/uav_msgs/uav_msgs/msg/detail/uav_cmd__traits.hpp
+[7.435s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/include/uav_msgs/uav_msgs/msg/detail/uav_state__type_support.hpp
+[7.435s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/include/uav_msgs/uav_msgs/msg/detail/uav_state__struct.hpp
+[7.435s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/include/uav_msgs/uav_msgs/msg/detail/uav_cmd__struct.hpp
+[7.435s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/include/uav_msgs/uav_msgs/msg/detail/uav_state__builder.hpp
+[7.435s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/include/uav_msgs/uav_msgs/msg/detail/uav_cmd__type_support.hpp
+[7.436s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/include/uav_msgs/uav_msgs/msg/detail/uav_cmd__builder.hpp
+[7.436s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/include/uav_msgs/uav_msgs/msg/detail/uav_state__traits.hpp
+[7.436s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/include/uav_msgs/uav_msgs/msg/uav_cmd.hpp
+[7.436s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/include/uav_msgs/uav_msgs/msg/uav_state.hpp
+[7.436s] -- Up-to-date: /home/huy/ros2_ws/install/uav_msgs/include/uav_msgs/uav_msgs
+[7.436s] -- Up-to-date: /home/huy/ros2_ws/install/uav_msgs/include/uav_msgs/uav_msgs/msg
+[7.436s] -- Up-to-date: /home/huy/ros2_ws/install/uav_msgs/include/uav_msgs/uav_msgs/msg/detail
+[7.437s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/include/uav_msgs/uav_msgs/msg/detail/uav_cmd__rosidl_typesupport_fastrtps_cpp.hpp
+[7.437s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/include/uav_msgs/uav_msgs/msg/detail/dds_fastrtps
+[7.437s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/include/uav_msgs/uav_msgs/msg/detail/uav_state__rosidl_typesupport_fastrtps_cpp.hpp
+[7.437s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/include/uav_msgs/uav_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[7.437s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/lib/libuav_msgs__rosidl_typesupport_fastrtps_cpp.so
+[7.438s] -- Set runtime path of "/home/huy/ros2_ws/install/uav_msgs/lib/libuav_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[7.438s] -- Up-to-date: /home/huy/ros2_ws/install/uav_msgs/include/uav_msgs/uav_msgs
+[7.438s] -- Up-to-date: /home/huy/ros2_ws/install/uav_msgs/include/uav_msgs/uav_msgs/msg
+[7.438s] -- Up-to-date: /home/huy/ros2_ws/install/uav_msgs/include/uav_msgs/uav_msgs/msg/detail
+[7.438s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/include/uav_msgs/uav_msgs/msg/detail/uav_state__type_support.cpp
+[7.438s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/include/uav_msgs/uav_msgs/msg/detail/uav_state__rosidl_typesupport_introspection_cpp.hpp
+[7.438s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/include/uav_msgs/uav_msgs/msg/detail/uav_cmd__type_support.cpp
+[7.438s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/include/uav_msgs/uav_msgs/msg/detail/uav_cmd__rosidl_typesupport_introspection_cpp.hpp
+[7.439s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/lib/libuav_msgs__rosidl_typesupport_introspection_cpp.so
+[7.439s] -- Set runtime path of "/home/huy/ros2_ws/install/uav_msgs/lib/libuav_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[7.439s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/lib/libuav_msgs__rosidl_typesupport_cpp.so
+[7.440s] -- Set runtime path of "/home/huy/ros2_ws/install/uav_msgs/lib/libuav_msgs__rosidl_typesupport_cpp.so" to ""
+[7.440s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/share/uav_msgs/environment/pythonpath.sh
+[7.440s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/share/uav_msgs/environment/pythonpath.dsv
+[7.440s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/local/lib/python3.10/dist-packages/uav_msgs-0.0.0-py3.10.egg-info
+[7.440s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/local/lib/python3.10/dist-packages/uav_msgs-0.0.0-py3.10.egg-info/PKG-INFO
+[7.441s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/local/lib/python3.10/dist-packages/uav_msgs-0.0.0-py3.10.egg-info/SOURCES.txt
+[7.441s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/local/lib/python3.10/dist-packages/uav_msgs-0.0.0-py3.10.egg-info/top_level.txt
+[7.441s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/local/lib/python3.10/dist-packages/uav_msgs-0.0.0-py3.10.egg-info/dependency_links.txt
+[7.441s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/local/lib/python3.10/dist-packages/uav_msgs
+[7.441s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/local/lib/python3.10/dist-packages/uav_msgs/libuav_msgs__rosidl_generator_py.so
+[7.441s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/local/lib/python3.10/dist-packages/uav_msgs/_uav_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[7.442s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/local/lib/python3.10/dist-packages/uav_msgs/_uav_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[7.442s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/local/lib/python3.10/dist-packages/uav_msgs/uav_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[7.442s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/local/lib/python3.10/dist-packages/uav_msgs/msg
+[7.442s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/local/lib/python3.10/dist-packages/uav_msgs/msg/_uav_state_s.c
+[7.442s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/local/lib/python3.10/dist-packages/uav_msgs/msg/_uav_cmd.py
+[7.443s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/local/lib/python3.10/dist-packages/uav_msgs/msg/_uav_state.py
+[7.443s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/local/lib/python3.10/dist-packages/uav_msgs/msg/__init__.py
+[7.443s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/local/lib/python3.10/dist-packages/uav_msgs/msg/_uav_cmd_s.c
+[7.443s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/local/lib/python3.10/dist-packages/uav_msgs/__init__.py
+[7.443s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/local/lib/python3.10/dist-packages/uav_msgs/uav_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[7.443s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/local/lib/python3.10/dist-packages/uav_msgs/_uav_msgs_s.ep.rosidl_typesupport_c.c
+[7.443s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/local/lib/python3.10/dist-packages/uav_msgs/uav_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[7.482s] Listing '/home/huy/ros2_ws/install/uav_msgs/local/lib/python3.10/dist-packages/uav_msgs'...
+[7.482s] Compiling '/home/huy/ros2_ws/install/uav_msgs/local/lib/python3.10/dist-packages/uav_msgs/__init__.py'...
+[7.482s] Listing '/home/huy/ros2_ws/install/uav_msgs/local/lib/python3.10/dist-packages/uav_msgs/msg'...
+[7.482s] Compiling '/home/huy/ros2_ws/install/uav_msgs/local/lib/python3.10/dist-packages/uav_msgs/msg/__init__.py'...
+[7.482s] Compiling '/home/huy/ros2_ws/install/uav_msgs/local/lib/python3.10/dist-packages/uav_msgs/msg/_uav_cmd.py'...
+[7.482s] Compiling '/home/huy/ros2_ws/install/uav_msgs/local/lib/python3.10/dist-packages/uav_msgs/msg/_uav_state.py'...
+[7.488s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/local/lib/python3.10/dist-packages/uav_msgs/uav_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[7.488s] -- Set runtime path of "/home/huy/ros2_ws/install/uav_msgs/local/lib/python3.10/dist-packages/uav_msgs/uav_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[7.488s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/local/lib/python3.10/dist-packages/uav_msgs/uav_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[7.489s] -- Set runtime path of "/home/huy/ros2_ws/install/uav_msgs/local/lib/python3.10/dist-packages/uav_msgs/uav_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[7.489s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/local/lib/python3.10/dist-packages/uav_msgs/uav_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[7.489s] -- Set runtime path of "/home/huy/ros2_ws/install/uav_msgs/local/lib/python3.10/dist-packages/uav_msgs/uav_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[7.489s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/lib/libuav_msgs__rosidl_generator_py.so
+[7.490s] -- Set runtime path of "/home/huy/ros2_ws/install/uav_msgs/lib/libuav_msgs__rosidl_generator_py.so" to ""
+[7.490s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/share/uav_msgs/msg/UavState.idl
+[7.490s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/share/uav_msgs/msg/UavCmd.idl
+[7.490s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/share/uav_msgs/msg/UavState.msg
+[7.490s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/share/uav_msgs/msg/UavCmd.msg
+[7.491s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/share/ament_index/resource_index/package_run_dependencies/uav_msgs
+[7.491s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/share/ament_index/resource_index/parent_prefix_path/uav_msgs
+[7.491s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/share/uav_msgs/environment/ament_prefix_path.sh
+[7.491s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/share/uav_msgs/environment/ament_prefix_path.dsv
+[7.492s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/share/uav_msgs/environment/path.sh
+[7.492s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/share/uav_msgs/environment/path.dsv
+[7.492s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/share/uav_msgs/local_setup.bash
+[7.492s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/share/uav_msgs/local_setup.sh
+[7.492s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/share/uav_msgs/local_setup.zsh
+[7.493s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/share/uav_msgs/local_setup.dsv
+[7.493s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/share/uav_msgs/package.dsv
+[7.493s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/share/ament_index/resource_index/packages/uav_msgs
+[7.493s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/share/uav_msgs/cmake/export_uav_msgs__rosidl_generator_cExport.cmake
+[7.493s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/share/uav_msgs/cmake/export_uav_msgs__rosidl_generator_cExport-noconfig.cmake
+[7.494s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/share/uav_msgs/cmake/export_uav_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[7.494s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/share/uav_msgs/cmake/export_uav_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[7.494s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/share/uav_msgs/cmake/uav_msgs__rosidl_typesupport_introspection_cExport.cmake
+[7.494s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/share/uav_msgs/cmake/uav_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[7.495s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/share/uav_msgs/cmake/uav_msgs__rosidl_typesupport_cExport.cmake
+[7.495s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/share/uav_msgs/cmake/uav_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[7.495s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/share/uav_msgs/cmake/export_uav_msgs__rosidl_generator_cppExport.cmake
+[7.495s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/share/uav_msgs/cmake/export_uav_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[7.495s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/share/uav_msgs/cmake/export_uav_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[7.496s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/share/uav_msgs/cmake/uav_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[7.496s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/share/uav_msgs/cmake/uav_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[7.496s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/share/uav_msgs/cmake/uav_msgs__rosidl_typesupport_cppExport.cmake
+[7.496s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/share/uav_msgs/cmake/uav_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[7.496s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/share/uav_msgs/cmake/export_uav_msgs__rosidl_generator_pyExport.cmake
+[7.497s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/share/uav_msgs/cmake/export_uav_msgs__rosidl_generator_pyExport-noconfig.cmake
+[7.497s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/share/uav_msgs/cmake/rosidl_cmake-extras.cmake
+[7.497s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/share/uav_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[7.497s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/share/uav_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[7.497s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/share/uav_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[7.498s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/share/uav_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[7.498s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/share/uav_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[7.498s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/share/uav_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[7.498s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/share/uav_msgs/cmake/uav_msgsConfig.cmake
+[7.498s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/share/uav_msgs/cmake/uav_msgsConfig-version.cmake
+[7.499s] -- Installing: /home/huy/ros2_ws/install/uav_msgs/share/uav_msgs/package.xml
+[7.502s] Invoked command in '/home/huy/ros2_ws/build/uav_msgs' returned '0': /usr/bin/cmake --install /home/huy/ros2_ws/build/uav_msgs

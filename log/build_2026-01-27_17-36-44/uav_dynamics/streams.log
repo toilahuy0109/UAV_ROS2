@@ -1,0 +1,22 @@
+[0.012s] Invoking command in '/home/huy/ros2_ws/build/uav_dynamics': CMAKE_PREFIX_PATH=/opt/ros/humble:/home/huy/ros2_ws/install/uav_msgs:/home/huy/ros2_ws/install/uav_dynamics:/home/huy/ros2_ws/install/uav_motor_plugin LD_LIBRARY_PATH=/home/huy/ros2_ws/install/uav_msgs/lib:/home/huy/ros2_ws/install/uav_motor_plugin/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake --build /home/huy/ros2_ws/build/uav_dynamics -- -j16 -l16
+[0.065s] [35m[1mConsolidate compiler generated dependencies of target dynamics_node[0m
+[0.075s] [ 14%] [32mBuilding CXX object CMakeFiles/cmd_pub_node.dir/src/uav_cmd_pub.cpp.o[0m
+[0.085s] [01m[K/home/huy/ros2_ws/src/uav_dynamics/src/uav_cmd_pub.cpp:1:10:[m[K [01;31m[Kfatal error: [m[Kuav_cmd_pub.hpp: No such file or directory
+[0.085s]     1 | #include [01;31m[K"uav_cmd_pub.hpp"[m[K
+[0.085s]       |          [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[0.085s] compilation terminated.
+[0.086s] gmake[2]: *** [CMakeFiles/cmd_pub_node.dir/build.make:76: CMakeFiles/cmd_pub_node.dir/src/uav_cmd_pub.cpp.o] Error 1
+[0.086s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/cmd_pub_node.dir/all] Error 2
+[0.087s] gmake[1]: *** Waiting for unfinished jobs....
+[0.092s] [ 28%] [32mBuilding CXX object CMakeFiles/dynamics_node.dir/src/uav_cmd_pub.cpp.o[0m
+[0.094s] [ 42%] [32mBuilding CXX object CMakeFiles/dynamics_node.dir/src/main.cpp.o[0m
+[0.336s] In file included from [01m[K/home/huy/ros2_ws/src/uav_dynamics/src/uav_cmd_pub.cpp:1[m[K:
+[0.336s] [01m[K/home/huy/ros2_ws/src/uav_dynamics/include/uav_cmd_pub.hpp:5:10:[m[K [01;31m[Kfatal error: [m[Ksensor_msgs/msg/joy.hpp: No such file or directory
+[0.337s]     5 | #include [01;31m[K"sensor_msgs/msg/joy.hpp"[m[K
+[0.337s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.337s] compilation terminated.
+[0.341s] gmake[2]: *** [CMakeFiles/dynamics_node.dir/build.make:118: CMakeFiles/dynamics_node.dir/src/uav_cmd_pub.cpp.o] Error 1
+[0.341s] gmake[2]: *** Waiting for unfinished jobs....
+[2.595s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/dynamics_node.dir/all] Error 2
+[2.596s] gmake: *** [Makefile:146: all] Error 2
+[2.598s] Invoked command in '/home/huy/ros2_ws/build/uav_dynamics' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble:/home/huy/ros2_ws/install/uav_msgs:/home/huy/ros2_ws/install/uav_dynamics:/home/huy/ros2_ws/install/uav_motor_plugin LD_LIBRARY_PATH=/home/huy/ros2_ws/install/uav_msgs/lib:/home/huy/ros2_ws/install/uav_motor_plugin/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake --build /home/huy/ros2_ws/build/uav_dynamics -- -j16 -l16

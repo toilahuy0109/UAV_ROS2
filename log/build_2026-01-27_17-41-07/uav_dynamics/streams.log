@@ -1,0 +1,16 @@
+[0.014s] Invoking command in '/home/huy/ros2_ws/build/uav_dynamics': CMAKE_PREFIX_PATH=/opt/ros/humble:/home/huy/ros2_ws/install/uav_msgs:/home/huy/ros2_ws/install/uav_dynamics:/home/huy/ros2_ws/install/uav_motor_plugin LD_LIBRARY_PATH=/home/huy/ros2_ws/install/uav_msgs/lib:/home/huy/ros2_ws/install/uav_motor_plugin/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake --build /home/huy/ros2_ws/build/uav_dynamics -- -j16 -l16
+[0.074s] [35m[1mConsolidate compiler generated dependencies of target dynamics_node[0m
+[0.085s] [ 14%] [32mBuilding CXX object CMakeFiles/cmd_pub_node.dir/src/uav_cmd_pub.cpp.o[0m
+[0.105s] [ 28%] [32mBuilding CXX object CMakeFiles/dynamics_node.dir/src/uav_cmd_pub.cpp.o[0m
+[0.369s] In file included from [01m[K/home/huy/ros2_ws/src/uav_dynamics/src/uav_cmd_pub.cpp:1[m[K:
+[0.369s] [01m[K/home/huy/ros2_ws/src/uav_dynamics/include/uav_cmd_pub.hpp:5:10:[m[K [01;31m[Kfatal error: [m[Ksensor_msgs/msg/joy.hpp: No such file or directory
+[0.369s]     5 | #include [01;31m[K"sensor_msgs/msg/joy.hpp"[m[K
+[0.369s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.369s] compilation terminated.
+[0.373s] gmake[2]: *** [CMakeFiles/dynamics_node.dir/build.make:118: CMakeFiles/dynamics_node.dir/src/uav_cmd_pub.cpp.o] Error 1
+[0.373s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/dynamics_node.dir/all] Error 2
+[0.373s] gmake[1]: *** Waiting for unfinished jobs....
+[6.697s] [ 42%] [32m[1mLinking CXX executable cmd_pub_node[0m
+[7.010s] [ 42%] Built target cmd_pub_node
+[7.011s] gmake: *** [Makefile:146: all] Error 2
+[7.013s] Invoked command in '/home/huy/ros2_ws/build/uav_dynamics' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble:/home/huy/ros2_ws/install/uav_msgs:/home/huy/ros2_ws/install/uav_dynamics:/home/huy/ros2_ws/install/uav_motor_plugin LD_LIBRARY_PATH=/home/huy/ros2_ws/install/uav_msgs/lib:/home/huy/ros2_ws/install/uav_motor_plugin/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake --build /home/huy/ros2_ws/build/uav_dynamics -- -j16 -l16

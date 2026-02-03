@@ -1,0 +1,45 @@
+[0.027s] Invoking command in '/home/huy/ros2_ws/build/uav_dynamics': CMAKE_PREFIX_PATH=/opt/ros/humble:/home/huy/ros2_ws/install/uav_msgs:/home/huy/ros2_ws/install/uav_dynamics:/home/huy/ros2_ws/install/uav_motor_plugin LD_LIBRARY_PATH=/home/huy/ros2_ws/install/uav_msgs/lib:/home/huy/ros2_ws/install/uav_motor_plugin/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake --build /home/huy/ros2_ws/build/uav_dynamics -- -j16 -l16
+[0.089s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.381s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[0.451s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.457s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.471s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.493s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.521s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.596s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.599s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.867s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.975s] -- Found uav_msgs: 0.0.0 (/home/huy/ros2_ws/install/uav_msgs/share/uav_msgs/cmake)
+[0.994s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.206s] -- Configuring done
+[1.242s] -- Generating done
+[1.254s] -- Build files have been written to: /home/huy/ros2_ws/build/uav_dynamics
+[1.321s] [35m[1mConsolidate compiler generated dependencies of target dynamics_node[0m
+[1.344s] [ 14%] [32mBuilding CXX object CMakeFiles/cmd_pub_node.dir/src/uav_cmd_pub.cpp.o[0m
+[1.366s] [01m[K/home/huy/ros2_ws/src/uav_dynamics/src/uav_cmd_pub.cpp:1:10:[m[K [01;31m[Kfatal error: [m[Kuav_cmd_pub.hpp: No such file or directory
+[1.366s]     1 | #include [01;31m[K"uav_cmd_pub.hpp"[m[K
+[1.367s]       |          [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[1.367s] compilation terminated.
+[1.369s] gmake[2]: *** [CMakeFiles/cmd_pub_node.dir/build.make:76: CMakeFiles/cmd_pub_node.dir/src/uav_cmd_pub.cpp.o] Error 1
+[1.369s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/cmd_pub_node.dir/all] Error 2
+[1.369s] gmake[1]: *** Waiting for unfinished jobs....
+[1.381s] [ 28%] [32mBuilding CXX object CMakeFiles/dynamics_node.dir/src/main.cpp.o[0m
+[1.382s] [ 42%] [32mBuilding CXX object CMakeFiles/dynamics_node.dir/src/uav_model.cpp.o[0m
+[1.382s] [ 57%] [32mBuilding CXX object CMakeFiles/dynamics_node.dir/src/dynamics_node.cpp.o[0m
+[1.383s] [ 71%] [32mBuilding CXX object CMakeFiles/dynamics_node.dir/src/uav_cmd_pub.cpp.o[0m
+[1.957s] In file included from [01m[K/home/huy/ros2_ws/src/uav_dynamics/src/main.cpp:3[m[K:
+[1.957s] [01m[K/home/huy/ros2_ws/src/uav_dynamics/include/uav_cmd_pub.hpp:5:10:[m[K [01;31m[Kfatal error: [m[Ksensor_msgs/msg/joy.hpp: No such file or directory
+[1.957s]     5 | #include [01;31m[K"sensor_msgs/msg/joy.hpp"[m[K
+[1.957s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.957s] compilation terminated.
+[1.962s] In file included from [01m[K/home/huy/ros2_ws/src/uav_dynamics/src/uav_cmd_pub.cpp:1[m[K:
+[1.962s] [01m[K/home/huy/ros2_ws/src/uav_dynamics/include/uav_cmd_pub.hpp:5:10:[m[K [01;31m[Kfatal error: [m[Ksensor_msgs/msg/joy.hpp: No such file or directory
+[1.962s]     5 | #include [01;31m[K"sensor_msgs/msg/joy.hpp"[m[K
+[1.962s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.962s] compilation terminated.
+[1.966s] gmake[2]: *** [CMakeFiles/dynamics_node.dir/build.make:76: CMakeFiles/dynamics_node.dir/src/main.cpp.o] Error 1
+[1.967s] gmake[2]: *** Waiting for unfinished jobs....
+[1.970s] gmake[2]: *** [CMakeFiles/dynamics_node.dir/build.make:118: CMakeFiles/dynamics_node.dir/src/uav_cmd_pub.cpp.o] Error 1
+[10.295s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/dynamics_node.dir/all] Error 2
+[10.295s] gmake: *** [Makefile:146: all] Error 2
+[10.298s] Invoked command in '/home/huy/ros2_ws/build/uav_dynamics' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble:/home/huy/ros2_ws/install/uav_msgs:/home/huy/ros2_ws/install/uav_dynamics:/home/huy/ros2_ws/install/uav_motor_plugin LD_LIBRARY_PATH=/home/huy/ros2_ws/install/uav_msgs/lib:/home/huy/ros2_ws/install/uav_motor_plugin/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake --build /home/huy/ros2_ws/build/uav_dynamics -- -j16 -l16

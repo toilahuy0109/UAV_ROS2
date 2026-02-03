@@ -1,0 +1,3 @@
+[ 14%] [32mBuilding CXX object CMakeFiles/cmd_pub_node.dir/src/uav_cmd_pub.cpp.o[0m
+[ 28%] [32mBuilding CXX object CMakeFiles/dynamics_node.dir/src/dynamics_node.cpp.o[0m
+[ 42%] [32mBuilding CXX object CMakeFiles/dynamics_node.dir/src/uav_cmd_pub.cpp.o[0m

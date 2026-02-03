@@ -1,0 +1,22 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from uav_msgs/msg/UavState.msg
+// generated code does not contain a copyright notice
+
+
+module uav_msgs {
+  module msg {
+    struct UavState {
+      double x;
+
+      double y;
+
+      double z;
+
+      double vx;
+
+      double vy;
+
+      double vz;
+    };
+  };
+};

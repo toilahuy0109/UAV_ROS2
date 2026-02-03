@@ -1,0 +1,16 @@
+/home/huy/ros2_ws/install/uav_controller/lib/uav_controller/imu_node
+/home/huy/ros2_ws/install/uav_controller/share/ament_index/resource_index/package_run_dependencies/uav_controller
+/home/huy/ros2_ws/install/uav_controller/share/ament_index/resource_index/parent_prefix_path/uav_controller
+/home/huy/ros2_ws/install/uav_controller/share/uav_controller/environment/ament_prefix_path.sh
+/home/huy/ros2_ws/install/uav_controller/share/uav_controller/environment/ament_prefix_path.dsv
+/home/huy/ros2_ws/install/uav_controller/share/uav_controller/environment/path.sh
+/home/huy/ros2_ws/install/uav_controller/share/uav_controller/environment/path.dsv
+/home/huy/ros2_ws/install/uav_controller/share/uav_controller/local_setup.bash
+/home/huy/ros2_ws/install/uav_controller/share/uav_controller/local_setup.sh
+/home/huy/ros2_ws/install/uav_controller/share/uav_controller/local_setup.zsh
+/home/huy/ros2_ws/install/uav_controller/share/uav_controller/local_setup.dsv
+/home/huy/ros2_ws/install/uav_controller/share/uav_controller/package.dsv
+/home/huy/ros2_ws/install/uav_controller/share/ament_index/resource_index/packages/uav_controller
+/home/huy/ros2_ws/install/uav_controller/share/uav_controller/cmake/uav_controllerConfig.cmake
+/home/huy/ros2_ws/install/uav_controller/share/uav_controller/cmake/uav_controllerConfig-version.cmake
+/home/huy/ros2_ws/install/uav_controller/share/uav_controller/package.xml

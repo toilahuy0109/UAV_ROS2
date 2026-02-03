@@ -1,0 +1,11 @@
+/home/huy/ros2_ws/build/uav_dynamics/CMakeFiles/uninstall.dir
+/home/huy/ros2_ws/build/uav_dynamics/CMakeFiles/uav_dynamics_uninstall.dir
+/home/huy/ros2_ws/build/uav_dynamics/CMakeFiles/dynamics_node.dir
+/home/huy/ros2_ws/build/uav_dynamics/CMakeFiles/cmd_pub_node.dir
+/home/huy/ros2_ws/build/uav_dynamics/CMakeFiles/test.dir
+/home/huy/ros2_ws/build/uav_dynamics/CMakeFiles/edit_cache.dir
+/home/huy/ros2_ws/build/uav_dynamics/CMakeFiles/rebuild_cache.dir
+/home/huy/ros2_ws/build/uav_dynamics/CMakeFiles/list_install_components.dir
+/home/huy/ros2_ws/build/uav_dynamics/CMakeFiles/install.dir
+/home/huy/ros2_ws/build/uav_dynamics/CMakeFiles/install/local.dir
+/home/huy/ros2_ws/build/uav_dynamics/CMakeFiles/install/strip.dir

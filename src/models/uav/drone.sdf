@@ -1,0 +1,194 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+  <model name="uav">
+    <!-- <plugin name="imu_plugin" filename="libgazebo_ros_imu_sensor.so">
+        <ros>
+            <namespace>/drone</namespace>
+            <remapping>imu:=/drone/imu</remapping>
+        </ros>
+    </plugin> -->
+
+    <plugin name="wind_plugin" filename="libgazebo_ros_force.so">
+      <link_name>motor_0_link</link_name>
+      <force_frame>world</force_frame>
+      <topicName>wind</topicName>
+      <force>6.0 0.0 0.0</force>
+    </plugin>
+
+    <plugin name="quad_motor" filename="libuav_motor_plugin.so">
+      <motor_0_link>motor_0_link</motor_0_link>
+      <motor_0_thrust_coeff>1.0</motor_0_thrust_coeff>
+      <motor_0_torque_coeff>0.05</motor_0_torque_coeff>
+      <motor_0_direction>1</motor_0_direction>
+
+      <motor_1_link>motor_1_link</motor_1_link>
+      <motor_1_thrust_coeff>1.0</motor_1_thrust_coeff>
+      <motor_1_torque_coeff>0.05</motor_1_torque_coeff>
+      <motor_1_direction>-1</motor_1_direction>
+
+      <motor_2_link>motor_2_link</motor_2_link>
+      <motor_2_thrust_coeff>1.0</motor_2_thrust_coeff>
+      <motor_2_torque_coeff>0.05</motor_2_torque_coeff>
+      <motor_2_direction>1</motor_2_direction>
+
+      <motor_3_link>motor_3_link</motor_3_link>
+      <motor_3_thrust_coeff>1.0</motor_3_thrust_coeff>
+      <motor_3_torque_coeff>0.05</motor_3_torque_coeff>
+      <motor_3_direction>-1</motor_3_direction>
+    </plugin>
+
+
+    <link name="body">
+      <inertial>
+        <mass>0.06</mass>
+        <inertia>
+	    <ixx>6.29e-4</ixx>
+	    <iyy>6.29e-4</iyy>
+	    <izz>8.23e-4</izz>
+        </inertia>
+      </inertial>
+      <!-- <velocity_decay>
+  	<linear>0.3</linear>
+  	<angular>0.3</angular>
+      </velocity_decay> -->
+
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.095 0.095 0.0276</size>
+          </box>
+        </geometry>
+      </collision>
+
+      <sensor name="imu" type="imu">
+        <always_on>true</always_on>
+        <visualize>0</visualize>
+        <update_rate>100</update_rate>
+        <plugin name="imu_plugin" filename="libgazebo_ros_imu_sensor.so">
+          <ros>
+            <namespace>drone</namespace>
+            <remapping>imu:=imu</remapping>
+          </ros>
+          <initial_orientation_as_reference>false</initial_orientation_as_reference>
+        </plugin>
+        <imu>
+          <angular_velocity>
+            <x><noise type="gaussian"><stddev>0.0</stddev></noise></x>
+            <y><noise type="gaussian"><stddev>0.0</stddev></noise></y>
+            <z><noise type="gaussian"><stddev>0.0</stddev></noise></z>
+          </angular_velocity>
+          <linear_acceleration>
+            <x><noise type="gaussian"><stddev>0.0</stddev></noise></x>
+            <y><noise type="gaussian"><stddev>0.0</stddev></noise></y>
+            <z><noise type="gaussian"><stddev>0.0</stddev></noise></z>
+          </linear_acceleration>
+        </imu>
+      </sensor>
+
+      <visual name="body">
+        <geometry>
+          <mesh>
+            <uri>model://uav/uav.stl</uri>
+            <scale>0.001 0.001 0.001</scale>
+              <material>
+  		<ambient>1 1 1 1</ambient>
+  		<diffuse>1 1 1 1</diffuse>
+  		<specular>0.4 0.4 0.4 1</specular>
+	    </material>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+
+    <link name="motor_0_link">
+      <pose>-0.1 0.12 0.038 0 0 0</pose>
+
+      <inertial>
+        <mass>0.0002</mass>
+        <inertia>
+          <ixx>1e-6</ixx>
+          <iyy>1e-6</iyy>
+          <izz>1e-6</izz>
+          </inertia> 
+      </inertial>
+      <visual name="prop0"><!-- rear left -->
+        <geometry><cylinder><radius>0.06</radius><length>0</length></cylinder></geometry>
+        <material><ambient>0.6 0.2 0.2 1.0</ambient><diffuse>0.9 0.4 0.4 1.0</diffuse></material>
+      </visual>
+    </link>
+
+    <link name="motor_1_link">
+      <pose>-0.1 -0.12 0.038 0 0 0</pose>
+
+      <inertial>
+        <mass>0.0002</mass>
+        <inertia>
+          <ixx>1e-6</ixx>
+          <iyy>1e-6</iyy>
+          <izz>1e-6</izz>
+        </inertia> 
+      </inertial>
+      <visual name="prop1"><!-- rear right -->
+        <geometry><cylinder><radius>0.06</radius><length>0</length></cylinder></geometry>
+        <material><ambient>0.6 0.2 0.2 1.0</ambient><diffuse>0.9 0.4 0.4 1.0</diffuse></material>
+      </visual>
+    </link>
+      
+    <link name="motor_2_link">
+      <pose>0.1 -0.12 0.038 0 0 0</pose>
+
+      <inertial>
+        <mass>0.0002</mass>
+        <inertia>
+          <ixx>1e-6</ixx>
+          <iyy>1e-6</iyy>
+          <izz>1e-6</izz>
+        </inertia> 
+      </inertial>
+
+      <visual name="prop2"><!-- front right -->
+        <geometry><cylinder><radius>0.06</radius><length>0</length></cylinder></geometry>
+        <material><ambient>0.6 0.2 0.2 1.0</ambient><diffuse>0.9 0.4 0.4 1.0</diffuse></material>
+      </visual>
+    </link>
+
+    <link name="motor_3_link">
+      <pose>0.1 0.12 0.038 0 0 0</pose>
+
+      <inertial>
+        <mass>0.0002</mass>
+        <inertia>
+          <ixx>1e-6</ixx>
+          <iyy>1e-6</iyy>
+          <izz>1e-6</izz>
+        </inertia> 
+      </inertial>
+
+      <visual name="prop3"><!-- front right -->
+        <geometry><cylinder><radius>0.06</radius><length>0</length></cylinder></geometry>
+        <material><ambient>0.6 0.2 0.2 1.0</ambient><diffuse>0.9 0.4 0.4 1.0</diffuse></material>
+      </visual>
+    </link>
+    
+
+    <joint name="motor_0_joint" type="fixed">
+      <parent>body</parent>
+      <child>motor_0_link</child>
+    </joint>
+
+    <joint name="motor_1_joint" type="fixed">
+      <parent>body</parent>
+      <child>motor_1_link</child>
+    </joint>
+
+    <joint name="motor_2_joint" type="fixed">
+      <parent>body</parent>
+      <child>motor_2_link</child>
+    </joint>
+
+    <joint name="motor_3_joint" type="fixed">
+      <parent>body</parent>
+      <child>motor_3_link</child>
+    </joint>
+  </model>
+</sdf>

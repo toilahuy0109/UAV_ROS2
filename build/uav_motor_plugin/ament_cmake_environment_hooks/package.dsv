@@ -1,0 +1,4 @@
+source;share/uav_motor_plugin/local_setup.bash
+source;share/uav_motor_plugin/local_setup.dsv
+source;share/uav_motor_plugin/local_setup.sh
+source;share/uav_motor_plugin/local_setup.zsh

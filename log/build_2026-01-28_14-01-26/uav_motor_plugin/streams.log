@@ -1,0 +1,92 @@
+[0.009s] Invoking command in '/home/huy/ros2_ws/build/uav_motor_plugin': CMAKE_PREFIX_PATH=/home/huy/ros2_ws/install/uav_dynamics:/opt/ros/humble:/home/huy/ros2_ws/install/uav_msgs:/home/huy/ros2_ws/install/uav_motor_plugin /usr/bin/cmake --build /home/huy/ros2_ws/build/uav_motor_plugin -- -j16 -l16
+[0.031s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.130s] -- Found gazebo_dev: 3.9.0 (/opt/ros/humble/share/gazebo_dev/cmake)
+[0.152s] -- Found DART: /usr/include (Required is at least version "6.6") found components: dart 
+[0.176s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+[0.177s] -- Looking for ignition-math6 -- found version 6.15.1
+[0.180s] -- Searching for dependencies of ignition-math6
+[0.181s] -- Looking for OGRE...
+[0.186s] -- Found Ogre Ghadamon (1.9.0)
+[0.186s] -- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so
+[0.193s] -- Looking for OGRE_Paging...
+[0.193s] -- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so
+[0.193s] -- Looking for OGRE_Terrain...
+[0.193s] -- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+[0.193s] -- Looking for OGRE_Property...
+[0.193s] -- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so
+[0.193s] -- Looking for OGRE_RTShaderSystem...
+[0.193s] -- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so
+[0.193s] -- Looking for OGRE_Volume...
+[0.193s] -- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so
+[0.193s] -- Looking for OGRE_Overlay...
+[0.193s] -- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so
+[0.276s] -- Looking for ignition-math6 -- found version 6.15.1
+[0.276s] -- Looking for ignition-transport8 -- found version 8.2.1
+[0.276s] -- Searching for dependencies of ignition-transport8
+[0.293s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") 
+[0.304s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[0.307s] -- Checking for module 'libzmq >= 4'
+[0.318s] --   Found libzmq , version 4.3.4
+[0.357s] -- Checking for module 'uuid'
+[0.369s] --   Found uuid, version 2.37.2
+[0.404s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[0.405s] -- Searching for dependencies of ignition-msgs5
+[0.422s] -- Looking for ignition-math6 -- found version 6.15.1
+[0.428s] -- Checking for module 'tinyxml2'
+[0.440s] --   Found tinyxml2, version 9.0.0
+[0.471s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[0.471s] -- Looking for ignition-common3 -- found version 3.14.0
+[0.471s] -- Searching for dependencies of ignition-common3
+[0.471s] -- Looking for dlfcn.h - found
+[0.471s] -- Looking for libdl - found
+[0.481s] -- Searching for <ignition-common3> component [graphics]
+[0.481s] -- Looking for ignition-common3-graphics -- found version 3.14.0
+[0.482s] -- Searching for dependencies of ignition-common3-graphics
+[0.482s] -- Looking for ignition-math6 -- found version 6.15.1
+[0.483s] -- Looking for ignition-fuel_tools4 -- found version 4.4.0
+[0.483s] -- Searching for dependencies of ignition-fuel_tools4
+[0.519s] -- Checking for module 'jsoncpp'
+[0.532s] --   Found jsoncpp, version 1.9.5
+[0.566s] -- Checking for module 'libzip'
+[0.577s] --   Found libzip, version 1.7.3
+[0.606s] -- Looking for ignition-common3 -- found version 3.14.0
+[0.606s] -- Looking for ignition-math6 -- found version 6.15.1
+[0.607s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[0.608s] -- Gazebo version: 11.10
+[0.608s] -- Found gazebo_ros: 3.9.0 (/opt/ros/humble/share/gazebo_ros/cmake)
+[0.626s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.628s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.632s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.639s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.647s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.669s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.670s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.757s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.843s] -- Configuring done
+[0.865s] -- Generating done
+[0.869s] -- Build files have been written to: /home/huy/ros2_ws/build/uav_motor_plugin
+[0.897s] [35m[1mConsolidate compiler generated dependencies of target uav_motor_plugin[0m
+[0.937s] [ 50%] [32mBuilding CXX object CMakeFiles/uav_motor_plugin.dir/src/uav_motor_plugin.cpp.o[0m
+[15.014s] [100%] [32m[1mLinking CXX shared library libuav_motor_plugin.so[0m
+[15.537s] [100%] Built target uav_motor_plugin
+[15.548s] Invoked command in '/home/huy/ros2_ws/build/uav_motor_plugin' returned '0': CMAKE_PREFIX_PATH=/home/huy/ros2_ws/install/uav_dynamics:/opt/ros/humble:/home/huy/ros2_ws/install/uav_msgs:/home/huy/ros2_ws/install/uav_motor_plugin /usr/bin/cmake --build /home/huy/ros2_ws/build/uav_motor_plugin -- -j16 -l16
+[15.549s] Invoking command in '/home/huy/ros2_ws/build/uav_motor_plugin': CMAKE_PREFIX_PATH=/home/huy/ros2_ws/install/uav_dynamics:/opt/ros/humble:/home/huy/ros2_ws/install/uav_msgs:/home/huy/ros2_ws/install/uav_motor_plugin /usr/bin/cmake --install /home/huy/ros2_ws/build/uav_motor_plugin
+[15.556s] -- Install configuration: ""
+[15.556s] -- Installing: /home/huy/ros2_ws/install/uav_motor_plugin/lib/libuav_motor_plugin.so
+[15.567s] -- Set runtime path of "/home/huy/ros2_ws/install/uav_motor_plugin/lib/libuav_motor_plugin.so" to ""
+[15.567s] -- Up-to-date: /home/huy/ros2_ws/install/uav_motor_plugin/share/ament_index/resource_index/package_run_dependencies/uav_motor_plugin
+[15.567s] -- Up-to-date: /home/huy/ros2_ws/install/uav_motor_plugin/share/ament_index/resource_index/parent_prefix_path/uav_motor_plugin
+[15.567s] -- Up-to-date: /home/huy/ros2_ws/install/uav_motor_plugin/share/uav_motor_plugin/environment/ament_prefix_path.sh
+[15.567s] -- Installing: /home/huy/ros2_ws/install/uav_motor_plugin/share/uav_motor_plugin/environment/ament_prefix_path.dsv
+[15.568s] -- Up-to-date: /home/huy/ros2_ws/install/uav_motor_plugin/share/uav_motor_plugin/environment/path.sh
+[15.568s] -- Installing: /home/huy/ros2_ws/install/uav_motor_plugin/share/uav_motor_plugin/environment/path.dsv
+[15.568s] -- Up-to-date: /home/huy/ros2_ws/install/uav_motor_plugin/share/uav_motor_plugin/local_setup.bash
+[15.568s] -- Up-to-date: /home/huy/ros2_ws/install/uav_motor_plugin/share/uav_motor_plugin/local_setup.sh
+[15.568s] -- Up-to-date: /home/huy/ros2_ws/install/uav_motor_plugin/share/uav_motor_plugin/local_setup.zsh
+[15.568s] -- Installing: /home/huy/ros2_ws/install/uav_motor_plugin/share/uav_motor_plugin/local_setup.dsv
+[15.568s] -- Installing: /home/huy/ros2_ws/install/uav_motor_plugin/share/uav_motor_plugin/package.dsv
+[15.568s] -- Up-to-date: /home/huy/ros2_ws/install/uav_motor_plugin/share/ament_index/resource_index/packages/uav_motor_plugin
+[15.568s] -- Up-to-date: /home/huy/ros2_ws/install/uav_motor_plugin/share/uav_motor_plugin/cmake/uav_motor_pluginConfig.cmake
+[15.569s] -- Up-to-date: /home/huy/ros2_ws/install/uav_motor_plugin/share/uav_motor_plugin/cmake/uav_motor_pluginConfig-version.cmake
+[15.569s] -- Up-to-date: /home/huy/ros2_ws/install/uav_motor_plugin/share/uav_motor_plugin/package.xml
+[15.571s] Invoked command in '/home/huy/ros2_ws/build/uav_motor_plugin' returned '0': CMAKE_PREFIX_PATH=/home/huy/ros2_ws/install/uav_dynamics:/opt/ros/humble:/home/huy/ros2_ws/install/uav_msgs:/home/huy/ros2_ws/install/uav_motor_plugin /usr/bin/cmake --install /home/huy/ros2_ws/build/uav_motor_plugin

@@ -1,0 +1,10 @@
+/home/huy/ros2_ws/build/uav_motor_plugin/CMakeFiles/uninstall.dir
+/home/huy/ros2_ws/build/uav_motor_plugin/CMakeFiles/uav_motor_plugin_uninstall.dir
+/home/huy/ros2_ws/build/uav_motor_plugin/CMakeFiles/uav_motor_plugin.dir
+/home/huy/ros2_ws/build/uav_motor_plugin/CMakeFiles/test.dir
+/home/huy/ros2_ws/build/uav_motor_plugin/CMakeFiles/edit_cache.dir
+/home/huy/ros2_ws/build/uav_motor_plugin/CMakeFiles/rebuild_cache.dir
+/home/huy/ros2_ws/build/uav_motor_plugin/CMakeFiles/list_install_components.dir
+/home/huy/ros2_ws/build/uav_motor_plugin/CMakeFiles/install.dir
+/home/huy/ros2_ws/build/uav_motor_plugin/CMakeFiles/install/local.dir
+/home/huy/ros2_ws/build/uav_motor_plugin/CMakeFiles/install/strip.dir

@@ -3,12 +3,14 @@
         {
             "name": "Linux",
             "includePath": [
-                "${workspaceFolder}/src/drone_drive/include",
                 "/usr/include/gazebo-11",
                 "/usr/include/sdformat-9.7",
                 "/opt/ros/humble/include/**",
                 "/usr/include/ignition/**",
-                "${workspaceFolder}/src/drone_drive/**"
+                "${workspaceFolder}/src/uav_controller/include/**",
+                "${workspaceFolder}/src/uav_dynamics/include/**",
+                "${workspaceFolder}/install/uav_msgs/include/uav_msgs",
+                "${workspaceFolder}/src/uav_motor_plugin/include"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/gcc",

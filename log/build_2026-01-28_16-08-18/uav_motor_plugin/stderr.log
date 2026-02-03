@@ -1,0 +1,20 @@
+In file included from [01m[K/home/huy/ros2_ws/src/uav_motor_plugin/src/uav_motor_plugin.cpp:1[m[K:
+[01m[K/home/huy/ros2_ws/src/uav_motor_plugin/include/uav_motor_plugin.hpp:38:45:[m[K [01;31m[Kerror: [m[K‘[01m[KBool[m[K’ is not a member of ‘[01m[Kstd_msgs::msg[m[K’
+   38 |         rclcpp::Subscription<std_msgs::msg::[01;31m[KBool[m[K>::SharedPtr run_cmd;
+      |                                             [01;31m[K^~~~[m[K
+[01m[K/home/huy/ros2_ws/src/uav_motor_plugin/include/uav_motor_plugin.hpp:38:49:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   38 |         rclcpp::Subscription<std_msgs::msg::Bool[01;31m[K>[m[K::SharedPtr run_cmd;
+      |                                                 [01;31m[K^[m[K
+[01m[K/home/huy/ros2_ws/src/uav_motor_plugin/include/uav_motor_plugin.hpp:38:49:[m[K [01;31m[Kerror: [m[Ktemplate argument 3 is invalid
+[01m[K/home/huy/ros2_ws/src/uav_motor_plugin/include/uav_motor_plugin.hpp:38:49:[m[K [01;31m[Kerror: [m[Ktemplate argument 4 is invalid
+[01m[K/home/huy/ros2_ws/src/uav_motor_plugin/include/uav_motor_plugin.hpp:38:49:[m[K [01;31m[Kerror: [m[Ktemplate argument 5 is invalid
+[01m[K/home/huy/ros2_ws/src/uav_motor_plugin/include/uav_motor_plugin.hpp:38:52:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   38 |         rclcpp::Subscription<std_msgs::msg::Bool>::[01;31m[KSharedPtr[m[K run_cmd;
+      |                                                    [01;31m[K^~~~~~~~~[m[K
+      |                                                             [32m[K;[m[K
+[01m[K/home/huy/ros2_ws/src/uav_motor_plugin/include/uav_motor_plugin.hpp:38:62:[m[K [01;31m[Kerror: [m[K‘[01m[Krun_cmd[m[K’ does not name a type
+   38 |         rclcpp::Subscription<std_msgs::msg::Bool>::SharedPtr [01;31m[Krun_cmd[m[K;
+      |                                                              [01;31m[K^~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/uav_motor_plugin.dir/build.make:76: CMakeFiles/uav_motor_plugin.dir/src/uav_motor_plugin.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/uav_motor_plugin.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,13 @@
+[0.009s] Invoking command in '/home/huy/ros2_ws/build/uav_motor_plugin': CMAKE_PREFIX_PATH=/home/huy/ros2_ws/install/uav_dynamics:/opt/ros/humble:/home/huy/ros2_ws/install/uav_msgs:/home/huy/ros2_ws/install/uav_motor_plugin /usr/bin/cmake --build /home/huy/ros2_ws/build/uav_motor_plugin -- -j16 -l16
+[0.056s] [35m[1mConsolidate compiler generated dependencies of target uav_motor_plugin[0m
+[0.095s] [ 50%] [32mBuilding CXX object CMakeFiles/uav_motor_plugin.dir/src/uav_motor_plugin.cpp.o[0m
+[8.283s] [01m[K/home/huy/ros2_ws/src/uav_motor_plugin/src/uav_motor_plugin.cpp:59:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+[8.283s]    59 | }
+[8.283s]       |  [01;31m[K^[m[K
+[8.283s] [01m[K/home/huy/ros2_ws/src/uav_motor_plugin/src/uav_motor_plugin.cpp:4:1:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+[8.283s]     4 | [01;36m[K{[m[K
+[8.283s]       | [01;36m[K^[m[K
+[11.058s] gmake[2]: *** [CMakeFiles/uav_motor_plugin.dir/build.make:76: CMakeFiles/uav_motor_plugin.dir/src/uav_motor_plugin.cpp.o] Error 1
+[11.059s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/uav_motor_plugin.dir/all] Error 2
+[11.059s] gmake: *** [Makefile:146: all] Error 2
+[11.062s] Invoked command in '/home/huy/ros2_ws/build/uav_motor_plugin' returned '2': CMAKE_PREFIX_PATH=/home/huy/ros2_ws/install/uav_dynamics:/opt/ros/humble:/home/huy/ros2_ws/install/uav_msgs:/home/huy/ros2_ws/install/uav_motor_plugin /usr/bin/cmake --build /home/huy/ros2_ws/build/uav_motor_plugin -- -j16 -l16

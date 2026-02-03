@@ -1,0 +1,16 @@
+/home/huy/ros2_ws/install/uav_motor_plugin/lib/libuav_motor_plugin.so
+/home/huy/ros2_ws/install/uav_motor_plugin/share/ament_index/resource_index/package_run_dependencies/uav_motor_plugin
+/home/huy/ros2_ws/install/uav_motor_plugin/share/ament_index/resource_index/parent_prefix_path/uav_motor_plugin
+/home/huy/ros2_ws/install/uav_motor_plugin/share/uav_motor_plugin/environment/ament_prefix_path.sh
+/home/huy/ros2_ws/install/uav_motor_plugin/share/uav_motor_plugin/environment/ament_prefix_path.dsv
+/home/huy/ros2_ws/install/uav_motor_plugin/share/uav_motor_plugin/environment/path.sh
+/home/huy/ros2_ws/install/uav_motor_plugin/share/uav_motor_plugin/environment/path.dsv
+/home/huy/ros2_ws/install/uav_motor_plugin/share/uav_motor_plugin/local_setup.bash
+/home/huy/ros2_ws/install/uav_motor_plugin/share/uav_motor_plugin/local_setup.sh
+/home/huy/ros2_ws/install/uav_motor_plugin/share/uav_motor_plugin/local_setup.zsh
+/home/huy/ros2_ws/install/uav_motor_plugin/share/uav_motor_plugin/local_setup.dsv
+/home/huy/ros2_ws/install/uav_motor_plugin/share/uav_motor_plugin/package.dsv
+/home/huy/ros2_ws/install/uav_motor_plugin/share/ament_index/resource_index/packages/uav_motor_plugin
+/home/huy/ros2_ws/install/uav_motor_plugin/share/uav_motor_plugin/cmake/uav_motor_pluginConfig.cmake
+/home/huy/ros2_ws/install/uav_motor_plugin/share/uav_motor_plugin/cmake/uav_motor_pluginConfig-version.cmake
+/home/huy/ros2_ws/install/uav_motor_plugin/share/uav_motor_plugin/package.xml

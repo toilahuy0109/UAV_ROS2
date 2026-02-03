@@ -1,0 +1,7 @@
+{
+  "package_name": "uav_msgs",
+  "non_idl_tuples": [
+    "/home/huy/ros2_ws/src/uav_msgs:msg/UavState.msg",
+    "/home/huy/ros2_ws/src/uav_msgs:msg/UavCmd.msg"
+  ]
+}

@@ -1,0 +1,22 @@
+[0.025s] Invoking command in '/home/huy/ros2_ws/build/uav_motor_plugin': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/huy/ros2_ws/src/uav_motor_plugin -DCMAKE_INSTALL_PREFIX=/home/huy/ros2_ws/install/uav_motor_plugin
+[0.165s] -- The C compiler identification is GNU 11.4.0
+[0.296s] -- The CXX compiler identification is GNU 11.4.0
+[0.314s] -- Detecting C compiler ABI info
+[0.492s] -- Detecting C compiler ABI info - done
+[0.510s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.510s] -- Detecting C compile features
+[0.511s] -- Detecting C compile features - done
+[0.519s] -- Detecting CXX compiler ABI info
+[0.739s] -- Detecting CXX compiler ABI info - done
+[0.756s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.757s] -- Detecting CXX compile features
+[0.758s] -- Detecting CXX compile features - done
+[0.764s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.152s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.371s] -- Found gazebo_dev: 3.9.0 (/opt/ros/humble/share/gazebo_dev/cmake)
+[1.387s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") 
+[1.398s] -- Checking for module 'bullet>=2.82'
+[1.431s] --   Found bullet, version 3.05
+[1.708s] -- Found fcl: /usr/include (found suitable version "0.7.0", minimum required is "0.5.0") 
+[1.844s] -- Found assimp: /usr/include (found version "5.2.0") 
+[1.876s] Invoked command in '/home/huy/ros2_ws/build/uav_motor_plugin' returned '-2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/huy/ros2_ws/src/uav_motor_plugin -DCMAKE_INSTALL_PREFIX=/home/huy/ros2_ws/install/uav_motor_plugin

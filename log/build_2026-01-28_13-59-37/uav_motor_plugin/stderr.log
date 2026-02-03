@@ -1,0 +1,9 @@
+[01m[K/home/huy/ros2_ws/src/uav_motor_plugin/src/uav_motor_plugin.cpp:59:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+   59 | }
+      |  [01;31m[K^[m[K
+[01m[K/home/huy/ros2_ws/src/uav_motor_plugin/src/uav_motor_plugin.cpp:4:1:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+    4 | [01;36m[K{[m[K
+      | [01;36m[K^[m[K
+gmake[2]: *** [CMakeFiles/uav_motor_plugin.dir/build.make:76: CMakeFiles/uav_motor_plugin.dir/src/uav_motor_plugin.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/uav_motor_plugin.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,47 @@
+-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found uav_msgs: 0.0.0 (/home/huy/ros2_ws/install/uav_msgs/share/uav_msgs/cmake)
+-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/huy/ros2_ws/build/uav_dynamics
+[35m[1mConsolidate compiler generated dependencies of target cmd_pub_node[0m
+[35m[1mConsolidate compiler generated dependencies of target dynamics_node[0m
+[ 40%] [32mBuilding CXX object CMakeFiles/cmd_pub_node.dir/src/uav_cmd_pub.cpp.o[0m
+[ 40%] [32mBuilding CXX object CMakeFiles/dynamics_node.dir/src/dynamics_node.cpp.o[0m
+In file included from [01m[K/home/huy/ros2_ws/src/uav_dynamics/src/uav_cmd_pub.cpp:1[m[K:
+[01m[K/home/huy/ros2_ws/src/uav_dynamics/include/uav_cmd_pub.hpp:15:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kuav_msgs[m[K’ was not declared in this scope
+   15 |     rclcpp::Publisher<[01;31m[Kuav_msgs[m[K::msg::UavCmd>::SharedPtr cmd_pub_;
+      |                       [01;31m[K^~~~~~~~[m[K
+[01m[K/home/huy/ros2_ws/src/uav_dynamics/include/uav_cmd_pub.hpp:15:44:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   15 |     rclcpp::Publisher<uav_msgs::msg::UavCmd[01;31m[K>[m[K::SharedPtr cmd_pub_;
+      |                                            [01;31m[K^[m[K
+[01m[K/home/huy/ros2_ws/src/uav_dynamics/include/uav_cmd_pub.hpp:15:47:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   15 |     rclcpp::Publisher<uav_msgs::msg::UavCmd>::[01;31m[KSharedPtr[m[K cmd_pub_;
+      |                                               [01;31m[K^~~~~~~~~[m[K
+      |                                                        [32m[K;[m[K
+[01m[K/home/huy/ros2_ws/src/uav_dynamics/include/uav_cmd_pub.hpp:15:57:[m[K [01;31m[Kerror: [m[K‘[01m[Kcmd_pub_[m[K’ does not name a type
+   15 |     rclcpp::Publisher<uav_msgs::msg::UavCmd>::SharedPtr [01;31m[Kcmd_pub_[m[K;
+      |                                                         [01;31m[K^~~~~~~~[m[K
+[01m[K/home/huy/ros2_ws/src/uav_dynamics/src/uav_cmd_pub.cpp:[m[K In constructor ‘[01m[KUavCmdPublisher::UavCmdPublisher()[m[K’:
+[01m[K/home/huy/ros2_ws/src/uav_dynamics/src/uav_cmd_pub.cpp:11:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcmd_pub_[m[K’ was not declared in this scope
+   11 |     [01;31m[Kcmd_pub_[m[K = this->create_publisher<std_msgs::msg::Float64>("motor_cmd", 10);
+      |     [01;31m[K^~~~~~~~[m[K
+[01m[K/home/huy/ros2_ws/src/uav_dynamics/src/uav_cmd_pub.cpp:[m[K In member function ‘[01m[Kvoid UavCmdPublisher::joy_callback(sensor_msgs::msg::Joy_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/huy/ros2_ws/src/uav_dynamics/src/uav_cmd_pub.cpp:19:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcmd_pub_[m[K’ was not declared in this scope
+   19 |     [01;31m[Kcmd_pub_[m[K->publish(cmd);
+      |     [01;31m[K^~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/cmd_pub_node.dir/build.make:76: CMakeFiles/cmd_pub_node.dir/src/uav_cmd_pub.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/cmd_pub_node.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[ 60%] [32m[1mLinking CXX executable dynamics_node[0m
+[ 80%] Built target dynamics_node
+gmake: *** [Makefile:146: all] Error 2

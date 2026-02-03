@@ -1,0 +1,23 @@
+[0.010s] Invoking command in '/home/huy/ros2_ws/build/uav_motor_plugin': CMAKE_PREFIX_PATH=/home/huy/ros2_ws/install/uav_dynamics:/opt/ros/humble:/home/huy/ros2_ws/install/uav_msgs:/home/huy/ros2_ws/install/uav_motor_plugin /usr/bin/cmake --build /home/huy/ros2_ws/build/uav_motor_plugin -- -j16 -l16
+[0.093s] [ 50%] [32mBuilding CXX object CMakeFiles/uav_motor_plugin.dir/src/uav_motor_plugin.cpp.o[0m
+[10.424s] In file included from [01m[K/home/huy/ros2_ws/src/uav_motor_plugin/src/uav_motor_plugin.cpp:1[m[K:
+[10.424s] [01m[K/home/huy/ros2_ws/src/uav_motor_plugin/include/uav_motor_plugin.hpp:38:45:[m[K [01;31m[Kerror: [m[K‘[01m[KBool[m[K’ is not a member of ‘[01m[Kstd_msgs::msg[m[K’
+[10.424s]    38 |         rclcpp::Subscription<std_msgs::msg::[01;31m[KBool[m[K>::SharedPtr run_cmd;
+[10.424s]       |                                             [01;31m[K^~~~[m[K
+[10.424s] [01m[K/home/huy/ros2_ws/src/uav_motor_plugin/include/uav_motor_plugin.hpp:38:49:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[10.424s]    38 |         rclcpp::Subscription<std_msgs::msg::Bool[01;31m[K>[m[K::SharedPtr run_cmd;
+[10.424s]       |                                                 [01;31m[K^[m[K
+[10.424s] [01m[K/home/huy/ros2_ws/src/uav_motor_plugin/include/uav_motor_plugin.hpp:38:49:[m[K [01;31m[Kerror: [m[Ktemplate argument 3 is invalid
+[10.424s] [01m[K/home/huy/ros2_ws/src/uav_motor_plugin/include/uav_motor_plugin.hpp:38:49:[m[K [01;31m[Kerror: [m[Ktemplate argument 4 is invalid
+[10.425s] [01m[K/home/huy/ros2_ws/src/uav_motor_plugin/include/uav_motor_plugin.hpp:38:49:[m[K [01;31m[Kerror: [m[Ktemplate argument 5 is invalid
+[10.425s] [01m[K/home/huy/ros2_ws/src/uav_motor_plugin/include/uav_motor_plugin.hpp:38:52:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[10.425s]    38 |         rclcpp::Subscription<std_msgs::msg::Bool>::[01;31m[KSharedPtr[m[K run_cmd;
+[10.425s]       |                                                    [01;31m[K^~~~~~~~~[m[K
+[10.425s]       |                                                             [32m[K;[m[K
+[10.430s] [01m[K/home/huy/ros2_ws/src/uav_motor_plugin/include/uav_motor_plugin.hpp:38:62:[m[K [01;31m[Kerror: [m[K‘[01m[Krun_cmd[m[K’ does not name a type
+[10.430s]    38 |         rclcpp::Subscription<std_msgs::msg::Bool>::SharedPtr [01;31m[Krun_cmd[m[K;
+[10.430s]       |                                                              [01;31m[K^~~~~~~[m[K
+[13.920s] gmake[2]: *** [CMakeFiles/uav_motor_plugin.dir/build.make:76: CMakeFiles/uav_motor_plugin.dir/src/uav_motor_plugin.cpp.o] Error 1
+[13.920s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/uav_motor_plugin.dir/all] Error 2
+[13.921s] gmake: *** [Makefile:146: all] Error 2
+[13.924s] Invoked command in '/home/huy/ros2_ws/build/uav_motor_plugin' returned '2': CMAKE_PREFIX_PATH=/home/huy/ros2_ws/install/uav_dynamics:/opt/ros/humble:/home/huy/ros2_ws/install/uav_msgs:/home/huy/ros2_ws/install/uav_motor_plugin /usr/bin/cmake --build /home/huy/ros2_ws/build/uav_motor_plugin -- -j16 -l16

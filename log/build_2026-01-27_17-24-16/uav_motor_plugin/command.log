@@ -1,0 +1,2 @@
+Invoking command in '/home/huy/ros2_ws/build/uav_motor_plugin': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/huy/ros2_ws/src/uav_motor_plugin -DCMAKE_INSTALL_PREFIX=/home/huy/ros2_ws/install/uav_motor_plugin
+Invoked command in '/home/huy/ros2_ws/build/uav_motor_plugin' returned '-2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/huy/ros2_ws/src/uav_motor_plugin -DCMAKE_INSTALL_PREFIX=/home/huy/ros2_ws/install/uav_motor_plugin
