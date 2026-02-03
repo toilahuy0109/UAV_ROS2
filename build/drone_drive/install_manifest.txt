@@ -1,5 +1,6 @@
 /home/huy/ros2_ws/install/drone_drive/lib/libdrone_drive.so
 /home/huy/ros2_ws/install/drone_drive/include/drone_drive/drone_drive/drone_drive.hpp
+/home/huy/ros2_ws/install/drone_drive/include/drone_drive/drone_drive/drone_odometry.hpp
 /home/huy/ros2_ws/install/drone_drive/share/drone_drive/package.xml
 /home/huy/ros2_ws/install/drone_drive/share/ament_index/resource_index/package_run_dependencies/drone_drive
 /home/huy/ros2_ws/install/drone_drive/share/ament_index/resource_index/parent_prefix_path/drone_drive
@@ -13,6 +14,7 @@
 /home/huy/ros2_ws/install/drone_drive/share/drone_drive/local_setup.dsv
 /home/huy/ros2_ws/install/drone_drive/share/drone_drive/package.dsv
 /home/huy/ros2_ws/install/drone_drive/share/ament_index/resource_index/packages/drone_drive
+/home/huy/ros2_ws/install/drone_drive/share/ament_index/resource_index/rclcpp_components/drone_drive
 /home/huy/ros2_ws/install/drone_drive/share/drone_drive/cmake/drone_driveConfig.cmake
 /home/huy/ros2_ws/install/drone_drive/share/drone_drive/cmake/drone_driveConfig-version.cmake
 /home/huy/ros2_ws/install/drone_drive/share/drone_drive/package.xml

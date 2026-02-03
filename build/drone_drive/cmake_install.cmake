@@ -122,6 +122,10 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/rclcpp_components" TYPE FILE FILES "/home/huy/ros2_ws/build/drone_drive/ament_cmake_index/share/ament_index/resource_index/rclcpp_components/drone_drive")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/drone_drive/cmake" TYPE FILE FILES
     "/home/huy/ros2_ws/build/drone_drive/ament_cmake_core/drone_driveConfig.cmake"
     "/home/huy/ros2_ws/build/drone_drive/ament_cmake_core/drone_driveConfig-version.cmake"

@@ -1,0 +1,82 @@
+[0.012s] Invoking command in '/home/huy/ros2_ws/build/drone_drive': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/huy/ros2_ws/install/my_robot_pkg:/opt/ros/humble /usr/bin/cmake --build /home/huy/ros2_ws/build/drone_drive -- -j16 -l16
+[0.037s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.132s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[0.154s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.156s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.160s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.166s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.175s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.198s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.198s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.284s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.318s] -- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.326s] -- Found gazebo_ros: 3.9.0 (/opt/ros/humble/share/gazebo_ros/cmake)
+[0.352s] -- Found DART: /usr/include (Required is at least version "6.6") found components: dart 
+[0.374s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+[0.375s] -- Looking for ignition-math6 -- found version 6.15.1
+[0.378s] -- Searching for dependencies of ignition-math6
+[0.379s] -- Looking for OGRE...
+[0.384s] -- Found Ogre Ghadamon (1.9.0)
+[0.384s] -- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so
+[0.391s] -- Looking for OGRE_Paging...
+[0.392s] -- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so
+[0.392s] -- Looking for OGRE_Terrain...
+[0.392s] -- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+[0.392s] -- Looking for OGRE_Property...
+[0.392s] -- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so
+[0.392s] -- Looking for OGRE_RTShaderSystem...
+[0.392s] -- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so
+[0.392s] -- Looking for OGRE_Volume...
+[0.392s] -- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so
+[0.392s] -- Looking for OGRE_Overlay...
+[0.392s] -- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so
+[0.468s] -- Looking for ignition-math6 -- found version 6.15.1
+[0.468s] -- Looking for ignition-transport8 -- found version 8.2.1
+[0.469s] -- Searching for dependencies of ignition-transport8
+[0.485s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") 
+[0.495s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[0.500s] -- Checking for module 'libzmq >= 4'
+[0.513s] --   Found libzmq , version 4.3.4
+[0.550s] -- Checking for module 'uuid'
+[0.561s] --   Found uuid, version 2.37.2
+[0.589s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[0.590s] -- Searching for dependencies of ignition-msgs5
+[0.606s] -- Looking for ignition-math6 -- found version 6.15.1
+[0.610s] -- Checking for module 'tinyxml2'
+[0.621s] --   Found tinyxml2, version 9.0.0
+[0.652s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[0.652s] -- Looking for ignition-common3 -- found version 3.14.0
+[0.652s] -- Searching for dependencies of ignition-common3
+[0.652s] -- Looking for dlfcn.h - found
+[0.653s] -- Looking for libdl - found
+[0.662s] -- Searching for <ignition-common3> component [graphics]
+[0.662s] -- Looking for ignition-common3-graphics -- found version 3.14.0
+[0.663s] -- Searching for dependencies of ignition-common3-graphics
+[0.663s] -- Looking for ignition-math6 -- found version 6.15.1
+[0.664s] -- Looking for ignition-fuel_tools4 -- found version 4.4.0
+[0.664s] -- Searching for dependencies of ignition-fuel_tools4
+[0.699s] -- Checking for module 'jsoncpp'
+[0.710s] --   Found jsoncpp, version 1.9.5
+[0.744s] -- Checking for module 'libzip'
+[0.755s] --   Found libzip, version 1.7.3
+[0.784s] -- Looking for ignition-common3 -- found version 3.14.0
+[0.784s] -- Looking for ignition-math6 -- found version 6.15.1
+[0.784s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[0.785s] -- Gazebo version: 11.10
+[0.786s] -- Found gazebo_msgs: 3.9.0 (/opt/ros/humble/share/gazebo_msgs/cmake)
+[0.812s] -- Found rclcpp_components: 16.0.12 (/opt/ros/humble/share/rclcpp_components/cmake)
+[0.824s] -- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.837s] -- Found tf2: 0.25.13 (/opt/ros/humble/share/tf2/cmake)
+[0.839s] -- Found tf2_ros: 0.25.13 (/opt/ros/humble/share/tf2_ros/cmake)
+[0.879s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.891s] [31mCMake Error at /opt/ros/humble/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:77 (message):
+[0.891s]   ament_target_dependencies() the passed package name 'tf2_geometry_msgs' was
+[0.891s]   not found before
+[0.891s] Call Stack (most recent call first):
+[0.891s]   CMakeLists.txt:47 (ament_target_dependencies)
+[0.891s] 
+[0.891s] [0m
+[0.891s] -- Configuring incomplete, errors occurred!
+[0.891s] See also "/home/huy/ros2_ws/build/drone_drive/CMakeFiles/CMakeOutput.log".
+[0.901s] gmake: *** [Makefile:267: cmake_check_build_system] Error 1
+[0.903s] Invoked command in '/home/huy/ros2_ws/build/drone_drive' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/huy/ros2_ws/install/my_robot_pkg:/opt/ros/humble /usr/bin/cmake --build /home/huy/ros2_ws/build/drone_drive -- -j16 -l16

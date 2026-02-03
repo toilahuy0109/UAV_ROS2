@@ -1,1 +1,1 @@
-rclcpp;geometry_msgs;gazebo;gazebo_ros;gazebo_dev;gazebo_msgs;ament_lint_auto;ament_lint_common
+rclcpp;rclcpp_components;nav_msgs;std_msgs;sensor_msgs;tf2;tf2_ros;Eigen3;geometry_msgs;gazebo;gazebo_ros;gazebo_dev;gazebo_msgs;ament_lint_auto;ament_lint_common

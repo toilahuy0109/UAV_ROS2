@@ -13,12 +13,24 @@ find_package(geometry_msgs REQUIRED)
 find_package(gazebo_ros REQUIRED)
 find_package(gazebo_dev REQUIRED)
 find_package(gazebo_msgs REQUIRED)
+find_package(rclcpp_components REQUIRED)
+find_package(nav_msgs REQUIRED)
+find_package(std_msgs REQUIRED)
+find_package(tf2 REQUIRED)
+find_package(tf2_ros REQUIRED)
+find_package(Eigen3 REQUIRED)
+find_package(sensor_msgs REQUIRED)
 
 
 # Include directories
 include_directories(
   include
   ${gazebo_dev_INCLUDE_DIRS}
+)
+
+include_directories(
+  include
+  ${EIGEN3_INCLUDE_DIR}
 )
 
 # Build plugin library
@@ -34,16 +46,27 @@ target_link_libraries(drone_drive
 # Add dependencies
 ament_target_dependencies(drone_drive
   rclcpp
+  rclcpp_components
   geometry_msgs
+  nav_msgs
+  std_msgs
+  tf2
+  tf2_ros
+  sensor_msgs
+  Eigen3
   gazebo_ros
   gazebo_dev
   gazebo_msgs
 )
 
+rclcpp_components_register_nodes(drone_drive "drone_drive::DroneDrive")
+
 # Install library
 install(TARGETS
   drone_drive
-  DESTINATION lib
+  ARCHIVE DESTINATION lib
+  LIBRARY DESTINATION lib
+  RUNTIME DESTINATION bin
 )
 
 # Install header files

@@ -1,0 +1,12 @@
+[0.012s] Invoking command in '/home/huy/ros2_ws/build/drone_drive': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/huy/ros2_ws/install/my_robot_pkg:/opt/ros/humble /usr/bin/cmake --build /home/huy/ros2_ws/build/drone_drive -- -j16 -l16
+[0.057s] [35m[1mConsolidate compiler generated dependencies of target drone_drive[0m
+[0.075s] [ 50%] [32mBuilding CXX object CMakeFiles/drone_drive.dir/src/drone_drive.cpp.o[0m
+[0.438s] In file included from [01m[K/home/huy/ros2_ws/src/drone_drive/src/drone_drive.cpp:1[m[K:
+[0.438s] [01m[K/home/huy/ros2_ws/src/drone_drive/include/drone_drive/drone_drive.hpp:8:10:[m[K [01;31m[Kfatal error: [m[Kurdf/model.h: No such file or directory
+[0.438s]     8 | #include [01;31m[K<urdf/model.h>[m[K
+[0.438s]       |          [01;31m[K^~~~~~~~~~~~~~[m[K
+[0.438s] compilation terminated.
+[0.445s] gmake[2]: *** [CMakeFiles/drone_drive.dir/build.make:76: CMakeFiles/drone_drive.dir/src/drone_drive.cpp.o] Error 1
+[0.445s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/drone_drive.dir/all] Error 2
+[0.446s] gmake: *** [Makefile:146: all] Error 2
+[0.448s] Invoked command in '/home/huy/ros2_ws/build/drone_drive' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/huy/ros2_ws/install/my_robot_pkg:/opt/ros/humble /usr/bin/cmake --build /home/huy/ros2_ws/build/drone_drive -- -j16 -l16
