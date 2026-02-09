@@ -1,0 +1,307 @@
+[0.000000] (-) TimerEvent: {}
+[0.000192] (uav_controller) JobQueued: {'identifier': 'uav_controller', 'dependencies': OrderedDict()}
+[0.000222] (uav_motor_plugin) JobQueued: {'identifier': 'uav_motor_plugin', 'dependencies': OrderedDict()}
+[0.000250] (uav_msgs) JobQueued: {'identifier': 'uav_msgs', 'dependencies': OrderedDict()}
+[0.000263] (uav_dynamics) JobQueued: {'identifier': 'uav_dynamics', 'dependencies': OrderedDict([('uav_msgs', '/home/huy/ros2_ws/install/uav_msgs')])}
+[0.000277] (uav_msgs) JobStarted: {'identifier': 'uav_msgs'}
+[0.007347] (uav_controller) JobStarted: {'identifier': 'uav_controller'}
+[0.010232] (uav_motor_plugin) JobStarted: {'identifier': 'uav_motor_plugin'}
+[0.014779] (uav_msgs) JobProgress: {'identifier': 'uav_msgs', 'progress': 'cmake'}
+[0.015865] (uav_msgs) JobProgress: {'identifier': 'uav_msgs', 'progress': 'build'}
+[0.016805] (uav_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/huy/ros2_ws/build/uav_msgs', '--', '-j16', '-l16'], 'cwd': '/home/huy/ros2_ws/build/uav_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'huy'), ('LC_TIME', 'vi_VN'), ('ROS_PACKAGE_PATH', '/home/huy/ros2_ws/install/uav_msgs/share'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/huy/ros2_ws/install/uav_msgs/lib:/home/huy/ros2_ws/install/uav_motor_plugin/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/home/huy'), ('OLDPWD', '/home/huy'), ('DESKTOP_SESSION', 'ubuntu'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'vi_VN'), ('SYSTEMD_EXEC_PID', '2532'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/huy/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'huy'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/huy/ros2_ws/install/uav_msgs/lib/x86_64-linux-gnu/pkgconfig:/home/huy/ros2_ws/install/uav_msgs/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'huy'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models::/home/huy/ros2_ws/src/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/huy-IdeaPad-Gaming-3-15ACH6:@/tmp/.ICE-unix/2489,unix/huy-IdeaPad-Gaming-3-15ACH6:/tmp/.ICE-unix/2489'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'vi_VN'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/68db3f6a_8e85_4122_ab6f_57006ba4d4c5'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'vi_VN'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.96'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/huy/ros2_ws/install/uav_dynamics:/home/huy/ros2_ws/install/uav_motor_plugin:/home/huy/ros2_ws/install/uav_controller:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'vi_VN'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'vi_VN'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:'), ('LC_IDENTIFICATION', 'vi_VN'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/huy/ros2_ws/build/uav_msgs'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/huy/ros2_ws/install/uav_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'vi_VN'), ('LC_PAPER', 'vi_VN'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/huy/ros2_ws/install/uav_dynamics:/home/huy/ros2_ws/install/uav_msgs:/home/huy/ros2_ws/install/uav_motor_plugin:/home/huy/ros2_ws/install/uav_controller')]), 'shell': False}
+[0.020398] (uav_controller) JobProgress: {'identifier': 'uav_controller', 'progress': 'cmake'}
+[0.021214] (uav_controller) JobProgress: {'identifier': 'uav_controller', 'progress': 'build'}
+[0.021398] (uav_controller) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/huy/ros2_ws/build/uav_controller', '--', '-j16', '-l16'], 'cwd': '/home/huy/ros2_ws/build/uav_controller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'huy'), ('LC_TIME', 'vi_VN'), ('ROS_PACKAGE_PATH', '/home/huy/ros2_ws/install/uav_msgs/share'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/huy/ros2_ws/install/uav_msgs/lib:/home/huy/ros2_ws/install/uav_motor_plugin/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/home/huy'), ('OLDPWD', '/home/huy'), ('DESKTOP_SESSION', 'ubuntu'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'vi_VN'), ('SYSTEMD_EXEC_PID', '2532'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/huy/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'huy'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/huy/ros2_ws/install/uav_msgs/lib/x86_64-linux-gnu/pkgconfig:/home/huy/ros2_ws/install/uav_msgs/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'huy'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models::/home/huy/ros2_ws/src/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/huy-IdeaPad-Gaming-3-15ACH6:@/tmp/.ICE-unix/2489,unix/huy-IdeaPad-Gaming-3-15ACH6:/tmp/.ICE-unix/2489'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'vi_VN'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/68db3f6a_8e85_4122_ab6f_57006ba4d4c5'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'vi_VN'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.96'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/huy/ros2_ws/install/uav_dynamics:/home/huy/ros2_ws/install/uav_motor_plugin:/home/huy/ros2_ws/install/uav_controller:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'vi_VN'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'vi_VN'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:'), ('LC_IDENTIFICATION', 'vi_VN'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/huy/ros2_ws/build/uav_controller'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/huy/ros2_ws/install/uav_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'vi_VN'), ('LC_PAPER', 'vi_VN'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/huy/ros2_ws/install/uav_dynamics:/opt/ros/humble:/home/huy/ros2_ws/install/uav_msgs:/home/huy/ros2_ws/install/uav_motor_plugin:/home/huy/ros2_ws/install/uav_controller')]), 'shell': False}
+[0.023742] (uav_motor_plugin) JobProgress: {'identifier': 'uav_motor_plugin', 'progress': 'cmake'}
+[0.024733] (uav_motor_plugin) JobProgress: {'identifier': 'uav_motor_plugin', 'progress': 'build'}
+[0.025134] (uav_motor_plugin) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/huy/ros2_ws/build/uav_motor_plugin', '--', '-j16', '-l16'], 'cwd': '/home/huy/ros2_ws/build/uav_motor_plugin', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'huy'), ('LC_TIME', 'vi_VN'), ('ROS_PACKAGE_PATH', '/home/huy/ros2_ws/install/uav_msgs/share'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/huy/ros2_ws/install/uav_msgs/lib:/home/huy/ros2_ws/install/uav_motor_plugin/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/home/huy'), ('OLDPWD', '/home/huy'), ('DESKTOP_SESSION', 'ubuntu'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'vi_VN'), ('SYSTEMD_EXEC_PID', '2532'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/huy/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'huy'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/huy/ros2_ws/install/uav_msgs/lib/x86_64-linux-gnu/pkgconfig:/home/huy/ros2_ws/install/uav_msgs/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'huy'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models::/home/huy/ros2_ws/src/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/huy-IdeaPad-Gaming-3-15ACH6:@/tmp/.ICE-unix/2489,unix/huy-IdeaPad-Gaming-3-15ACH6:/tmp/.ICE-unix/2489'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'vi_VN'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/68db3f6a_8e85_4122_ab6f_57006ba4d4c5'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'vi_VN'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.96'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/huy/ros2_ws/install/uav_dynamics:/home/huy/ros2_ws/install/uav_motor_plugin:/home/huy/ros2_ws/install/uav_controller:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'vi_VN'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'vi_VN'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:'), ('LC_IDENTIFICATION', 'vi_VN'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/huy/ros2_ws/build/uav_motor_plugin'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/huy/ros2_ws/install/uav_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'vi_VN'), ('LC_PAPER', 'vi_VN'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/huy/ros2_ws/install/uav_dynamics:/opt/ros/humble:/home/huy/ros2_ws/install/uav_msgs:/home/huy/ros2_ws/install/uav_motor_plugin:/home/huy/ros2_ws/install/uav_controller')]), 'shell': False}
+[0.065056] (uav_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.065264] (uav_controller) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.099289] (-) TimerEvent: {}
+[0.122091] (uav_motor_plugin) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/uav_motor_plugin.dir/src/uav_motor_plugin.cpp.o\x1b[0m\n'}
+[0.184611] (uav_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.184843] (uav_controller) StdoutLine: {'line': b'-- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.187044] (uav_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.190840] (uav_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.199343] (-) TimerEvent: {}
+[0.215777] (uav_controller) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.217715] (uav_controller) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.222695] (uav_controller) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.225033] (uav_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.232792] (uav_controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.242133] (uav_controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.274646] (uav_controller) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.276779] (uav_controller) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.299483] (-) TimerEvent: {}
+[0.400170] (-) TimerEvent: {}
+[0.406072] (uav_controller) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.459712] (uav_controller) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[0.476119] (uav_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[0.491571] (uav_controller) StdoutLine: {'line': b'-- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[0.500237] (-) TimerEvent: {}
+[0.561741] (uav_controller) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.575225] (uav_controller) StdoutLine: {'line': b'-- Generating done\n'}
+[0.579435] (uav_controller) StdoutLine: {'line': b'-- Build files have been written to: /home/huy/ros2_ws/build/uav_controller\n'}
+[0.600341] (-) TimerEvent: {}
+[0.608974] (uav_controller) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target imu_node\x1b[0m\n'}
+[0.619014] (uav_controller) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/pos_controller_node.dir/src/pid_controller.cpp.o\x1b[0m\n'}
+[0.627349] (uav_controller) StdoutLine: {'line': b'[ 75%] Built target imu_node\n'}
+[0.630460] (uav_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.700438] (-) TimerEvent: {}
+[0.800787] (-) TimerEvent: {}
+[0.836558] (uav_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.838287] (uav_controller) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/huy/ros2_ws/src/uav_controller/src/pid_controller.cpp:1\x1b[m\x1b[K:\n'}
+[0.838400] (uav_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/huy/ros2_ws/src/uav_controller/include/pid_controller.hpp:5:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Kgeometry_msgs/msgs/vector3.hpp: No such file or directory\n'}
+[0.838463] (uav_controller) StderrLine: {'line': b'    5 | #include \x1b[01;31m\x1b[K"geometry_msgs/msgs/vector3.hpp"\x1b[m\x1b[K\n'}
+[0.838516] (uav_controller) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.838557] (uav_controller) StderrLine: {'line': b'compilation terminated.\n'}
+[0.842186] (uav_controller) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/pos_controller_node.dir/build.make:76: CMakeFiles/pos_controller_node.dir/src/pid_controller.cpp.o] Error 1\n'}
+[0.842453] (uav_controller) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/pos_controller_node.dir/all] Error 2\n'}
+[0.842744] (uav_controller) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[0.845054] (uav_controller) CommandEnded: {'returncode': 2}
+[0.856011] (uav_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[0.858882] (uav_controller) JobEnded: {'identifier': 'uav_controller', 'rc': 2}
+[0.875241] (uav_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.875422] (uav_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[0.875498] (uav_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[0.892673] (uav_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.900855] (-) TimerEvent: {}
+[0.930844] (uav_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[0.939921] (uav_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/huy/ros2_ws/build/uav_msgs\n'}
+[0.967624] (uav_msgs) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[0.977634] (uav_msgs) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[0.992071] (uav_msgs) StdoutLine: {'line': b'[  5%] Built target ament_cmake_python_copy_uav_msgs\n'}
+[1.000956] (-) TimerEvent: {}
+[1.101243] (-) TimerEvent: {}
+[1.198274] (uav_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[1.199341] (uav_msgs) StdoutLine: {'line': b'writing uav_msgs.egg-info/PKG-INFO\n'}
+[1.199668] (uav_msgs) StdoutLine: {'line': b'writing dependency_links to uav_msgs.egg-info/dependency_links.txt\n'}
+[1.199917] (uav_msgs) StdoutLine: {'line': b'writing top-level names to uav_msgs.egg-info/top_level.txt\n'}
+[1.201336] (-) TimerEvent: {}
+[1.204783] (uav_msgs) StdoutLine: {'line': b"reading manifest file 'uav_msgs.egg-info/SOURCES.txt'\n"}
+[1.205046] (uav_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target uav_msgs__rosidl_generator_c\x1b[0m\n'}
+[1.205493] (uav_msgs) StdoutLine: {'line': b"writing manifest file 'uav_msgs.egg-info/SOURCES.txt'\n"}
+[1.214973] (uav_msgs) StdoutLine: {'line': b'[  5%] Built target uav_msgs__cpp\n'}
+[1.217628] (uav_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/uav_msgs__rosidl_generator_c.dir/rosidl_generator_c/uav_msgs/msg/detail/uav_state__functions.c.o\x1b[0m\n'}
+[1.217909] (uav_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/uav_msgs__rosidl_generator_c.dir/rosidl_generator_c/uav_msgs/msg/detail/uav_cmd__functions.c.o\x1b[0m\n'}
+[1.226821] (uav_msgs) StdoutLine: {'line': b'[ 17%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[1.227099] (uav_msgs) StdoutLine: {'line': b'[ 17%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[1.227185] (uav_msgs) StdoutLine: {'line': b'[ 17%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[1.244706] (uav_msgs) StdoutLine: {'line': b'[ 17%] Built target ament_cmake_python_build_uav_msgs_egg\n'}
+[1.294392] (uav_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32m\x1b[1mLinking C shared library libuav_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[1.301444] (-) TimerEvent: {}
+[1.343169] (uav_msgs) StdoutLine: {'line': b'[ 20%] Built target uav_msgs__rosidl_generator_c\n'}
+[1.354446] (uav_msgs) StdoutLine: {'line': b'[ 25%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[1.354680] (uav_msgs) StdoutLine: {'line': b'[ 25%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[1.355973] (uav_msgs) StdoutLine: {'line': b'[ 28%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[1.401538] (-) TimerEvent: {}
+[1.441180] (uav_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target uav_msgs__rosidl_typesupport_cpp\x1b[0m\n'}
+[1.456983] (uav_msgs) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/uav_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/uav_msgs/msg/uav_cmd__type_support.cpp.o\x1b[0m\n'}
+[1.457235] (uav_msgs) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/uav_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/uav_msgs/msg/uav_state__type_support.cpp.o\x1b[0m\n'}
+[1.477864] (uav_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target uav_msgs__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[1.498967] (uav_msgs) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/uav_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/uav_msgs/msg/detail/uav_state__type_support.cpp.o\x1b[0m\n'}
+[1.499315] (uav_msgs) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/uav_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/uav_msgs/msg/detail/uav_cmd__type_support.cpp.o\x1b[0m\n'}
+[1.501633] (-) TimerEvent: {}
+[1.520798] (uav_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target uav_msgs__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[1.537916] (uav_msgs) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/uav_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/uav_msgs/msg/detail/dds_fastrtps/uav_state__type_support.cpp.o\x1b[0m\n'}
+[1.539209] (uav_msgs) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/uav_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/uav_msgs/msg/detail/dds_fastrtps/uav_cmd__type_support.cpp.o\x1b[0m\n'}
+[1.600998] (uav_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target uav_msgs__rosidl_typesupport_c\x1b[0m\n'}
+[1.601714] (-) TimerEvent: {}
+[1.615194] (uav_msgs) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/uav_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/uav_msgs/msg/uav_state__type_support.cpp.o\x1b[0m\n'}
+[1.616708] (uav_msgs) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/uav_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/uav_msgs/msg/uav_cmd__type_support.cpp.o\x1b[0m\n'}
+[1.647585] (uav_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target uav_msgs__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[1.667335] (uav_msgs) StdoutLine: {'line': b'[ 56%] \x1b[32m\x1b[1mLinking CXX shared library libuav_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[1.667693] (uav_msgs) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding C object CMakeFiles/uav_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/uav_msgs/msg/detail/uav_cmd__type_support.c.o\x1b[0m\n'}
+[1.667843] (uav_msgs) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding C object CMakeFiles/uav_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/uav_msgs/msg/detail/uav_state__type_support.c.o\x1b[0m\n'}
+[1.701876] (-) TimerEvent: {}
+[1.705557] (uav_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target uav_msgs__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[1.717065] (uav_msgs) StdoutLine: {'line': b'[ 58%] \x1b[32m\x1b[1mLinking C shared library libuav_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[1.725040] (uav_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/uav_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/uav_msgs/msg/detail/uav_cmd__type_support_c.cpp.o\x1b[0m\n'}
+[1.727568] (uav_msgs) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding CXX object CMakeFiles/uav_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/uav_msgs/msg/detail/uav_state__type_support_c.cpp.o\x1b[0m\n'}
+[1.731666] (uav_msgs) StdoutLine: {'line': b'[ 64%] Built target uav_msgs__rosidl_typesupport_c\n'}
+[1.764552] (uav_msgs) StdoutLine: {'line': b'[ 64%] Built target uav_msgs__rosidl_typesupport_introspection_c\n'}
+[1.802008] (-) TimerEvent: {}
+[1.809586] (uav_msgs) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking CXX shared library libuav_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[1.878492] (uav_msgs) StdoutLine: {'line': b'[ 66%] Built target uav_msgs__rosidl_typesupport_cpp\n'}
+[1.902144] (-) TimerEvent: {}
+[1.929549] (uav_msgs) StdoutLine: {'line': b'[ 69%] \x1b[32m\x1b[1mLinking CXX shared library libuav_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[1.976586] (uav_msgs) StdoutLine: {'line': b'[ 71%] \x1b[32m\x1b[1mLinking CXX shared library libuav_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[1.976908] (uav_msgs) StdoutLine: {'line': b'[ 71%] Built target uav_msgs__rosidl_typesupport_introspection_cpp\n'}
+[2.002263] (-) TimerEvent: {}
+[2.038103] (uav_msgs) StdoutLine: {'line': b'[ 74%] \x1b[32m\x1b[1mLinking CXX shared library libuav_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[2.054861] (uav_msgs) StdoutLine: {'line': b'[ 74%] Built target uav_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[2.102367] (-) TimerEvent: {}
+[2.112763] (uav_msgs) StdoutLine: {'line': b'[ 74%] Built target uav_msgs__rosidl_typesupport_fastrtps_c\n'}
+[2.134037] (uav_msgs) StdoutLine: {'line': b'[ 74%] Built target uav_msgs\n'}
+[2.155359] (uav_msgs) StdoutLine: {'line': b'[ 76%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[2.202480] (-) TimerEvent: {}
+[2.302801] (-) TimerEvent: {}
+[2.403112] (-) TimerEvent: {}
+[2.446570] (uav_msgs) StdoutLine: {'line': b'[ 76%] Built target uav_msgs__py\n'}
+[2.458682] (uav_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target uav_msgs__rosidl_generator_py\x1b[0m\n'}
+[2.472564] (uav_msgs) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/uav_msgs__rosidl_generator_py.dir/rosidl_generator_py/uav_msgs/msg/_uav_cmd_s.c.o\x1b[0m\n'}
+[2.472766] (uav_msgs) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/uav_msgs__rosidl_generator_py.dir/rosidl_generator_py/uav_msgs/msg/_uav_state_s.c.o\x1b[0m\n'}
+[2.503217] (-) TimerEvent: {}
+[2.569814] (uav_msgs) StdoutLine: {'line': b'[ 84%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/uav_msgs/libuav_msgs__rosidl_generator_py.so\x1b[0m\n'}
+[2.603326] (-) TimerEvent: {}
+[2.609776] (uav_msgs) StdoutLine: {'line': b'[ 84%] Built target uav_msgs__rosidl_generator_py\n'}
+[2.620862] (uav_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target uav_msgs__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[2.621098] (uav_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target uav_msgs__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[2.621177] (uav_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target uav_msgs__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[2.635339] (uav_msgs) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/uav_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/uav_msgs/_uav_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[2.635591] (uav_msgs) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/uav_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/uav_msgs/_uav_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[2.635678] (uav_msgs) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/uav_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/uav_msgs/_uav_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[2.703471] (-) TimerEvent: {}
+[2.714559] (uav_msgs) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/uav_msgs/uav_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[2.714793] (uav_msgs) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/uav_msgs/uav_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[2.716138] (uav_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/uav_msgs/uav_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[2.749317] (uav_msgs) StdoutLine: {'line': b'[100%] Built target uav_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[2.749584] (uav_msgs) StdoutLine: {'line': b'[100%] Built target uav_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[2.749667] (uav_msgs) StdoutLine: {'line': b'[100%] Built target uav_msgs__rosidl_typesupport_c__pyext\n'}
+[2.762387] (uav_msgs) JobEnded: {'identifier': 'uav_msgs', 'rc': 'SIGINT'}
+[2.803554] (-) TimerEvent: {}
+[2.903850] (-) TimerEvent: {}
+[3.004184] (-) TimerEvent: {}
+[3.104516] (-) TimerEvent: {}
+[3.204843] (-) TimerEvent: {}
+[3.305172] (-) TimerEvent: {}
+[3.405482] (-) TimerEvent: {}
+[3.505791] (-) TimerEvent: {}
+[3.606112] (-) TimerEvent: {}
+[3.706437] (-) TimerEvent: {}
+[3.806764] (-) TimerEvent: {}
+[3.907088] (-) TimerEvent: {}
+[4.007399] (-) TimerEvent: {}
+[4.107720] (-) TimerEvent: {}
+[4.208029] (-) TimerEvent: {}
+[4.308344] (-) TimerEvent: {}
+[4.408776] (-) TimerEvent: {}
+[4.509122] (-) TimerEvent: {}
+[4.609428] (-) TimerEvent: {}
+[4.709743] (-) TimerEvent: {}
+[4.810057] (-) TimerEvent: {}
+[4.910388] (-) TimerEvent: {}
+[5.010758] (-) TimerEvent: {}
+[5.111074] (-) TimerEvent: {}
+[5.211424] (-) TimerEvent: {}
+[5.311772] (-) TimerEvent: {}
+[5.412081] (-) TimerEvent: {}
+[5.512401] (-) TimerEvent: {}
+[5.612739] (-) TimerEvent: {}
+[5.713064] (-) TimerEvent: {}
+[5.813394] (-) TimerEvent: {}
+[5.913751] (-) TimerEvent: {}
+[6.014102] (-) TimerEvent: {}
+[6.114432] (-) TimerEvent: {}
+[6.214770] (-) TimerEvent: {}
+[6.315102] (-) TimerEvent: {}
+[6.415438] (-) TimerEvent: {}
+[6.515789] (-) TimerEvent: {}
+[6.616096] (-) TimerEvent: {}
+[6.716414] (-) TimerEvent: {}
+[6.816745] (-) TimerEvent: {}
+[6.917072] (-) TimerEvent: {}
+[7.017424] (-) TimerEvent: {}
+[7.117762] (-) TimerEvent: {}
+[7.218089] (-) TimerEvent: {}
+[7.318436] (-) TimerEvent: {}
+[7.418791] (-) TimerEvent: {}
+[7.519135] (-) TimerEvent: {}
+[7.619491] (-) TimerEvent: {}
+[7.719819] (-) TimerEvent: {}
+[7.820142] (-) TimerEvent: {}
+[7.920474] (-) TimerEvent: {}
+[8.020777] (-) TimerEvent: {}
+[8.121086] (-) TimerEvent: {}
+[8.221415] (-) TimerEvent: {}
+[8.321763] (-) TimerEvent: {}
+[8.422090] (-) TimerEvent: {}
+[8.522408] (-) TimerEvent: {}
+[8.622734] (-) TimerEvent: {}
+[8.723046] (-) TimerEvent: {}
+[8.823374] (-) TimerEvent: {}
+[8.923713] (-) TimerEvent: {}
+[9.024025] (-) TimerEvent: {}
+[9.124331] (-) TimerEvent: {}
+[9.224672] (-) TimerEvent: {}
+[9.324989] (-) TimerEvent: {}
+[9.425295] (-) TimerEvent: {}
+[9.525597] (-) TimerEvent: {}
+[9.625916] (-) TimerEvent: {}
+[9.726237] (-) TimerEvent: {}
+[9.826531] (-) TimerEvent: {}
+[9.926845] (-) TimerEvent: {}
+[10.027150] (-) TimerEvent: {}
+[10.127473] (-) TimerEvent: {}
+[10.227827] (-) TimerEvent: {}
+[10.328153] (-) TimerEvent: {}
+[10.428469] (-) TimerEvent: {}
+[10.528764] (-) TimerEvent: {}
+[10.629058] (-) TimerEvent: {}
+[10.729356] (-) TimerEvent: {}
+[10.829739] (-) TimerEvent: {}
+[10.930223] (-) TimerEvent: {}
+[11.030530] (-) TimerEvent: {}
+[11.130862] (-) TimerEvent: {}
+[11.231165] (-) TimerEvent: {}
+[11.331525] (-) TimerEvent: {}
+[11.431857] (-) TimerEvent: {}
+[11.532240] (-) TimerEvent: {}
+[11.632603] (-) TimerEvent: {}
+[11.732910] (-) TimerEvent: {}
+[11.833204] (-) TimerEvent: {}
+[11.933510] (-) TimerEvent: {}
+[12.033803] (-) TimerEvent: {}
+[12.134103] (-) TimerEvent: {}
+[12.234406] (-) TimerEvent: {}
+[12.334712] (-) TimerEvent: {}
+[12.435010] (-) TimerEvent: {}
+[12.535313] (-) TimerEvent: {}
+[12.635641] (-) TimerEvent: {}
+[12.735969] (-) TimerEvent: {}
+[12.836279] (-) TimerEvent: {}
+[12.936610] (-) TimerEvent: {}
+[13.036918] (-) TimerEvent: {}
+[13.137223] (-) TimerEvent: {}
+[13.237529] (-) TimerEvent: {}
+[13.337827] (-) TimerEvent: {}
+[13.438128] (-) TimerEvent: {}
+[13.538430] (-) TimerEvent: {}
+[13.638738] (-) TimerEvent: {}
+[13.739040] (-) TimerEvent: {}
+[13.839348] (-) TimerEvent: {}
+[13.939664] (-) TimerEvent: {}
+[14.039956] (-) TimerEvent: {}
+[14.140261] (-) TimerEvent: {}
+[14.240561] (-) TimerEvent: {}
+[14.340859] (-) TimerEvent: {}
+[14.441159] (-) TimerEvent: {}
+[14.541470] (-) TimerEvent: {}
+[14.641791] (-) TimerEvent: {}
+[14.742116] (-) TimerEvent: {}
+[14.842407] (-) TimerEvent: {}
+[14.942718] (-) TimerEvent: {}
+[15.043019] (-) TimerEvent: {}
+[15.143323] (-) TimerEvent: {}
+[15.243638] (-) TimerEvent: {}
+[15.343928] (-) TimerEvent: {}
+[15.444232] (-) TimerEvent: {}
+[15.544542] (-) TimerEvent: {}
+[15.644942] (-) TimerEvent: {}
+[15.745349] (-) TimerEvent: {}
+[15.845732] (-) TimerEvent: {}
+[15.946110] (-) TimerEvent: {}
+[16.046483] (-) TimerEvent: {}
+[16.146764] (-) TimerEvent: {}
+[16.232286] (uav_motor_plugin) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libuav_motor_plugin.so\x1b[0m\n'}
+[16.246865] (-) TimerEvent: {}
+[16.347148] (-) TimerEvent: {}
+[16.447471] (-) TimerEvent: {}
+[16.547808] (-) TimerEvent: {}
+[16.648182] (-) TimerEvent: {}
+[16.748522] (-) TimerEvent: {}
+[16.848850] (-) TimerEvent: {}
+[16.865685] (uav_motor_plugin) StdoutLine: {'line': b'[100%] Built target uav_motor_plugin\n'}
+[16.876044] (uav_motor_plugin) JobEnded: {'identifier': 'uav_motor_plugin', 'rc': 'SIGINT'}
+[16.886725] (uav_dynamics) JobSkipped: {'identifier': 'uav_dynamics'}
+[16.886851] (-) EventReactorShutdown: {}

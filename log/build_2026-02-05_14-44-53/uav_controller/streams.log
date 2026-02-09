@@ -1,0 +1,12 @@
+[0.013s] Invoking command in '/home/huy/ros2_ws/build/uav_controller': CMAKE_PREFIX_PATH=/home/huy/ros2_ws/install/uav_dynamics:/opt/ros/humble:/home/huy/ros2_ws/install/uav_msgs:/home/huy/ros2_ws/install/uav_motor_plugin:/home/huy/ros2_ws/install/uav_controller /usr/bin/cmake --build /home/huy/ros2_ws/build/uav_controller -- -j16 -l16
+[0.063s] [ 25%] [32mBuilding CXX object CMakeFiles/pos_controller_node.dir/src/pid_controller.cpp.o[0m
+[0.067s] [ 75%] Built target imu_node
+[0.294s] In file included from [01m[K/home/huy/ros2_ws/src/uav_controller/src/pid_controller.cpp:1[m[K:
+[0.294s] [01m[K/home/huy/ros2_ws/src/uav_controller/include/pid_controller.hpp:6:10:[m[K [01;31m[Kfatal error: [m[Kstd_msgs/msg/Float64.hpp: No such file or directory
+[0.294s]     6 | #include [01;31m[K"std_msgs/msg/Float64.hpp"[m[K
+[0.294s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.294s] compilation terminated.
+[0.298s] gmake[2]: *** [CMakeFiles/pos_controller_node.dir/build.make:76: CMakeFiles/pos_controller_node.dir/src/pid_controller.cpp.o] Error 1
+[0.298s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/pos_controller_node.dir/all] Error 2
+[0.298s] gmake: *** [Makefile:146: all] Error 2
+[0.300s] Invoked command in '/home/huy/ros2_ws/build/uav_controller' returned '2': CMAKE_PREFIX_PATH=/home/huy/ros2_ws/install/uav_dynamics:/opt/ros/humble:/home/huy/ros2_ws/install/uav_msgs:/home/huy/ros2_ws/install/uav_motor_plugin:/home/huy/ros2_ws/install/uav_controller /usr/bin/cmake --build /home/huy/ros2_ws/build/uav_controller -- -j16 -l16

@@ -1,0 +1,8 @@
+[01m[K/home/huy/ros2_ws/src/uav_controller/src/smc_controller.cpp:1:10:[m[K [01;31m[Kfatal error: [m[Katt_controller.hpp: No such file or directory
+    1 | #include [01;31m[K"att_controller.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/smc_controller_node.dir/build.make:76: CMakeFiles/smc_controller_node.dir/src/smc_controller.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/smc_controller_node.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,15 @@
+[35m[1mConsolidate compiler generated dependencies of target smc_controller_node[0m
+[ 66%] Built target imu_node
+[ 66%] Built target pos_controller_node
+[ 83%] [32mBuilding CXX object CMakeFiles/smc_controller_node.dir/src/smc_controller.cpp.o[0m
+[01m[K/home/huy/ros2_ws/src/uav_controller/src/smc_controller.cpp:[m[K In member function ‘[01m[Kvoid Att_Controller::controlLoop()[m[K’:
+[01m[K/home/huy/ros2_ws/src/uav_controller/src/smc_controller.cpp:190:25:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K;[m[K’ token
+  190 |     omega_mem_.w2 = w[1][01;31m[K;[m[K
+      |                         [01;31m[K^[m[K
+      |                         [32m[K)[m[K
+[01m[K/home/huy/ros2_ws/src/uav_controller/src/smc_controller.cpp:189:34:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K([m[K’
+  189 |     omega_mem_.w1 = w[0];std::abs[01;36m[K([m[K
+      |                                  [01;36m[K^[m[K
+gmake[2]: *** [CMakeFiles/smc_controller_node.dir/build.make:76: CMakeFiles/smc_controller_node.dir/src/smc_controller.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/smc_controller_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

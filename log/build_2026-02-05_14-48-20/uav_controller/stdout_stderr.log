@@ -1,0 +1,14 @@
+[35m[1mConsolidate compiler generated dependencies of target pos_controller_node[0m
+[ 50%] Built target imu_node
+[ 75%] [32mBuilding CXX object CMakeFiles/pos_controller_node.dir/src/pid_controller.cpp.o[0m
+[01m[K/home/huy/ros2_ws/src/uav_controller/src/pid_controller.cpp:[m[K In constructor ‘[01m[KPos_Controller::Pos_Controller()[m[K’:
+[01m[K/home/huy/ros2_ws/src/uav_controller/src/pid_controller.cpp:18:1:[m[K [01;31m[Kerror: [m[Kuninitialized const member in ‘[01m[Kconst double[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+   18 | [01;31m[KPos_Controller[m[K::Pos_Controller() : rclcpp::Node("pos_controller"), x_(0.0), y_(0.0), vx_(0.0), vy_(0.0), vz_(0.0), yaw_ref_(0.0)
+      | [01;31m[K^~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/huy/ros2_ws/src/uav_controller/src/pid_controller.cpp:1[m[K:
+[01m[K/home/huy/ros2_ws/src/uav_controller/include/pid_controller.hpp:50:18:[m[K [01;36m[Knote: [m[K‘[01m[Kconst double Pos_Controller::g_[m[K’ should be initialized
+   50 |     const double [01;36m[Kg_[m[K;
+      |                  [01;36m[K^~[m[K
+gmake[2]: *** [CMakeFiles/pos_controller_node.dir/build.make:76: CMakeFiles/pos_controller_node.dir/src/pid_controller.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/pos_controller_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

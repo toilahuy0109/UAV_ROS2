@@ -210,6 +210,32 @@ imu_node/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu_node.dir/build.make CMakeFiles/imu_node.dir/build
 .PHONY : imu_node/fast
 
+#=============================================================================
+# Target rules for targets named pos_controller_node
+
+# Build rule for target.
+pos_controller_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pos_controller_node
+.PHONY : pos_controller_node
+
+# fast build rule for target.
+pos_controller_node/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pos_controller_node.dir/build.make CMakeFiles/pos_controller_node.dir/build
+.PHONY : pos_controller_node/fast
+
+#=============================================================================
+# Target rules for targets named smc_controller_node
+
+# Build rule for target.
+smc_controller_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 smc_controller_node
+.PHONY : smc_controller_node
+
+# fast build rule for target.
+smc_controller_node/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/smc_controller_node.dir/build.make CMakeFiles/smc_controller_node.dir/build
+.PHONY : smc_controller_node/fast
+
 src/imu_read.o: src/imu_read.cpp.o
 .PHONY : src/imu_read.o
 
@@ -234,6 +260,54 @@ src/imu_read.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu_node.dir/build.make CMakeFiles/imu_node.dir/src/imu_read.cpp.s
 .PHONY : src/imu_read.cpp.s
 
+src/pid_controller.o: src/pid_controller.cpp.o
+.PHONY : src/pid_controller.o
+
+# target to build an object file
+src/pid_controller.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pos_controller_node.dir/build.make CMakeFiles/pos_controller_node.dir/src/pid_controller.cpp.o
+.PHONY : src/pid_controller.cpp.o
+
+src/pid_controller.i: src/pid_controller.cpp.i
+.PHONY : src/pid_controller.i
+
+# target to preprocess a source file
+src/pid_controller.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pos_controller_node.dir/build.make CMakeFiles/pos_controller_node.dir/src/pid_controller.cpp.i
+.PHONY : src/pid_controller.cpp.i
+
+src/pid_controller.s: src/pid_controller.cpp.s
+.PHONY : src/pid_controller.s
+
+# target to generate assembly for a file
+src/pid_controller.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pos_controller_node.dir/build.make CMakeFiles/pos_controller_node.dir/src/pid_controller.cpp.s
+.PHONY : src/pid_controller.cpp.s
+
+src/smc_controller.o: src/smc_controller.cpp.o
+.PHONY : src/smc_controller.o
+
+# target to build an object file
+src/smc_controller.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/smc_controller_node.dir/build.make CMakeFiles/smc_controller_node.dir/src/smc_controller.cpp.o
+.PHONY : src/smc_controller.cpp.o
+
+src/smc_controller.i: src/smc_controller.cpp.i
+.PHONY : src/smc_controller.i
+
+# target to preprocess a source file
+src/smc_controller.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/smc_controller_node.dir/build.make CMakeFiles/smc_controller_node.dir/src/smc_controller.cpp.i
+.PHONY : src/smc_controller.cpp.i
+
+src/smc_controller.s: src/smc_controller.cpp.s
+.PHONY : src/smc_controller.s
+
+# target to generate assembly for a file
+src/smc_controller.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/smc_controller_node.dir/build.make CMakeFiles/smc_controller_node.dir/src/smc_controller.cpp.s
+.PHONY : src/smc_controller.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -250,9 +324,17 @@ help:
 	@echo "... uav_controller_uninstall"
 	@echo "... uninstall"
 	@echo "... imu_node"
+	@echo "... pos_controller_node"
+	@echo "... smc_controller_node"
 	@echo "... src/imu_read.o"
 	@echo "... src/imu_read.i"
 	@echo "... src/imu_read.s"
+	@echo "... src/pid_controller.o"
+	@echo "... src/pid_controller.i"
+	@echo "... src/pid_controller.s"
+	@echo "... src/smc_controller.o"
+	@echo "... src/smc_controller.i"
+	@echo "... src/smc_controller.s"
 .PHONY : help
 
 

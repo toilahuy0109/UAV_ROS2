@@ -1,0 +1,59 @@
+[35m[1mConsolidate compiler generated dependencies of target pos_controller_node[0m
+[ 50%] Built target imu_node
+[ 75%] [32mBuilding CXX object CMakeFiles/pos_controller_node.dir/src/pid_controller.cpp.o[0m
+[01m[K/home/huy/ros2_ws/src/uav_controller/src/pid_controller.cpp:[m[K In constructor ‘[01m[KPos_Controller::Pos_Controller()[m[K’:
+[01m[K/home/huy/ros2_ws/src/uav_controller/src/pid_controller.cpp:18:116:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KPos_Controller[m[K’ does not have any field named ‘[01m[Kyaw_ref_[m[K’
+   18 | Pos_Controller::Pos_Controller() : rclcpp::Node("pos_controller"), x_(0.0), y_(0.0), vx_(0.0), vy_(0.0), vz_(0.0), [01;31m[Kyaw_ref_[m[K(0.0)
+      |                                                                                                                    [01;31m[K^~~~~~~~[m[K
+[01m[K/home/huy/ros2_ws/src/uav_controller/src/pid_controller.cpp:18:1:[m[K [01;31m[Kerror: [m[Kuninitialized const member in ‘[01m[Kconst double[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+   18 | [01;31m[KPos_Controller[m[K::Pos_Controller() : rclcpp::Node("pos_controller"), x_(0.0), y_(0.0), vx_(0.0), vy_(0.0), vz_(0.0), yaw_ref_(0.0)
+      | [01;31m[K^~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/huy/ros2_ws/src/uav_controller/src/pid_controller.cpp:1[m[K:
+[01m[K/home/huy/ros2_ws/src/uav_controller/include/pid_controller.hpp:50:18:[m[K [01;36m[Knote: [m[K‘[01m[Kconst double Pos_Controller::g_[m[K’ should be initialized
+   50 |     const double [01;36m[Kg_[m[K;
+      |                  [01;36m[K^~[m[K
+[01m[K/home/huy/ros2_ws/src/uav_controller/src/pid_controller.cpp:30:6:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K;[m[K’ token
+   30 |     )[01;31m[K;[m[K
+      |      [01;31m[K^[m[K
+      |      [32m[K)[m[K
+[01m[K/home/huy/ros2_ws/src/uav_controller/src/pid_controller.cpp:27:67:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K([m[K’
+   27 |     odom_sub_ = this->create_subscription<nav_msgs::msg::Odometry>[01;36m[K([m[K
+      |                                                                   [01;36m[K^[m[K
+[01m[K/home/huy/ros2_ws/src/uav_controller/src/pid_controller.cpp:[m[K In member function ‘[01m[Kvoid Pos_Controller::controlLoop()[m[K’:
+[01m[K/home/huy/ros2_ws/src/uav_controller/src/pid_controller.cpp:70:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kz_ref_[m[K’ was not declared in this scope; did you mean ‘[01m[Kx_ref_[m[K’?
+   70 |     [01;31m[Kz_ref_[m[K = z_rate * t;
+      |     [01;31m[K^~~~~~[m[K
+      |     [32m[Kx_ref_[m[K
+[01m[K/home/huy/ros2_ws/src/uav_controller/src/pid_controller.cpp:90:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kyaw_ref_[m[K’ was not declared in this scope; did you mean ‘[01m[Kyaw_ref[m[K’?
+   90 |     att_ref.z = [01;31m[Kyaw_ref_[m[K;
+      |                 [01;31m[K^~~~~~~~[m[K
+      |                 [32m[Kyaw_ref[m[K
+[01m[K/home/huy/ros2_ws/src/uav_controller/src/pid_controller.cpp:[m[K At global scope:
+[01m[K/home/huy/ros2_ws/src/uav_controller/src/pid_controller.cpp:101:5:[m[K [01;35m[Kwarning: [m[Ksecond argument of ‘[01m[Kint main(int, char***)[m[K’ should be ‘[01m[Kchar **[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmain-Wmain]8;;[m[K]
+  101 | int [01;35m[Kmain[m[K(int argc, char **argv[])
+      |     [01;35m[K^~~~[m[K
+[01m[K/home/huy/ros2_ws/src/uav_controller/src/pid_controller.cpp:[m[K In function ‘[01m[Kint main(int, char***)[m[K’:
+[01m[K/home/huy/ros2_ws/src/uav_controller/src/pid_controller.cpp:103:24:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kchar***[m[K’ to ‘[01m[Kconst char* const*[m[K’
+  103 |     rclcpp::init(argc, [01;31m[Kargv[m[K);
+      |                        [01;31m[K^~~~[m[K
+      |                        [01;31m[K|[m[K
+      |                        [01;31m[Kchar***[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/huy/ros2_ws/src/uav_controller/include/pid_controller.hpp:3[m[K,
+                 from [01m[K/home/huy/ros2_ws/src/uav_controller/src/pid_controller.cpp:1[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/utilities.hpp:77:24:[m[K [01;36m[Knote: [m[K  initializing argument 2 of ‘[01m[Kvoid rclcpp::init(int, const char* const*, const rclcpp::InitOptions&, rclcpp::SignalHandlerOptions)[m[K’
+   77 |   [01;36m[Kchar const * const * argv[m[K,
+      |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+gmake[2]: *** [CMakeFiles/pos_controller_node.dir/build.make:76: CMakeFiles/pos_controller_node.dir/src/pid_controller.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/pos_controller_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

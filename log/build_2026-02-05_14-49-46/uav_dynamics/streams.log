@@ -1,0 +1,29 @@
+[0.008s] Invoking command in '/home/huy/ros2_ws/build/uav_dynamics': CMAKE_PREFIX_PATH=/opt/ros/humble:/home/huy/ros2_ws/install/uav_msgs:/home/huy/ros2_ws/install/uav_dynamics:/home/huy/ros2_ws/install/uav_motor_plugin:/home/huy/ros2_ws/install/uav_controller LD_LIBRARY_PATH=/home/huy/ros2_ws/install/uav_msgs/lib:/home/huy/ros2_ws/install/uav_motor_plugin/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake --build /home/huy/ros2_ws/build/uav_dynamics -- -j16 -l16
+[0.049s] [35m[1mConsolidate compiler generated dependencies of target dynamics_node[0m
+[0.061s] [ 40%] Built target cmd_pub_node
+[0.065s] [ 60%] [32mBuilding CXX object CMakeFiles/dynamics_node.dir/src/dynamics_node.cpp.o[0m
+[6.490s] [ 80%] [32m[1mLinking CXX executable dynamics_node[0m
+[6.765s] [100%] Built target dynamics_node
+[6.777s] Invoked command in '/home/huy/ros2_ws/build/uav_dynamics' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble:/home/huy/ros2_ws/install/uav_msgs:/home/huy/ros2_ws/install/uav_dynamics:/home/huy/ros2_ws/install/uav_motor_plugin:/home/huy/ros2_ws/install/uav_controller LD_LIBRARY_PATH=/home/huy/ros2_ws/install/uav_msgs/lib:/home/huy/ros2_ws/install/uav_motor_plugin/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake --build /home/huy/ros2_ws/build/uav_dynamics -- -j16 -l16
+[6.778s] Invoking command in '/home/huy/ros2_ws/build/uav_dynamics': CMAKE_PREFIX_PATH=/opt/ros/humble:/home/huy/ros2_ws/install/uav_msgs:/home/huy/ros2_ws/install/uav_dynamics:/home/huy/ros2_ws/install/uav_motor_plugin:/home/huy/ros2_ws/install/uav_controller LD_LIBRARY_PATH=/home/huy/ros2_ws/install/uav_msgs/lib:/home/huy/ros2_ws/install/uav_motor_plugin/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake --install /home/huy/ros2_ws/build/uav_dynamics
+[6.785s] -- Install configuration: ""
+[6.786s] -- Installing: /home/huy/ros2_ws/install/uav_dynamics/lib/uav_dynamics/dynamics_node
+[6.791s] -- Set runtime path of "/home/huy/ros2_ws/install/uav_dynamics/lib/uav_dynamics/dynamics_node" to ""
+[6.791s] -- Installing: /home/huy/ros2_ws/install/uav_dynamics/lib/uav_dynamics/cmd_pub_node
+[6.797s] -- Set runtime path of "/home/huy/ros2_ws/install/uav_dynamics/lib/uav_dynamics/cmd_pub_node" to ""
+[6.797s] -- Up-to-date: /home/huy/ros2_ws/install/uav_dynamics/share/ament_index/resource_index/package_run_dependencies/uav_dynamics
+[6.797s] -- Up-to-date: /home/huy/ros2_ws/install/uav_dynamics/share/ament_index/resource_index/parent_prefix_path/uav_dynamics
+[6.797s] -- Up-to-date: /home/huy/ros2_ws/install/uav_dynamics/share/uav_dynamics/environment/ament_prefix_path.sh
+[6.797s] -- Up-to-date: /home/huy/ros2_ws/install/uav_dynamics/share/uav_dynamics/environment/ament_prefix_path.dsv
+[6.797s] -- Up-to-date: /home/huy/ros2_ws/install/uav_dynamics/share/uav_dynamics/environment/path.sh
+[6.797s] -- Up-to-date: /home/huy/ros2_ws/install/uav_dynamics/share/uav_dynamics/environment/path.dsv
+[6.797s] -- Up-to-date: /home/huy/ros2_ws/install/uav_dynamics/share/uav_dynamics/local_setup.bash
+[6.797s] -- Up-to-date: /home/huy/ros2_ws/install/uav_dynamics/share/uav_dynamics/local_setup.sh
+[6.797s] -- Up-to-date: /home/huy/ros2_ws/install/uav_dynamics/share/uav_dynamics/local_setup.zsh
+[6.797s] -- Up-to-date: /home/huy/ros2_ws/install/uav_dynamics/share/uav_dynamics/local_setup.dsv
+[6.797s] -- Installing: /home/huy/ros2_ws/install/uav_dynamics/share/uav_dynamics/package.dsv
+[6.797s] -- Up-to-date: /home/huy/ros2_ws/install/uav_dynamics/share/ament_index/resource_index/packages/uav_dynamics
+[6.797s] -- Up-to-date: /home/huy/ros2_ws/install/uav_dynamics/share/uav_dynamics/cmake/uav_dynamicsConfig.cmake
+[6.797s] -- Up-to-date: /home/huy/ros2_ws/install/uav_dynamics/share/uav_dynamics/cmake/uav_dynamicsConfig-version.cmake
+[6.797s] -- Up-to-date: /home/huy/ros2_ws/install/uav_dynamics/share/uav_dynamics/package.xml
+[6.800s] Invoked command in '/home/huy/ros2_ws/build/uav_dynamics' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble:/home/huy/ros2_ws/install/uav_msgs:/home/huy/ros2_ws/install/uav_dynamics:/home/huy/ros2_ws/install/uav_motor_plugin:/home/huy/ros2_ws/install/uav_controller LD_LIBRARY_PATH=/home/huy/ros2_ws/install/uav_msgs/lib:/home/huy/ros2_ws/install/uav_motor_plugin/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake --install /home/huy/ros2_ws/build/uav_dynamics

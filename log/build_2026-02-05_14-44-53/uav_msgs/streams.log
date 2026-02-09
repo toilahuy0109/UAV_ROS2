@@ -1,0 +1,34 @@
+[0.014s] Invoking command in '/home/huy/ros2_ws/build/uav_msgs': /usr/bin/cmake --build /home/huy/ros2_ws/build/uav_msgs -- -j16 -l16
+[0.057s] [35m[1mConsolidate compiler generated dependencies of target uav_msgs__rosidl_generator_c[0m
+[0.068s] [  2%] Built target uav_msgs__cpp
+[0.071s] [ 12%] Built target uav_msgs__rosidl_generator_c
+[0.081s] [ 12%] Built target ament_cmake_python_copy_uav_msgs
+[0.081s] [35m[1mConsolidate compiler generated dependencies of target uav_msgs__rosidl_typesupport_cpp[0m
+[0.082s] [35m[1mConsolidate compiler generated dependencies of target uav_msgs__rosidl_typesupport_fastrtps_cpp[0m
+[0.082s] [35m[1mConsolidate compiler generated dependencies of target uav_msgs__rosidl_typesupport_introspection_c[0m
+[0.082s] [35m[1mConsolidate compiler generated dependencies of target uav_msgs__rosidl_typesupport_introspection_cpp[0m
+[0.085s] [35m[1mConsolidate compiler generated dependencies of target uav_msgs__rosidl_typesupport_c[0m
+[0.085s] [35m[1mConsolidate compiler generated dependencies of target uav_msgs__rosidl_typesupport_fastrtps_c[0m
+[0.097s] [ 23%] Built target uav_msgs__rosidl_typesupport_introspection_c
+[0.099s] [ 38%] Built target uav_msgs__rosidl_typesupport_fastrtps_cpp
+[0.099s] [ 43%] Built target uav_msgs__rosidl_typesupport_c
+[0.099s] [ 53%] Built target uav_msgs__rosidl_typesupport_cpp
+[0.099s] [ 64%] Built target uav_msgs__rosidl_typesupport_introspection_cpp
+[0.102s] [ 74%] Built target uav_msgs__rosidl_typesupport_fastrtps_c
+[0.127s] [ 74%] Built target uav_msgs
+[0.150s] [ 76%] Built target uav_msgs__py
+[0.161s] [35m[1mConsolidate compiler generated dependencies of target uav_msgs__rosidl_generator_py[0m
+[0.180s] [ 84%] Built target uav_msgs__rosidl_generator_py
+[0.191s] [35m[1mConsolidate compiler generated dependencies of target uav_msgs__rosidl_typesupport_fastrtps_c__pyext[0m
+[0.192s] [35m[1mConsolidate compiler generated dependencies of target uav_msgs__rosidl_typesupport_c__pyext[0m
+[0.192s] [35m[1mConsolidate compiler generated dependencies of target uav_msgs__rosidl_typesupport_introspection_c__pyext[0m
+[0.206s] [100%] Built target uav_msgs__rosidl_typesupport_fastrtps_c__pyext
+[0.206s] [100%] Built target uav_msgs__rosidl_typesupport_c__pyext
+[0.206s] [100%] Built target uav_msgs__rosidl_typesupport_introspection_c__pyext
+[0.299s] running egg_info
+[0.300s] writing uav_msgs.egg-info/PKG-INFO
+[0.300s] writing dependency_links to uav_msgs.egg-info/dependency_links.txt
+[0.300s] writing top-level names to uav_msgs.egg-info/top_level.txt
+[0.302s] reading manifest file 'uav_msgs.egg-info/SOURCES.txt'
+[0.303s] writing manifest file 'uav_msgs.egg-info/SOURCES.txt'
+[0.331s] [100%] Built target ament_cmake_python_build_uav_msgs_egg

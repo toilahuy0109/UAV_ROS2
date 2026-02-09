@@ -1,0 +1,18 @@
+[ 40%] [32mBuilding CXX object CMakeFiles/dynamics_node.dir/src/dynamics_node.cpp.o[0m
+[ 40%] [32mBuilding CXX object CMakeFiles/cmd_pub_node.dir/src/uav_cmd_pub.cpp.o[0m
+[01m[K/home/huy/ros2_ws/src/uav_dynamics/src/dynamics_node.cpp:[m[K In member function ‘[01m[Kvoid DynamicsNode::cmdCallback(uav_msgs::msg::UavCmd_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/huy/ros2_ws/src/uav_dynamics/src/dynamics_node.cpp:23:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct uav_msgs::msg::UavCmd_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct uav_msgs::msg::UavCmd_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kax[m[K’
+   23 |     model_.setCommand(msg->[01;31m[Kax[m[K, msg->ay, msg->az);
+      |                            [01;31m[K^~[m[K
+[01m[K/home/huy/ros2_ws/src/uav_dynamics/src/dynamics_node.cpp:23:37:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct uav_msgs::msg::UavCmd_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct uav_msgs::msg::UavCmd_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kay[m[K’
+   23 |     model_.setCommand(msg->ax, msg->[01;31m[Kay[m[K, msg->az);
+      |                                     [01;31m[K^~[m[K
+[01m[K/home/huy/ros2_ws/src/uav_dynamics/src/dynamics_node.cpp:23:46:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct uav_msgs::msg::UavCmd_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct uav_msgs::msg::UavCmd_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kaz[m[K’
+   23 |     model_.setCommand(msg->ax, msg->ay, msg->[01;31m[Kaz[m[K);
+      |                                              [01;31m[K^~[m[K
+gmake[2]: *** [CMakeFiles/dynamics_node.dir/build.make:76: CMakeFiles/dynamics_node.dir/src/dynamics_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/dynamics_node.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[ 60%] [32m[1mLinking CXX executable cmd_pub_node[0m
+[ 60%] Built target cmd_pub_node
+gmake: *** [Makefile:146: all] Error 2

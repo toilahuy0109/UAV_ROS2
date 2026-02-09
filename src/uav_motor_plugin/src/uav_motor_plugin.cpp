@@ -33,7 +33,7 @@ void QuadMotorPlugin::Load(physics::ModelPtr model, sdf::ElementPtr sdf)
       10,
       [this, i](std_msgs::msg::Float64::SharedPtr msg)
       {
-        motors_[i].command = std::clamp(msg->data, 0.0, 1.0);
+        motors_[i].command = std::clamp(msg->data, 0.0, 2300.0);
       }
     );
     motors_.push_back(m);

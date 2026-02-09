@@ -1,0 +1,30 @@
+[0.016s] Invoking command in '/home/huy/ros2_ws/build/uav_controller': CMAKE_PREFIX_PATH=/home/huy/ros2_ws/install/uav_dynamics:/opt/ros/humble:/home/huy/ros2_ws/install/uav_msgs:/home/huy/ros2_ws/install/uav_motor_plugin:/home/huy/ros2_ws/install/uav_controller /usr/bin/cmake --build /home/huy/ros2_ws/build/uav_controller -- -j16 -l16
+[0.059s] [35m[1mConsolidate compiler generated dependencies of target pos_controller_node[0m
+[0.079s] [ 16%] [32mBuilding CXX object CMakeFiles/smc_controller_node.dir/src/smc_controller.cpp.o[0m
+[0.082s] [ 50%] Built target imu_node
+[0.084s] [ 83%] Built target pos_controller_node
+[11.421s] [100%] [32m[1mLinking CXX executable smc_controller_node[0m
+[12.095s] [100%] Built target smc_controller_node
+[12.109s] Invoked command in '/home/huy/ros2_ws/build/uav_controller' returned '0': CMAKE_PREFIX_PATH=/home/huy/ros2_ws/install/uav_dynamics:/opt/ros/humble:/home/huy/ros2_ws/install/uav_msgs:/home/huy/ros2_ws/install/uav_motor_plugin:/home/huy/ros2_ws/install/uav_controller /usr/bin/cmake --build /home/huy/ros2_ws/build/uav_controller -- -j16 -l16
+[12.111s] Invoking command in '/home/huy/ros2_ws/build/uav_controller': CMAKE_PREFIX_PATH=/home/huy/ros2_ws/install/uav_dynamics:/opt/ros/humble:/home/huy/ros2_ws/install/uav_msgs:/home/huy/ros2_ws/install/uav_motor_plugin:/home/huy/ros2_ws/install/uav_controller /usr/bin/cmake --install /home/huy/ros2_ws/build/uav_controller
+[12.120s] -- Install configuration: ""
+[12.120s] -- Up-to-date: /home/huy/ros2_ws/install/uav_controller/lib/uav_controller/imu_node
+[12.120s] -- Up-to-date: /home/huy/ros2_ws/install/uav_controller/lib/uav_controller/pos_controller_node
+[12.121s] -- Installing: /home/huy/ros2_ws/install/uav_controller/lib/uav_controller/smc_controller_node
+[12.132s] -- Set runtime path of "/home/huy/ros2_ws/install/uav_controller/lib/uav_controller/smc_controller_node" to ""
+[12.133s] -- Up-to-date: /home/huy/ros2_ws/install/uav_controller/share/ament_index/resource_index/package_run_dependencies/uav_controller
+[12.133s] -- Up-to-date: /home/huy/ros2_ws/install/uav_controller/share/ament_index/resource_index/parent_prefix_path/uav_controller
+[12.133s] -- Up-to-date: /home/huy/ros2_ws/install/uav_controller/share/uav_controller/environment/ament_prefix_path.sh
+[12.133s] -- Up-to-date: /home/huy/ros2_ws/install/uav_controller/share/uav_controller/environment/ament_prefix_path.dsv
+[12.133s] -- Up-to-date: /home/huy/ros2_ws/install/uav_controller/share/uav_controller/environment/path.sh
+[12.133s] -- Up-to-date: /home/huy/ros2_ws/install/uav_controller/share/uav_controller/environment/path.dsv
+[12.133s] -- Up-to-date: /home/huy/ros2_ws/install/uav_controller/share/uav_controller/local_setup.bash
+[12.133s] -- Up-to-date: /home/huy/ros2_ws/install/uav_controller/share/uav_controller/local_setup.sh
+[12.133s] -- Up-to-date: /home/huy/ros2_ws/install/uav_controller/share/uav_controller/local_setup.zsh
+[12.133s] -- Up-to-date: /home/huy/ros2_ws/install/uav_controller/share/uav_controller/local_setup.dsv
+[12.133s] -- Installing: /home/huy/ros2_ws/install/uav_controller/share/uav_controller/package.dsv
+[12.133s] -- Up-to-date: /home/huy/ros2_ws/install/uav_controller/share/ament_index/resource_index/packages/uav_controller
+[12.134s] -- Up-to-date: /home/huy/ros2_ws/install/uav_controller/share/uav_controller/cmake/uav_controllerConfig.cmake
+[12.134s] -- Up-to-date: /home/huy/ros2_ws/install/uav_controller/share/uav_controller/cmake/uav_controllerConfig-version.cmake
+[12.134s] -- Up-to-date: /home/huy/ros2_ws/install/uav_controller/share/uav_controller/package.xml
+[12.136s] Invoked command in '/home/huy/ros2_ws/build/uav_controller' returned '0': CMAKE_PREFIX_PATH=/home/huy/ros2_ws/install/uav_dynamics:/opt/ros/humble:/home/huy/ros2_ws/install/uav_msgs:/home/huy/ros2_ws/install/uav_motor_plugin:/home/huy/ros2_ws/install/uav_controller /usr/bin/cmake --install /home/huy/ros2_ws/build/uav_controller

@@ -1,0 +1,17 @@
+[0.015s] Invoking command in '/home/huy/ros2_ws/build/uav_controller': CMAKE_PREFIX_PATH=/home/huy/ros2_ws/install/uav_dynamics:/opt/ros/humble:/home/huy/ros2_ws/install/uav_msgs:/home/huy/ros2_ws/install/uav_motor_plugin:/home/huy/ros2_ws/install/uav_controller /usr/bin/cmake --build /home/huy/ros2_ws/build/uav_controller -- -j16 -l16
+[0.061s] [35m[1mConsolidate compiler generated dependencies of target smc_controller_node[0m
+[0.079s] [ 66%] Built target imu_node
+[0.079s] [ 66%] Built target pos_controller_node
+[0.090s] [ 83%] [32mBuilding CXX object CMakeFiles/smc_controller_node.dir/src/smc_controller.cpp.o[0m
+[2.716s] [01m[K/home/huy/ros2_ws/src/uav_controller/src/smc_controller.cpp:[m[K In member function ‘[01m[Kvoid Att_Controller::controlLoop()[m[K’:
+[2.716s] [01m[K/home/huy/ros2_ws/src/uav_controller/src/smc_controller.cpp:190:25:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K;[m[K’ token
+[2.716s]   190 |     omega_mem_.w2 = w[1][01;31m[K;[m[K
+[2.716s]       |                         [01;31m[K^[m[K
+[2.716s]       |                         [32m[K)[m[K
+[2.716s] [01m[K/home/huy/ros2_ws/src/uav_controller/src/smc_controller.cpp:189:34:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K([m[K’
+[2.716s]   189 |     omega_mem_.w1 = w[0];std::abs[01;36m[K([m[K
+[2.716s]       |                                  [01;36m[K^[m[K
+[6.185s] gmake[2]: *** [CMakeFiles/smc_controller_node.dir/build.make:76: CMakeFiles/smc_controller_node.dir/src/smc_controller.cpp.o] Error 1
+[6.185s] gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/smc_controller_node.dir/all] Error 2
+[6.186s] gmake: *** [Makefile:146: all] Error 2
+[6.188s] Invoked command in '/home/huy/ros2_ws/build/uav_controller' returned '2': CMAKE_PREFIX_PATH=/home/huy/ros2_ws/install/uav_dynamics:/opt/ros/humble:/home/huy/ros2_ws/install/uav_msgs:/home/huy/ros2_ws/install/uav_motor_plugin:/home/huy/ros2_ws/install/uav_controller /usr/bin/cmake --build /home/huy/ros2_ws/build/uav_controller -- -j16 -l16

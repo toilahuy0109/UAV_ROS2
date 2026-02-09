@@ -1,0 +1,38 @@
+[0.015s] Invoking command in '/home/huy/ros2_ws/build/uav_controller': CMAKE_PREFIX_PATH=/home/huy/ros2_ws/install/uav_dynamics:/opt/ros/humble:/home/huy/ros2_ws/install/uav_msgs:/home/huy/ros2_ws/install/uav_motor_plugin:/home/huy/ros2_ws/install/uav_controller /usr/bin/cmake --build /home/huy/ros2_ws/build/uav_controller -- -j16 -l16
+[0.045s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.190s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[0.239s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.242s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.250s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.262s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.276s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.317s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.319s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.435s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.496s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.534s] -- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.554s] -- Found tf2: 0.25.13 (/opt/ros/humble/share/tf2/cmake)
+[0.568s] -- Found tf2_ros: 0.25.13 (/opt/ros/humble/share/tf2_ros/cmake)
+[0.670s] -- Found tf2_geometry_msgs: 0.25.13 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[0.689s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[0.690s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[0.690s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[0.760s] -- Configuring done
+[0.780s] -- Generating done
+[0.786s] -- Build files have been written to: /home/huy/ros2_ws/build/uav_controller
+[0.819s] [35m[1mConsolidate compiler generated dependencies of target imu_node[0m
+[0.819s] [35m[1mConsolidate compiler generated dependencies of target pos_controller_node[0m
+[0.830s] [ 16%] [32mBuilding CXX object CMakeFiles/smc_controller_node.dir/src/smc_controller.cpp.o[0m
+[0.838s] [ 66%] [32mBuilding CXX object CMakeFiles/imu_node.dir/src/imu_read.cpp.o[0m
+[0.838s] [ 66%] Built target pos_controller_node
+[0.840s] [01m[K/home/huy/ros2_ws/src/uav_controller/src/smc_controller.cpp:1:10:[m[K [01;31m[Kfatal error: [m[Katt_controller.hpp: No such file or directory
+[0.840s]     1 | #include [01;31m[K"att_controller.hpp"[m[K
+[0.840s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[0.840s] compilation terminated.
+[0.841s] gmake[2]: *** [CMakeFiles/smc_controller_node.dir/build.make:76: CMakeFiles/smc_controller_node.dir/src/smc_controller.cpp.o] Error 1
+[0.841s] gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/smc_controller_node.dir/all] Error 2
+[0.841s] gmake[1]: *** Waiting for unfinished jobs....
+[7.395s] [ 83%] [32m[1mLinking CXX executable imu_node[0m
+[7.733s] [ 83%] Built target imu_node
+[7.734s] gmake: *** [Makefile:146: all] Error 2
+[7.737s] Invoked command in '/home/huy/ros2_ws/build/uav_controller' returned '2': CMAKE_PREFIX_PATH=/home/huy/ros2_ws/install/uav_dynamics:/opt/ros/humble:/home/huy/ros2_ws/install/uav_msgs:/home/huy/ros2_ws/install/uav_motor_plugin:/home/huy/ros2_ws/install/uav_controller /usr/bin/cmake --build /home/huy/ros2_ws/build/uav_controller -- -j16 -l16

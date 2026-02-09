@@ -64,6 +64,8 @@ CMAKE_BINARY_DIR = /home/huy/ros2_ws/build/uav_controller
 
 # The main recursive "all" target.
 all: CMakeFiles/imu_node.dir/all
+all: CMakeFiles/pos_controller_node.dir/all
+all: CMakeFiles/smc_controller_node.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -74,6 +76,8 @@ preinstall:
 clean: CMakeFiles/uninstall.dir/clean
 clean: CMakeFiles/uav_controller_uninstall.dir/clean
 clean: CMakeFiles/imu_node.dir/clean
+clean: CMakeFiles/pos_controller_node.dir/clean
+clean: CMakeFiles/smc_controller_node.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -153,6 +157,58 @@ imu_node: CMakeFiles/imu_node.dir/rule
 CMakeFiles/imu_node.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/imu_node.dir/build.make CMakeFiles/imu_node.dir/clean
 .PHONY : CMakeFiles/imu_node.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/pos_controller_node.dir
+
+# All Build rule for target.
+CMakeFiles/pos_controller_node.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pos_controller_node.dir/build.make CMakeFiles/pos_controller_node.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pos_controller_node.dir/build.make CMakeFiles/pos_controller_node.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/huy/ros2_ws/build/uav_controller/CMakeFiles --progress-num=3,4 "Built target pos_controller_node"
+.PHONY : CMakeFiles/pos_controller_node.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/pos_controller_node.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/huy/ros2_ws/build/uav_controller/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/pos_controller_node.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/huy/ros2_ws/build/uav_controller/CMakeFiles 0
+.PHONY : CMakeFiles/pos_controller_node.dir/rule
+
+# Convenience name for target.
+pos_controller_node: CMakeFiles/pos_controller_node.dir/rule
+.PHONY : pos_controller_node
+
+# clean rule for target.
+CMakeFiles/pos_controller_node.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pos_controller_node.dir/build.make CMakeFiles/pos_controller_node.dir/clean
+.PHONY : CMakeFiles/pos_controller_node.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/smc_controller_node.dir
+
+# All Build rule for target.
+CMakeFiles/smc_controller_node.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/smc_controller_node.dir/build.make CMakeFiles/smc_controller_node.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/smc_controller_node.dir/build.make CMakeFiles/smc_controller_node.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/huy/ros2_ws/build/uav_controller/CMakeFiles --progress-num=5,6 "Built target smc_controller_node"
+.PHONY : CMakeFiles/smc_controller_node.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/smc_controller_node.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/huy/ros2_ws/build/uav_controller/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/smc_controller_node.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/huy/ros2_ws/build/uav_controller/CMakeFiles 0
+.PHONY : CMakeFiles/smc_controller_node.dir/rule
+
+# Convenience name for target.
+smc_controller_node: CMakeFiles/smc_controller_node.dir/rule
+.PHONY : smc_controller_node
+
+# clean rule for target.
+CMakeFiles/smc_controller_node.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/smc_controller_node.dir/build.make CMakeFiles/smc_controller_node.dir/clean
+.PHONY : CMakeFiles/smc_controller_node.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
