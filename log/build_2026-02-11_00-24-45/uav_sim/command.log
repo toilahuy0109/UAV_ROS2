@@ -1,0 +1,2 @@
+Invoking command in '/home/huy/ros2_ws/build/uav_sim': /usr/bin/cmake /home/huy/ros2_ws/src/launch -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/huy/ros2_ws/install/uav_sim
+Invoked command in '/home/huy/ros2_ws/build/uav_sim' returned '1': /usr/bin/cmake /home/huy/ros2_ws/src/launch -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/huy/ros2_ws/install/uav_sim

@@ -1,0 +1,14 @@
+[0.012s] Invoking command in '/home/huy/ros2_ws/build/uav_controller': CMAKE_PREFIX_PATH=/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/huy/ros2_ws/build/uav_controller -- -j16 -l16
+[0.052s] [35m[1mConsolidate compiler generated dependencies of target pos_controller_node[0m
+[0.064s] [ 33%] Built target smc_controller_node
+[0.065s] [ 66%] Built target imu_node
+[0.073s] [ 83%] [32mBuilding CXX object CMakeFiles/pos_controller_node.dir/src/pid_controller.cpp.o[0m
+[0.291s] In file included from [01m[K/home/huy/ros2_ws/src/uav_controller/src/pid_controller.cpp:1[m[K:
+[0.291s] [01m[K/home/huy/ros2_ws/src/uav_controller/include/pid_controller.hpp:7:10:[m[K [01;31m[Kfatal error: [m[Ksensor_msgs/msg/imu.hpp: No such file or directory
+[0.291s]     7 | #include [01;31m[K"sensor_msgs/msg/imu.hpp"[m[K
+[0.291s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.291s] compilation terminated.
+[0.295s] gmake[2]: *** [CMakeFiles/pos_controller_node.dir/build.make:76: CMakeFiles/pos_controller_node.dir/src/pid_controller.cpp.o] Error 1
+[0.295s] gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/pos_controller_node.dir/all] Error 2
+[0.295s] gmake: *** [Makefile:146: all] Error 2
+[0.298s] Invoked command in '/home/huy/ros2_ws/build/uav_controller' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/huy/ros2_ws/build/uav_controller -- -j16 -l16

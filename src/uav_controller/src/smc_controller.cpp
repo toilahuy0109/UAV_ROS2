@@ -30,9 +30,9 @@ double SMC::get_slide(double e, double edot)
 Att_Controller::Att_Controller()
 : Node("attitude_controller"), phi_(0.0), theta_(0.0), psi_(0.0),
 phi_ref_(0.0), theta_ref_(0.0), psi_ref_(0.0),
-thrust_ref_(0.0), smc_roll_(6.0, 2.0), smc_pitch_(6.0, 2.0), smc_yaw_(6.0, 1.5)
+thrust_ref_(0.0), smc_roll_(10.0, 10.0), smc_pitch_(10.0, 10.0), smc_yaw_(10.0, 10.0)
 {
-    Ts_ = 0.004;
+    Ts_ = 0.01;
 
     imu_sub_ = this->create_subscription<sensor_msgs::msg::Imu>(
         "/drone/imu_plugin/out", 50,
@@ -49,13 +49,21 @@ thrust_ref_(0.0), smc_roll_(6.0, 2.0), smc_pitch_(6.0, 2.0), smc_yaw_(6.0, 1.5)
         std::bind(&Att_Controller::thrustCallback, this, std::placeholders::_1)
     );
 
+    // Publisher
+    att_err_ = this->create_publisher<geometry_msgs::msg::Vector3>(
+        "/att_error", 10
+    );
+
+    att_err_dot_ = this->create_publisher<geometry_msgs::msg::Vector3>(
+        "/att_error_dot", 10
+    );
+
+    slide_sur_ = this->create_publisher<geometry_msgs::msg::Vector3>(
+        "/slide_sur", 10
+    );
+
     /*----------------- Motor Publisher --------------------*/
-    for (int i = 0; i < 4; i++)
-    {
-        motor_pub_[i] = this->create_publisher<std_msgs::msg::Float64>(
-            "/motor_cmd_" + std::to_string(i), 10
-        );
-    }
+    motor_pub_ = this->create_publisher<uav_msgs::msg::UavCmd>("/motor_vel", 10);
 
     /*----------------- Controller Timer ---------------------*/
     control_timer_ = this->create_wall_timer(
@@ -163,12 +171,28 @@ void Att_Controller::controlLoop()
     double e_theta_dot = theta_dot - theta_ref_dot;
     double e_psi_dot = psi_dot - psi_ref_dot;
 
+    geometry_msgs::msg::Vector3 att_err;
+    geometry_msgs::msg::Vector3 att_err_dot;
+
+    att_err.x = e_phi;
+    att_err.y = e_theta;
+    att_err.z = e_psi;
+
+    att_err_dot.x = e_phi_dot;
+    att_err_dot.y = e_theta_dot;
+    att_err_dot.z = e_psi_dot;
+
     /* ----------------- Sliding Surface -----------------------*/
     double P[3];
+    geometry_msgs::msg::Vector3 slide_sur;
 
     P[0] = smc_roll_.update(e_phi, e_phi_dot);
     P[1] = smc_pitch_.update(e_theta, e_theta_dot);
     P[2] = smc_yaw_.update(e_psi, e_psi_dot);
+
+    slide_sur.x = P[0];
+    slide_sur.y = P[1];
+    slide_sur.z = P[2];
 
     /* ----------------- Calculate Tau --------------------------*/
     double tau[3];
@@ -186,6 +210,8 @@ void Att_Controller::controlLoop()
     w[2] = std::sqrt(std::abs(thrust_ref_/(4*b_) + tau[1]/(2*length_*b_) - tau[2]/(4*d_)));
     w[3] = std::sqrt(std::abs(thrust_ref_/(4*b_) + tau[0]/(2*length_*b_) + tau[2]/(4*d_)));
 
+    
+
     omega_mem_.w1 = w[0];
     omega_mem_.w2 = w[1];
     omega_mem_.w3 = w[2];
@@ -193,16 +219,18 @@ void Att_Controller::controlLoop()
 
 
     /*------------------ Saturation and publish ----------------*/
-    std_msgs::msg::Float64 cmd;
-    for (int i = 0; i < 4; i++)
-    {
-        w[i] = std::clamp(w[i], 0.0, 590.0);
-        cmd.data = w[i];
-        motor_pub_[i]->publish(cmd);
-    }
+    uav_msgs::msg::UavCmd motor_cmd;
+    
+    motor_cmd.w1 = w[0];
+    motor_cmd.w2 = w[1];
+    motor_cmd.w3 = w[2];
+    motor_cmd.w4 = w[3];
 
-    RCLCPP_INFO(this->get_logger(),
-    "w1: %.4f, w2: %.4f, w3: %.4f, w4: %.4f", w[0], w[1], w[2], w[3]);
+    motor_pub_->publish(motor_cmd);
+
+    att_err_->publish(att_err);
+    att_err_dot_->publish(att_err_dot);
+    slide_sur_->publish(slide_sur);
 }
 
 int main(int argc, char * argv[])

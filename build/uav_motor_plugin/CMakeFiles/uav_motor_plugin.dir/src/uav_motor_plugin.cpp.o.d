@@ -2971,6 +2971,12 @@ CMakeFiles/uav_motor_plugin.dir/src/uav_motor_plugin.cpp.o: \
  /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/thread_safe_synchronization.hpp \
  /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/detail/write_preferring_read_write_lock.hpp \
  /opt/ros/humble/include/rclcpp/rclcpp/wait_set_template.hpp \
+ /home/huy/ros2_ws/install/uav_msgs/include/uav_msgs/uav_msgs/msg/uav_cmd.hpp \
+ /home/huy/ros2_ws/install/uav_msgs/include/uav_msgs/uav_msgs/msg/detail/uav_cmd__struct.hpp \
+ /home/huy/ros2_ws/install/uav_msgs/include/uav_msgs/uav_msgs/msg/detail/uav_cmd__builder.hpp \
+ /home/huy/ros2_ws/install/uav_msgs/include/uav_msgs/uav_msgs/msg/detail/uav_cmd__traits.hpp \
+ /home/huy/ros2_ws/install/uav_msgs/include/uav_msgs/uav_msgs/msg/detail/uav_cmd__type_support.hpp \
+ /home/huy/ros2_ws/install/uav_msgs/include/uav_msgs/uav_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
  /opt/ros/humble/include/std_msgs/std_msgs/msg/float64.hpp \
  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float64__struct.hpp \
  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float64__builder.hpp \

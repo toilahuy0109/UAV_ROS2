@@ -1,0 +1,11 @@
+[0.010s] Invoking command in '/home/huy/ros2_ws/build/uav_sim': CMAKE_PREFIX_PATH=/home/huy/ros2_ws/install/uav_motor_plugin:/home/huy/ros2_ws/install/uav_dynamics:/home/huy/ros2_ws/install/uav_controller:/opt/ros/humble:/home/huy/ros2_ws/install/uav_msgs:/home/huy/ros2_ws/install/uav_sim LD_LIBRARY_PATH=/home/huy/ros2_ws/install/uav_motor_plugin/lib:/home/huy/ros2_ws/install/uav_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake --build /home/huy/ros2_ws/build/uav_sim -- -j16 -l16
+[0.051s] [35m[1mConsolidate compiler generated dependencies of target data_node[0m
+[0.072s] [ 50%] [32mBuilding CXX object CMakeFiles/data_node.dir/src/show_data.cpp.o[0m
+[2.082s] [01m[K/home/huy/ros2_ws/src/uav_sim/src/show_data.cpp:[m[K In member function ‘[01m[Kvoid ShowData::thrustCallback(std_msgs::msg::Float64_<std::allocator<void> >::SharedPtr)[m[K’:
+[2.082s] [01m[K/home/huy/ros2_ws/src/uav_sim/src/show_data.cpp:69:31:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst class std::shared_ptr<std_msgs::msg::Float64_<std::allocator<void> > >[m[K’} has no member named ‘[01m[Kdata[m[K’
+[2.082s]    69 |     pid_data.thrust_ref = msg.[01;31m[Kdata[m[K;
+[2.082s]       |                               [01;31m[K^~~~[m[K
+[5.061s] gmake[2]: *** [CMakeFiles/data_node.dir/build.make:76: CMakeFiles/data_node.dir/src/show_data.cpp.o] Error 1
+[5.061s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/data_node.dir/all] Error 2
+[5.062s] gmake: *** [Makefile:146: all] Error 2
+[5.064s] Invoked command in '/home/huy/ros2_ws/build/uav_sim' returned '2': CMAKE_PREFIX_PATH=/home/huy/ros2_ws/install/uav_motor_plugin:/home/huy/ros2_ws/install/uav_dynamics:/home/huy/ros2_ws/install/uav_controller:/opt/ros/humble:/home/huy/ros2_ws/install/uav_msgs:/home/huy/ros2_ws/install/uav_sim LD_LIBRARY_PATH=/home/huy/ros2_ws/install/uav_motor_plugin/lib:/home/huy/ros2_ws/install/uav_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake --build /home/huy/ros2_ws/build/uav_sim -- -j16 -l16

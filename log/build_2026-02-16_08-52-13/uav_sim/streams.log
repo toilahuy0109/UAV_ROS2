@@ -1,0 +1,12 @@
+[0.009s] Invoking command in '/home/huy/ros2_ws/build/uav_sim': CMAKE_PREFIX_PATH=/home/huy/ros2_ws/install/uav_motor_plugin:/home/huy/ros2_ws/install/uav_dynamics:/home/huy/ros2_ws/install/uav_controller:/opt/ros/humble:/home/huy/ros2_ws/install/uav_msgs:/home/huy/ros2_ws/install/uav_sim LD_LIBRARY_PATH=/home/huy/ros2_ws/install/uav_motor_plugin/lib:/home/huy/ros2_ws/install/uav_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake --build /home/huy/ros2_ws/build/uav_sim -- -j16 -l16
+[0.060s] [35m[1mConsolidate compiler generated dependencies of target data_node[0m
+[0.080s] [ 50%] [32mBuilding CXX object CMakeFiles/data_node.dir/src/show_data.cpp.o[0m
+[0.288s] In file included from [01m[K/home/huy/ros2_ws/src/uav_sim/src/show_data.cpp:1[m[K:
+[0.288s] [01m[K/home/huy/ros2_ws/src/uav_sim/include/show_data.hpp:7:10:[m[K [01;31m[Kfatal error: [m[Kuav_msgs/msg/uav_cmd.hpp: No such file or directory
+[0.288s]     7 | #include [01;31m[K"uav_msgs/msg/uav_cmd.hpp"[m[K
+[0.288s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.288s] compilation terminated.
+[0.292s] gmake[2]: *** [CMakeFiles/data_node.dir/build.make:76: CMakeFiles/data_node.dir/src/show_data.cpp.o] Error 1
+[0.293s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/data_node.dir/all] Error 2
+[0.293s] gmake: *** [Makefile:146: all] Error 2
+[0.295s] Invoked command in '/home/huy/ros2_ws/build/uav_sim' returned '2': CMAKE_PREFIX_PATH=/home/huy/ros2_ws/install/uav_motor_plugin:/home/huy/ros2_ws/install/uav_dynamics:/home/huy/ros2_ws/install/uav_controller:/opt/ros/humble:/home/huy/ros2_ws/install/uav_msgs:/home/huy/ros2_ws/install/uav_sim LD_LIBRARY_PATH=/home/huy/ros2_ws/install/uav_motor_plugin/lib:/home/huy/ros2_ws/install/uav_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake --build /home/huy/ros2_ws/build/uav_sim -- -j16 -l16

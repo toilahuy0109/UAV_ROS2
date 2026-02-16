@@ -1,1 +1,1 @@
-gazebo_dev;gazebo_ros;rclcpp;std_msgs
+gazebo_dev;gazebo_ros;rclcpp;std_msgs;uav_msgs

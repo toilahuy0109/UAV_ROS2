@@ -1,0 +1,16 @@
+[01m[K/home/huy/ros2_ws/src/uav_motor_plugin/src/uav_motor_plugin.cpp:[m[K In member function ‘[01m[Kvoid gazebo::QuadMotorPlugin::CommandCallback(uav_msgs::msg::UavCmd_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/huy/ros2_ws/src/uav_motor_plugin/src/uav_motor_plugin.cpp:45:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst class std::shared_ptr<uav_msgs::msg::UavCmd_<std::allocator<void> > >[m[K’} has no member named ‘[01m[Kw1[m[K’
+   45 |   motors_[0].command = msg.[01;31m[Kw1[m[K;
+      |                            [01;31m[K^~[m[K
+[01m[K/home/huy/ros2_ws/src/uav_motor_plugin/src/uav_motor_plugin.cpp:46:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst class std::shared_ptr<uav_msgs::msg::UavCmd_<std::allocator<void> > >[m[K’} has no member named ‘[01m[Kw2[m[K’
+   46 |   motors_[1].command = msg.[01;31m[Kw2[m[K;
+      |                            [01;31m[K^~[m[K
+[01m[K/home/huy/ros2_ws/src/uav_motor_plugin/src/uav_motor_plugin.cpp:47:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst class std::shared_ptr<uav_msgs::msg::UavCmd_<std::allocator<void> > >[m[K’} has no member named ‘[01m[Kw3[m[K’
+   47 |   motors_[2].command = msg.[01;31m[Kw3[m[K;
+      |                            [01;31m[K^~[m[K
+[01m[K/home/huy/ros2_ws/src/uav_motor_plugin/src/uav_motor_plugin.cpp:48:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst class std::shared_ptr<uav_msgs::msg::UavCmd_<std::allocator<void> > >[m[K’} has no member named ‘[01m[Kw4[m[K’
+   48 |   motors_[3].command = msg.[01;31m[Kw4[m[K;
+      |                            [01;31m[K^~[m[K
+gmake[2]: *** [CMakeFiles/uav_motor_plugin.dir/build.make:76: CMakeFiles/uav_motor_plugin.dir/src/uav_motor_plugin.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/uav_motor_plugin.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

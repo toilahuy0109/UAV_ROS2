@@ -57,18 +57,21 @@ class UavCmd(metaclass=Metaclass_UavCmd):
     """Message class 'UavCmd'."""
 
     __slots__ = [
-        '_ax',
-        '_ay',
-        '_az',
+        '_w1',
+        '_w2',
+        '_w3',
+        '_w4',
     ]
 
     _fields_and_field_types = {
-        'ax': 'double',
-        'ay': 'double',
-        'az': 'double',
+        'w1': 'double',
+        'w2': 'double',
+        'w3': 'double',
+        'w4': 'double',
     }
 
     SLOT_TYPES = (
+        rosidl_parser.definition.BasicType('double'),  # noqa: E501
         rosidl_parser.definition.BasicType('double'),  # noqa: E501
         rosidl_parser.definition.BasicType('double'),  # noqa: E501
         rosidl_parser.definition.BasicType('double'),  # noqa: E501
@@ -78,9 +81,10 @@ class UavCmd(metaclass=Metaclass_UavCmd):
         assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
-        self.ax = kwargs.get('ax', float())
-        self.ay = kwargs.get('ay', float())
-        self.az = kwargs.get('az', float())
+        self.w1 = kwargs.get('w1', float())
+        self.w2 = kwargs.get('w2', float())
+        self.w3 = kwargs.get('w3', float())
+        self.w4 = kwargs.get('w4', float())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -111,11 +115,13 @@ class UavCmd(metaclass=Metaclass_UavCmd):
     def __eq__(self, other):
         if not isinstance(other, self.__class__):
             return False
-        if self.ax != other.ax:
+        if self.w1 != other.w1:
             return False
-        if self.ay != other.ay:
+        if self.w2 != other.w2:
             return False
-        if self.az != other.az:
+        if self.w3 != other.w3:
+            return False
+        if self.w4 != other.w4:
             return False
         return True
 
@@ -125,46 +131,61 @@ class UavCmd(metaclass=Metaclass_UavCmd):
         return copy(cls._fields_and_field_types)
 
     @builtins.property
-    def ax(self):
-        """Message field 'ax'."""
-        return self._ax
+    def w1(self):
+        """Message field 'w1'."""
+        return self._w1
 
-    @ax.setter
-    def ax(self, value):
+    @w1.setter
+    def w1(self, value):
         if __debug__:
             assert \
                 isinstance(value, float), \
-                "The 'ax' field must be of type 'float'"
+                "The 'w1' field must be of type 'float'"
             assert not (value < -1.7976931348623157e+308 or value > 1.7976931348623157e+308) or math.isinf(value), \
-                "The 'ax' field must be a double in [-1.7976931348623157e+308, 1.7976931348623157e+308]"
-        self._ax = value
+                "The 'w1' field must be a double in [-1.7976931348623157e+308, 1.7976931348623157e+308]"
+        self._w1 = value
 
     @builtins.property
-    def ay(self):
-        """Message field 'ay'."""
-        return self._ay
+    def w2(self):
+        """Message field 'w2'."""
+        return self._w2
 
-    @ay.setter
-    def ay(self, value):
+    @w2.setter
+    def w2(self, value):
         if __debug__:
             assert \
                 isinstance(value, float), \
-                "The 'ay' field must be of type 'float'"
+                "The 'w2' field must be of type 'float'"
             assert not (value < -1.7976931348623157e+308 or value > 1.7976931348623157e+308) or math.isinf(value), \
-                "The 'ay' field must be a double in [-1.7976931348623157e+308, 1.7976931348623157e+308]"
-        self._ay = value
+                "The 'w2' field must be a double in [-1.7976931348623157e+308, 1.7976931348623157e+308]"
+        self._w2 = value
 
     @builtins.property
-    def az(self):
-        """Message field 'az'."""
-        return self._az
+    def w3(self):
+        """Message field 'w3'."""
+        return self._w3
 
-    @az.setter
-    def az(self, value):
+    @w3.setter
+    def w3(self, value):
         if __debug__:
             assert \
                 isinstance(value, float), \
-                "The 'az' field must be of type 'float'"
+                "The 'w3' field must be of type 'float'"
             assert not (value < -1.7976931348623157e+308 or value > 1.7976931348623157e+308) or math.isinf(value), \
-                "The 'az' field must be a double in [-1.7976931348623157e+308, 1.7976931348623157e+308]"
-        self._az = value
+                "The 'w3' field must be a double in [-1.7976931348623157e+308, 1.7976931348623157e+308]"
+        self._w3 = value
+
+    @builtins.property
+    def w4(self):
+        """Message field 'w4'."""
+        return self._w4
+
+    @w4.setter
+    def w4(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, float), \
+                "The 'w4' field must be of type 'float'"
+            assert not (value < -1.7976931348623157e+308 or value > 1.7976931348623157e+308) or math.isinf(value), \
+                "The 'w4' field must be a double in [-1.7976931348623157e+308, 1.7976931348623157e+308]"
+        self._w4 = value

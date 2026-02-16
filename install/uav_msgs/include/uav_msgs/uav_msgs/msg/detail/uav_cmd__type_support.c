@@ -31,16 +31,16 @@ void uav_msgs__msg__UavCmd__rosidl_typesupport_introspection_c__UavCmd_fini_func
   uav_msgs__msg__UavCmd__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember uav_msgs__msg__UavCmd__rosidl_typesupport_introspection_c__UavCmd_message_member_array[3] = {
+static rosidl_typesupport_introspection_c__MessageMember uav_msgs__msg__UavCmd__rosidl_typesupport_introspection_c__UavCmd_message_member_array[4] = {
   {
-    "ax",  // name
+    "w1",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_DOUBLE,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(uav_msgs__msg__UavCmd, ax),  // bytes offset in struct
+    offsetof(uav_msgs__msg__UavCmd, w1),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
@@ -50,14 +50,14 @@ static rosidl_typesupport_introspection_c__MessageMember uav_msgs__msg__UavCmd__
     NULL  // resize(index) function pointer
   },
   {
-    "ay",  // name
+    "w2",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_DOUBLE,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(uav_msgs__msg__UavCmd, ay),  // bytes offset in struct
+    offsetof(uav_msgs__msg__UavCmd, w2),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
@@ -67,14 +67,31 @@ static rosidl_typesupport_introspection_c__MessageMember uav_msgs__msg__UavCmd__
     NULL  // resize(index) function pointer
   },
   {
-    "az",  // name
+    "w3",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_DOUBLE,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(uav_msgs__msg__UavCmd, az),  // bytes offset in struct
+    offsetof(uav_msgs__msg__UavCmd, w3),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
+    NULL  // resize(index) function pointer
+  },
+  {
+    "w4",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_DOUBLE,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(uav_msgs__msg__UavCmd, w4),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
@@ -88,7 +105,7 @@ static rosidl_typesupport_introspection_c__MessageMember uav_msgs__msg__UavCmd__
 static const rosidl_typesupport_introspection_c__MessageMembers uav_msgs__msg__UavCmd__rosidl_typesupport_introspection_c__UavCmd_message_members = {
   "uav_msgs__msg",  // message namespace
   "UavCmd",  // message name
-  3,  // number of fields
+  4,  // number of fields
   sizeof(uav_msgs__msg__UavCmd),
   uav_msgs__msg__UavCmd__rosidl_typesupport_introspection_c__UavCmd_message_member_array,  // message members
   uav_msgs__msg__UavCmd__rosidl_typesupport_introspection_c__UavCmd_init_function,  // function to initialize message memory (memory has to be allocated)

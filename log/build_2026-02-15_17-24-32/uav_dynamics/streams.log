@@ -1,0 +1,17 @@
+[0.012s] Invoking command in '/home/huy/ros2_ws/build/uav_dynamics': CMAKE_PREFIX_PATH=/opt/ros/humble:/home/huy/ros2_ws/install/uav_msgs:/home/huy/ros2_ws/install/uav_sim:/home/huy/ros2_ws/install/uav_dynamics:/home/huy/ros2_ws/install/uav_motor_plugin:/home/huy/ros2_ws/install/uav_controller LD_LIBRARY_PATH=/home/huy/ros2_ws/install/uav_msgs/lib:/home/huy/ros2_ws/install/uav_motor_plugin/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake --build /home/huy/ros2_ws/build/uav_dynamics -- -j16 -l16
+[0.066s] [ 60%] [32mBuilding CXX object CMakeFiles/dynamics_node.dir/src/dynamics_node.cpp.o[0m
+[0.066s] [ 60%] Built target cmd_pub_node
+[2.441s] [01m[K/home/huy/ros2_ws/src/uav_dynamics/src/dynamics_node.cpp:[m[K In member function ‘[01m[Kvoid DynamicsNode::cmdCallback(uav_msgs::msg::UavCmd_<std::allocator<void> >::SharedPtr)[m[K’:
+[2.441s] [01m[K/home/huy/ros2_ws/src/uav_dynamics/src/dynamics_node.cpp:23:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct uav_msgs::msg::UavCmd_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct uav_msgs::msg::UavCmd_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kax[m[K’
+[2.441s]    23 |     model_.setCommand(msg->[01;31m[Kax[m[K, msg->ay, msg->az);
+[2.441s]       |                            [01;31m[K^~[m[K
+[2.441s] [01m[K/home/huy/ros2_ws/src/uav_dynamics/src/dynamics_node.cpp:23:37:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct uav_msgs::msg::UavCmd_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct uav_msgs::msg::UavCmd_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kay[m[K’
+[2.441s]    23 |     model_.setCommand(msg->ax, msg->[01;31m[Kay[m[K, msg->az);
+[2.441s]       |                                     [01;31m[K^~[m[K
+[2.441s] [01m[K/home/huy/ros2_ws/src/uav_dynamics/src/dynamics_node.cpp:23:46:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct uav_msgs::msg::UavCmd_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct uav_msgs::msg::UavCmd_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kaz[m[K’
+[2.442s]    23 |     model_.setCommand(msg->ax, msg->ay, msg->[01;31m[Kaz[m[K);
+[2.442s]       |                                              [01;31m[K^~[m[K
+[4.818s] gmake[2]: *** [CMakeFiles/dynamics_node.dir/build.make:76: CMakeFiles/dynamics_node.dir/src/dynamics_node.cpp.o] Error 1
+[4.818s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/dynamics_node.dir/all] Error 2
+[4.818s] gmake: *** [Makefile:146: all] Error 2
+[4.821s] Invoked command in '/home/huy/ros2_ws/build/uav_dynamics' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble:/home/huy/ros2_ws/install/uav_msgs:/home/huy/ros2_ws/install/uav_sim:/home/huy/ros2_ws/install/uav_dynamics:/home/huy/ros2_ws/install/uav_motor_plugin:/home/huy/ros2_ws/install/uav_controller LD_LIBRARY_PATH=/home/huy/ros2_ws/install/uav_msgs/lib:/home/huy/ros2_ws/install/uav_motor_plugin/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake --build /home/huy/ros2_ws/build/uav_dynamics -- -j16 -l16

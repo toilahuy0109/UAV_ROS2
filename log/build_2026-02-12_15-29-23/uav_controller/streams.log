@@ -1,0 +1,25 @@
+[0.011s] Invoking command in '/home/huy/ros2_ws/build/uav_controller': CMAKE_PREFIX_PATH=/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/huy/ros2_ws/build/uav_controller -- -j16 -l16
+[0.066s] [ 33%] Built target imu_node
+[0.066s] [ 50%] [32mBuilding CXX object CMakeFiles/pos_controller_node.dir/src/pid_controller.cpp.o[0m
+[0.067s] [ 83%] Built target smc_controller_node
+[2.044s] [01m[K/home/huy/ros2_ws/src/uav_controller/src/pid_controller.cpp:[m[K In member function ‘[01m[Kvoid Pos_Controller::controlLoop()[m[K’:
+[2.044s] [01m[K/home/huy/ros2_ws/src/uav_controller/src/pid_controller.cpp:106:53:[m[K [01;31m[Kerror: [m[K‘[01m[Kw1[m[K’ was not declared in this scope; did you mean ‘[01m[Ky1[m[K’?
+[2.044s]   106 |     printf("w1: %.1f w2: %.1f w3: %.1f w4: %.1f\n", [01;31m[Kw1[m[K, w2, w3, w4);
+[2.044s]       |                                                     [01;31m[K^~[m[K
+[2.044s]       |                                                     [32m[Ky1[m[K
+[2.047s] [01m[K/home/huy/ros2_ws/src/uav_controller/src/pid_controller.cpp:106:57:[m[K [01;31m[Kerror: [m[K‘[01m[Kw2[m[K’ was not declared in this scope; did you mean ‘[01m[Kw[m[K’?
+[2.047s]   106 |     printf("w1: %.1f w2: %.1f w3: %.1f w4: %.1f\n", w1, [01;31m[Kw2[m[K, w3, w4);
+[2.047s]       |                                                         [01;31m[K^~[m[K
+[2.047s]       |                                                         [32m[Kw[m[K
+[2.050s] [01m[K/home/huy/ros2_ws/src/uav_controller/src/pid_controller.cpp:106:61:[m[K [01;31m[Kerror: [m[K‘[01m[Kw3[m[K’ was not declared in this scope; did you mean ‘[01m[Kw[m[K’?
+[2.050s]   106 |     printf("w1: %.1f w2: %.1f w3: %.1f w4: %.1f\n", w1, w2, [01;31m[Kw3[m[K, w4);
+[2.050s]       |                                                             [01;31m[K^~[m[K
+[2.050s]       |                                                             [32m[Kw[m[K
+[2.053s] [01m[K/home/huy/ros2_ws/src/uav_controller/src/pid_controller.cpp:106:65:[m[K [01;31m[Kerror: [m[K‘[01m[Kw4[m[K’ was not declared in this scope; did you mean ‘[01m[Kw[m[K’?
+[2.053s]   106 |     printf("w1: %.1f w2: %.1f w3: %.1f w4: %.1f\n", w1, w2, w3, [01;31m[Kw4[m[K);
+[2.053s]       |                                                                 [01;31m[K^~[m[K
+[2.053s]       |                                                                 [32m[Kw[m[K
+[4.106s] gmake[2]: *** [CMakeFiles/pos_controller_node.dir/build.make:76: CMakeFiles/pos_controller_node.dir/src/pid_controller.cpp.o] Error 1
+[4.106s] gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/pos_controller_node.dir/all] Error 2
+[4.107s] gmake: *** [Makefile:146: all] Error 2
+[4.109s] Invoked command in '/home/huy/ros2_ws/build/uav_controller' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/huy/ros2_ws/build/uav_controller -- -j16 -l16

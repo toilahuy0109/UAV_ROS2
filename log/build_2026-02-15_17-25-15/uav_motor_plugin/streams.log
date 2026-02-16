@@ -1,0 +1,20 @@
+[0.012s] Invoking command in '/home/huy/ros2_ws/build/uav_motor_plugin': CMAKE_PREFIX_PATH=/opt/ros/humble:/home/huy/ros2_ws/install/uav_msgs:/home/huy/ros2_ws/install/uav_sim:/home/huy/ros2_ws/install/uav_dynamics:/home/huy/ros2_ws/install/uav_motor_plugin:/home/huy/ros2_ws/install/uav_controller LD_LIBRARY_PATH=/home/huy/ros2_ws/install/uav_msgs/lib:/home/huy/ros2_ws/install/uav_motor_plugin/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake --build /home/huy/ros2_ws/build/uav_motor_plugin -- -j16 -l16
+[0.074s] [35m[1mConsolidate compiler generated dependencies of target uav_motor_plugin[0m
+[0.126s] [ 50%] [32mBuilding CXX object CMakeFiles/uav_motor_plugin.dir/src/uav_motor_plugin.cpp.o[0m
+[8.917s] [01m[K/home/huy/ros2_ws/src/uav_motor_plugin/src/uav_motor_plugin.cpp:[m[K In member function ‘[01m[Kvoid gazebo::QuadMotorPlugin::CommandCallback(uav_msgs::msg::UavCmd_<std::allocator<void> >::SharedPtr)[m[K’:
+[8.917s] [01m[K/home/huy/ros2_ws/src/uav_motor_plugin/src/uav_motor_plugin.cpp:45:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst class std::shared_ptr<uav_msgs::msg::UavCmd_<std::allocator<void> > >[m[K’} has no member named ‘[01m[Kw1[m[K’
+[8.917s]    45 |   motors_[0].command = msg.[01;31m[Kw1[m[K;
+[8.917s]       |                            [01;31m[K^~[m[K
+[8.917s] [01m[K/home/huy/ros2_ws/src/uav_motor_plugin/src/uav_motor_plugin.cpp:46:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst class std::shared_ptr<uav_msgs::msg::UavCmd_<std::allocator<void> > >[m[K’} has no member named ‘[01m[Kw2[m[K’
+[8.917s]    46 |   motors_[1].command = msg.[01;31m[Kw2[m[K;
+[8.917s]       |                            [01;31m[K^~[m[K
+[8.917s] [01m[K/home/huy/ros2_ws/src/uav_motor_plugin/src/uav_motor_plugin.cpp:47:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst class std::shared_ptr<uav_msgs::msg::UavCmd_<std::allocator<void> > >[m[K’} has no member named ‘[01m[Kw3[m[K’
+[8.917s]    47 |   motors_[2].command = msg.[01;31m[Kw3[m[K;
+[8.917s]       |                            [01;31m[K^~[m[K
+[8.917s] [01m[K/home/huy/ros2_ws/src/uav_motor_plugin/src/uav_motor_plugin.cpp:48:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst class std::shared_ptr<uav_msgs::msg::UavCmd_<std::allocator<void> > >[m[K’} has no member named ‘[01m[Kw4[m[K’
+[8.917s]    48 |   motors_[3].command = msg.[01;31m[Kw4[m[K;
+[8.917s]       |                            [01;31m[K^~[m[K
+[11.667s] gmake[2]: *** [CMakeFiles/uav_motor_plugin.dir/build.make:76: CMakeFiles/uav_motor_plugin.dir/src/uav_motor_plugin.cpp.o] Error 1
+[11.667s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/uav_motor_plugin.dir/all] Error 2
+[11.667s] gmake: *** [Makefile:146: all] Error 2
+[11.670s] Invoked command in '/home/huy/ros2_ws/build/uav_motor_plugin' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble:/home/huy/ros2_ws/install/uav_msgs:/home/huy/ros2_ws/install/uav_sim:/home/huy/ros2_ws/install/uav_dynamics:/home/huy/ros2_ws/install/uav_motor_plugin:/home/huy/ros2_ws/install/uav_controller LD_LIBRARY_PATH=/home/huy/ros2_ws/install/uav_msgs/lib:/home/huy/ros2_ws/install/uav_motor_plugin/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake --build /home/huy/ros2_ws/build/uav_motor_plugin -- -j16 -l16

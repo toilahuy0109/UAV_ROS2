@@ -1,0 +1,11 @@
+[0.010s] Invoking command in '/home/huy/ros2_ws/build/uav_sim': CMAKE_PREFIX_PATH=/home/huy/ros2_ws/install/uav_motor_plugin:/home/huy/ros2_ws/install/uav_dynamics:/home/huy/ros2_ws/install/uav_controller:/opt/ros/humble:/home/huy/ros2_ws/install/uav_msgs:/home/huy/ros2_ws/install/uav_sim LD_LIBRARY_PATH=/home/huy/ros2_ws/install/uav_motor_plugin/lib:/home/huy/ros2_ws/install/uav_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake --build /home/huy/ros2_ws/build/uav_sim -- -j16 -l16
+[0.050s] [35m[1mConsolidate compiler generated dependencies of target data_node[0m
+[0.072s] [ 50%] [32mBuilding CXX object CMakeFiles/data_node.dir/src/show_data.cpp.o[0m
+[10.254s] [100%] [32m[1mLinking CXX executable data_node[0m
+[10.670s] /usr/bin/ld: /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o: in function `_start':
+[10.670s] (.text+0x1b): undefined reference to `main'
+[10.740s] collect2: error: ld returned 1 exit status
+[10.742s] gmake[2]: *** [CMakeFiles/data_node.dir/build.make:175: data_node] Error 1
+[10.742s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/data_node.dir/all] Error 2
+[10.742s] gmake: *** [Makefile:146: all] Error 2
+[10.745s] Invoked command in '/home/huy/ros2_ws/build/uav_sim' returned '2': CMAKE_PREFIX_PATH=/home/huy/ros2_ws/install/uav_motor_plugin:/home/huy/ros2_ws/install/uav_dynamics:/home/huy/ros2_ws/install/uav_controller:/opt/ros/humble:/home/huy/ros2_ws/install/uav_msgs:/home/huy/ros2_ws/install/uav_sim LD_LIBRARY_PATH=/home/huy/ros2_ws/install/uav_motor_plugin/lib:/home/huy/ros2_ws/install/uav_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake --build /home/huy/ros2_ws/build/uav_sim -- -j16 -l16

@@ -1,0 +1,17 @@
+[35m[1mConsolidate compiler generated dependencies of target pos_controller_node[0m
+[ 33%] Built target imu_node
+[ 66%] Built target smc_controller_node
+[ 83%] [32mBuilding CXX object CMakeFiles/pos_controller_node.dir/src/pid_controller.cpp.o[0m
+[01m[K/home/huy/ros2_ws/src/uav_controller/src/pid_controller.cpp:[m[K In constructor ‘[01m[KPos_Controller::Pos_Controller()[m[K’:
+[01m[K/home/huy/ros2_ws/src/uav_controller/src/pid_controller.cpp:24:86:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KPos_Controller[m[K’ does not have any field named ‘[01m[Kvx_[m[K’
+   24 | Pos_Controller::Pos_Controller() : rclcpp::Node("pos_controller"), x_(0.0), y_(0.0), [01;31m[Kvx_[m[K(0.0), vy_(0.0), vz_(0.0), yaw_ref_(0.0), g_(9.81)
+      |                                                                                      [01;31m[K^~~[m[K
+[01m[K/home/huy/ros2_ws/src/uav_controller/src/pid_controller.cpp:24:96:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KPos_Controller[m[K’ does not have any field named ‘[01m[Kvy_[m[K’
+   24 | Pos_Controller::Pos_Controller() : rclcpp::Node("pos_controller"), x_(0.0), y_(0.0), vx_(0.0), [01;31m[Kvy_[m[K(0.0), vz_(0.0), yaw_ref_(0.0), g_(9.81)
+      |                                                                                                [01;31m[K^~~[m[K
+[01m[K/home/huy/ros2_ws/src/uav_controller/src/pid_controller.cpp:24:106:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KPos_Controller[m[K’ does not have any field named ‘[01m[Kvz_[m[K’
+   24 | Pos_Controller::Pos_Controller() : rclcpp::Node("pos_controller"), x_(0.0), y_(0.0), vx_(0.0), vy_(0.0), [01;31m[Kvz_[m[K(0.0), yaw_ref_(0.0), g_(9.81)
+      |                                                                                                          [01;31m[K^~~[m[K
+gmake[2]: *** [CMakeFiles/pos_controller_node.dir/build.make:76: CMakeFiles/pos_controller_node.dir/src/pid_controller.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/pos_controller_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

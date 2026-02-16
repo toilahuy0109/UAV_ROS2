@@ -17,9 +17,10 @@ uav_msgs__msg__UavCmd__init(uav_msgs__msg__UavCmd * msg)
   if (!msg) {
     return false;
   }
-  // ax
-  // ay
-  // az
+  // w1
+  // w2
+  // w3
+  // w4
   return true;
 }
 
@@ -29,9 +30,10 @@ uav_msgs__msg__UavCmd__fini(uav_msgs__msg__UavCmd * msg)
   if (!msg) {
     return;
   }
-  // ax
-  // ay
-  // az
+  // w1
+  // w2
+  // w3
+  // w4
 }
 
 bool
@@ -40,16 +42,20 @@ uav_msgs__msg__UavCmd__are_equal(const uav_msgs__msg__UavCmd * lhs, const uav_ms
   if (!lhs || !rhs) {
     return false;
   }
-  // ax
-  if (lhs->ax != rhs->ax) {
+  // w1
+  if (lhs->w1 != rhs->w1) {
     return false;
   }
-  // ay
-  if (lhs->ay != rhs->ay) {
+  // w2
+  if (lhs->w2 != rhs->w2) {
     return false;
   }
-  // az
-  if (lhs->az != rhs->az) {
+  // w3
+  if (lhs->w3 != rhs->w3) {
+    return false;
+  }
+  // w4
+  if (lhs->w4 != rhs->w4) {
     return false;
   }
   return true;
@@ -63,12 +69,14 @@ uav_msgs__msg__UavCmd__copy(
   if (!input || !output) {
     return false;
   }
-  // ax
-  output->ax = input->ax;
-  // ay
-  output->ay = input->ay;
-  // az
-  output->az = input->az;
+  // w1
+  output->w1 = input->w1;
+  // w2
+  output->w2 = input->w2;
+  // w3
+  output->w3 = input->w3;
+  // w4
+  output->w4 = input->w4;
   return true;
 }
 

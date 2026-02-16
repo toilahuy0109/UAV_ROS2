@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>uav_sim</name>
+  <version>0.0.1</version>
+  <description>UAV simulation package</description>
+
+  <maintainer email="your_email@example.com">your_name</maintainer>
+  <license>Apache-2.0</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <!-- Vì bạn launch Gazebo -->
+  <exec_depend>gazebo_ros</exec_depend>
+  <exec_depend>ament_index_python</exec_depend>
+
+  <!-- Nếu launch controller -->
+  <exec_depend>uav_controller</exec_depend>
+  <exec_depend>uav_motor_plugin</exec_depend>
+
+  <depend>rclcpp</depend>
+  <depend>std_msgs</depend>
+  <depend>nav_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>uav_msgs</depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

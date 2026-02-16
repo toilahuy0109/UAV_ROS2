@@ -25,24 +25,31 @@ inline void to_flow_style_yaml(
   std::ostream & out)
 {
   out << "{";
-  // member: ax
+  // member: w1
   {
-    out << "ax: ";
-    rosidl_generator_traits::value_to_yaml(msg.ax, out);
+    out << "w1: ";
+    rosidl_generator_traits::value_to_yaml(msg.w1, out);
     out << ", ";
   }
 
-  // member: ay
+  // member: w2
   {
-    out << "ay: ";
-    rosidl_generator_traits::value_to_yaml(msg.ay, out);
+    out << "w2: ";
+    rosidl_generator_traits::value_to_yaml(msg.w2, out);
     out << ", ";
   }
 
-  // member: az
+  // member: w3
   {
-    out << "az: ";
-    rosidl_generator_traits::value_to_yaml(msg.az, out);
+    out << "w3: ";
+    rosidl_generator_traits::value_to_yaml(msg.w3, out);
+    out << ", ";
+  }
+
+  // member: w4
+  {
+    out << "w4: ";
+    rosidl_generator_traits::value_to_yaml(msg.w4, out);
   }
   out << "}";
 }  // NOLINT(readability/fn_size)
@@ -51,33 +58,43 @@ inline void to_block_style_yaml(
   const UavCmd & msg,
   std::ostream & out, size_t indentation = 0)
 {
-  // member: ax
+  // member: w1
   {
     if (indentation > 0) {
       out << std::string(indentation, ' ');
     }
-    out << "ax: ";
-    rosidl_generator_traits::value_to_yaml(msg.ax, out);
+    out << "w1: ";
+    rosidl_generator_traits::value_to_yaml(msg.w1, out);
     out << "\n";
   }
 
-  // member: ay
+  // member: w2
   {
     if (indentation > 0) {
       out << std::string(indentation, ' ');
     }
-    out << "ay: ";
-    rosidl_generator_traits::value_to_yaml(msg.ay, out);
+    out << "w2: ";
+    rosidl_generator_traits::value_to_yaml(msg.w2, out);
     out << "\n";
   }
 
-  // member: az
+  // member: w3
   {
     if (indentation > 0) {
       out << std::string(indentation, ' ');
     }
-    out << "az: ";
-    rosidl_generator_traits::value_to_yaml(msg.az, out);
+    out << "w3: ";
+    rosidl_generator_traits::value_to_yaml(msg.w3, out);
+    out << "\n";
+  }
+
+  // member: w4
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "w4: ";
+    rosidl_generator_traits::value_to_yaml(msg.w4, out);
     out << "\n";
   }
 }  // NOLINT(readability/fn_size)

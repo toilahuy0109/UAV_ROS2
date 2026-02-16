@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+  <world name="default">
+    <include>
+      <uri>model://uav</uri>
+      <pose>0 0 1.0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+    <include>
+      <uri>model://sun</uri>
+    </include>
+    <gravity>0 0 -9.8</gravity>
+    <gui>
+      <camera name="user_camera">
+        <pose>0 0 10 0 -0.5 0</pose>
+        <track_visual>
+          <name>uav::body</name>
+        </track_visual>
+      </camera>
+    </gui>
+  </world>
+</sdf>

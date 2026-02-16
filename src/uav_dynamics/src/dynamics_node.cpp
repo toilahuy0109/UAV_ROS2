@@ -20,7 +20,7 @@ model_(0.01)
 
 void DynamicsNode::cmdCallback(const uav_msgs::msg::UavCmd::SharedPtr msg)
 {
-    model_.setCommand(msg->ax, msg->ay, msg->az);
+    
 }
 
 void DynamicsNode::update()

@@ -1,0 +1,4 @@
+Invoking command in '/home/huy/ros2_ws/build/uav_motor_plugin': CMAKE_PREFIX_PATH=/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/huy/ros2_ws/build/uav_motor_plugin -- -j16 -l16
+Invoked command in '/home/huy/ros2_ws/build/uav_motor_plugin' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/huy/ros2_ws/build/uav_motor_plugin -- -j16 -l16
+Invoking command in '/home/huy/ros2_ws/build/uav_motor_plugin': CMAKE_PREFIX_PATH=/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /home/huy/ros2_ws/build/uav_motor_plugin
+Invoked command in '/home/huy/ros2_ws/build/uav_motor_plugin' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /home/huy/ros2_ws/build/uav_motor_plugin

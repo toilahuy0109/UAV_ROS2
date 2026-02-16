@@ -38,9 +38,10 @@ struct UavCmd_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->ax = 0.0;
-      this->ay = 0.0;
-      this->az = 0.0;
+      this->w1 = 0.0;
+      this->w2 = 0.0;
+      this->w3 = 0.0;
+      this->w4 = 0.0;
     }
   }
 
@@ -50,40 +51,50 @@ struct UavCmd_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->ax = 0.0;
-      this->ay = 0.0;
-      this->az = 0.0;
+      this->w1 = 0.0;
+      this->w2 = 0.0;
+      this->w3 = 0.0;
+      this->w4 = 0.0;
     }
   }
 
   // field types and members
-  using _ax_type =
+  using _w1_type =
     double;
-  _ax_type ax;
-  using _ay_type =
+  _w1_type w1;
+  using _w2_type =
     double;
-  _ay_type ay;
-  using _az_type =
+  _w2_type w2;
+  using _w3_type =
     double;
-  _az_type az;
+  _w3_type w3;
+  using _w4_type =
+    double;
+  _w4_type w4;
 
   // setters for named parameter idiom
-  Type & set__ax(
+  Type & set__w1(
     const double & _arg)
   {
-    this->ax = _arg;
+    this->w1 = _arg;
     return *this;
   }
-  Type & set__ay(
+  Type & set__w2(
     const double & _arg)
   {
-    this->ay = _arg;
+    this->w2 = _arg;
     return *this;
   }
-  Type & set__az(
+  Type & set__w3(
     const double & _arg)
   {
-    this->az = _arg;
+    this->w3 = _arg;
+    return *this;
+  }
+  Type & set__w4(
+    const double & _arg)
+  {
+    this->w4 = _arg;
     return *this;
   }
 
@@ -129,13 +140,16 @@ struct UavCmd_
   // comparison operators
   bool operator==(const UavCmd_ & other) const
   {
-    if (this->ax != other.ax) {
+    if (this->w1 != other.w1) {
       return false;
     }
-    if (this->ay != other.ay) {
+    if (this->w2 != other.w2) {
       return false;
     }
-    if (this->az != other.az) {
+    if (this->w3 != other.w3) {
+      return false;
+    }
+    if (this->w4 != other.w4) {
       return false;
     }
     return true;

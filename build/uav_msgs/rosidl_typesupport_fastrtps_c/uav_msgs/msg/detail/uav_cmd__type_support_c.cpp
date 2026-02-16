@@ -49,19 +49,24 @@ static bool _UavCmd__cdr_serialize(
     return false;
   }
   const _UavCmd__ros_msg_type * ros_message = static_cast<const _UavCmd__ros_msg_type *>(untyped_ros_message);
-  // Field name: ax
+  // Field name: w1
   {
-    cdr << ros_message->ax;
+    cdr << ros_message->w1;
   }
 
-  // Field name: ay
+  // Field name: w2
   {
-    cdr << ros_message->ay;
+    cdr << ros_message->w2;
   }
 
-  // Field name: az
+  // Field name: w3
   {
-    cdr << ros_message->az;
+    cdr << ros_message->w3;
+  }
+
+  // Field name: w4
+  {
+    cdr << ros_message->w4;
   }
 
   return true;
@@ -76,19 +81,24 @@ static bool _UavCmd__cdr_deserialize(
     return false;
   }
   _UavCmd__ros_msg_type * ros_message = static_cast<_UavCmd__ros_msg_type *>(untyped_ros_message);
-  // Field name: ax
+  // Field name: w1
   {
-    cdr >> ros_message->ax;
+    cdr >> ros_message->w1;
   }
 
-  // Field name: ay
+  // Field name: w2
   {
-    cdr >> ros_message->ay;
+    cdr >> ros_message->w2;
   }
 
-  // Field name: az
+  // Field name: w3
   {
-    cdr >> ros_message->az;
+    cdr >> ros_message->w3;
+  }
+
+  // Field name: w4
+  {
+    cdr >> ros_message->w4;
   }
 
   return true;
@@ -108,21 +118,27 @@ size_t get_serialized_size_uav_msgs__msg__UavCmd(
   (void)padding;
   (void)wchar_size;
 
-  // field.name ax
+  // field.name w1
   {
-    size_t item_size = sizeof(ros_message->ax);
+    size_t item_size = sizeof(ros_message->w1);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // field.name ay
+  // field.name w2
   {
-    size_t item_size = sizeof(ros_message->ay);
+    size_t item_size = sizeof(ros_message->w2);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // field.name az
+  // field.name w3
   {
-    size_t item_size = sizeof(ros_message->az);
+    size_t item_size = sizeof(ros_message->w3);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // field.name w4
+  {
+    size_t item_size = sizeof(ros_message->w4);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -155,7 +171,7 @@ size_t max_serialized_size_uav_msgs__msg__UavCmd(
   full_bounded = true;
   is_plain = true;
 
-  // member: ax
+  // member: w1
   {
     size_t array_size = 1;
 
@@ -163,7 +179,7 @@ size_t max_serialized_size_uav_msgs__msg__UavCmd(
     current_alignment += array_size * sizeof(uint64_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
   }
-  // member: ay
+  // member: w2
   {
     size_t array_size = 1;
 
@@ -171,7 +187,15 @@ size_t max_serialized_size_uav_msgs__msg__UavCmd(
     current_alignment += array_size * sizeof(uint64_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
   }
-  // member: az
+  // member: w3
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint64_t);
+    current_alignment += array_size * sizeof(uint64_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+  }
+  // member: w4
   {
     size_t array_size = 1;
 
@@ -188,7 +212,7 @@ size_t max_serialized_size_uav_msgs__msg__UavCmd(
     using DataType = uav_msgs__msg__UavCmd;
     is_plain =
       (
-      offsetof(DataType, az) +
+      offsetof(DataType, w4) +
       last_member_size
       ) == ret_val;
   }

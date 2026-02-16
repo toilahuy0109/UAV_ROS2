@@ -13,6 +13,10 @@ void QuadMotorPlugin::Load(physics::ModelPtr model, sdf::ElementPtr sdf)
     rclcpp::init(0, nullptr);
   }
   ros_node_ = rclcpp::Node::make_shared("quad_motor_plugin");
+  vel_cmd_ = ros_node_->create_subscription<uav_msgs::msg::UavCmd>(
+    "/motor_vel", 10,
+    std::bind(&QuadMotorPlugin::CommandCallback, this, std::placeholders::_1)
+  );
 
   // Read config of 4 motors
   for (int i = 0; i < 4; i++)
@@ -29,13 +33,6 @@ void QuadMotorPlugin::Load(physics::ModelPtr model, sdf::ElementPtr sdf)
     m.direction = direction;
     m.command = 0.0;
 
-    m.sub = ros_node_->create_subscription<std_msgs::msg::Float64>("motor_cmd_" + std::to_string(i),
-      10,
-      [this, i](std_msgs::msg::Float64::SharedPtr msg)
-      {
-        motors_[i].command = std::clamp(msg->data, 0.0, 2300.0);
-      }
-    );
     motors_.push_back(m);
   }
   update_connection_ = event::Events::ConnectWorldUpdateBegin(
@@ -43,6 +40,13 @@ void QuadMotorPlugin::Load(physics::ModelPtr model, sdf::ElementPtr sdf)
   );
 }
 
+void QuadMotorPlugin::CommandCallback(const uav_msgs::msg::UavCmd::SharedPtr msg)
+{
+  motors_[0].command = msg->w1;
+  motors_[1].command = msg->w2;
+  motors_[2].command = msg->w3;
+  motors_[3].command = msg->w4;
+}
 
 void QuadMotorPlugin::OnUpdate()
 {

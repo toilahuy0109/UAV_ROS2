@@ -1,0 +1,23 @@
+[0.060s] Invoking command in '/home/huy/ros2_ws/build/uav_msgs': /usr/bin/cmake --build /home/huy/ros2_ws/build/uav_msgs -- -j16 -l16
+[0.203s] [  7%] Built target uav_msgs__cpp
+[0.203s] [ 12%] Built target uav_msgs__rosidl_generator_c
+[0.232s] [ 12%] Built target ament_cmake_python_copy_uav_msgs
+[0.262s] [ 23%] Built target uav_msgs__rosidl_typesupport_c
+[0.263s] [ 33%] Built target uav_msgs__rosidl_typesupport_introspection_c
+[0.270s] [ 43%] Built target uav_msgs__rosidl_typesupport_fastrtps_c
+[0.295s] [ 74%] Built target uav_msgs__rosidl_typesupport_cpp
+[0.295s] [ 74%] Built target uav_msgs__rosidl_typesupport_fastrtps_cpp
+[0.295s] [ 74%] Built target uav_msgs__rosidl_typesupport_introspection_cpp
+[0.356s] [ 74%] Built target uav_msgs
+[0.412s] [ 76%] Built target uav_msgs__py
+[0.478s] [ 84%] Built target uav_msgs__rosidl_generator_py
+[0.537s] [ 94%] Built target uav_msgs__rosidl_typesupport_introspection_c__pyext
+[0.537s] [ 94%] Built target uav_msgs__rosidl_typesupport_fastrtps_c__pyext
+[0.537s] [100%] Built target uav_msgs__rosidl_typesupport_c__pyext
+[0.821s] running egg_info
+[0.822s] writing uav_msgs.egg-info/PKG-INFO
+[0.823s] writing dependency_links to uav_msgs.egg-info/dependency_links.txt
+[0.823s] writing top-level names to uav_msgs.egg-info/top_level.txt
+[0.830s] reading manifest file 'uav_msgs.egg-info/SOURCES.txt'
+[0.831s] writing manifest file 'uav_msgs.egg-info/SOURCES.txt'
+[0.904s] [100%] Built target ament_cmake_python_build_uav_msgs_egg

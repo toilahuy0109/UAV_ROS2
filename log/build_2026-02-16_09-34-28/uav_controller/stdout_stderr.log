@@ -1,0 +1,11 @@
+[ 66%] Built target imu_node
+[ 83%] [32mBuilding CXX object CMakeFiles/pos_controller_node.dir/src/pid_controller.cpp.o[0m
+[ 83%] Built target smc_controller_node
+[01m[K/home/huy/ros2_ws/src/uav_controller/src/pid_controller.cpp:[m[K In member function ‘[01m[Kvoid Pos_Controller::controlLoop()[m[K’:
+[01m[K/home/huy/ros2_ws/src/uav_controller/src/pid_controller.cpp:119:69:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K;[m[K’ token
+  119 |     att_ref.y = std::atan[34m[K([m[K(ux*std::cos(psi_) + uy*std::sin(psi_))/uz[01;31m[K;[m[K
+      |                          [34m[K~[m[K                                          [01;31m[K^[m[K
+      |                                                                     [32m[K)[m[K
+gmake[2]: *** [CMakeFiles/pos_controller_node.dir/build.make:76: CMakeFiles/pos_controller_node.dir/src/pid_controller.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/pos_controller_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

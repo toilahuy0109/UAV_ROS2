@@ -1,0 +1,25 @@
+[35m[1mConsolidate compiler generated dependencies of target uav_node[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/uav_node.dir/src/main.cpp.o[0m
+[100%] [32m[1mLinking CXX executable uav_node[0m
+[100%] Built target uav_node
+-- Install configuration: ""
+-- Installing: /home/huy/ros2_ws/install/uav_sim/lib/uav_sim/uav_node
+-- Set runtime path of "/home/huy/ros2_ws/install/uav_sim/lib/uav_sim/uav_node" to ""
+-- Installing: /home/huy/ros2_ws/install/uav_sim/share/uav_sim//launch
+-- Installing: /home/huy/ros2_ws/install/uav_sim/share/uav_sim//launch/uav_sim.launch.py
+-- Installing: /home/huy/ros2_ws/install/uav_sim/share/uav_sim//launch/dynamics.launch.py
+-- Installing: /home/huy/ros2_ws/install/uav_sim/share/ament_index/resource_index/package_run_dependencies/uav_sim
+-- Installing: /home/huy/ros2_ws/install/uav_sim/share/ament_index/resource_index/parent_prefix_path/uav_sim
+-- Installing: /home/huy/ros2_ws/install/uav_sim/share/uav_sim/environment/ament_prefix_path.sh
+-- Installing: /home/huy/ros2_ws/install/uav_sim/share/uav_sim/environment/ament_prefix_path.dsv
+-- Installing: /home/huy/ros2_ws/install/uav_sim/share/uav_sim/environment/path.sh
+-- Installing: /home/huy/ros2_ws/install/uav_sim/share/uav_sim/environment/path.dsv
+-- Installing: /home/huy/ros2_ws/install/uav_sim/share/uav_sim/local_setup.bash
+-- Installing: /home/huy/ros2_ws/install/uav_sim/share/uav_sim/local_setup.sh
+-- Installing: /home/huy/ros2_ws/install/uav_sim/share/uav_sim/local_setup.zsh
+-- Installing: /home/huy/ros2_ws/install/uav_sim/share/uav_sim/local_setup.dsv
+-- Up-to-date: /home/huy/ros2_ws/install/uav_sim/share/uav_sim/package.dsv
+-- Installing: /home/huy/ros2_ws/install/uav_sim/share/ament_index/resource_index/packages/uav_sim
+-- Installing: /home/huy/ros2_ws/install/uav_sim/share/uav_sim/cmake/uav_simConfig.cmake
+-- Installing: /home/huy/ros2_ws/install/uav_sim/share/uav_sim/cmake/uav_simConfig-version.cmake
+-- Installing: /home/huy/ros2_ws/install/uav_sim/share/uav_sim/package.xml

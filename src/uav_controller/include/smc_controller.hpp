@@ -4,6 +4,7 @@
 #include "geometry_msgs/msg/vector3.hpp"
 #include "std_msgs/msg/float64.hpp"
 #include "sensor_msgs/msg/imu.hpp"
+#include "uav_msgs/msg/uav_cmd.hpp"
 
 
 struct DerivativeMemory
@@ -60,7 +61,12 @@ class Att_Controller : public rclcpp::Node
     rclcpp::Subscription<sensor_msgs::msg::Imu>::SharedPtr imu_sub_;
 
     // Publisher
-    rclcpp::Publisher<std_msgs::msg::Float64>::SharedPtr motor_pub_[4];
+    rclcpp::Publisher<uav_msgs::msg::UavCmd>::SharedPtr motor_pub_;
+
+    rclcpp::Publisher<geometry_msgs::msg::Vector3>::SharedPtr att_err_;
+    rclcpp::Publisher<geometry_msgs::msg::Vector3>::SharedPtr att_err_dot_;
+    rclcpp::Publisher<geometry_msgs::msg::Vector3>::SharedPtr slide_sur_;
+
 
     void attRefCallback(const geometry_msgs::msg::Vector3::SharedPtr msg);
     void thrustCallback(const std_msgs::msg::Float64::SharedPtr msg);
@@ -104,8 +110,7 @@ class Att_Controller : public rclcpp::Node
     double d_ = 3.558e-7;
 
     // Parameters for controller
-    double k1_ = 10;
-    double k2_ = 20;
+    double k1_ = 2.0;
 
 };
 

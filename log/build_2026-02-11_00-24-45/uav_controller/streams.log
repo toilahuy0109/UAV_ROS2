@@ -1,0 +1,4 @@
+[0.053s] Invoking command in '/home/huy/ros2_ws/build/uav_controller': CMAKE_PREFIX_PATH=/home/huy/ros2_ws/install/uav_dynamics:/opt/ros/humble:/home/huy/ros2_ws/install/uav_msgs:/home/huy/ros2_ws/install/uav_motor_plugin:/home/huy/ros2_ws/install/uav_controller /usr/bin/cmake --build /home/huy/ros2_ws/build/uav_controller -- -j16 -l16
+[0.204s] [ 33%] Built target pos_controller_node
+[0.204s] [ 66%] Built target smc_controller_node
+[0.205s] [100%] Built target imu_node

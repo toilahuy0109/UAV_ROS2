@@ -6,11 +6,13 @@
 module uav_msgs {
   module msg {
     struct UavCmd {
-      double ax;
+      double w1;
 
-      double ay;
+      double w2;
 
-      double az;
+      double w3;
+
+      double w4;
     };
   };
 };

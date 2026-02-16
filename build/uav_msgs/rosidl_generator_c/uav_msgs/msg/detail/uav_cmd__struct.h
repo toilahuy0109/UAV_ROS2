@@ -20,9 +20,10 @@ extern "C"
 /// Struct defined in msg/UavCmd in the package uav_msgs.
 typedef struct uav_msgs__msg__UavCmd
 {
-  double ax;
-  double ay;
-  double az;
+  double w1;
+  double w2;
+  double w3;
+  double w4;
 } uav_msgs__msg__UavCmd;
 
 // Struct for a sequence of uav_msgs__msg__UavCmd.

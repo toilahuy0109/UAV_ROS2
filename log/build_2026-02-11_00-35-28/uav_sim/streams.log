@@ -1,0 +1,4 @@
+[0.030s] Invoking command in '/home/huy/ros2_ws/build/uav_sim': /usr/bin/cmake /home/huy/ros2_ws/src/uav_sim -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/huy/ros2_ws/install/uav_sim
+[0.049s] [0mCMake Error: The source directory "/home/huy/ros2_ws/src/uav_sim" does not appear to contain CMakeLists.txt.
+[0.050s] Specify --help for usage, or press the help button on the CMake GUI.[0m
+[0.055s] Invoked command in '/home/huy/ros2_ws/build/uav_sim' returned '1': /usr/bin/cmake /home/huy/ros2_ws/src/uav_sim -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/huy/ros2_ws/install/uav_sim

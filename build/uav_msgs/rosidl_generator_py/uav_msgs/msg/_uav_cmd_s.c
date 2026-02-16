@@ -50,31 +50,40 @@ bool uav_msgs__msg__uav_cmd__convert_from_py(PyObject * _pymsg, void * _ros_mess
     assert(strncmp("uav_msgs.msg._uav_cmd.UavCmd", full_classname_dest, 28) == 0);
   }
   uav_msgs__msg__UavCmd * ros_message = _ros_message;
-  {  // ax
-    PyObject * field = PyObject_GetAttrString(_pymsg, "ax");
+  {  // w1
+    PyObject * field = PyObject_GetAttrString(_pymsg, "w1");
     if (!field) {
       return false;
     }
     assert(PyFloat_Check(field));
-    ros_message->ax = PyFloat_AS_DOUBLE(field);
+    ros_message->w1 = PyFloat_AS_DOUBLE(field);
     Py_DECREF(field);
   }
-  {  // ay
-    PyObject * field = PyObject_GetAttrString(_pymsg, "ay");
+  {  // w2
+    PyObject * field = PyObject_GetAttrString(_pymsg, "w2");
     if (!field) {
       return false;
     }
     assert(PyFloat_Check(field));
-    ros_message->ay = PyFloat_AS_DOUBLE(field);
+    ros_message->w2 = PyFloat_AS_DOUBLE(field);
     Py_DECREF(field);
   }
-  {  // az
-    PyObject * field = PyObject_GetAttrString(_pymsg, "az");
+  {  // w3
+    PyObject * field = PyObject_GetAttrString(_pymsg, "w3");
     if (!field) {
       return false;
     }
     assert(PyFloat_Check(field));
-    ros_message->az = PyFloat_AS_DOUBLE(field);
+    ros_message->w3 = PyFloat_AS_DOUBLE(field);
+    Py_DECREF(field);
+  }
+  {  // w4
+    PyObject * field = PyObject_GetAttrString(_pymsg, "w4");
+    if (!field) {
+      return false;
+    }
+    assert(PyFloat_Check(field));
+    ros_message->w4 = PyFloat_AS_DOUBLE(field);
     Py_DECREF(field);
   }
 
@@ -99,33 +108,44 @@ PyObject * uav_msgs__msg__uav_cmd__convert_to_py(void * raw_ros_message)
     }
   }
   uav_msgs__msg__UavCmd * ros_message = (uav_msgs__msg__UavCmd *)raw_ros_message;
-  {  // ax
+  {  // w1
     PyObject * field = NULL;
-    field = PyFloat_FromDouble(ros_message->ax);
+    field = PyFloat_FromDouble(ros_message->w1);
     {
-      int rc = PyObject_SetAttrString(_pymessage, "ax", field);
+      int rc = PyObject_SetAttrString(_pymessage, "w1", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;
       }
     }
   }
-  {  // ay
+  {  // w2
     PyObject * field = NULL;
-    field = PyFloat_FromDouble(ros_message->ay);
+    field = PyFloat_FromDouble(ros_message->w2);
     {
-      int rc = PyObject_SetAttrString(_pymessage, "ay", field);
+      int rc = PyObject_SetAttrString(_pymessage, "w2", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;
       }
     }
   }
-  {  // az
+  {  // w3
     PyObject * field = NULL;
-    field = PyFloat_FromDouble(ros_message->az);
+    field = PyFloat_FromDouble(ros_message->w3);
     {
-      int rc = PyObject_SetAttrString(_pymessage, "az", field);
+      int rc = PyObject_SetAttrString(_pymessage, "w3", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // w4
+    PyObject * field = NULL;
+    field = PyFloat_FromDouble(ros_message->w4);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "w4", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

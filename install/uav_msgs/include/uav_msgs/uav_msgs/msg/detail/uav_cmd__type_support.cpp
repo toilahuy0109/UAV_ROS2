@@ -37,16 +37,16 @@ void UavCmd_fini_function(void * message_memory)
   typed_message->~UavCmd();
 }
 
-static const ::rosidl_typesupport_introspection_cpp::MessageMember UavCmd_message_member_array[3] = {
+static const ::rosidl_typesupport_introspection_cpp::MessageMember UavCmd_message_member_array[4] = {
   {
-    "ax",  // name
+    "w1",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_DOUBLE,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(uav_msgs::msg::UavCmd, ax),  // bytes offset in struct
+    offsetof(uav_msgs::msg::UavCmd, w1),  // bytes offset in struct
     nullptr,  // default value
     nullptr,  // size() function pointer
     nullptr,  // get_const(index) function pointer
@@ -56,14 +56,14 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember UavCmd_messag
     nullptr  // resize(index) function pointer
   },
   {
-    "ay",  // name
+    "w2",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_DOUBLE,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(uav_msgs::msg::UavCmd, ay),  // bytes offset in struct
+    offsetof(uav_msgs::msg::UavCmd, w2),  // bytes offset in struct
     nullptr,  // default value
     nullptr,  // size() function pointer
     nullptr,  // get_const(index) function pointer
@@ -73,14 +73,31 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember UavCmd_messag
     nullptr  // resize(index) function pointer
   },
   {
-    "az",  // name
+    "w3",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_DOUBLE,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(uav_msgs::msg::UavCmd, az),  // bytes offset in struct
+    offsetof(uav_msgs::msg::UavCmd, w3),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr,  // fetch(index, &value) function pointer
+    nullptr,  // assign(index, value) function pointer
+    nullptr  // resize(index) function pointer
+  },
+  {
+    "w4",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_DOUBLE,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(uav_msgs::msg::UavCmd, w4),  // bytes offset in struct
     nullptr,  // default value
     nullptr,  // size() function pointer
     nullptr,  // get_const(index) function pointer
@@ -94,7 +111,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember UavCmd_messag
 static const ::rosidl_typesupport_introspection_cpp::MessageMembers UavCmd_message_members = {
   "uav_msgs::msg",  // message namespace
   "UavCmd",  // message name
-  3,  // number of fields
+  4,  // number of fields
   sizeof(uav_msgs::msg::UavCmd),
   UavCmd_message_member_array,  // message members
   UavCmd_init_function,  // function to initialize message memory (memory has to be allocated)

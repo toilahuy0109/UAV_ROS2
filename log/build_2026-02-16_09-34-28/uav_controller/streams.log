@@ -1,0 +1,13 @@
+[0.014s] Invoking command in '/home/huy/ros2_ws/build/uav_controller': CMAKE_PREFIX_PATH=/opt/ros/humble:/home/huy/ros2_ws/install/uav_msgs:/home/huy/ros2_ws/install/uav_sim:/home/huy/ros2_ws/install/uav_dynamics:/home/huy/ros2_ws/install/uav_motor_plugin:/home/huy/ros2_ws/install/uav_controller LD_LIBRARY_PATH=/home/huy/ros2_ws/install/uav_msgs/lib:/home/huy/ros2_ws/install/uav_motor_plugin/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake --build /home/huy/ros2_ws/build/uav_controller -- -j16 -l16
+[0.075s] [ 66%] Built target imu_node
+[0.075s] [ 83%] [32mBuilding CXX object CMakeFiles/pos_controller_node.dir/src/pid_controller.cpp.o[0m
+[0.075s] [ 83%] Built target smc_controller_node
+[2.336s] [01m[K/home/huy/ros2_ws/src/uav_controller/src/pid_controller.cpp:[m[K In member function ‘[01m[Kvoid Pos_Controller::controlLoop()[m[K’:
+[2.336s] [01m[K/home/huy/ros2_ws/src/uav_controller/src/pid_controller.cpp:119:69:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K;[m[K’ token
+[2.336s]   119 |     att_ref.y = std::atan[34m[K([m[K(ux*std::cos(psi_) + uy*std::sin(psi_))/uz[01;31m[K;[m[K
+[2.336s]       |                          [34m[K~[m[K                                          [01;31m[K^[m[K
+[2.336s]       |                                                                     [32m[K)[m[K
+[4.438s] gmake[2]: *** [CMakeFiles/pos_controller_node.dir/build.make:76: CMakeFiles/pos_controller_node.dir/src/pid_controller.cpp.o] Error 1
+[4.438s] gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/pos_controller_node.dir/all] Error 2
+[4.439s] gmake: *** [Makefile:146: all] Error 2
+[4.441s] Invoked command in '/home/huy/ros2_ws/build/uav_controller' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble:/home/huy/ros2_ws/install/uav_msgs:/home/huy/ros2_ws/install/uav_sim:/home/huy/ros2_ws/install/uav_dynamics:/home/huy/ros2_ws/install/uav_motor_plugin:/home/huy/ros2_ws/install/uav_controller LD_LIBRARY_PATH=/home/huy/ros2_ws/install/uav_msgs/lib:/home/huy/ros2_ws/install/uav_motor_plugin/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake --build /home/huy/ros2_ws/build/uav_controller -- -j16 -l16

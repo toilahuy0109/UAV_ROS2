@@ -1,0 +1,22 @@
+[35m[1mConsolidate compiler generated dependencies of target uav_motor_plugin[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/uav_motor_plugin.dir/src/uav_motor_plugin.cpp.o[0m
+[100%] [32m[1mLinking CXX shared library libuav_motor_plugin.so[0m
+[100%] Built target uav_motor_plugin
+-- Install configuration: ""
+-- Installing: /home/huy/ros2_ws/install/uav_motor_plugin/lib/libuav_motor_plugin.so
+-- Set runtime path of "/home/huy/ros2_ws/install/uav_motor_plugin/lib/libuav_motor_plugin.so" to ""
+-- Installing: /home/huy/ros2_ws/install/uav_motor_plugin/share/ament_index/resource_index/package_run_dependencies/uav_motor_plugin
+-- Installing: /home/huy/ros2_ws/install/uav_motor_plugin/share/ament_index/resource_index/parent_prefix_path/uav_motor_plugin
+-- Up-to-date: /home/huy/ros2_ws/install/uav_motor_plugin/share/uav_motor_plugin/environment/ament_prefix_path.sh
+-- Installing: /home/huy/ros2_ws/install/uav_motor_plugin/share/uav_motor_plugin/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/huy/ros2_ws/install/uav_motor_plugin/share/uav_motor_plugin/environment/path.sh
+-- Installing: /home/huy/ros2_ws/install/uav_motor_plugin/share/uav_motor_plugin/environment/path.dsv
+-- Up-to-date: /home/huy/ros2_ws/install/uav_motor_plugin/share/uav_motor_plugin/local_setup.bash
+-- Up-to-date: /home/huy/ros2_ws/install/uav_motor_plugin/share/uav_motor_plugin/local_setup.sh
+-- Up-to-date: /home/huy/ros2_ws/install/uav_motor_plugin/share/uav_motor_plugin/local_setup.zsh
+-- Installing: /home/huy/ros2_ws/install/uav_motor_plugin/share/uav_motor_plugin/local_setup.dsv
+-- Installing: /home/huy/ros2_ws/install/uav_motor_plugin/share/uav_motor_plugin/package.dsv
+-- Up-to-date: /home/huy/ros2_ws/install/uav_motor_plugin/share/ament_index/resource_index/packages/uav_motor_plugin
+-- Up-to-date: /home/huy/ros2_ws/install/uav_motor_plugin/share/uav_motor_plugin/cmake/uav_motor_pluginConfig.cmake
+-- Up-to-date: /home/huy/ros2_ws/install/uav_motor_plugin/share/uav_motor_plugin/cmake/uav_motor_pluginConfig-version.cmake
+-- Installing: /home/huy/ros2_ws/install/uav_motor_plugin/share/uav_motor_plugin/package.xml

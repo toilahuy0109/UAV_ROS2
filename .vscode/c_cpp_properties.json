@@ -10,7 +10,8 @@
                 "${workspaceFolder}/src/uav_controller/include/**",
                 "${workspaceFolder}/src/uav_dynamics/include/**",
                 "${workspaceFolder}/install/uav_msgs/include/uav_msgs",
-                "${workspaceFolder}/src/uav_motor_plugin/include"
+                "${workspaceFolder}/src/uav_motor_plugin/include",
+                "${workspaceFolder}/src/uav_sim/include"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/gcc",

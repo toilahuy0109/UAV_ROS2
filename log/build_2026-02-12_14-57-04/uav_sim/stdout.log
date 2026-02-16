@@ -1,0 +1,24 @@
+-- Install configuration: ""
+-- Up-to-date: /home/huy/ros2_ws/install/uav_sim/share/uav_sim/launch
+-- Installing: /home/huy/ros2_ws/install/uav_sim/share/uav_sim/launch/uav_sim.launch.py
+-- Up-to-date: /home/huy/ros2_ws/install/uav_sim/share/uav_sim/models
+-- Up-to-date: /home/huy/ros2_ws/install/uav_sim/share/uav_sim/models/uav_world.sdf
+-- Up-to-date: /home/huy/ros2_ws/install/uav_sim/share/uav_sim/models/uav
+-- Up-to-date: /home/huy/ros2_ws/install/uav_sim/share/uav_sim/models/uav/drone.sdf
+-- Up-to-date: /home/huy/ros2_ws/install/uav_sim/share/uav_sim/models/uav/uav.stl
+-- Up-to-date: /home/huy/ros2_ws/install/uav_sim/share/uav_sim/models/uav/model.config
+-- Up-to-date: /home/huy/ros2_ws/install/uav_sim/share/ament_index/resource_index/package_run_dependencies/uav_sim
+-- Up-to-date: /home/huy/ros2_ws/install/uav_sim/share/ament_index/resource_index/parent_prefix_path/uav_sim
+-- Up-to-date: /home/huy/ros2_ws/install/uav_sim/share/uav_sim/environment/ament_prefix_path.sh
+-- Up-to-date: /home/huy/ros2_ws/install/uav_sim/share/uav_sim/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/huy/ros2_ws/install/uav_sim/share/uav_sim/environment/path.sh
+-- Up-to-date: /home/huy/ros2_ws/install/uav_sim/share/uav_sim/environment/path.dsv
+-- Up-to-date: /home/huy/ros2_ws/install/uav_sim/share/uav_sim/local_setup.bash
+-- Up-to-date: /home/huy/ros2_ws/install/uav_sim/share/uav_sim/local_setup.sh
+-- Up-to-date: /home/huy/ros2_ws/install/uav_sim/share/uav_sim/local_setup.zsh
+-- Up-to-date: /home/huy/ros2_ws/install/uav_sim/share/uav_sim/local_setup.dsv
+-- Up-to-date: /home/huy/ros2_ws/install/uav_sim/share/uav_sim/package.dsv
+-- Up-to-date: /home/huy/ros2_ws/install/uav_sim/share/ament_index/resource_index/packages/uav_sim
+-- Up-to-date: /home/huy/ros2_ws/install/uav_sim/share/uav_sim/cmake/uav_simConfig.cmake
+-- Up-to-date: /home/huy/ros2_ws/install/uav_sim/share/uav_sim/cmake/uav_simConfig-version.cmake
+-- Up-to-date: /home/huy/ros2_ws/install/uav_sim/share/uav_sim/package.xml

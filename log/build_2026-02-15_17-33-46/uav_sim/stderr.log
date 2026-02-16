@@ -1,0 +1,71 @@
+[01m[K/home/huy/ros2_ws/src/uav_sim/src/show_data.cpp:[m[K In constructor ‘[01m[KShowData::ShowData()[m[K’:
+[01m[K/home/huy/ros2_ws/src/uav_sim/src/show_data.cpp:3:24:[m[K [01;31m[Kerror: [m[Kexpected identifier before ‘[01m[Kpublic[m[K’
+    3 | ShowData::ShowData() : [01;31m[Kpublic[m[K rclcpp::Node("data_node")
+      |                        [01;31m[K^~~~~~[m[K
+[01m[K/home/huy/ros2_ws/src/uav_sim/src/show_data.cpp:3:24:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Node::Node()[m[K’
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/huy/ros2_ws/src/uav_sim/include/show_data.hpp:3[m[K,
+                 from [01m[K/home/huy/ros2_ws/src/uav_sim/src/show_data.cpp:1[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1294:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Node::Node(const rclcpp::Node&, const string&)[m[K’
+ 1294 |   [01;36m[KNode[m[K(
+      |   [01;36m[K^~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1294:3:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 0 provided
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:101:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Node::Node(const string&, const string&, const rclcpp::NodeOptions&)[m[K’
+  101 |   explicit [01;36m[KNode[m[K(
+      |            [01;36m[K^~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:101:12:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 0 provided
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:89:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Node::Node(const string&, const rclcpp::NodeOptions&)[m[K’
+   89 |   explicit [01;36m[KNode[m[K(
+      |            [01;36m[K^~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:89:12:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 0 provided
+[01m[K/home/huy/ros2_ws/src/uav_sim/src/show_data.cpp:3:24:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K{[m[K’ before ‘[01m[Kpublic[m[K’
+    3 | ShowData::ShowData() : [01;31m[Kpublic[m[K rclcpp::Node("data_node")
+      |                        [01;31m[K^~~~~~[m[K
+[01m[K/home/huy/ros2_ws/src/uav_sim/src/show_data.cpp:[m[K At global scope:
+[01m[K/home/huy/ros2_ws/src/uav_sim/src/show_data.cpp:3:24:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kpublic[m[K’
+[01m[K/home/huy/ros2_ws/src/uav_sim/src/show_data.cpp:[m[K In member function ‘[01m[Kvoid ShowData::eposCallback(geometry_msgs::msg::Vector3_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/huy/ros2_ws/src/uav_sim/src/show_data.cpp:48:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst class std::shared_ptr<geometry_msgs::msg::Vector3_<std::allocator<void> > >[m[K’} has no member named ‘[01m[Kx[m[K’
+   48 |     pid_data.ex = msg.[01;31m[Kx[m[K;
+      |                       [01;31m[K^[m[K
+[01m[K/home/huy/ros2_ws/src/uav_sim/src/show_data.cpp:49:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst class std::shared_ptr<geometry_msgs::msg::Vector3_<std::allocator<void> > >[m[K’} has no member named ‘[01m[Ky[m[K’
+   49 |     pid_data.ey = msg.[01;31m[Ky[m[K;
+      |                       [01;31m[K^[m[K
+[01m[K/home/huy/ros2_ws/src/uav_sim/src/show_data.cpp:50:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst class std::shared_ptr<geometry_msgs::msg::Vector3_<std::allocator<void> > >[m[K’} has no member named ‘[01m[Kz[m[K’
+   50 |     pid_data.ez = msg.[01;31m[Kz[m[K;
+      |                       [01;31m[K^[m[K
+[01m[K/home/huy/ros2_ws/src/uav_sim/src/show_data.cpp:[m[K In member function ‘[01m[Kvoid ShowData::eposdotCallback(geometry_msgs::msg::Vector3_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/huy/ros2_ws/src/uav_sim/src/show_data.cpp:55:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst class std::shared_ptr<geometry_msgs::msg::Vector3_<std::allocator<void> > >[m[K’} has no member named ‘[01m[Kx[m[K’
+   55 |     pid_data.ex_dot = msg.[01;31m[Kx[m[K;
+      |                           [01;31m[K^[m[K
+[01m[K/home/huy/ros2_ws/src/uav_sim/src/show_data.cpp:56:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst class std::shared_ptr<geometry_msgs::msg::Vector3_<std::allocator<void> > >[m[K’} has no member named ‘[01m[Ky[m[K’
+   56 |     pid_data.ey_dot = msg.[01;31m[Ky[m[K;
+      |                           [01;31m[K^[m[K
+[01m[K/home/huy/ros2_ws/src/uav_sim/src/show_data.cpp:57:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst class std::shared_ptr<geometry_msgs::msg::Vector3_<std::allocator<void> > >[m[K’} has no member named ‘[01m[Kz[m[K’
+   57 |     pid_data.ez_dot = msg.[01;31m[Kz[m[K;
+      |                           [01;31m[K^[m[K
+[01m[K/home/huy/ros2_ws/src/uav_sim/src/show_data.cpp:[m[K In member function ‘[01m[Kvoid ShowData::attCallback(geometry_msgs::msg::Vector3_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/huy/ros2_ws/src/uav_sim/src/show_data.cpp:62:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst class std::shared_ptr<geometry_msgs::msg::Vector3_<std::allocator<void> > >[m[K’} has no member named ‘[01m[Kx[m[K’
+   62 |     pid_data.phi_ref = msg.[01;31m[Kx[m[K;
+      |                            [01;31m[K^[m[K
+[01m[K/home/huy/ros2_ws/src/uav_sim/src/show_data.cpp:63:30:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst class std::shared_ptr<geometry_msgs::msg::Vector3_<std::allocator<void> > >[m[K’} has no member named ‘[01m[Ky[m[K’
+   63 |     pid_data.theta_ref = msg.[01;31m[Ky[m[K;
+      |                              [01;31m[K^[m[K
+[01m[K/home/huy/ros2_ws/src/uav_sim/src/show_data.cpp:64:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst class std::shared_ptr<geometry_msgs::msg::Vector3_<std::allocator<void> > >[m[K’} has no member named ‘[01m[Kz[m[K’
+   64 |     pid_data.psi_ref = msg.[01;31m[Kz[m[K;
+      |                            [01;31m[K^[m[K
+[01m[K/home/huy/ros2_ws/src/uav_sim/src/show_data.cpp:[m[K At global scope:
+[01m[K/home/huy/ros2_ws/src/uav_sim/src/show_data.cpp:67:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid ShowData::thrustCallback(geometry_msgs::msg::Vector3_<std::allocator<void> >::SharedPtr)[m[K’
+   67 | void [01;31m[KShowData[m[K::thrustCallback(const geometry_msgs::msg::Vector3::SharedPtr msg)
+      |      [01;31m[K^~~~~~~~[m[K
+In file included from [01m[K/home/huy/ros2_ws/src/uav_sim/src/show_data.cpp:1[m[K:
+[01m[K/home/huy/ros2_ws/src/uav_sim/include/show_data.hpp:45:10:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kvoid ShowData::thrustCallback(std_msgs::msg::Float64_<std::allocator<void> >::SharedPtr)[m[K’
+   45 |     void [01;36m[KthrustCallback[m[K(const std_msgs::msg::Float64::SharedPtr msg);
+      |          [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/huy/ros2_ws/src/uav_sim/include/show_data.hpp:35:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass ShowData[m[K’ defined here
+   35 | class [01;36m[KShowData[m[K : public rclcpp::Node
+      |       [01;36m[K^~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/data_node.dir/build.make:76: CMakeFiles/data_node.dir/src/show_data.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/data_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,10 @@
+/home/huy/ros2_ws/build/uav_sim/CMakeFiles/uninstall.dir
+/home/huy/ros2_ws/build/uav_sim/CMakeFiles/uav_sim_uninstall.dir
+/home/huy/ros2_ws/build/uav_sim/CMakeFiles/data_node.dir
+/home/huy/ros2_ws/build/uav_sim/CMakeFiles/test.dir
+/home/huy/ros2_ws/build/uav_sim/CMakeFiles/edit_cache.dir
+/home/huy/ros2_ws/build/uav_sim/CMakeFiles/rebuild_cache.dir
+/home/huy/ros2_ws/build/uav_sim/CMakeFiles/list_install_components.dir
+/home/huy/ros2_ws/build/uav_sim/CMakeFiles/install.dir
+/home/huy/ros2_ws/build/uav_sim/CMakeFiles/install/local.dir
+/home/huy/ros2_ws/build/uav_sim/CMakeFiles/install/strip.dir
