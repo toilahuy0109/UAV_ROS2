@@ -3,7 +3,7 @@
 #include <tf2/LinearMath/Matrix3x3.h>
 
 PID::PID(double kp, double ki, double kd, double Ts)
-: kp_(kp), ki_(ki), kd_(kd), Ts_(Ts), integral_(0.0), imax_(2.0), eps_(1.0)
+: kp_(kp), ki_(ki), kd_(kd), Ts_(Ts), integral_(0.0), eps_(1.0), N_(57.1413988020802), prev_error_(0.0)
 {}
 
 double PID::get_integral()
@@ -13,15 +13,18 @@ double PID::get_integral()
 
 double PID::update(double e, double edot)
 {
+    double alpha = N_*Ts_ / (1.0 + N_ * Ts_);
+    derivative_ = alpha * derivative_ + (kd_ * N_ / (1.0 + N_ * Ts_))*(e - prev_error_);
     if (std::abs(e) > eps_)
     {
         integral_ += e*Ts_;
         
     }
-    return kp_*e + ki_*integral_ + kd_*edot;
+    prev_error_ = e;
+    return kp_*e + ki_*integral_ + derivative_;
 }
 
-Pos_Controller::Pos_Controller() : rclcpp::Node("pos_controller"), x_(0.0), y_(0.0), yaw_ref_(0.0), g_(9.81)
+Pos_Controller::Pos_Controller() : rclcpp::Node("pos_controller"), x_(0.0), y_(0.0), yaw_ref_(0.0)
 {
     Ts_ = 0.01;
     start_time_ = this->get_clock()->now();
@@ -106,7 +109,7 @@ void Pos_Controller::controlLoop()
     /*------------------ PID ----------------------*/
     double ux = pid_x_->update(ex, ex_dot);
     double uy = pid_y_->update(ey, ey_dot);
-    double uz = pid_z_->update(ez, ez_dot) + 1.4*9.8;
+    double uz = pid_z_->update(ez, ez_dot) + 1.5*9.8;
 
 
     /*---------------- Thrust Ref -------------------*/

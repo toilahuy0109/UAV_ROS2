@@ -25,8 +25,10 @@ class PID
     private:
     double kp_, ki_, kd_, Ts_;
     double integral_;
-    double imax_;
     double eps_;
+    double N_;
+    double prev_error_;
+    double derivative_;
     
 };
 
@@ -67,8 +69,8 @@ class Pos_Controller : public rclcpp::Node
     rclcpp:: Time start_time_;
 
     // Constants
-    const double g_;
-    double m_ = 1.4;
+    const double g_ = 9.8;
+    double m_ = 1.5;
 
     // Callback
     void odomCallback(const nav_msgs::msg::Odometry::SharedPtr msg);

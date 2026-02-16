@@ -159,7 +159,7 @@ void Att_Controller::controlLoop()
 
         phi_ref_ddot = (phi_ref_dot - phi_ref_mem_.ref_dot_prev) / Ts_;
         theta_ref_ddot = (theta_ref_dot - theta_ref_mem_.ref_dot_prev) / Ts_;
-        psi_ref_ddot = (theta_ref_dot - theta_ref_mem_.ref_dot_prev) / Ts_;
+        psi_ref_ddot = (psi_ref_dot - psi_ref_mem_.ref_dot_prev) / Ts_;
     }
 
     /* ----------------- Error -----------------------------*/
