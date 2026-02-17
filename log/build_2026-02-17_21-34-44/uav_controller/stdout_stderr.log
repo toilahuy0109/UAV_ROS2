@@ -1,0 +1,28 @@
+[35m[1mConsolidate compiler generated dependencies of target pos_controller_node[0m
+[35m[1mConsolidate compiler generated dependencies of target smc_controller_node[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/controller_node.dir/src/controller.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/smc_controller_node.dir/src/smc_controller.cpp.o[0m
+[ 66%] Built target pos_controller_node
+In file included from [01m[K/home/huy/ros2_ws/src/uav_controller/src/controller.cpp:1[m[K:
+[01m[K/home/huy/ros2_ws/src/uav_controller/include/controller.hpp:8:10:[m[K [01;31m[Kfatal error: [m[Kuav_msgs/msg/uav_cmd.hpp: No such file or directory
+    8 | #include [01;31m[K"uav_msgs/msg/uav_cmd.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/controller_node.dir/build.make:76: CMakeFiles/controller_node.dir/src/controller.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/controller_node.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[01m[K/home/huy/ros2_ws/src/uav_controller/src/smc_controller.cpp:30:1:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[KSMC::SMC(double, double)[m[K’
+   30 | [01;31m[KSMC[m[K::SMC(double lambda, double k) : lambda_(lambda), k_(k)
+      | [01;31m[K^~~[m[K
+[01m[K/home/huy/ros2_ws/src/uav_controller/src/smc_controller.cpp:9:1:[m[K [01;36m[Knote: [m[K‘[01m[KSMC::SMC(double, double)[m[K’ previously defined here
+    9 | [01;36m[KSMC[m[K::SMC(double lambda, double k) : lambda_(lambda), k_(k)
+      | [01;36m[K^~~[m[K
+[01m[K/home/huy/ros2_ws/src/uav_controller/src/smc_controller.cpp:33:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kdouble SMC::update(double, double)[m[K’
+   33 | double [01;31m[KSMC[m[K::update(double e, double edot)
+      |        [01;31m[K^~~[m[K
+[01m[K/home/huy/ros2_ws/src/uav_controller/src/smc_controller.cpp:12:8:[m[K [01;36m[Knote: [m[K‘[01m[Kdouble SMC::update(double, double)[m[K’ previously defined here
+   12 | double [01;36m[KSMC[m[K::update(double e, double edot)
+      |        [01;36m[K^~~[m[K
+gmake[2]: *** [CMakeFiles/smc_controller_node.dir/build.make:76: CMakeFiles/smc_controller_node.dir/src/smc_controller.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/smc_controller_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

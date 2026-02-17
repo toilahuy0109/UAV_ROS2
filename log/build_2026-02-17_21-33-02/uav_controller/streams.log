@@ -1,0 +1,65 @@
+[0.014s] Invoking command in '/home/huy/ros2_ws/build/uav_controller': CMAKE_PREFIX_PATH=/opt/ros/humble:/home/huy/ros2_ws/install/uav_msgs:/home/huy/ros2_ws/install/uav_sim:/home/huy/ros2_ws/install/uav_motor_plugin:/home/huy/ros2_ws/install/uav_dynamics:/home/huy/ros2_ws/install/uav_controller LD_LIBRARY_PATH=/home/huy/ros2_ws/install/uav_msgs/lib:/home/huy/ros2_ws/install/uav_motor_plugin/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake --build /home/huy/ros2_ws/build/uav_controller -- -j16 -l16
+[0.038s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.148s] -- Found rclcpp: 16.0.17 (/opt/ros/humble/share/rclcpp/cmake)
+[0.178s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.179s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.184s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.191s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.200s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.235s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.237s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.342s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.394s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.425s] -- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.441s] -- Found uav_msgs: 0.0.0 (/home/huy/ros2_ws/install/uav_msgs/share/uav_msgs/cmake)
+[0.448s] -- Found tf2: 0.25.18 (/opt/ros/humble/share/tf2/cmake)
+[0.453s] -- Found tf2_ros: 0.25.18 (/opt/ros/humble/share/tf2_ros/cmake)
+[0.536s] -- Found tf2_geometry_msgs: 0.25.18 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[0.541s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[0.542s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[0.646s] -- Configuring done
+[0.669s] -- Generating done
+[0.678s] -- Build files have been written to: /home/huy/ros2_ws/build/uav_controller
+[0.706s] [35m[1mConsolidate compiler generated dependencies of target smc_controller_node[0m
+[0.706s] [35m[1mConsolidate compiler generated dependencies of target pos_controller_node[0m
+[0.716s] [ 16%] [32mBuilding CXX object CMakeFiles/controller_node.dir/src/controller.cpp.o[0m
+[0.725s] [ 33%] [32mBuilding CXX object CMakeFiles/pos_controller_node.dir/src/pid_controller.cpp.o[0m
+[0.728s] [ 50%] [32mBuilding CXX object CMakeFiles/smc_controller_node.dir/src/smc_controller.cpp.o[0m
+[0.997s] In file included from [01m[K/home/huy/ros2_ws/src/uav_controller/src/controller.cpp:1[m[K:
+[0.998s] [01m[K/home/huy/ros2_ws/src/uav_controller/include/controller.hpp:8:10:[m[K [01;31m[Kfatal error: [m[Kuav_msgs/msg/uav_cmd.hpp: No such file or directory
+[0.998s]     8 | #include [01;31m[K"uav_msgs/msg/uav_cmd.hpp"[m[K
+[0.998s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.998s] compilation terminated.
+[1.001s] gmake[2]: *** [CMakeFiles/controller_node.dir/build.make:76: CMakeFiles/controller_node.dir/src/controller.cpp.o] Error 1
+[1.002s] gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/controller_node.dir/all] Error 2
+[1.002s] gmake[1]: *** Waiting for unfinished jobs....
+[3.155s] [01m[K/home/huy/ros2_ws/src/uav_controller/src/smc_controller.cpp:30:1:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[KSMC::SMC(double, double)[m[K’
+[3.155s]    30 | [01;31m[KSMC[m[K::SMC(double lambda, double k) : lambda_(lambda), k_(k)
+[3.155s]       | [01;31m[K^~~[m[K
+[3.155s] [01m[K/home/huy/ros2_ws/src/uav_controller/src/smc_controller.cpp:9:1:[m[K [01;36m[Knote: [m[K‘[01m[KSMC::SMC(double, double)[m[K’ previously defined here
+[3.155s]     9 | [01;36m[KSMC[m[K::SMC(double lambda, double k) : lambda_(lambda), k_(k)
+[3.156s]       | [01;36m[K^~~[m[K
+[3.156s] [01m[K/home/huy/ros2_ws/src/uav_controller/src/smc_controller.cpp:33:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kdouble SMC::update(double, double)[m[K’
+[3.156s]    33 | double [01;31m[KSMC[m[K::update(double e, double edot)
+[3.156s]       |        [01;31m[K^~~[m[K
+[3.156s] [01m[K/home/huy/ros2_ws/src/uav_controller/src/smc_controller.cpp:12:8:[m[K [01;36m[Knote: [m[K‘[01m[Kdouble SMC::update(double, double)[m[K’ previously defined here
+[3.156s]    12 | double [01;36m[KSMC[m[K::update(double e, double edot)
+[3.156s]       |        [01;36m[K^~~[m[K
+[3.156s] [01m[K/home/huy/ros2_ws/src/uav_controller/src/smc_controller.cpp:41:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kdouble SMC::get_lambda()[m[K’
+[3.156s]    41 | double [01;31m[KSMC[m[K::get_lambda()
+[3.156s]       |        [01;31m[K^~~[m[K
+[3.156s] [01m[K/home/huy/ros2_ws/src/uav_controller/src/smc_controller.cpp:20:8:[m[K [01;36m[Knote: [m[K‘[01m[Kdouble SMC::get_lambda()[m[K’ previously defined here
+[3.156s]    20 | double [01;36m[KSMC[m[K::get_lambda()
+[3.156s]       |        [01;36m[K^~~[m[K
+[3.156s] [01m[K/home/huy/ros2_ws/src/uav_controller/src/smc_controller.cpp:46:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kdouble SMC::get_slide(double, double)[m[K’
+[3.156s]    46 | double [01;31m[KSMC[m[K::get_slide(double e, double edot)
+[3.156s]       |        [01;31m[K^~~[m[K
+[3.156s] [01m[K/home/huy/ros2_ws/src/uav_controller/src/smc_controller.cpp:25:8:[m[K [01;36m[Knote: [m[K‘[01m[Kdouble SMC::get_slide(double, double)[m[K’ previously defined here
+[3.156s]    25 | double [01;36m[KSMC[m[K::get_slide(double e, double edot)
+[3.156s]       |        [01;36m[K^~~[m[K
+[7.723s] gmake[2]: *** [CMakeFiles/smc_controller_node.dir/build.make:76: CMakeFiles/smc_controller_node.dir/src/smc_controller.cpp.o] Error 1
+[7.723s] gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/smc_controller_node.dir/all] Error 2
+[8.648s] [ 66%] [32m[1mLinking CXX executable pos_controller_node[0m
+[9.019s] [ 66%] Built target pos_controller_node
+[9.020s] gmake: *** [Makefile:146: all] Error 2
+[9.022s] Invoked command in '/home/huy/ros2_ws/build/uav_controller' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble:/home/huy/ros2_ws/install/uav_msgs:/home/huy/ros2_ws/install/uav_sim:/home/huy/ros2_ws/install/uav_motor_plugin:/home/huy/ros2_ws/install/uav_dynamics:/home/huy/ros2_ws/install/uav_controller LD_LIBRARY_PATH=/home/huy/ros2_ws/install/uav_msgs/lib:/home/huy/ros2_ws/install/uav_motor_plugin/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake --build /home/huy/ros2_ws/build/uav_controller -- -j16 -l16

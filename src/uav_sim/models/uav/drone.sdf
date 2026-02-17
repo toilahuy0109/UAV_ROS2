@@ -77,7 +77,7 @@
       <sensor name="imu" type="imu">
         <always_on>true</always_on>
         <visualize>0</visualize>
-        <update_rate>1000</update_rate>
+        <update_rate>100</update_rate>
         <plugin name="imu_plugin" filename="libgazebo_ros_imu_sensor.so">
           <ros>
             <namespace>drone</namespace>

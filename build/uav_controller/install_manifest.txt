@@ -1,4 +1,4 @@
-/home/huy/ros2_ws/install/uav_controller/lib/uav_controller/imu_node
+/home/huy/ros2_ws/install/uav_controller/lib/uav_controller/controller_node
 /home/huy/ros2_ws/install/uav_controller/lib/uav_controller/pos_controller_node
 /home/huy/ros2_ws/install/uav_controller/lib/uav_controller/smc_controller_node
 /home/huy/ros2_ws/install/uav_controller/share/ament_index/resource_index/package_run_dependencies/uav_controller

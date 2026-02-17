@@ -1,0 +1,5 @@
+[35m[1mConsolidate compiler generated dependencies of target pos_controller_node[0m
+[35m[1mConsolidate compiler generated dependencies of target smc_controller_node[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/controller_node.dir/src/controller.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/smc_controller_node.dir/src/smc_controller.cpp.o[0m
+[ 66%] Built target pos_controller_node

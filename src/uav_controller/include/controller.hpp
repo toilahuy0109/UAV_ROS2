@@ -7,14 +7,6 @@
 #include "sensor_msgs/msg/imu.hpp"
 #include "uav_msgs/msg/uav_cmd.hpp"
 
-struct DerivativeMemory
-{
-    double prev;
-    bool initialized;
-
-    DerivativeMemory() : prev(0.0), initialized(false)
-    {}
-};
 
 
 // To calculate e_dot
@@ -22,20 +14,40 @@ struct DerivativePID
 {
     double ex, ey, ez;
 
-    PrevData() : ex(0.0), ey(0.0), ez(0.0) {};
+    int tick;
+
+    DerivativePID() : ex(0.0), ey(0.0), ez(0.0), tick(0) {};
+};
+
+// To calculate att_dot, att_ref_dot, att_ref_ddot
+struct DerivativeSMC
+{
+    double phi_, theta_, psi_;
+    double ephi_, etheta_, epsi_;
+    double phi_ref_, theta_ref_, psi_ref_;
+    double phi_ref_dot, theta_ref_dot, psi_ref_dot;
+
+    double w1, w2, w3, w4;
+
+    DerivativeSMC() : phi_(0.0), theta_(0.0), psi_(0.0),
+                        ephi_(0.0), etheta_(0.0), epsi_(0.0),
+                        phi_ref_(0.0), theta_ref_(0.0), psi_ref_(0.0),
+                        phi_ref_dot(0.0), theta_ref_dot(0.0), psi_ref_dot(0.0),
+                        w1(0.0), w2(0.0), w3(0.0), w4(0.0)
+    {}
 };
 
 
 class PID
 {
     public:
-    PID(double kp, double ki, double kd, double Ts);
+    PID(double kp, double ki, double kd);
     double get_integral();
 
-    double update(double e, double edot);
+    double update(double e, double edot, double Ts_);
     
     private:
-    double kp_, ki_, kd_, Ts_;
+    double kp_, ki_, kd_;
     double integral_;
     double eps_;
     double N_;
@@ -65,8 +77,7 @@ class Controller : public rclcpp::Node
 
     // Callback
     void odomCallback(const nav_msgs::msg::Odometry::SharedPtr msg);
-    void imuCallback(const sensor_msgs::msg::Imu::SharedPtr msg);
-    void controlLoop();
+    void controlLoop(const sensor_msgs::msg::Imu::SharedPtr msg);
 
     private:
 
@@ -89,27 +100,40 @@ class Controller : public rclcpp::Node
 
     // State
     double x_, y_, z_;
-    double x_dot_, y_dot_, z_dot_;
 
     double phi_, theta_, psi_;
-    double phi_dot_, theta_dot_, psi_dot_;
 
-    PrevData prev;
+    DerivativePID pid_data;
+    DerivativeSMC smc_data;
 
     // Reference
     double x_ref_, y_ref_, z_ref_, yaw_ref_;
-
-    double phi_, theta_, psi_;
 
     // PID
     std::shared_ptr<PID> pid_x_;
     std::shared_ptr<PID> pid_y_;
     std::shared_ptr<PID> pid_z_;
+
+    std::shared_ptr<SMC> smc_phi_;
+    std::shared_ptr<SMC> smc_theta_;
+    std::shared_ptr<SMC> smc_psi_;
+
     double Ts_;
-    rclcpp:: Time start_time_;
+    rclcpp::Time start_time_;
+    rclcpp::Time prev_time_;
 
     // Constants
     const double g_ = 9.8;
-    double m_ = 1.5;
-};
+    const double m_ = 1.5;
+    const double Ix_ = 0.0211;
+    const double Iy_ = 0.0219;
+    const double Iz_ = 0.0366;
+    const double Jr_ = 0.0;
+
+    const double length_ = 0.156;
+    const double b_ = 1.105e-5;
+    const double d_ = 3.558e-7;
+
+    double k1_ = 10.0;
+}; 
 

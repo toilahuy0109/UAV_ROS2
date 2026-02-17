@@ -19,8 +19,8 @@ find_package(tf2_ros REQUIRED)
 find_package(tf2_geometry_msgs REQUIRED)
 
 # Thêm source code
-add_executable(imu_node
-  src/imu_read.cpp
+add_executable(controller_node
+  src/controller.cpp
 )
 
 add_executable(pos_controller_node
@@ -32,9 +32,16 @@ add_executable(smc_controller_node
 )
 
 
-ament_target_dependencies(imu_node
+ament_target_dependencies(controller_node
     rclcpp
     sensor_msgs
+    geometry_msgs
+    std_msgs
+    nav_msgs
+    tf2
+    tf2_ros
+    tf2_geometry_msgs
+    uav_msgs
 )
 
 ament_target_dependencies(pos_controller_node
@@ -59,7 +66,7 @@ ament_target_dependencies(smc_controller_node
   tf2_geometry_msgs
 )
 
-target_include_directories(imu_node PUBLIC
+target_include_directories(controller_node PUBLIC
     $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
     $<INSTALL_INTERFACE:include>
 )
@@ -78,7 +85,7 @@ target_include_directories(smc_controller_node PUBLIC
 # Cài đặt binary
 install(
   TARGETS 
-  imu_node
+  controller_node
   DESTINATION lib/${PROJECT_NAME}
 )
 

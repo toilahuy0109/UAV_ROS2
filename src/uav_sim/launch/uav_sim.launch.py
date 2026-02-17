@@ -32,6 +32,12 @@ def generate_launch_description():
         output='screen'
     )
 
+    controller = Node(
+        package = 'uav_controller',
+        executable='controller_node',
+        output='screen'
+    )
+
     pos_controller = Node(
         package='uav_controller',
         executable='pos_controller_node',
@@ -46,7 +52,7 @@ def generate_launch_description():
 
     start_controllers = TimerAction(
         period = 5.0,
-        actions = [pos_controller, att_controller]
+        actions = [controller]
     )
 
     return LaunchDescription([

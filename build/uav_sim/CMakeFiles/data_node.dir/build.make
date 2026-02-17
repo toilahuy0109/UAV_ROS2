@@ -166,7 +166,7 @@ data_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_c.so
 data_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_c.so
 data_node: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_c.so
 data_node: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_cpp.so
-data_node: /opt/ros/humble/lib/libfastcdr.so.1.0.24
+data_node: /opt/ros/humble/lib/libfastcdr.so.1.0.29
 data_node: /opt/ros/humble/lib/librmw.so
 data_node: /opt/ros/humble/lib/librosidl_typesupport_introspection_cpp.so
 data_node: /opt/ros/humble/lib/librosidl_typesupport_introspection_c.so

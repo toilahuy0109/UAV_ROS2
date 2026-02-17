@@ -27,6 +27,7 @@ double SMC::get_slide(double e, double edot)
     return edot + lambda_*e;
 }
 
+
 Att_Controller::Att_Controller()
 : Node("attitude_controller"), phi_(0.0), theta_(0.0), psi_(0.0),
 phi_ref_(0.0), theta_ref_(0.0), psi_ref_(0.0),

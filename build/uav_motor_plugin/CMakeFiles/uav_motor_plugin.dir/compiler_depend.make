@@ -2891,6 +2891,7 @@ CMakeFiles/uav_motor_plugin.dir/src/uav_motor_plugin.cpp.o: /home/huy/ros2_ws/sr
   /opt/ros/humble/include/rmw/rmw/topic_endpoint_info_array.h \
   /opt/ros/humble/include/rmw/rmw/topic_endpoint_info.h \
   /opt/ros/humble/include/rclcpp/rclcpp/event.hpp \
+  /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/detail/node_interfaces_helpers.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/qos.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/duration.hpp \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp \
@@ -6362,6 +6363,8 @@ CMakeFiles/uav_motor_plugin.dir/src/uav_motor_plugin.cpp.o: /home/huy/ros2_ws/sr
 /usr/include/c++/11/bits/atomic_base.h:
 
 /usr/include/gazebo-11/gazebo/msgs/undo_redo.pb.h:
+
+/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/detail/node_interfaces_helpers.hpp:
 
 /usr/include/c++/11/bits/atomic_lockfree_defines.h:
 

@@ -158,7 +158,7 @@ dynamics_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_c.so
 dynamics_node: /opt/ros/humble/lib/libtracetools.so
 dynamics_node: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_c.so
 dynamics_node: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_cpp.so
-dynamics_node: /opt/ros/humble/lib/libfastcdr.so.1.0.24
+dynamics_node: /opt/ros/humble/lib/libfastcdr.so.1.0.29
 dynamics_node: /opt/ros/humble/lib/librmw.so
 dynamics_node: /opt/ros/humble/lib/librosidl_typesupport_introspection_cpp.so
 dynamics_node: /opt/ros/humble/lib/librosidl_typesupport_introspection_c.so

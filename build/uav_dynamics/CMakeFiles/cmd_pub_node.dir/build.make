@@ -139,7 +139,7 @@ cmd_pub_node: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_
 cmd_pub_node: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_fastrtps_cpp.so
 cmd_pub_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_cpp.so
 cmd_pub_node: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_cpp.so
-cmd_pub_node: /opt/ros/humble/lib/libfastcdr.so.1.0.24
+cmd_pub_node: /opt/ros/humble/lib/libfastcdr.so.1.0.29
 cmd_pub_node: /opt/ros/humble/lib/librmw.so
 cmd_pub_node: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_introspection_c.so
 cmd_pub_node: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_introspection_c.so

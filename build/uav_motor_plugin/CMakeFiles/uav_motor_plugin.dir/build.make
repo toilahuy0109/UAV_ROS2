@@ -242,7 +242,7 @@ libuav_motor_plugin.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesu
 libuav_motor_plugin.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_c.so
 libuav_motor_plugin.so: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_c.so
 libuav_motor_plugin.so: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_cpp.so
-libuav_motor_plugin.so: /opt/ros/humble/lib/libfastcdr.so.1.0.24
+libuav_motor_plugin.so: /opt/ros/humble/lib/libfastcdr.so.1.0.29
 libuav_motor_plugin.so: /opt/ros/humble/lib/librmw.so
 libuav_motor_plugin.so: /opt/ros/humble/lib/librosidl_typesupport_introspection_cpp.so
 libuav_motor_plugin.so: /opt/ros/humble/lib/librosidl_typesupport_introspection_c.so
