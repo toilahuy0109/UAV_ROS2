@@ -44,13 +44,13 @@
       </ros>
       <body_name>body</body_name>
       <frameName>odom</frameName>
-      <updateRate>1000</updateRate>
+      <updateRate>100</updateRate>
     </plugin>
 
 
     <link name="body">
       <inertial>
-        <mass>1.4</mass>
+        <mass>1.5</mass>
         <inertia>
           <ixx>0.0211</ixx>
           <iyy>0.0219</iyy>
@@ -77,7 +77,7 @@
       <sensor name="imu" type="imu">
         <always_on>true</always_on>
         <visualize>0</visualize>
-        <update_rate>1000</update_rate>
+        <update_rate>100</update_rate>
         <plugin name="imu_plugin" filename="libgazebo_ros_imu_sensor.so">
           <ros>
             <namespace>drone</namespace>

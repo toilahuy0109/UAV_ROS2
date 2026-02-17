@@ -28,6 +28,7 @@ Pos_Controller::Pos_Controller() : rclcpp::Node("pos_controller"), x_(0.0), y_(0
 {
     Ts_ = 0.01;
     start_time_ = this->get_clock()->now();
+    prev_time_ = this->get_clock()->now();
 
     pid_x_ = std::make_shared<PID>(0.0274953657924367, 0.00055898718103685, 0.330530505324201, Ts_);
     pid_y_ = std::make_shared<PID>(0.0274953657924367, 0.00055898718103685, 0.330530505324201, Ts_);
@@ -54,20 +55,21 @@ Pos_Controller::Pos_Controller() : rclcpp::Node("pos_controller"), x_(0.0), y_(0
         "/pos_dot_err", 10
     );
 
-    control_timer_ = this->create_wall_timer(
-        std::chrono::duration<double>(Ts_),
-        std::bind(&Pos_Controller::controlLoop, this)
-    );
-
     RCLCPP_INFO(this->get_logger(),
     "Position PID controller (XYZ tracking) started");
 }
 
 void Pos_Controller::odomCallback(const nav_msgs::msg::Odometry::SharedPtr msg)
 {
+    rclcpp::Time now(msg->header.stamp);
+    Ts_ = (now - prev_time_).seconds();
+    prev_time_ = now;
+
     x_ = msg->pose.pose.position.x;
     y_ = msg->pose.pose.position.y;
     z_ = msg->pose.pose.position.z;
+
+    controlLoop(now);
 }
 
 void Pos_Controller::imuCallback(const sensor_msgs::msg::Imu::SharedPtr msg)
@@ -81,9 +83,9 @@ void Pos_Controller::imuCallback(const sensor_msgs::msg::Imu::SharedPtr msg)
     tf2::Matrix3x3(q).getRPY(phi_, theta_, psi_);
 }
 
-void Pos_Controller::controlLoop()
+void Pos_Controller::controlLoop(rclcpp::Time now)
 {
-    double t = (this->get_clock()->now() - start_time_).seconds();
+    double t = (now - start_time_).seconds();
 
     double A = 10.0;
     double w = 1/16;

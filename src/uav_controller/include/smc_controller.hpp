@@ -98,8 +98,10 @@ class Att_Controller : public rclcpp::Node
 
     OmegaMemory omega_mem_;
 
+    rclcpp::Time prev_time_;
+
     // UAV Parameter
-    double m_ = 1.4;
+    double m_ = 1.5;
     double Ix_ = 0.0211;
     double Iy_ = 0.0219;
     double Iz_ = 0.0366;

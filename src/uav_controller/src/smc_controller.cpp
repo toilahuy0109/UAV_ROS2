@@ -65,12 +65,6 @@ thrust_ref_(0.0), smc_roll_(10.0, 10.0), smc_pitch_(10.0, 10.0), smc_yaw_(10.0, 
     /*----------------- Motor Publisher --------------------*/
     motor_pub_ = this->create_publisher<uav_msgs::msg::UavCmd>("/motor_vel", 10);
 
-    /*----------------- Controller Timer ---------------------*/
-    control_timer_ = this->create_wall_timer(
-        std::chrono::duration<double>(Ts_),
-        std::bind(&Att_Controller::controlLoop, this)
-    );
-
     RCLCPP_INFO(this->get_logger(),
         "Attitude SMC controller started (Ts = %.4f s)", Ts_);
 }
@@ -89,6 +83,9 @@ void Att_Controller::thrustCallback(const std_msgs::msg::Float64::SharedPtr msg)
 
 void Att_Controller::imuCallback(const sensor_msgs::msg::Imu::SharedPtr msg)
 {
+    rclcpp::Time now(msg->header.stamp);
+    Ts_ = (now - prev_time_).seconds();
+    prev_time_ = now;
     tf2::Quaternion q(
         msg->orientation.x,
         msg->orientation.y,
@@ -96,6 +93,7 @@ void Att_Controller::imuCallback(const sensor_msgs::msg::Imu::SharedPtr msg)
         msg->orientation.w
     );
     tf2::Matrix3x3(q).getRPY(phi_, theta_, psi_);
+    controlLoop();
 }
 
 void Att_Controller::controlLoop()
@@ -210,8 +208,11 @@ void Att_Controller::controlLoop()
     w[2] = std::sqrt(std::abs(thrust_ref_/(4*b_) + tau[1]/(2*length_*b_) - tau[2]/(4*d_)));
     w[3] = std::sqrt(std::abs(thrust_ref_/(4*b_) + tau[0]/(2*length_*b_) + tau[2]/(4*d_)));
 
+    w[0] = std::clamp(w[0], 0.0, 2300.0);
+    w[1] = std::clamp(w[1], 0.0, 2300.0);
+    w[2] = std::clamp(w[2], 0.0, 2300.0);
+    w[3] = std::clamp(w[3], 0.0, 2300.0);
     
-
     omega_mem_.w1 = w[0];
     omega_mem_.w2 = w[1];
     omega_mem_.w3 = w[2];

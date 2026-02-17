@@ -66,6 +66,7 @@ class Pos_Controller : public rclcpp::Node
     std::shared_ptr<PID> pid_y_;
     std::shared_ptr<PID> pid_z_;
     double Ts_;
+    rclcpp::Time prev_time_;
     rclcpp:: Time start_time_;
 
     // Constants
@@ -75,6 +76,6 @@ class Pos_Controller : public rclcpp::Node
     // Callback
     void odomCallback(const nav_msgs::msg::Odometry::SharedPtr msg);
     void imuCallback(const sensor_msgs::msg::Imu::SharedPtr msg);
-    void controlLoop();
+    void controlLoop(rclcpp::Time now);
 };
 
