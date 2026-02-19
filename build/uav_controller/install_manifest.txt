@@ -1,3 +1,4 @@
+/home/huy/ros2_ws/install/uav_controller/lib/uav_controller/test_pid_node
 /home/huy/ros2_ws/install/uav_controller/lib/uav_controller/controller_node
 /home/huy/ros2_ws/install/uav_controller/lib/uav_controller/pos_controller_node
 /home/huy/ros2_ws/install/uav_controller/lib/uav_controller/smc_controller_node

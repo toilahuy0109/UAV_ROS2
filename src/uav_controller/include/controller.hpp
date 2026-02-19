@@ -48,11 +48,11 @@ class PID
     
     private:
     double kp_, ki_, kd_;
-    double integral_;
+    double integral_ = 0.0;
     double eps_;
     double N_;
-    double prev_error_;
-    double derivative_;
+    double prev_error_ = 0.0;
+    double derivative_ = 0.0;
     
 };
 
@@ -118,9 +118,15 @@ class Controller : public rclcpp::Node
     std::shared_ptr<SMC> smc_theta_;
     std::shared_ptr<SMC> smc_psi_;
 
-    double Ts_;
+    double Ts_pid;
+    double Ts_smc;
+
     rclcpp::Time start_time_;
-    rclcpp::Time prev_time_;
+    rclcpp::Time prev_time_pid;
+    rclcpp::Time prev_time_smc;
+
+    double phi_ref, theta_ref, psi_ref;
+    double thrust_ref;
 
     // Constants
     const double g_ = 9.8;

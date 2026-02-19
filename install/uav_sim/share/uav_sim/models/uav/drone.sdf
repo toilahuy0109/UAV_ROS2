@@ -44,7 +44,7 @@
       </ros>
       <body_name>body</body_name>
       <frameName>odom</frameName>
-      <updateRate>100</updateRate>
+      <updateRate>200</updateRate>
     </plugin>
 
 

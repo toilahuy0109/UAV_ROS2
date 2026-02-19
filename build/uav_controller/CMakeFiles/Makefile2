@@ -66,6 +66,7 @@ CMAKE_BINARY_DIR = /home/huy/ros2_ws/build/uav_controller
 all: CMakeFiles/controller_node.dir/all
 all: CMakeFiles/pos_controller_node.dir/all
 all: CMakeFiles/smc_controller_node.dir/all
+all: CMakeFiles/test_pid_node.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -78,6 +79,7 @@ clean: CMakeFiles/uav_controller_uninstall.dir/clean
 clean: CMakeFiles/controller_node.dir/clean
 clean: CMakeFiles/pos_controller_node.dir/clean
 clean: CMakeFiles/smc_controller_node.dir/clean
+clean: CMakeFiles/test_pid_node.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -209,6 +211,32 @@ smc_controller_node: CMakeFiles/smc_controller_node.dir/rule
 CMakeFiles/smc_controller_node.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/smc_controller_node.dir/build.make CMakeFiles/smc_controller_node.dir/clean
 .PHONY : CMakeFiles/smc_controller_node.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/test_pid_node.dir
+
+# All Build rule for target.
+CMakeFiles/test_pid_node.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_pid_node.dir/build.make CMakeFiles/test_pid_node.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_pid_node.dir/build.make CMakeFiles/test_pid_node.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/huy/ros2_ws/build/uav_controller/CMakeFiles --progress-num=7,8 "Built target test_pid_node"
+.PHONY : CMakeFiles/test_pid_node.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/test_pid_node.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/huy/ros2_ws/build/uav_controller/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_pid_node.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/huy/ros2_ws/build/uav_controller/CMakeFiles 0
+.PHONY : CMakeFiles/test_pid_node.dir/rule
+
+# Convenience name for target.
+test_pid_node: CMakeFiles/test_pid_node.dir/rule
+.PHONY : test_pid_node
+
+# clean rule for target.
+CMakeFiles/test_pid_node.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_pid_node.dir/build.make CMakeFiles/test_pid_node.dir/clean
+.PHONY : CMakeFiles/test_pid_node.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

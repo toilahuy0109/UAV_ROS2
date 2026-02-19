@@ -1,0 +1,5 @@
+[35m[1mConsolidate compiler generated dependencies of target test_pid_node[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/controller_node.dir/src/controller.cpp.o[0m
+[ 37%] Built target pos_controller_node
+[ 62%] Built target smc_controller_node
+[ 87%] Built target test_pid_node

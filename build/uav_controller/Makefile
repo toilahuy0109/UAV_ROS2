@@ -236,6 +236,19 @@ smc_controller_node/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/smc_controller_node.dir/build.make CMakeFiles/smc_controller_node.dir/build
 .PHONY : smc_controller_node/fast
 
+#=============================================================================
+# Target rules for targets named test_pid_node
+
+# Build rule for target.
+test_pid_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_pid_node
+.PHONY : test_pid_node
+
+# fast build rule for target.
+test_pid_node/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_pid_node.dir/build.make CMakeFiles/test_pid_node.dir/build
+.PHONY : test_pid_node/fast
+
 src/controller.o: src/controller.cpp.o
 .PHONY : src/controller.o
 
@@ -308,6 +321,30 @@ src/smc_controller.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/smc_controller_node.dir/build.make CMakeFiles/smc_controller_node.dir/src/smc_controller.cpp.s
 .PHONY : src/smc_controller.cpp.s
 
+src/test_pid.o: src/test_pid.cpp.o
+.PHONY : src/test_pid.o
+
+# target to build an object file
+src/test_pid.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_pid_node.dir/build.make CMakeFiles/test_pid_node.dir/src/test_pid.cpp.o
+.PHONY : src/test_pid.cpp.o
+
+src/test_pid.i: src/test_pid.cpp.i
+.PHONY : src/test_pid.i
+
+# target to preprocess a source file
+src/test_pid.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_pid_node.dir/build.make CMakeFiles/test_pid_node.dir/src/test_pid.cpp.i
+.PHONY : src/test_pid.cpp.i
+
+src/test_pid.s: src/test_pid.cpp.s
+.PHONY : src/test_pid.s
+
+# target to generate assembly for a file
+src/test_pid.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_pid_node.dir/build.make CMakeFiles/test_pid_node.dir/src/test_pid.cpp.s
+.PHONY : src/test_pid.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -326,6 +363,7 @@ help:
 	@echo "... controller_node"
 	@echo "... pos_controller_node"
 	@echo "... smc_controller_node"
+	@echo "... test_pid_node"
 	@echo "... src/controller.o"
 	@echo "... src/controller.i"
 	@echo "... src/controller.s"
@@ -335,6 +373,9 @@ help:
 	@echo "... src/smc_controller.o"
 	@echo "... src/smc_controller.i"
 	@echo "... src/smc_controller.s"
+	@echo "... src/test_pid.o"
+	@echo "... src/test_pid.i"
+	@echo "... src/test_pid.s"
 .PHONY : help
 
 

@@ -6,7 +6,7 @@
 
 
 PID::PID(double kp, double ki, double kd)
-: kp_(kp), ki_(ki), kd_(kd), integral_(0.0), eps_(1.0), N_(228.565595208321), prev_error_(0.0)
+: kp_(kp), ki_(ki), kd_(kd), integral_(0.0), eps_(1.0), N_(228.565595208321), prev_error_(0.0), derivative_(0.0)
 {}
 
 double PID::get_integral()
@@ -49,10 +49,11 @@ double SMC::get_slide(double e, double edot)
 }
 
 
-Controller::Controller() : Node("controller_node"), x_(0.0), y_(0.0), Ts_(0.01), start_time_(0.0), prev_time_(0.0)
+Controller::Controller() : Node("controller_node"), x_(0.0), y_(0.0)
 {
     start_time_ = this->get_clock()->now();
-    prev_time_ = this->get_clock()->now();
+    prev_time_pid = this->get_clock()->now();
+    prev_time_smc = this->get_clock()->now();
 
     // Publish Data to show
     pos_err_ = this->create_publisher<geometry_msgs::msg::Vector3>(
@@ -95,8 +96,8 @@ Controller::Controller() : Node("controller_node"), x_(0.0), y_(0.0), Ts_(0.01),
 
     /*------------------------ Controller -----------------------------*/
     pid_x_ = std::make_shared<PID>(1.34965529853073, 0.0986779769726277, 2.94194871374757);
-    pid_y_ = std::make_shared<PID>(0.0274953657924367, 0.00055898718103685, 0.330530505324201);
-    pid_z_ = std::make_shared<PID>(0.0274953657924367, 0.00055898718103685, 0.330530505324201);
+    pid_y_ = std::make_shared<PID>(1.34965529853073, 0.0986779769726277, 2.94194871374757);
+    pid_z_ = std::make_shared<PID>(1.34965529853073, 0.0986779769726277, 2.94194871374757);
 
     smc_phi_ = std::make_shared<SMC>(10.0, 10.0);
     smc_theta_ = std::make_shared<SMC>(10.0, 10.0);
@@ -106,26 +107,14 @@ Controller::Controller() : Node("controller_node"), x_(0.0), y_(0.0), Ts_(0.01),
 
 void Controller::odomCallback(const nav_msgs::msg::Odometry::SharedPtr msg)
 {
-        x_ = msg->pose.pose.position.x;
-        y_ = msg->pose.pose.position.y;
-        z_ = msg->pose.pose.position.z;
-}
-
-void Controller::controlLoop(const sensor_msgs::msg::Imu::SharedPtr msg)
-{
     rclcpp::Time now(msg->header.stamp);
-    Ts_ = (now - prev_time_).seconds();
+    Ts_pid = (now - prev_time_pid).seconds();
+    prev_time_pid = now;
     double t = (now - start_time_).seconds();
-    printf("%.4f", t);
 
-    // Get attitude from sensor
-    tf2::Quaternion q(
-        msg->orientation.x,
-        msg->orientation.y,
-        msg->orientation.z,
-        msg->orientation.w
-    );
-    tf2::Matrix3x3(q).getRPY(phi_, theta_, psi_);
+    x_ = msg->pose.pose.position.x;
+    y_ = msg->pose.pose.position.y;
+    z_ = msg->pose.pose.position.z;
 
     // Reference Trajectory
     double A = 10.0;
@@ -141,31 +130,33 @@ void Controller::controlLoop(const sensor_msgs::msg::Imu::SharedPtr msg)
     double ey = y_ref_ - y_;
     double ez = z_ref_ - z_;
 
-    double ex_dot = (ex - pid_data.ex)/Ts_;
-    double ey_dot = (ey - pid_data.ey)/Ts_;
-    double ez_dot = (ez - pid_data.ez)/Ts_;
+    double ex_dot = (ex - pid_data.ex)/Ts_pid;
+    double ey_dot = (ey - pid_data.ey)/Ts_pid;
+    double ez_dot = (ez - pid_data.ez)/Ts_pid;
     
     pid_data.ex = ex;
     pid_data.ey = ey;
     pid_data.ez = ez;
 
     /*------------------ PID ----------------------*/
-    double ux = pid_x_->update(ex, ex_dot, Ts_);
-    double uy = pid_y_->update(ey, ey_dot, Ts_);
-    double uz = pid_z_->update(ez, ez_dot, Ts_) + m_*g_;
+    double ux = pid_x_->update(ex, ex_dot, Ts_pid);
+    double uy = pid_y_->update(ey, ey_dot, Ts_pid);
+    double uz = pid_z_->update(ez, ez_dot, Ts_pid) + m_*g_;
+
+    printf("%.4f", Ts_pid);
 
 
     /*---------------- Thrust Ref -------------------*/
-    double thrust_ref = m_*std::sqrt(ux*ux + uy*uy + (uz+g_)*(uz+g_));
+    thrust_ref = m_*std::sqrt(ux*ux + uy*uy + (uz+g_)*(uz+g_));
 
     std_msgs::msg::Float64 thrust;
     thrust.data = thrust_ref;
     thrust_ref_pub_->publish(thrust);
 
     /*----------------- Attitude Ref ---------------*/
-    double phi_ref = std::asin(m_*(ux*std::sin(psi_) - uy*std::cos(psi_))/thrust_ref);
-    double theta_ref = std::atan((ux*std::cos(psi_) + uy*std::sin(psi_))/(uz+g_));
-    double psi_ref = yaw_ref_;
+    phi_ref = std::asin(m_*(ux*std::sin(psi_) - uy*std::cos(psi_))/thrust_ref);
+    theta_ref = std::atan((ux*std::cos(psi_) + uy*std::sin(psi_))/(uz+g_));
+    psi_ref = yaw_ref_;
 
     // Publish for show node
     geometry_msgs::msg::Vector3 e_pos;
@@ -181,22 +172,40 @@ void Controller::controlLoop(const sensor_msgs::msg::Imu::SharedPtr msg)
     pos_err_->publish(e_pos);
     pos_dot_err_->publish(e_pos_dot);
 
+}
+
+void Controller::controlLoop(const sensor_msgs::msg::Imu::SharedPtr msg)
+{
+    rclcpp::Time now(msg->header.stamp);
+    Ts_smc = (now - prev_time_smc).seconds();
+    prev_time_smc = now;
+
+    // Get attitude from sensor
+    tf2::Quaternion q(
+        msg->orientation.x,
+        msg->orientation.y,
+        msg->orientation.z,
+        msg->orientation.w
+    );
+    tf2::Matrix3x3(q).getRPY(phi_, theta_, psi_);
+
+
     /*---------------------- Derivative ------------------------*/
     double phi_dot, theta_dot, psi_dot;
     double phi_ref_dot, theta_ref_dot, psi_ref_dot;
     double phi_ref_ddot, theta_ref_ddot, psi_ref_ddot;
 
-    phi_dot = (phi_ - smc_data.phi_)/Ts_;
-    theta_dot = (theta_ - smc_data.theta_)/Ts_;
-    psi_dot = (psi_ - smc_data.psi_)/Ts_;
+    phi_dot = (phi_ - smc_data.phi_)/Ts_smc;
+    theta_dot = (theta_ - smc_data.theta_)/Ts_smc;
+    psi_dot = (psi_ - smc_data.psi_)/Ts_smc;
 
-    phi_ref_dot = (phi_ref - smc_data.phi_ref_)/Ts_;
-    theta_ref_dot = (theta_ref - smc_data.theta_ref_)/Ts_;
-    psi_ref_dot = (psi_ref - smc_data.psi_ref_)/Ts_;
+    phi_ref_dot = (phi_ref - smc_data.phi_ref_)/Ts_smc;
+    theta_ref_dot = (theta_ref - smc_data.theta_ref_)/Ts_smc;
+    psi_ref_dot = (psi_ref - smc_data.psi_ref_)/Ts_smc;
 
-    phi_ref_ddot = (phi_ref_dot - smc_data.phi_ref_dot)/Ts_;
-    theta_ref_ddot = (theta_ref_dot - smc_data.theta_ref_dot)/Ts_;
-    psi_ref_ddot = (psi_ref_dot - smc_data.psi_ref_dot)/Ts_;
+    phi_ref_ddot = (phi_ref_dot - smc_data.phi_ref_dot)/Ts_smc;
+    theta_ref_ddot = (theta_ref_dot - smc_data.theta_ref_dot)/Ts_smc;
+    psi_ref_ddot = (psi_ref_dot - smc_data.psi_ref_dot)/Ts_smc;
 
     /* ----------------- Error -----------------------------*/
     double e_phi = phi_ - phi_ref;
@@ -252,7 +261,7 @@ void Controller::controlLoop(const sensor_msgs::msg::Imu::SharedPtr msg)
 
     tau[0] = Ix_*(-smc_phi_->get_lambda()*e_phi_dot + phi_ref_ddot - theta_dot*psi_dot*(Iy_-Iz_)/Ix_ - Jr_*theta_dot*omega/Ix_ - k1_*smc_phi_->get_slide(e_phi, e_phi_dot) + smc_phi_->update(e_phi, e_phi_dot));
     tau[1] = Iy_*(-smc_theta_->get_lambda()*e_theta_dot + theta_ref_ddot - phi_dot*psi_dot*(Iz_-Ix_)/Iy_ + Jr_*phi_dot*omega/Iy_ - k1_*smc_theta_->get_slide(e_theta, e_theta_dot) + smc_theta_->update(e_theta, e_theta_dot));
-    tau[2] = Iz_*(-smc_psi_->get_lambda()*e_psi_dot + psi_ref_ddot - phi_dot*theta_dot*(Ix_-Iy_)/Iz_ - k1_*smc_psi_->get_slide(e_psi, e_psi_dot) + smc_phi_->update(e_psi, e_psi_dot));
+    tau[2] = Iz_*(-smc_psi_->get_lambda()*e_psi_dot + psi_ref_ddot - phi_dot*theta_dot*(Ix_-Iy_)/Iz_ - k1_*smc_psi_->get_slide(e_psi, e_psi_dot) + smc_psi_->update(e_psi, e_psi_dot));
 
     /* ----------------- Calculate w for 4 motors --------------*/
     double w1, w2, w3, w4;

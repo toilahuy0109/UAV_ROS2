@@ -1,0 +1,21 @@
+[35m[1mConsolidate compiler generated dependencies of target test_pid_node[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/controller_node.dir/src/controller.cpp.o[0m
+[ 37%] Built target pos_controller_node
+[ 62%] Built target smc_controller_node
+[ 87%] Built target test_pid_node
+[01m[K/home/huy/ros2_ws/src/uav_controller/src/controller.cpp:[m[K In constructor ‘[01m[KController::Controller()[m[K’:
+[01m[K/home/huy/ros2_ws/src/uav_controller/src/controller.cpp:52:71:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KController[m[K’ does not have any field named ‘[01m[KTs_[m[K’
+   52 | ::Controller() : Node("controller_node"), x_(0.0), y_(0.0), [01;31m[KTs_[m[K(0.01), start_time_(0.0), prev_time_(0.0)
+      |                                                             [01;31m[K^~~[m[K
+
+[01m[K/home/huy/ros2_ws/src/uav_controller/src/controller.cpp:52:100:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KController[m[K’ does not have any field named ‘[01m[Kprev_time_[m[K’
+   52 | ller_node"), x_(0.0), y_(0.0), Ts_(0.01), start_time_(0.0), [01;31m[Kprev_time_[m[K(0.0)
+      |                                                             [01;31m[K^~~~~~~~~~[m[K
+
+[01m[K/home/huy/ros2_ws/src/uav_controller/src/controller.cpp:55:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kprev_time_[m[K’ was not declared in this scope; did you mean ‘[01m[Kprev_time_pid[m[K’?
+   55 |     [01;31m[Kprev_time_[m[K = this->get_clock()->now();
+      |     [01;31m[K^~~~~~~~~~[m[K
+      |     [32m[Kprev_time_pid[m[K
+gmake[2]: *** [CMakeFiles/controller_node.dir/build.make:76: CMakeFiles/controller_node.dir/src/controller.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:143: CMakeFiles/controller_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -31,6 +31,15 @@ add_executable(smc_controller_node
   src/smc_controller.cpp
 )
 
+add_executable(test_pid_node
+  src/test_pid.cpp
+)
+
+ament_target_dependencies(test_pid_node
+  rclcpp
+  std_msgs
+)
+
 
 ament_target_dependencies(controller_node
     rclcpp
@@ -66,6 +75,11 @@ ament_target_dependencies(smc_controller_node
   tf2_geometry_msgs
 )
 
+target_include_directories(test_pid_node PUBLIC
+    $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+    $<INSTALL_INTERFACE:include>
+)
+
 target_include_directories(controller_node PUBLIC
     $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
     $<INSTALL_INTERFACE:include>
@@ -81,6 +95,11 @@ target_include_directories(smc_controller_node PUBLIC
   $<INSTALL_INTERFACE:include>
 )
 
+install(
+  TARGETS
+  test_pid_node
+  DESTINATION lib/${PROJECT_NAME}
+)
 
 # Cài đặt binary
 install(

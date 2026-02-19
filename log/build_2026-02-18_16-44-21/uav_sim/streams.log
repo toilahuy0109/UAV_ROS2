@@ -1,0 +1,30 @@
+[0.012s] Invoking command in '/home/huy/ros2_ws/build/uav_sim': CMAKE_PREFIX_PATH=/home/huy/ros2_ws/install/uav_motor_plugin:/home/huy/ros2_ws/install/uav_controller:/opt/ros/humble:/home/huy/ros2_ws/install/uav_msgs:/home/huy/ros2_ws/install/uav_sim:/home/huy/ros2_ws/install/uav_dynamics LD_LIBRARY_PATH=/home/huy/ros2_ws/install/uav_motor_plugin/lib:/home/huy/ros2_ws/install/uav_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake --build /home/huy/ros2_ws/build/uav_sim -- -j16 -l16
+[0.066s] [100%] Built target data_node
+[0.075s] Invoked command in '/home/huy/ros2_ws/build/uav_sim' returned '0': CMAKE_PREFIX_PATH=/home/huy/ros2_ws/install/uav_motor_plugin:/home/huy/ros2_ws/install/uav_controller:/opt/ros/humble:/home/huy/ros2_ws/install/uav_msgs:/home/huy/ros2_ws/install/uav_sim:/home/huy/ros2_ws/install/uav_dynamics LD_LIBRARY_PATH=/home/huy/ros2_ws/install/uav_motor_plugin/lib:/home/huy/ros2_ws/install/uav_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake --build /home/huy/ros2_ws/build/uav_sim -- -j16 -l16
+[0.077s] Invoking command in '/home/huy/ros2_ws/build/uav_sim': CMAKE_PREFIX_PATH=/home/huy/ros2_ws/install/uav_motor_plugin:/home/huy/ros2_ws/install/uav_controller:/opt/ros/humble:/home/huy/ros2_ws/install/uav_msgs:/home/huy/ros2_ws/install/uav_sim:/home/huy/ros2_ws/install/uav_dynamics LD_LIBRARY_PATH=/home/huy/ros2_ws/install/uav_motor_plugin/lib:/home/huy/ros2_ws/install/uav_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake --install /home/huy/ros2_ws/build/uav_sim
+[0.084s] -- Install configuration: ""
+[0.084s] -- Up-to-date: /home/huy/ros2_ws/install/uav_sim/share/uav_sim/launch
+[0.084s] -- Up-to-date: /home/huy/ros2_ws/install/uav_sim/share/uav_sim/launch/uav_sim.launch.py
+[0.085s] -- Up-to-date: /home/huy/ros2_ws/install/uav_sim/share/uav_sim/models
+[0.085s] -- Up-to-date: /home/huy/ros2_ws/install/uav_sim/share/uav_sim/models/uav_world.sdf
+[0.085s] -- Up-to-date: /home/huy/ros2_ws/install/uav_sim/share/uav_sim/models/uav
+[0.085s] -- Up-to-date: /home/huy/ros2_ws/install/uav_sim/share/uav_sim/models/uav/drone.sdf
+[0.085s] -- Up-to-date: /home/huy/ros2_ws/install/uav_sim/share/uav_sim/models/uav/uav.stl
+[0.085s] -- Up-to-date: /home/huy/ros2_ws/install/uav_sim/share/uav_sim/models/uav/model.config
+[0.085s] -- Up-to-date: /home/huy/ros2_ws/install/uav_sim/lib/uav_sim/data_node
+[0.085s] -- Up-to-date: /home/huy/ros2_ws/install/uav_sim/share/ament_index/resource_index/package_run_dependencies/uav_sim
+[0.085s] -- Up-to-date: /home/huy/ros2_ws/install/uav_sim/share/ament_index/resource_index/parent_prefix_path/uav_sim
+[0.085s] -- Up-to-date: /home/huy/ros2_ws/install/uav_sim/share/uav_sim/environment/ament_prefix_path.sh
+[0.085s] -- Up-to-date: /home/huy/ros2_ws/install/uav_sim/share/uav_sim/environment/ament_prefix_path.dsv
+[0.085s] -- Up-to-date: /home/huy/ros2_ws/install/uav_sim/share/uav_sim/environment/path.sh
+[0.086s] -- Up-to-date: /home/huy/ros2_ws/install/uav_sim/share/uav_sim/environment/path.dsv
+[0.086s] -- Up-to-date: /home/huy/ros2_ws/install/uav_sim/share/uav_sim/local_setup.bash
+[0.086s] -- Up-to-date: /home/huy/ros2_ws/install/uav_sim/share/uav_sim/local_setup.sh
+[0.086s] -- Up-to-date: /home/huy/ros2_ws/install/uav_sim/share/uav_sim/local_setup.zsh
+[0.086s] -- Up-to-date: /home/huy/ros2_ws/install/uav_sim/share/uav_sim/local_setup.dsv
+[0.086s] -- Installing: /home/huy/ros2_ws/install/uav_sim/share/uav_sim/package.dsv
+[0.086s] -- Up-to-date: /home/huy/ros2_ws/install/uav_sim/share/ament_index/resource_index/packages/uav_sim
+[0.086s] -- Up-to-date: /home/huy/ros2_ws/install/uav_sim/share/uav_sim/cmake/uav_simConfig.cmake
+[0.086s] -- Up-to-date: /home/huy/ros2_ws/install/uav_sim/share/uav_sim/cmake/uav_simConfig-version.cmake
+[0.086s] -- Up-to-date: /home/huy/ros2_ws/install/uav_sim/share/uav_sim/package.xml
+[0.089s] Invoked command in '/home/huy/ros2_ws/build/uav_sim' returned '0': CMAKE_PREFIX_PATH=/home/huy/ros2_ws/install/uav_motor_plugin:/home/huy/ros2_ws/install/uav_controller:/opt/ros/humble:/home/huy/ros2_ws/install/uav_msgs:/home/huy/ros2_ws/install/uav_sim:/home/huy/ros2_ws/install/uav_dynamics LD_LIBRARY_PATH=/home/huy/ros2_ws/install/uav_motor_plugin/lib:/home/huy/ros2_ws/install/uav_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake --install /home/huy/ros2_ws/build/uav_sim

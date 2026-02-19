@@ -1,0 +1,28 @@
+[35m[1mConsolidate compiler generated dependencies of target controller_node[0m
+[ 50%] Built target pos_controller_node
+[ 50%] Built target test_pid_node
+[ 75%] Built target smc_controller_node
+[ 87%] [32mBuilding CXX object CMakeFiles/controller_node.dir/src/controller.cpp.o[0m
+[100%] [32m[1mLinking CXX executable controller_node[0m
+[100%] Built target controller_node
+-- Install configuration: ""
+-- Up-to-date: /home/huy/ros2_ws/install/uav_controller/lib/uav_controller/test_pid_node
+-- Installing: /home/huy/ros2_ws/install/uav_controller/lib/uav_controller/controller_node
+-- Set runtime path of "/home/huy/ros2_ws/install/uav_controller/lib/uav_controller/controller_node" to ""
+-- Up-to-date: /home/huy/ros2_ws/install/uav_controller/lib/uav_controller/pos_controller_node
+-- Up-to-date: /home/huy/ros2_ws/install/uav_controller/lib/uav_controller/smc_controller_node
+-- Up-to-date: /home/huy/ros2_ws/install/uav_controller/share/ament_index/resource_index/package_run_dependencies/uav_controller
+-- Up-to-date: /home/huy/ros2_ws/install/uav_controller/share/ament_index/resource_index/parent_prefix_path/uav_controller
+-- Up-to-date: /home/huy/ros2_ws/install/uav_controller/share/uav_controller/environment/ament_prefix_path.sh
+-- Up-to-date: /home/huy/ros2_ws/install/uav_controller/share/uav_controller/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/huy/ros2_ws/install/uav_controller/share/uav_controller/environment/path.sh
+-- Up-to-date: /home/huy/ros2_ws/install/uav_controller/share/uav_controller/environment/path.dsv
+-- Up-to-date: /home/huy/ros2_ws/install/uav_controller/share/uav_controller/local_setup.bash
+-- Up-to-date: /home/huy/ros2_ws/install/uav_controller/share/uav_controller/local_setup.sh
+-- Up-to-date: /home/huy/ros2_ws/install/uav_controller/share/uav_controller/local_setup.zsh
+-- Up-to-date: /home/huy/ros2_ws/install/uav_controller/share/uav_controller/local_setup.dsv
+-- Installing: /home/huy/ros2_ws/install/uav_controller/share/uav_controller/package.dsv
+-- Up-to-date: /home/huy/ros2_ws/install/uav_controller/share/ament_index/resource_index/packages/uav_controller
+-- Up-to-date: /home/huy/ros2_ws/install/uav_controller/share/uav_controller/cmake/uav_controllerConfig.cmake
+-- Up-to-date: /home/huy/ros2_ws/install/uav_controller/share/uav_controller/cmake/uav_controllerConfig-version.cmake
+-- Up-to-date: /home/huy/ros2_ws/install/uav_controller/share/uav_controller/package.xml
