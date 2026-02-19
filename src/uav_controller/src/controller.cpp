@@ -6,7 +6,7 @@
 
 
 PID::PID(double kp, double ki, double kd)
-: kp_(kp), ki_(ki), kd_(kd), integral_(0.0), eps_(1.0), N_(57.1413988020802), prev_error_(0.0)
+: kp_(kp), ki_(ki), kd_(kd), integral_(0.0), eps_(1.0), N_(228.565595208321), prev_error_(0.0)
 {}
 
 double PID::get_integral()
@@ -94,7 +94,7 @@ Controller::Controller() : Node("controller_node"), x_(0.0), y_(0.0), Ts_(0.01),
     );
 
     /*------------------------ Controller -----------------------------*/
-    pid_x_ = std::make_shared<PID>(0.0274953657924367, 0.00055898718103685, 0.330530505324201);
+    pid_x_ = std::make_shared<PID>(1.34965529853073, 0.0986779769726277, 2.94194871374757);
     pid_y_ = std::make_shared<PID>(0.0274953657924367, 0.00055898718103685, 0.330530505324201);
     pid_z_ = std::make_shared<PID>(0.0274953657924367, 0.00055898718103685, 0.330530505324201);
 
