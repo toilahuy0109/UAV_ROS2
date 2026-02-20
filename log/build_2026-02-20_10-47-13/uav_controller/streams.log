@@ -1,0 +1,19 @@
+[0.014s] Invoking command in '/home/huy/ros2_ws/build/uav_controller': CMAKE_PREFIX_PATH=/opt/ros/humble:/home/huy/ros2_ws/install/uav_msgs:/home/huy/ros2_ws/install/uav_sim:/home/huy/ros2_ws/install/uav_motor_plugin:/home/huy/ros2_ws/install/uav_dynamics:/home/huy/ros2_ws/install/uav_controller LD_LIBRARY_PATH=/home/huy/ros2_ws/install/uav_msgs/lib:/home/huy/ros2_ws/install/uav_motor_plugin/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake --build /home/huy/ros2_ws/build/uav_controller -- -j16 -l16
+[0.058s] [35m[1mConsolidate compiler generated dependencies of target controller_node[0m
+[0.072s] [ 75%] Built target smc_controller_node
+[0.072s] [ 75%] Built target pos_controller_node
+[0.072s] [ 75%] Built target test_pid_node
+[0.078s] [ 87%] [32mBuilding CXX object CMakeFiles/controller_node.dir/src/controller.cpp.o[0m
+[2.103s] [01m[K/home/huy/ros2_ws/src/uav_controller/src/controller.cpp:[m[K In member function ‘[01m[Kvoid Controller::controlLoop()[m[K’:
+[2.103s] [01m[K/home/huy/ros2_ws/src/uav_controller/src/controller.cpp:147:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kx_ref[m[K’ was not declared in this scope; did you mean ‘[01m[Kx_ref_[m[K’?
+[2.103s]   147 |     [01;31m[Kx_ref[m[K = 0.0;
+[2.103s]       |     [01;31m[K^~~~~[m[K
+[2.103s]       |     [32m[Kx_ref_[m[K
+[2.106s] [01m[K/home/huy/ros2_ws/src/uav_controller/src/controller.cpp:148:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ky_ref[m[K’ was not declared in this scope; did you mean ‘[01m[Ky_ref_[m[K’?
+[2.106s]   148 |     [01;31m[Ky_ref[m[K = 0.0;
+[2.106s]       |     [01;31m[K^~~~~[m[K
+[2.106s]       |     [32m[Ky_ref_[m[K
+[4.755s] gmake[2]: *** [CMakeFiles/controller_node.dir/build.make:76: CMakeFiles/controller_node.dir/src/controller.cpp.o] Error 1
+[4.755s] gmake[1]: *** [CMakeFiles/Makefile2:143: CMakeFiles/controller_node.dir/all] Error 2
+[4.755s] gmake: *** [Makefile:146: all] Error 2
+[4.758s] Invoked command in '/home/huy/ros2_ws/build/uav_controller' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble:/home/huy/ros2_ws/install/uav_msgs:/home/huy/ros2_ws/install/uav_sim:/home/huy/ros2_ws/install/uav_motor_plugin:/home/huy/ros2_ws/install/uav_dynamics:/home/huy/ros2_ws/install/uav_controller LD_LIBRARY_PATH=/home/huy/ros2_ws/install/uav_msgs/lib:/home/huy/ros2_ws/install/uav_motor_plugin/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake --build /home/huy/ros2_ws/build/uav_controller -- -j16 -l16

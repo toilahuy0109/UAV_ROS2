@@ -77,7 +77,8 @@ class Controller : public rclcpp::Node
 
     // Callback
     void odomCallback(const nav_msgs::msg::Odometry::SharedPtr msg);
-    void controlLoop(const sensor_msgs::msg::Imu::SharedPtr msg);
+    void imuCallback(const sensor_msgs::msg::Imu::SharedPtr msg);
+    void controlLoop();
 
     private:
 
@@ -97,6 +98,8 @@ class Controller : public rclcpp::Node
     rclcpp::Publisher<geometry_msgs::msg::Vector3>::SharedPtr slide_sur_;
 
     rclcpp::Subscription<sensor_msgs::msg::Imu>::SharedPtr imu_sub_;
+
+    rclcpp::TimerBase::SharedPtr timer_;
 
     // State
     double x_, y_, z_;
@@ -118,12 +121,10 @@ class Controller : public rclcpp::Node
     std::shared_ptr<SMC> smc_theta_;
     std::shared_ptr<SMC> smc_psi_;
 
-    double Ts_pid;
-    double Ts_smc;
+    double Ts_;
 
     rclcpp::Time start_time_;
-    rclcpp::Time prev_time_pid;
-    rclcpp::Time prev_time_smc;
+    rclcpp::Time prev_time_;
 
     double phi_ref, theta_ref, psi_ref;
     double thrust_ref;
@@ -131,15 +132,17 @@ class Controller : public rclcpp::Node
     // Constants
     const double g_ = 9.8;
     const double m_ = 1.5;
-    const double Ix_ = 0.0211;
-    const double Iy_ = 0.0219;
-    const double Iz_ = 0.0366;
-    const double Jr_ = 0.0;
+    const double Ix_ = 4.8e-3;
+    const double Iy_ = 4.8e-3;
+    const double Iz_ = 9.8e-3;
+    const double Jr_ = 1.287e-4;
 
     const double length_ = 0.156;
-    const double b_ = 1.105e-5;
-    const double d_ = 3.558e-7;
+    const double b_ = 2.92e-6;
+    const double d_ = 1.12e-7;
 
-    double k1_ = 10.0;
+    double k1_ = 2.0;
+
+    bool first_run;
 }; 
 

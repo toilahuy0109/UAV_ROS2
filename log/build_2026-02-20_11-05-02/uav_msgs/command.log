@@ -1,0 +1,4 @@
+Invoking command in '/home/huy/ros2_ws/build/uav_msgs': /usr/bin/cmake --build /home/huy/ros2_ws/build/uav_msgs -- -j16 -l16
+Invoked command in '/home/huy/ros2_ws/build/uav_msgs' returned '0': /usr/bin/cmake --build /home/huy/ros2_ws/build/uav_msgs -- -j16 -l16
+Invoking command in '/home/huy/ros2_ws/build/uav_msgs': /usr/bin/cmake --install /home/huy/ros2_ws/build/uav_msgs
+Invoked command in '/home/huy/ros2_ws/build/uav_msgs' returned '0': /usr/bin/cmake --install /home/huy/ros2_ws/build/uav_msgs

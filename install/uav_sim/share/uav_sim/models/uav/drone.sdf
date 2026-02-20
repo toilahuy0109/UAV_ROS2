@@ -17,23 +17,23 @@
 
     <plugin name="quad_motor" filename="libuav_motor_plugin.so">
       <motor_0_link>motor_0_link</motor_0_link>
-      <motor_0_thrust_coeff>1.105e-5</motor_0_thrust_coeff>
-      <motor_0_torque_coeff>3.558e-7</motor_0_torque_coeff>
+      <motor_0_thrust_coeff>2.92e-6</motor_0_thrust_coeff>
+      <motor_0_torque_coeff>1.12e-7</motor_0_torque_coeff>
       <motor_0_direction>1</motor_0_direction>
 
       <motor_1_link>motor_1_link</motor_1_link>
-      <motor_1_thrust_coeff>1.105e-5</motor_1_thrust_coeff>
-      <motor_1_torque_coeff>3.558e-7</motor_1_torque_coeff>
+      <motor_1_thrust_coeff>2.92e-6</motor_1_thrust_coeff>
+      <motor_1_torque_coeff>1.12e-7</motor_1_torque_coeff>
       <motor_1_direction>-1</motor_1_direction>
 
       <motor_2_link>motor_2_link</motor_2_link>
-      <motor_2_thrust_coeff>1.105e-5</motor_2_thrust_coeff>
-      <motor_2_torque_coeff>3.558e-7</motor_2_torque_coeff>
+      <motor_2_thrust_coeff>2.92e-6</motor_2_thrust_coeff>
+      <motor_2_torque_coeff>1.12e-7</motor_2_torque_coeff>
       <motor_2_direction>1</motor_2_direction>
 
       <motor_3_link>motor_3_link</motor_3_link>
-      <motor_3_thrust_coeff>1.105e-5</motor_3_thrust_coeff>
-      <motor_3_torque_coeff>3.558e-7</motor_3_torque_coeff>
+      <motor_3_thrust_coeff>2.92e-6</motor_3_thrust_coeff>
+      <motor_3_torque_coeff>1.12e-7</motor_3_torque_coeff>
       <motor_3_direction>-1</motor_3_direction>
     </plugin>
 
@@ -44,7 +44,7 @@
       </ros>
       <body_name>body</body_name>
       <frameName>odom</frameName>
-      <updateRate>200</updateRate>
+      <updateRate>1000</updateRate>
     </plugin>
 
 
@@ -52,9 +52,9 @@
       <inertial>
         <mass>1.5</mass>
         <inertia>
-          <ixx>0.0211</ixx>
-          <iyy>0.0219</iyy>
-          <izz>0.0366</izz>
+          <ixx>4.8e-3</ixx>
+          <iyy>4.8e-3</iyy>
+          <izz>9.8e-3</izz>
           <ixy>0</ixy>
           <ixz>0</ixz>
           <iyz>0</iyz>
@@ -77,10 +77,10 @@
       <sensor name="imu" type="imu">
         <always_on>true</always_on>
         <visualize>0</visualize>
-        <update_rate>100</update_rate>
+        <update_rate>1000</update_rate>
         <plugin name="imu_plugin" filename="libgazebo_ros_imu_sensor.so">
           <ros>
-            <namespace>drone</namespace>
+            <namespace></namespace>
             <remapping>imu:=imu</remapping>
           </ros>
           <initial_orientation_as_reference>false</initial_orientation_as_reference>
