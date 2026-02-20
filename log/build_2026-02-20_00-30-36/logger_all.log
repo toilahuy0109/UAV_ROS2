@@ -1,0 +1,422 @@
+[0.245s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.245s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x719c82f62110>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x719c82f61b40>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x719c82f61b40>>, mixin_verb=('build',))
+[0.672s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.673s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.673s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.673s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.673s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.673s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.673s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/huy/ros2_ws'
+[0.674s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.674s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.674s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.674s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.674s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.675s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.675s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.675s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.675s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.798s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.798s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.798s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.798s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.799s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.799s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.799s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.799s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.800s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.800s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.800s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.801s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.801s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.801s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.801s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.801s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.801s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.801s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.802s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.802s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.802s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.802s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.802s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.802s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.802s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.802s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.802s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.802s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.802s] Level 1:colcon.colcon_core.package_identification:_identify(src/launch) by extensions ['ignore', 'ignore_ament_install']
+[0.803s] Level 1:colcon.colcon_core.package_identification:_identify(src/launch) by extension 'ignore'
+[0.803s] Level 1:colcon.colcon_core.package_identification:_identify(src/launch) by extension 'ignore_ament_install'
+[0.803s] Level 1:colcon.colcon_core.package_identification:_identify(src/launch) by extensions ['colcon_pkg']
+[0.803s] Level 1:colcon.colcon_core.package_identification:_identify(src/launch) by extension 'colcon_pkg'
+[0.803s] Level 1:colcon.colcon_core.package_identification:_identify(src/launch) by extensions ['colcon_meta']
+[0.803s] Level 1:colcon.colcon_core.package_identification:_identify(src/launch) by extension 'colcon_meta'
+[0.803s] Level 1:colcon.colcon_core.package_identification:_identify(src/launch) by extensions ['ros']
+[0.803s] Level 1:colcon.colcon_core.package_identification:_identify(src/launch) by extension 'ros'
+[0.803s] Level 1:colcon.colcon_core.package_identification:_identify(src/launch) by extensions ['cmake', 'python']
+[0.803s] Level 1:colcon.colcon_core.package_identification:_identify(src/launch) by extension 'cmake'
+[0.803s] Level 1:colcon.colcon_core.package_identification:_identify(src/launch) by extension 'python'
+[0.803s] Level 1:colcon.colcon_core.package_identification:_identify(src/launch) by extensions ['python_setup_py']
+[0.804s] Level 1:colcon.colcon_core.package_identification:_identify(src/launch) by extension 'python_setup_py'
+[0.804s] Level 1:colcon.colcon_core.package_identification:_identify(src/uav_controller) by extensions ['ignore', 'ignore_ament_install']
+[0.804s] Level 1:colcon.colcon_core.package_identification:_identify(src/uav_controller) by extension 'ignore'
+[0.804s] Level 1:colcon.colcon_core.package_identification:_identify(src/uav_controller) by extension 'ignore_ament_install'
+[0.804s] Level 1:colcon.colcon_core.package_identification:_identify(src/uav_controller) by extensions ['colcon_pkg']
+[0.804s] Level 1:colcon.colcon_core.package_identification:_identify(src/uav_controller) by extension 'colcon_pkg'
+[0.805s] Level 1:colcon.colcon_core.package_identification:_identify(src/uav_controller) by extensions ['colcon_meta']
+[0.805s] Level 1:colcon.colcon_core.package_identification:_identify(src/uav_controller) by extension 'colcon_meta'
+[0.805s] Level 1:colcon.colcon_core.package_identification:_identify(src/uav_controller) by extensions ['ros']
+[0.805s] Level 1:colcon.colcon_core.package_identification:_identify(src/uav_controller) by extension 'ros'
+[0.813s] DEBUG:colcon.colcon_core.package_identification:Package 'src/uav_controller' with type 'ros.ament_cmake' and name 'uav_controller'
+[0.813s] Level 1:colcon.colcon_core.package_identification:_identify(src/uav_dynamics) by extensions ['ignore', 'ignore_ament_install']
+[0.813s] Level 1:colcon.colcon_core.package_identification:_identify(src/uav_dynamics) by extension 'ignore'
+[0.814s] Level 1:colcon.colcon_core.package_identification:_identify(src/uav_dynamics) by extension 'ignore_ament_install'
+[0.814s] Level 1:colcon.colcon_core.package_identification:_identify(src/uav_dynamics) by extensions ['colcon_pkg']
+[0.814s] Level 1:colcon.colcon_core.package_identification:_identify(src/uav_dynamics) by extension 'colcon_pkg'
+[0.814s] Level 1:colcon.colcon_core.package_identification:_identify(src/uav_dynamics) by extensions ['colcon_meta']
+[0.814s] Level 1:colcon.colcon_core.package_identification:_identify(src/uav_dynamics) by extension 'colcon_meta'
+[0.814s] Level 1:colcon.colcon_core.package_identification:_identify(src/uav_dynamics) by extensions ['ros']
+[0.814s] Level 1:colcon.colcon_core.package_identification:_identify(src/uav_dynamics) by extension 'ros'
+[0.816s] DEBUG:colcon.colcon_core.package_identification:Package 'src/uav_dynamics' with type 'ros.ament_cmake' and name 'uav_dynamics'
+[0.817s] Level 1:colcon.colcon_core.package_identification:_identify(src/uav_motor_plugin) by extensions ['ignore', 'ignore_ament_install']
+[0.817s] Level 1:colcon.colcon_core.package_identification:_identify(src/uav_motor_plugin) by extension 'ignore'
+[0.817s] Level 1:colcon.colcon_core.package_identification:_identify(src/uav_motor_plugin) by extension 'ignore_ament_install'
+[0.817s] Level 1:colcon.colcon_core.package_identification:_identify(src/uav_motor_plugin) by extensions ['colcon_pkg']
+[0.817s] Level 1:colcon.colcon_core.package_identification:_identify(src/uav_motor_plugin) by extension 'colcon_pkg'
+[0.817s] Level 1:colcon.colcon_core.package_identification:_identify(src/uav_motor_plugin) by extensions ['colcon_meta']
+[0.817s] Level 1:colcon.colcon_core.package_identification:_identify(src/uav_motor_plugin) by extension 'colcon_meta'
+[0.818s] Level 1:colcon.colcon_core.package_identification:_identify(src/uav_motor_plugin) by extensions ['ros']
+[0.818s] Level 1:colcon.colcon_core.package_identification:_identify(src/uav_motor_plugin) by extension 'ros'
+[0.820s] DEBUG:colcon.colcon_core.package_identification:Package 'src/uav_motor_plugin' with type 'ros.ament_cmake' and name 'uav_motor_plugin'
+[0.820s] Level 1:colcon.colcon_core.package_identification:_identify(src/uav_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.820s] Level 1:colcon.colcon_core.package_identification:_identify(src/uav_msgs) by extension 'ignore'
+[0.821s] Level 1:colcon.colcon_core.package_identification:_identify(src/uav_msgs) by extension 'ignore_ament_install'
+[0.821s] Level 1:colcon.colcon_core.package_identification:_identify(src/uav_msgs) by extensions ['colcon_pkg']
+[0.821s] Level 1:colcon.colcon_core.package_identification:_identify(src/uav_msgs) by extension 'colcon_pkg'
+[0.821s] Level 1:colcon.colcon_core.package_identification:_identify(src/uav_msgs) by extensions ['colcon_meta']
+[0.821s] Level 1:colcon.colcon_core.package_identification:_identify(src/uav_msgs) by extension 'colcon_meta'
+[0.821s] Level 1:colcon.colcon_core.package_identification:_identify(src/uav_msgs) by extensions ['ros']
+[0.821s] Level 1:colcon.colcon_core.package_identification:_identify(src/uav_msgs) by extension 'ros'
+[0.822s] DEBUG:colcon.colcon_core.package_identification:Package 'src/uav_msgs' with type 'ros.catkin' and name 'uav_msgs'
+[0.823s] Level 1:colcon.colcon_core.package_identification:_identify(src/uav_sim) by extensions ['ignore', 'ignore_ament_install']
+[0.823s] Level 1:colcon.colcon_core.package_identification:_identify(src/uav_sim) by extension 'ignore'
+[0.823s] Level 1:colcon.colcon_core.package_identification:_identify(src/uav_sim) by extension 'ignore_ament_install'
+[0.823s] Level 1:colcon.colcon_core.package_identification:_identify(src/uav_sim) by extensions ['colcon_pkg']
+[0.823s] Level 1:colcon.colcon_core.package_identification:_identify(src/uav_sim) by extension 'colcon_pkg'
+[0.823s] Level 1:colcon.colcon_core.package_identification:_identify(src/uav_sim) by extensions ['colcon_meta']
+[0.824s] Level 1:colcon.colcon_core.package_identification:_identify(src/uav_sim) by extension 'colcon_meta'
+[0.824s] Level 1:colcon.colcon_core.package_identification:_identify(src/uav_sim) by extensions ['ros']
+[0.824s] Level 1:colcon.colcon_core.package_identification:_identify(src/uav_sim) by extension 'ros'
+[0.827s] DEBUG:colcon.colcon_core.package_identification:Package 'src/uav_sim' with type 'ros.ament_cmake' and name 'uav_sim'
+[0.827s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.827s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.827s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.827s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.827s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.881s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.881s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.886s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 5 installed packages in /home/huy/ros2_ws/install
+[0.890s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 309 installed packages in /opt/ros/humble
+[0.893s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.991s] Level 5:colcon.colcon_core.verb:set package 'uav_msgs' build argument 'cmake_args' from command line to 'None'
+[0.991s] Level 5:colcon.colcon_core.verb:set package 'uav_msgs' build argument 'cmake_target' from command line to 'None'
+[0.991s] Level 5:colcon.colcon_core.verb:set package 'uav_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.991s] Level 5:colcon.colcon_core.verb:set package 'uav_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.991s] Level 5:colcon.colcon_core.verb:set package 'uav_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.991s] Level 5:colcon.colcon_core.verb:set package 'uav_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.991s] Level 5:colcon.colcon_core.verb:set package 'uav_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.991s] Level 5:colcon.colcon_core.verb:set package 'uav_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.992s] Level 5:colcon.colcon_core.verb:set package 'uav_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.992s] DEBUG:colcon.colcon_core.verb:Building package 'uav_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/huy/ros2_ws/build/uav_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/huy/ros2_ws/install/uav_msgs', 'merge_install': False, 'path': '/home/huy/ros2_ws/src/uav_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.992s] Level 5:colcon.colcon_core.verb:set package 'uav_controller' build argument 'cmake_args' from command line to 'None'
+[0.993s] Level 5:colcon.colcon_core.verb:set package 'uav_controller' build argument 'cmake_target' from command line to 'None'
+[0.993s] Level 5:colcon.colcon_core.verb:set package 'uav_controller' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.993s] Level 5:colcon.colcon_core.verb:set package 'uav_controller' build argument 'cmake_clean_cache' from command line to 'False'
+[0.993s] Level 5:colcon.colcon_core.verb:set package 'uav_controller' build argument 'cmake_clean_first' from command line to 'False'
+[0.993s] Level 5:colcon.colcon_core.verb:set package 'uav_controller' build argument 'cmake_force_configure' from command line to 'False'
+[0.993s] Level 5:colcon.colcon_core.verb:set package 'uav_controller' build argument 'ament_cmake_args' from command line to 'None'
+[0.993s] Level 5:colcon.colcon_core.verb:set package 'uav_controller' build argument 'catkin_cmake_args' from command line to 'None'
+[0.993s] Level 5:colcon.colcon_core.verb:set package 'uav_controller' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.993s] DEBUG:colcon.colcon_core.verb:Building package 'uav_controller' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/huy/ros2_ws/build/uav_controller', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/huy/ros2_ws/install/uav_controller', 'merge_install': False, 'path': '/home/huy/ros2_ws/src/uav_controller', 'symlink_install': False, 'test_result_base': None}
+[0.994s] Level 5:colcon.colcon_core.verb:set package 'uav_dynamics' build argument 'cmake_args' from command line to 'None'
+[0.994s] Level 5:colcon.colcon_core.verb:set package 'uav_dynamics' build argument 'cmake_target' from command line to 'None'
+[0.994s] Level 5:colcon.colcon_core.verb:set package 'uav_dynamics' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.994s] Level 5:colcon.colcon_core.verb:set package 'uav_dynamics' build argument 'cmake_clean_cache' from command line to 'False'
+[0.994s] Level 5:colcon.colcon_core.verb:set package 'uav_dynamics' build argument 'cmake_clean_first' from command line to 'False'
+[0.994s] Level 5:colcon.colcon_core.verb:set package 'uav_dynamics' build argument 'cmake_force_configure' from command line to 'False'
+[0.994s] Level 5:colcon.colcon_core.verb:set package 'uav_dynamics' build argument 'ament_cmake_args' from command line to 'None'
+[0.994s] Level 5:colcon.colcon_core.verb:set package 'uav_dynamics' build argument 'catkin_cmake_args' from command line to 'None'
+[0.994s] Level 5:colcon.colcon_core.verb:set package 'uav_dynamics' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.995s] DEBUG:colcon.colcon_core.verb:Building package 'uav_dynamics' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/huy/ros2_ws/build/uav_dynamics', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/huy/ros2_ws/install/uav_dynamics', 'merge_install': False, 'path': '/home/huy/ros2_ws/src/uav_dynamics', 'symlink_install': False, 'test_result_base': None}
+[0.995s] Level 5:colcon.colcon_core.verb:set package 'uav_motor_plugin' build argument 'cmake_args' from command line to 'None'
+[0.995s] Level 5:colcon.colcon_core.verb:set package 'uav_motor_plugin' build argument 'cmake_target' from command line to 'None'
+[0.995s] Level 5:colcon.colcon_core.verb:set package 'uav_motor_plugin' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.995s] Level 5:colcon.colcon_core.verb:set package 'uav_motor_plugin' build argument 'cmake_clean_cache' from command line to 'False'
+[0.996s] Level 5:colcon.colcon_core.verb:set package 'uav_motor_plugin' build argument 'cmake_clean_first' from command line to 'False'
+[0.996s] Level 5:colcon.colcon_core.verb:set package 'uav_motor_plugin' build argument 'cmake_force_configure' from command line to 'False'
+[0.996s] Level 5:colcon.colcon_core.verb:set package 'uav_motor_plugin' build argument 'ament_cmake_args' from command line to 'None'
+[0.996s] Level 5:colcon.colcon_core.verb:set package 'uav_motor_plugin' build argument 'catkin_cmake_args' from command line to 'None'
+[0.996s] Level 5:colcon.colcon_core.verb:set package 'uav_motor_plugin' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.996s] DEBUG:colcon.colcon_core.verb:Building package 'uav_motor_plugin' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/huy/ros2_ws/build/uav_motor_plugin', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/huy/ros2_ws/install/uav_motor_plugin', 'merge_install': False, 'path': '/home/huy/ros2_ws/src/uav_motor_plugin', 'symlink_install': False, 'test_result_base': None}
+[0.997s] Level 5:colcon.colcon_core.verb:set package 'uav_sim' build argument 'cmake_args' from command line to 'None'
+[0.997s] Level 5:colcon.colcon_core.verb:set package 'uav_sim' build argument 'cmake_target' from command line to 'None'
+[0.997s] Level 5:colcon.colcon_core.verb:set package 'uav_sim' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.997s] Level 5:colcon.colcon_core.verb:set package 'uav_sim' build argument 'cmake_clean_cache' from command line to 'False'
+[0.997s] Level 5:colcon.colcon_core.verb:set package 'uav_sim' build argument 'cmake_clean_first' from command line to 'False'
+[0.997s] Level 5:colcon.colcon_core.verb:set package 'uav_sim' build argument 'cmake_force_configure' from command line to 'False'
+[0.997s] Level 5:colcon.colcon_core.verb:set package 'uav_sim' build argument 'ament_cmake_args' from command line to 'None'
+[0.997s] Level 5:colcon.colcon_core.verb:set package 'uav_sim' build argument 'catkin_cmake_args' from command line to 'None'
+[0.997s] Level 5:colcon.colcon_core.verb:set package 'uav_sim' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.997s] DEBUG:colcon.colcon_core.verb:Building package 'uav_sim' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/huy/ros2_ws/build/uav_sim', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/huy/ros2_ws/install/uav_sim', 'merge_install': False, 'path': '/home/huy/ros2_ws/src/uav_sim', 'symlink_install': False, 'test_result_base': None}
+[0.997s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.000s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.000s] INFO:colcon.colcon_ros.task.catkin.build:Building ROS package in '/home/huy/ros2_ws/src/uav_msgs' with build type 'catkin'
+[1.001s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/huy/ros2_ws/src/uav_msgs'
+[1.006s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.006s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.006s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.033s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/huy/ros2_ws/build/uav_msgs': /usr/bin/cmake --build /home/huy/ros2_ws/build/uav_msgs -- -j16 -l16
+[1.948s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/huy/ros2_ws/build/uav_msgs' returned '0': /usr/bin/cmake --build /home/huy/ros2_ws/build/uav_msgs -- -j16 -l16
+[1.980s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/huy/ros2_ws/build/uav_msgs': /usr/bin/cmake --install /home/huy/ros2_ws/build/uav_msgs
+[2.118s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/huy/ros2_ws/build/uav_msgs' returned '0': /usr/bin/cmake --install /home/huy/ros2_ws/build/uav_msgs
+[2.119s] Level 1:colcon.colcon_core.shell:create_environment_hook('uav_msgs', 'ros_package_path')
+[2.119s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/huy/ros2_ws/install/uav_msgs/share/uav_msgs/hook/ros_package_path.ps1'
+[2.121s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/huy/ros2_ws/install/uav_msgs/share/uav_msgs/hook/ros_package_path.dsv'
+[2.122s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/huy/ros2_ws/install/uav_msgs/share/uav_msgs/hook/ros_package_path.sh'
+[2.124s] Level 1:colcon.colcon_ros.task.catkin:checking '/home/huy/ros2_ws/install/uav_msgs/local/lib/python3.10/dist-packages'
+[2.124s] Level 1:colcon.colcon_core.shell:create_environment_hook('uav_msgs', 'catkin_pythonpath')
+[2.124s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/huy/ros2_ws/install/uav_msgs/share/uav_msgs/hook/catkin_pythonpath.ps1'
+[2.125s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/huy/ros2_ws/install/uav_msgs/share/uav_msgs/hook/catkin_pythonpath.dsv'
+[2.126s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/huy/ros2_ws/install/uav_msgs/share/uav_msgs/hook/catkin_pythonpath.sh'
+[2.127s] Level 1:colcon.colcon_core.shell:create_environment_hook('uav_msgs', 'pkg_config_path')
+[2.128s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/huy/ros2_ws/install/uav_msgs/share/uav_msgs/hook/pkg_config_path.ps1'
+[2.128s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/huy/ros2_ws/install/uav_msgs/share/uav_msgs/hook/pkg_config_path.dsv'
+[2.129s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/huy/ros2_ws/install/uav_msgs/share/uav_msgs/hook/pkg_config_path.sh'
+[2.134s] Level 1:colcon.colcon_core.shell:create_environment_hook('uav_msgs', 'pkg_config_path_multiarch')
+[2.135s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/huy/ros2_ws/install/uav_msgs/share/uav_msgs/hook/pkg_config_path_multiarch.ps1'
+[2.136s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/huy/ros2_ws/install/uav_msgs/share/uav_msgs/hook/pkg_config_path_multiarch.dsv'
+[2.137s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/huy/ros2_ws/install/uav_msgs/share/uav_msgs/hook/pkg_config_path_multiarch.sh'
+[2.139s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(uav_msgs)
+[2.144s] Level 1:colcon.colcon_core.environment:checking '/home/huy/ros2_ws/install/uav_msgs' for CMake module files
+[2.146s] Level 1:colcon.colcon_core.environment:checking '/home/huy/ros2_ws/install/uav_msgs' for CMake config files
+[2.147s] Level 1:colcon.colcon_core.shell:create_environment_hook('uav_msgs', 'cmake_prefix_path')
+[2.148s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/huy/ros2_ws/install/uav_msgs/share/uav_msgs/hook/cmake_prefix_path.ps1'
+[2.149s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/huy/ros2_ws/install/uav_msgs/share/uav_msgs/hook/cmake_prefix_path.dsv'
+[2.150s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/huy/ros2_ws/install/uav_msgs/share/uav_msgs/hook/cmake_prefix_path.sh'
+[2.151s] Level 1:colcon.colcon_core.environment:checking '/home/huy/ros2_ws/install/uav_msgs/lib'
+[2.152s] Level 1:colcon.colcon_core.shell:create_environment_hook('uav_msgs', 'ld_library_path_lib')
+[2.152s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/huy/ros2_ws/install/uav_msgs/share/uav_msgs/hook/ld_library_path_lib.ps1'
+[2.154s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/huy/ros2_ws/install/uav_msgs/share/uav_msgs/hook/ld_library_path_lib.dsv'
+[2.154s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/huy/ros2_ws/install/uav_msgs/share/uav_msgs/hook/ld_library_path_lib.sh'
+[2.155s] Level 1:colcon.colcon_core.environment:checking '/home/huy/ros2_ws/install/uav_msgs/bin'
+[2.156s] Level 1:colcon.colcon_core.environment:checking '/home/huy/ros2_ws/install/uav_msgs/lib/pkgconfig/uav_msgs.pc'
+[2.156s] Level 1:colcon.colcon_core.environment:checking '/home/huy/ros2_ws/install/uav_msgs/lib/python3.10/site-packages'
+[2.157s] Level 1:colcon.colcon_core.environment:checking '/home/huy/ros2_ws/install/uav_msgs/bin'
+[2.158s] INFO:colcon.colcon_core.shell:Creating package script '/home/huy/ros2_ws/install/uav_msgs/share/uav_msgs/package.ps1'
+[2.161s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/huy/ros2_ws/install/uav_msgs/share/uav_msgs/package.dsv'
+[2.162s] INFO:colcon.colcon_core.shell:Creating package script '/home/huy/ros2_ws/install/uav_msgs/share/uav_msgs/package.sh'
+[2.164s] INFO:colcon.colcon_core.shell:Creating package script '/home/huy/ros2_ws/install/uav_msgs/share/uav_msgs/package.bash'
+[2.166s] INFO:colcon.colcon_core.shell:Creating package script '/home/huy/ros2_ws/install/uav_msgs/share/uav_msgs/package.zsh'
+[2.168s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/huy/ros2_ws/install/uav_msgs/share/colcon-core/packages/uav_msgs)
+[2.169s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/huy/ros2_ws/src/uav_controller' with build type 'ament_cmake'
+[2.170s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/huy/ros2_ws/src/uav_controller'
+[2.171s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.171s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.180s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/huy/ros2_ws/src/uav_motor_plugin' with build type 'ament_cmake'
+[2.180s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/huy/ros2_ws/src/uav_motor_plugin'
+[2.181s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.181s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.190s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/huy/ros2_ws/src/uav_dynamics' with build type 'ament_cmake'
+[2.191s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/huy/ros2_ws/src/uav_dynamics'
+[2.192s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.192s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.213s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/huy/ros2_ws/build/uav_controller': CMAKE_PREFIX_PATH=/opt/ros/humble:/home/huy/ros2_ws/install/uav_msgs:/home/huy/ros2_ws/install/uav_sim:/home/huy/ros2_ws/install/uav_motor_plugin:/home/huy/ros2_ws/install/uav_dynamics:/home/huy/ros2_ws/install/uav_controller LD_LIBRARY_PATH=/home/huy/ros2_ws/install/uav_msgs/lib:/home/huy/ros2_ws/install/uav_motor_plugin/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake --build /home/huy/ros2_ws/build/uav_controller -- -j16 -l16
+[2.224s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/huy/ros2_ws/build/uav_motor_plugin': CMAKE_PREFIX_PATH=/opt/ros/humble:/home/huy/ros2_ws/install/uav_msgs:/home/huy/ros2_ws/install/uav_sim:/home/huy/ros2_ws/install/uav_motor_plugin:/home/huy/ros2_ws/install/uav_dynamics:/home/huy/ros2_ws/install/uav_controller LD_LIBRARY_PATH=/home/huy/ros2_ws/install/uav_msgs/lib:/home/huy/ros2_ws/install/uav_motor_plugin/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake --build /home/huy/ros2_ws/build/uav_motor_plugin -- -j16 -l16
+[2.232s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/huy/ros2_ws/build/uav_dynamics': CMAKE_PREFIX_PATH=/opt/ros/humble:/home/huy/ros2_ws/install/uav_msgs:/home/huy/ros2_ws/install/uav_sim:/home/huy/ros2_ws/install/uav_motor_plugin:/home/huy/ros2_ws/install/uav_dynamics:/home/huy/ros2_ws/install/uav_controller LD_LIBRARY_PATH=/home/huy/ros2_ws/install/uav_msgs/lib:/home/huy/ros2_ws/install/uav_motor_plugin/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake --build /home/huy/ros2_ws/build/uav_dynamics -- -j16 -l16
+[2.403s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/huy/ros2_ws/build/uav_dynamics' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble:/home/huy/ros2_ws/install/uav_msgs:/home/huy/ros2_ws/install/uav_sim:/home/huy/ros2_ws/install/uav_motor_plugin:/home/huy/ros2_ws/install/uav_dynamics:/home/huy/ros2_ws/install/uav_controller LD_LIBRARY_PATH=/home/huy/ros2_ws/install/uav_msgs/lib:/home/huy/ros2_ws/install/uav_motor_plugin/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake --build /home/huy/ros2_ws/build/uav_dynamics -- -j16 -l16
+[2.408s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/huy/ros2_ws/build/uav_dynamics': CMAKE_PREFIX_PATH=/opt/ros/humble:/home/huy/ros2_ws/install/uav_msgs:/home/huy/ros2_ws/install/uav_sim:/home/huy/ros2_ws/install/uav_motor_plugin:/home/huy/ros2_ws/install/uav_dynamics:/home/huy/ros2_ws/install/uav_controller LD_LIBRARY_PATH=/home/huy/ros2_ws/install/uav_msgs/lib:/home/huy/ros2_ws/install/uav_motor_plugin/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake --install /home/huy/ros2_ws/build/uav_dynamics
+[2.432s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(uav_dynamics)
+[2.433s] Level 1:colcon.colcon_core.environment:checking '/home/huy/ros2_ws/install/uav_dynamics' for CMake module files
+[2.435s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/huy/ros2_ws/build/uav_dynamics' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble:/home/huy/ros2_ws/install/uav_msgs:/home/huy/ros2_ws/install/uav_sim:/home/huy/ros2_ws/install/uav_motor_plugin:/home/huy/ros2_ws/install/uav_dynamics:/home/huy/ros2_ws/install/uav_controller LD_LIBRARY_PATH=/home/huy/ros2_ws/install/uav_msgs/lib:/home/huy/ros2_ws/install/uav_motor_plugin/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake --install /home/huy/ros2_ws/build/uav_dynamics
+[2.436s] Level 1:colcon.colcon_core.environment:checking '/home/huy/ros2_ws/install/uav_dynamics' for CMake config files
+[2.436s] Level 1:colcon.colcon_core.shell:create_environment_hook('uav_dynamics', 'cmake_prefix_path')
+[2.437s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/huy/ros2_ws/install/uav_dynamics/share/uav_dynamics/hook/cmake_prefix_path.ps1'
+[2.438s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/huy/ros2_ws/install/uav_dynamics/share/uav_dynamics/hook/cmake_prefix_path.dsv'
+[2.439s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/huy/ros2_ws/install/uav_dynamics/share/uav_dynamics/hook/cmake_prefix_path.sh'
+[2.440s] Level 1:colcon.colcon_core.environment:checking '/home/huy/ros2_ws/install/uav_dynamics/lib'
+[2.440s] Level 1:colcon.colcon_core.environment:checking '/home/huy/ros2_ws/install/uav_dynamics/bin'
+[2.441s] Level 1:colcon.colcon_core.environment:checking '/home/huy/ros2_ws/install/uav_dynamics/lib/pkgconfig/uav_dynamics.pc'
+[2.441s] Level 1:colcon.colcon_core.environment:checking '/home/huy/ros2_ws/install/uav_dynamics/lib/python3.10/site-packages'
+[2.442s] Level 1:colcon.colcon_core.environment:checking '/home/huy/ros2_ws/install/uav_dynamics/bin'
+[2.442s] INFO:colcon.colcon_core.shell:Creating package script '/home/huy/ros2_ws/install/uav_dynamics/share/uav_dynamics/package.ps1'
+[2.444s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/huy/ros2_ws/install/uav_dynamics/share/uav_dynamics/package.dsv'
+[2.445s] INFO:colcon.colcon_core.shell:Creating package script '/home/huy/ros2_ws/install/uav_dynamics/share/uav_dynamics/package.sh'
+[2.446s] INFO:colcon.colcon_core.shell:Creating package script '/home/huy/ros2_ws/install/uav_dynamics/share/uav_dynamics/package.bash'
+[2.447s] INFO:colcon.colcon_core.shell:Creating package script '/home/huy/ros2_ws/install/uav_dynamics/share/uav_dynamics/package.zsh'
+[2.448s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/huy/ros2_ws/install/uav_dynamics/share/colcon-core/packages/uav_dynamics)
+[2.449s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(uav_dynamics)
+[2.450s] Level 1:colcon.colcon_core.environment:checking '/home/huy/ros2_ws/install/uav_dynamics' for CMake module files
+[2.451s] Level 1:colcon.colcon_core.environment:checking '/home/huy/ros2_ws/install/uav_dynamics' for CMake config files
+[2.451s] Level 1:colcon.colcon_core.shell:create_environment_hook('uav_dynamics', 'cmake_prefix_path')
+[2.452s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/huy/ros2_ws/install/uav_dynamics/share/uav_dynamics/hook/cmake_prefix_path.ps1'
+[2.453s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/huy/ros2_ws/install/uav_dynamics/share/uav_dynamics/hook/cmake_prefix_path.dsv'
+[2.454s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/huy/ros2_ws/install/uav_dynamics/share/uav_dynamics/hook/cmake_prefix_path.sh'
+[2.455s] Level 1:colcon.colcon_core.environment:checking '/home/huy/ros2_ws/install/uav_dynamics/lib'
+[2.455s] Level 1:colcon.colcon_core.environment:checking '/home/huy/ros2_ws/install/uav_dynamics/bin'
+[2.455s] Level 1:colcon.colcon_core.environment:checking '/home/huy/ros2_ws/install/uav_dynamics/lib/pkgconfig/uav_dynamics.pc'
+[2.456s] Level 1:colcon.colcon_core.environment:checking '/home/huy/ros2_ws/install/uav_dynamics/lib/python3.10/site-packages'
+[2.457s] Level 1:colcon.colcon_core.environment:checking '/home/huy/ros2_ws/install/uav_dynamics/bin'
+[2.457s] INFO:colcon.colcon_core.shell:Creating package script '/home/huy/ros2_ws/install/uav_dynamics/share/uav_dynamics/package.ps1'
+[2.459s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/huy/ros2_ws/install/uav_dynamics/share/uav_dynamics/package.dsv'
+[2.460s] INFO:colcon.colcon_core.shell:Creating package script '/home/huy/ros2_ws/install/uav_dynamics/share/uav_dynamics/package.sh'
+[2.461s] INFO:colcon.colcon_core.shell:Creating package script '/home/huy/ros2_ws/install/uav_dynamics/share/uav_dynamics/package.bash'
+[2.462s] INFO:colcon.colcon_core.shell:Creating package script '/home/huy/ros2_ws/install/uav_dynamics/share/uav_dynamics/package.zsh'
+[2.463s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/huy/ros2_ws/install/uav_dynamics/share/colcon-core/packages/uav_dynamics)
+[2.468s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/huy/ros2_ws/build/uav_motor_plugin' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble:/home/huy/ros2_ws/install/uav_msgs:/home/huy/ros2_ws/install/uav_sim:/home/huy/ros2_ws/install/uav_motor_plugin:/home/huy/ros2_ws/install/uav_dynamics:/home/huy/ros2_ws/install/uav_controller LD_LIBRARY_PATH=/home/huy/ros2_ws/install/uav_msgs/lib:/home/huy/ros2_ws/install/uav_motor_plugin/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake --build /home/huy/ros2_ws/build/uav_motor_plugin -- -j16 -l16
+[2.472s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/huy/ros2_ws/build/uav_motor_plugin': CMAKE_PREFIX_PATH=/opt/ros/humble:/home/huy/ros2_ws/install/uav_msgs:/home/huy/ros2_ws/install/uav_sim:/home/huy/ros2_ws/install/uav_motor_plugin:/home/huy/ros2_ws/install/uav_dynamics:/home/huy/ros2_ws/install/uav_controller LD_LIBRARY_PATH=/home/huy/ros2_ws/install/uav_msgs/lib:/home/huy/ros2_ws/install/uav_motor_plugin/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake --install /home/huy/ros2_ws/build/uav_motor_plugin
+[2.497s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(uav_motor_plugin)
+[2.498s] Level 1:colcon.colcon_core.environment:checking '/home/huy/ros2_ws/install/uav_motor_plugin' for CMake module files
+[2.499s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/huy/ros2_ws/build/uav_motor_plugin' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble:/home/huy/ros2_ws/install/uav_msgs:/home/huy/ros2_ws/install/uav_sim:/home/huy/ros2_ws/install/uav_motor_plugin:/home/huy/ros2_ws/install/uav_dynamics:/home/huy/ros2_ws/install/uav_controller LD_LIBRARY_PATH=/home/huy/ros2_ws/install/uav_msgs/lib:/home/huy/ros2_ws/install/uav_motor_plugin/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake --install /home/huy/ros2_ws/build/uav_motor_plugin
+[2.500s] Level 1:colcon.colcon_core.environment:checking '/home/huy/ros2_ws/install/uav_motor_plugin' for CMake config files
+[2.501s] Level 1:colcon.colcon_core.shell:create_environment_hook('uav_motor_plugin', 'cmake_prefix_path')
+[2.501s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/huy/ros2_ws/install/uav_motor_plugin/share/uav_motor_plugin/hook/cmake_prefix_path.ps1'
+[2.502s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/huy/ros2_ws/install/uav_motor_plugin/share/uav_motor_plugin/hook/cmake_prefix_path.dsv'
+[2.503s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/huy/ros2_ws/install/uav_motor_plugin/share/uav_motor_plugin/hook/cmake_prefix_path.sh'
+[2.505s] Level 1:colcon.colcon_core.environment:checking '/home/huy/ros2_ws/install/uav_motor_plugin/lib'
+[2.505s] Level 1:colcon.colcon_core.shell:create_environment_hook('uav_motor_plugin', 'ld_library_path_lib')
+[2.506s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/huy/ros2_ws/install/uav_motor_plugin/share/uav_motor_plugin/hook/ld_library_path_lib.ps1'
+[2.507s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/huy/ros2_ws/install/uav_motor_plugin/share/uav_motor_plugin/hook/ld_library_path_lib.dsv'
+[2.507s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/huy/ros2_ws/install/uav_motor_plugin/share/uav_motor_plugin/hook/ld_library_path_lib.sh'
+[2.508s] Level 1:colcon.colcon_core.environment:checking '/home/huy/ros2_ws/install/uav_motor_plugin/bin'
+[2.509s] Level 1:colcon.colcon_core.environment:checking '/home/huy/ros2_ws/install/uav_motor_plugin/lib/pkgconfig/uav_motor_plugin.pc'
+[2.509s] Level 1:colcon.colcon_core.environment:checking '/home/huy/ros2_ws/install/uav_motor_plugin/lib/python3.10/site-packages'
+[2.510s] Level 1:colcon.colcon_core.environment:checking '/home/huy/ros2_ws/install/uav_motor_plugin/bin'
+[2.511s] INFO:colcon.colcon_core.shell:Creating package script '/home/huy/ros2_ws/install/uav_motor_plugin/share/uav_motor_plugin/package.ps1'
+[2.512s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/huy/ros2_ws/install/uav_motor_plugin/share/uav_motor_plugin/package.dsv'
+[2.513s] INFO:colcon.colcon_core.shell:Creating package script '/home/huy/ros2_ws/install/uav_motor_plugin/share/uav_motor_plugin/package.sh'
+[2.514s] INFO:colcon.colcon_core.shell:Creating package script '/home/huy/ros2_ws/install/uav_motor_plugin/share/uav_motor_plugin/package.bash'
+[2.515s] INFO:colcon.colcon_core.shell:Creating package script '/home/huy/ros2_ws/install/uav_motor_plugin/share/uav_motor_plugin/package.zsh'
+[2.516s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/huy/ros2_ws/install/uav_motor_plugin/share/colcon-core/packages/uav_motor_plugin)
+[2.517s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(uav_motor_plugin)
+[2.517s] Level 1:colcon.colcon_core.environment:checking '/home/huy/ros2_ws/install/uav_motor_plugin' for CMake module files
+[2.518s] Level 1:colcon.colcon_core.environment:checking '/home/huy/ros2_ws/install/uav_motor_plugin' for CMake config files
+[2.519s] Level 1:colcon.colcon_core.shell:create_environment_hook('uav_motor_plugin', 'cmake_prefix_path')
+[2.519s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/huy/ros2_ws/install/uav_motor_plugin/share/uav_motor_plugin/hook/cmake_prefix_path.ps1'
+[2.520s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/huy/ros2_ws/install/uav_motor_plugin/share/uav_motor_plugin/hook/cmake_prefix_path.dsv'
+[2.521s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/huy/ros2_ws/install/uav_motor_plugin/share/uav_motor_plugin/hook/cmake_prefix_path.sh'
+[2.522s] Level 1:colcon.colcon_core.environment:checking '/home/huy/ros2_ws/install/uav_motor_plugin/lib'
+[2.523s] Level 1:colcon.colcon_core.shell:create_environment_hook('uav_motor_plugin', 'ld_library_path_lib')
+[2.523s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/huy/ros2_ws/install/uav_motor_plugin/share/uav_motor_plugin/hook/ld_library_path_lib.ps1'
+[2.524s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/huy/ros2_ws/install/uav_motor_plugin/share/uav_motor_plugin/hook/ld_library_path_lib.dsv'
+[2.525s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/huy/ros2_ws/install/uav_motor_plugin/share/uav_motor_plugin/hook/ld_library_path_lib.sh'
+[2.526s] Level 1:colcon.colcon_core.environment:checking '/home/huy/ros2_ws/install/uav_motor_plugin/bin'
+[2.527s] Level 1:colcon.colcon_core.environment:checking '/home/huy/ros2_ws/install/uav_motor_plugin/lib/pkgconfig/uav_motor_plugin.pc'
+[2.527s] Level 1:colcon.colcon_core.environment:checking '/home/huy/ros2_ws/install/uav_motor_plugin/lib/python3.10/site-packages'
+[2.528s] Level 1:colcon.colcon_core.environment:checking '/home/huy/ros2_ws/install/uav_motor_plugin/bin'
+[2.529s] INFO:colcon.colcon_core.shell:Creating package script '/home/huy/ros2_ws/install/uav_motor_plugin/share/uav_motor_plugin/package.ps1'
+[2.531s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/huy/ros2_ws/install/uav_motor_plugin/share/uav_motor_plugin/package.dsv'
+[2.533s] INFO:colcon.colcon_core.shell:Creating package script '/home/huy/ros2_ws/install/uav_motor_plugin/share/uav_motor_plugin/package.sh'
+[2.534s] INFO:colcon.colcon_core.shell:Creating package script '/home/huy/ros2_ws/install/uav_motor_plugin/share/uav_motor_plugin/package.bash'
+[2.535s] INFO:colcon.colcon_core.shell:Creating package script '/home/huy/ros2_ws/install/uav_motor_plugin/share/uav_motor_plugin/package.zsh'
+[2.537s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/huy/ros2_ws/install/uav_motor_plugin/share/colcon-core/packages/uav_motor_plugin)
+[16.543s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/huy/ros2_ws/build/uav_controller' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble:/home/huy/ros2_ws/install/uav_msgs:/home/huy/ros2_ws/install/uav_sim:/home/huy/ros2_ws/install/uav_motor_plugin:/home/huy/ros2_ws/install/uav_dynamics:/home/huy/ros2_ws/install/uav_controller LD_LIBRARY_PATH=/home/huy/ros2_ws/install/uav_msgs/lib:/home/huy/ros2_ws/install/uav_motor_plugin/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake --build /home/huy/ros2_ws/build/uav_controller -- -j16 -l16
+[16.545s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/huy/ros2_ws/build/uav_controller': CMAKE_PREFIX_PATH=/opt/ros/humble:/home/huy/ros2_ws/install/uav_msgs:/home/huy/ros2_ws/install/uav_sim:/home/huy/ros2_ws/install/uav_motor_plugin:/home/huy/ros2_ws/install/uav_dynamics:/home/huy/ros2_ws/install/uav_controller LD_LIBRARY_PATH=/home/huy/ros2_ws/install/uav_msgs/lib:/home/huy/ros2_ws/install/uav_motor_plugin/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake --install /home/huy/ros2_ws/build/uav_controller
+[16.564s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(uav_controller)
+[16.565s] Level 1:colcon.colcon_core.environment:checking '/home/huy/ros2_ws/install/uav_controller' for CMake module files
+[16.566s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/huy/ros2_ws/build/uav_controller' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble:/home/huy/ros2_ws/install/uav_msgs:/home/huy/ros2_ws/install/uav_sim:/home/huy/ros2_ws/install/uav_motor_plugin:/home/huy/ros2_ws/install/uav_dynamics:/home/huy/ros2_ws/install/uav_controller LD_LIBRARY_PATH=/home/huy/ros2_ws/install/uav_msgs/lib:/home/huy/ros2_ws/install/uav_motor_plugin/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake --install /home/huy/ros2_ws/build/uav_controller
+[16.566s] Level 1:colcon.colcon_core.environment:checking '/home/huy/ros2_ws/install/uav_controller' for CMake config files
+[16.566s] Level 1:colcon.colcon_core.shell:create_environment_hook('uav_controller', 'cmake_prefix_path')
+[16.566s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/huy/ros2_ws/install/uav_controller/share/uav_controller/hook/cmake_prefix_path.ps1'
+[16.567s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/huy/ros2_ws/install/uav_controller/share/uav_controller/hook/cmake_prefix_path.dsv'
+[16.567s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/huy/ros2_ws/install/uav_controller/share/uav_controller/hook/cmake_prefix_path.sh'
+[16.567s] Level 1:colcon.colcon_core.environment:checking '/home/huy/ros2_ws/install/uav_controller/lib'
+[16.567s] Level 1:colcon.colcon_core.environment:checking '/home/huy/ros2_ws/install/uav_controller/bin'
+[16.568s] Level 1:colcon.colcon_core.environment:checking '/home/huy/ros2_ws/install/uav_controller/lib/pkgconfig/uav_controller.pc'
+[16.568s] Level 1:colcon.colcon_core.environment:checking '/home/huy/ros2_ws/install/uav_controller/lib/python3.10/site-packages'
+[16.568s] Level 1:colcon.colcon_core.environment:checking '/home/huy/ros2_ws/install/uav_controller/bin'
+[16.568s] INFO:colcon.colcon_core.shell:Creating package script '/home/huy/ros2_ws/install/uav_controller/share/uav_controller/package.ps1'
+[16.569s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/huy/ros2_ws/install/uav_controller/share/uav_controller/package.dsv'
+[16.569s] INFO:colcon.colcon_core.shell:Creating package script '/home/huy/ros2_ws/install/uav_controller/share/uav_controller/package.sh'
+[16.569s] INFO:colcon.colcon_core.shell:Creating package script '/home/huy/ros2_ws/install/uav_controller/share/uav_controller/package.bash'
+[16.569s] INFO:colcon.colcon_core.shell:Creating package script '/home/huy/ros2_ws/install/uav_controller/share/uav_controller/package.zsh'
+[16.570s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/huy/ros2_ws/install/uav_controller/share/colcon-core/packages/uav_controller)
+[16.570s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(uav_controller)
+[16.570s] Level 1:colcon.colcon_core.environment:checking '/home/huy/ros2_ws/install/uav_controller' for CMake module files
+[16.571s] Level 1:colcon.colcon_core.environment:checking '/home/huy/ros2_ws/install/uav_controller' for CMake config files
+[16.571s] Level 1:colcon.colcon_core.shell:create_environment_hook('uav_controller', 'cmake_prefix_path')
+[16.571s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/huy/ros2_ws/install/uav_controller/share/uav_controller/hook/cmake_prefix_path.ps1'
+[16.571s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/huy/ros2_ws/install/uav_controller/share/uav_controller/hook/cmake_prefix_path.dsv'
+[16.572s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/huy/ros2_ws/install/uav_controller/share/uav_controller/hook/cmake_prefix_path.sh'
+[16.572s] Level 1:colcon.colcon_core.environment:checking '/home/huy/ros2_ws/install/uav_controller/lib'
+[16.572s] Level 1:colcon.colcon_core.environment:checking '/home/huy/ros2_ws/install/uav_controller/bin'
+[16.572s] Level 1:colcon.colcon_core.environment:checking '/home/huy/ros2_ws/install/uav_controller/lib/pkgconfig/uav_controller.pc'
+[16.572s] Level 1:colcon.colcon_core.environment:checking '/home/huy/ros2_ws/install/uav_controller/lib/python3.10/site-packages'
+[16.573s] Level 1:colcon.colcon_core.environment:checking '/home/huy/ros2_ws/install/uav_controller/bin'
+[16.573s] INFO:colcon.colcon_core.shell:Creating package script '/home/huy/ros2_ws/install/uav_controller/share/uav_controller/package.ps1'
+[16.573s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/huy/ros2_ws/install/uav_controller/share/uav_controller/package.dsv'
+[16.574s] INFO:colcon.colcon_core.shell:Creating package script '/home/huy/ros2_ws/install/uav_controller/share/uav_controller/package.sh'
+[16.574s] INFO:colcon.colcon_core.shell:Creating package script '/home/huy/ros2_ws/install/uav_controller/share/uav_controller/package.bash'
+[16.574s] INFO:colcon.colcon_core.shell:Creating package script '/home/huy/ros2_ws/install/uav_controller/share/uav_controller/package.zsh'
+[16.575s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/huy/ros2_ws/install/uav_controller/share/colcon-core/packages/uav_controller)
+[16.575s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/huy/ros2_ws/src/uav_sim' with build type 'ament_cmake'
+[16.575s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/huy/ros2_ws/src/uav_sim'
+[16.575s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[16.575s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[16.586s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/huy/ros2_ws/build/uav_sim': CMAKE_PREFIX_PATH=/home/huy/ros2_ws/install/uav_motor_plugin:/home/huy/ros2_ws/install/uav_controller:/opt/ros/humble:/home/huy/ros2_ws/install/uav_msgs:/home/huy/ros2_ws/install/uav_sim:/home/huy/ros2_ws/install/uav_dynamics LD_LIBRARY_PATH=/home/huy/ros2_ws/install/uav_motor_plugin/lib:/home/huy/ros2_ws/install/uav_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake --build /home/huy/ros2_ws/build/uav_sim -- -j16 -l16
+[16.649s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/huy/ros2_ws/build/uav_sim' returned '0': CMAKE_PREFIX_PATH=/home/huy/ros2_ws/install/uav_motor_plugin:/home/huy/ros2_ws/install/uav_controller:/opt/ros/humble:/home/huy/ros2_ws/install/uav_msgs:/home/huy/ros2_ws/install/uav_sim:/home/huy/ros2_ws/install/uav_dynamics LD_LIBRARY_PATH=/home/huy/ros2_ws/install/uav_motor_plugin/lib:/home/huy/ros2_ws/install/uav_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake --build /home/huy/ros2_ws/build/uav_sim -- -j16 -l16
+[16.651s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/huy/ros2_ws/build/uav_sim': CMAKE_PREFIX_PATH=/home/huy/ros2_ws/install/uav_motor_plugin:/home/huy/ros2_ws/install/uav_controller:/opt/ros/humble:/home/huy/ros2_ws/install/uav_msgs:/home/huy/ros2_ws/install/uav_sim:/home/huy/ros2_ws/install/uav_dynamics LD_LIBRARY_PATH=/home/huy/ros2_ws/install/uav_motor_plugin/lib:/home/huy/ros2_ws/install/uav_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake --install /home/huy/ros2_ws/build/uav_sim
+[16.660s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(uav_sim)
+[16.660s] Level 1:colcon.colcon_core.environment:checking '/home/huy/ros2_ws/install/uav_sim' for CMake module files
+[16.661s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/huy/ros2_ws/build/uav_sim' returned '0': CMAKE_PREFIX_PATH=/home/huy/ros2_ws/install/uav_motor_plugin:/home/huy/ros2_ws/install/uav_controller:/opt/ros/humble:/home/huy/ros2_ws/install/uav_msgs:/home/huy/ros2_ws/install/uav_sim:/home/huy/ros2_ws/install/uav_dynamics LD_LIBRARY_PATH=/home/huy/ros2_ws/install/uav_motor_plugin/lib:/home/huy/ros2_ws/install/uav_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake --install /home/huy/ros2_ws/build/uav_sim
+[16.661s] Level 1:colcon.colcon_core.environment:checking '/home/huy/ros2_ws/install/uav_sim' for CMake config files
+[16.661s] Level 1:colcon.colcon_core.shell:create_environment_hook('uav_sim', 'cmake_prefix_path')
+[16.662s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/huy/ros2_ws/install/uav_sim/share/uav_sim/hook/cmake_prefix_path.ps1'
+[16.662s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/huy/ros2_ws/install/uav_sim/share/uav_sim/hook/cmake_prefix_path.dsv'
+[16.662s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/huy/ros2_ws/install/uav_sim/share/uav_sim/hook/cmake_prefix_path.sh'
+[16.663s] Level 1:colcon.colcon_core.environment:checking '/home/huy/ros2_ws/install/uav_sim/lib'
+[16.663s] Level 1:colcon.colcon_core.environment:checking '/home/huy/ros2_ws/install/uav_sim/bin'
+[16.663s] Level 1:colcon.colcon_core.environment:checking '/home/huy/ros2_ws/install/uav_sim/lib/pkgconfig/uav_sim.pc'
+[16.663s] Level 1:colcon.colcon_core.environment:checking '/home/huy/ros2_ws/install/uav_sim/lib/python3.10/site-packages'
+[16.663s] Level 1:colcon.colcon_core.environment:checking '/home/huy/ros2_ws/install/uav_sim/bin'
+[16.663s] INFO:colcon.colcon_core.shell:Creating package script '/home/huy/ros2_ws/install/uav_sim/share/uav_sim/package.ps1'
+[16.664s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/huy/ros2_ws/install/uav_sim/share/uav_sim/package.dsv'
+[16.664s] INFO:colcon.colcon_core.shell:Creating package script '/home/huy/ros2_ws/install/uav_sim/share/uav_sim/package.sh'
+[16.664s] INFO:colcon.colcon_core.shell:Creating package script '/home/huy/ros2_ws/install/uav_sim/share/uav_sim/package.bash'
+[16.665s] INFO:colcon.colcon_core.shell:Creating package script '/home/huy/ros2_ws/install/uav_sim/share/uav_sim/package.zsh'
+[16.665s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/huy/ros2_ws/install/uav_sim/share/colcon-core/packages/uav_sim)
+[16.666s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(uav_sim)
+[16.666s] Level 1:colcon.colcon_core.environment:checking '/home/huy/ros2_ws/install/uav_sim' for CMake module files
+[16.666s] Level 1:colcon.colcon_core.environment:checking '/home/huy/ros2_ws/install/uav_sim' for CMake config files
+[16.666s] Level 1:colcon.colcon_core.shell:create_environment_hook('uav_sim', 'cmake_prefix_path')
+[16.667s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/huy/ros2_ws/install/uav_sim/share/uav_sim/hook/cmake_prefix_path.ps1'
+[16.667s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/huy/ros2_ws/install/uav_sim/share/uav_sim/hook/cmake_prefix_path.dsv'
+[16.667s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/huy/ros2_ws/install/uav_sim/share/uav_sim/hook/cmake_prefix_path.sh'
+[16.668s] Level 1:colcon.colcon_core.environment:checking '/home/huy/ros2_ws/install/uav_sim/lib'
+[16.668s] Level 1:colcon.colcon_core.environment:checking '/home/huy/ros2_ws/install/uav_sim/bin'
+[16.668s] Level 1:colcon.colcon_core.environment:checking '/home/huy/ros2_ws/install/uav_sim/lib/pkgconfig/uav_sim.pc'
+[16.668s] Level 1:colcon.colcon_core.environment:checking '/home/huy/ros2_ws/install/uav_sim/lib/python3.10/site-packages'
+[16.668s] Level 1:colcon.colcon_core.environment:checking '/home/huy/ros2_ws/install/uav_sim/bin'
+[16.668s] INFO:colcon.colcon_core.shell:Creating package script '/home/huy/ros2_ws/install/uav_sim/share/uav_sim/package.ps1'
+[16.669s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/huy/ros2_ws/install/uav_sim/share/uav_sim/package.dsv'
+[16.669s] INFO:colcon.colcon_core.shell:Creating package script '/home/huy/ros2_ws/install/uav_sim/share/uav_sim/package.sh'
+[16.670s] INFO:colcon.colcon_core.shell:Creating package script '/home/huy/ros2_ws/install/uav_sim/share/uav_sim/package.bash'
+[16.670s] INFO:colcon.colcon_core.shell:Creating package script '/home/huy/ros2_ws/install/uav_sim/share/uav_sim/package.zsh'
+[16.670s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/huy/ros2_ws/install/uav_sim/share/colcon-core/packages/uav_sim)
+[16.670s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[16.671s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[16.671s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[16.671s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[16.675s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[16.675s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[16.675s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[16.685s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[16.685s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/huy/ros2_ws/install/local_setup.ps1'
+[16.686s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/huy/ros2_ws/install/_local_setup_util_ps1.py'
+[16.687s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/huy/ros2_ws/install/setup.ps1'
+[16.689s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/huy/ros2_ws/install/local_setup.sh'
+[16.689s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/huy/ros2_ws/install/_local_setup_util_sh.py'
+[16.689s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/huy/ros2_ws/install/setup.sh'
+[16.691s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/huy/ros2_ws/install/local_setup.bash'
+[16.691s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/huy/ros2_ws/install/setup.bash'
+[16.692s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/huy/ros2_ws/install/local_setup.zsh'
+[16.692s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/huy/ros2_ws/install/setup.zsh'

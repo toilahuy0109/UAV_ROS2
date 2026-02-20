@@ -14,7 +14,7 @@ double PID::get_integral()
     return integral_;
 }
 
-double PID::update(double e, double edot, double Ts_)
+double PID::update(double e, double Ts_)
 {
     double alpha = N_*Ts_ / (1.0 + N_ * Ts_);
     derivative_ = alpha * derivative_ + (kd_ * N_ / (1.0 + N_ * Ts_))*(e - prev_error_);
@@ -139,9 +139,9 @@ void Controller::odomCallback(const nav_msgs::msg::Odometry::SharedPtr msg)
     pid_data.ez = ez;
 
     /*------------------ PID ----------------------*/
-    double ux = pid_x_->update(ex, ex_dot, Ts_pid);
-    double uy = pid_y_->update(ey, ey_dot, Ts_pid);
-    double uz = pid_z_->update(ez, ez_dot, Ts_pid) + m_*g_;
+    double ux = pid_x_->update(ex, Ts_pid);
+    double uy = pid_y_->update(ey, Ts_pid);
+    double uz = pid_z_->update(ez, Ts_pid) + m_*g_;
 
     printf("%.4f", Ts_pid);
 

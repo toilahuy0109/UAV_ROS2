@@ -12,12 +12,12 @@ public:
             std::chrono::milliseconds(10),
             std::bind(&PIDSim::controlLoop, this));
 
-        Ts_ = 0.001;
+        Ts_ = 0.01;
 
         // PID gains
-        Kp_ = 0.0274953657924367;
-        Ki_ = 0.00055898718103685;
-        Kd_ = 0.330530505324201;
+        Kp_ = 1.34965529853073;
+        Ki_ = 0.0986779769726277;
+        Kd_ = 2.94194871374757;
 
         setpoint_ = 6.0; // muốn hệ đạt 1m
     }
@@ -28,17 +28,19 @@ private:
         // ===== PID =====
         double error = setpoint_ - y_;
 
+        double alpha = N_*Ts_ / (1.0 + N_ * Ts_);
+        derivative_ = alpha * derivative_ + (Kd_ * N_ / (1.0 + N_ * Ts_))*(error - prev_error_);
+
         integral_ += error * Ts_;
-        double derivative = (error - prev_error_) / Ts_;
 
         double u = Kp_ * error
                  + Ki_ * integral_
-                 + Kd_ * derivative;
+                 + Kd_ * derivative_;
 
         prev_error_ = error;
 
         // ===== PLANT: 1/(1.5 s^2) =====
-        double a = u*1.5;
+        double a = u/1.5;
         v_ += a * Ts_;
         y_ += v_ * Ts_;
 
@@ -59,10 +61,13 @@ private:
     double Kp_, Ki_, Kd_;
     double integral_ = 0.0;
     double prev_error_ = 0.0;
+    double derivative_ = 0.0;
 
     // Plant states
     double y_ = 0.0;
     double v_ = 0.0;
+
+    double N_ = 228.565595208321;
 
     double setpoint_;
 };

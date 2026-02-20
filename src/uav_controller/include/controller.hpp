@@ -44,7 +44,7 @@ class PID
     PID(double kp, double ki, double kd);
     double get_integral();
 
-    double update(double e, double edot, double Ts_);
+    double update(double e, double Ts_);
     
     private:
     double kp_, ki_, kd_;
